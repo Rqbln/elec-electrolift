@@ -1,5 +1,5 @@
 Analysis & Elaboration report for Quartus
-Wed Oct  4 14:53:28 2023
+Wed Oct 04 15:03:03 2023
 Quartus Prime Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
 
 
@@ -37,10 +37,10 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------------------------------------------+
 ; Analysis & Elaboration Summary                                                   ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Elaboration Status      ; Failed - Wed Oct  4 14:53:28 2023           ;
+; Analysis & Elaboration Status      ; Successful - Wed Oct 04 15:03:03 2023       ;
 ; Quartus Prime Version              ; 20.1.0 Build 711 06/05/2020 SJ Lite Edition ;
 ; Revision Name                      ; Quartus                                     ;
-; Top-level Entity Name              ; FS1                                         ;
+; Top-level Entity Name              ; Quartus                                     ;
 ; Family                             ; MAX 10                                      ;
 ; Total logic elements               ; N/A until Partition Merge                   ;
 ;     Total combinational functions  ; N/A until Partition Merge                   ;
@@ -61,8 +61,8 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------+-------------+
 ; Processors                 ; Number      ;
 +----------------------------+-------------+
-; Number detected on machine ; 16          ;
-; Maximum allowed            ; 12          ;
+; Number detected on machine ; 8           ;
+; Maximum allowed            ; 4           ;
 ;                            ;             ;
 ; Average used               ; 1.00        ;
 ; Maximum used               ; 1           ;
@@ -78,7 +78,7 @@ https://fpgasoftware.intel.com/eula.
 ; Option                                                           ; Setting            ; Default Value      ;
 +------------------------------------------------------------------+--------------------+--------------------+
 ; Device                                                           ; 10M50DAF484C7G     ;                    ;
-; Top-level entity name                                            ; FS1                ; Quartus            ;
+; Top-level entity name                                            ; Quartus            ; Quartus            ;
 ; Family name                                                      ; MAX 10             ; Cyclone V          ;
 ; Type of Retiming Performed During Resynthesis                    ; Full               ;                    ;
 ; Resynthesis Optimization Effort                                  ; Normal             ;                    ;
@@ -168,18 +168,17 @@ https://fpgasoftware.intel.com/eula.
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Elaboration
     Info: Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
-    Info: Processing started: Wed Oct  4 14:53:22 2023
+    Info: Processing started: Wed Oct 04 15:02:52 2023
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Quartus -c Quartus --analysis_and_elaboration
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
-Info (20030): Parallel compilation is enabled and will use 12 of the 12 processors detected
-Info (12021): Found 2 design units, including 1 entities, in source file /home/rqbin/Documents/ECE/ECE ING 2/Conception FPGA/Projet_S1/FS1.vhd
-    Info (12022): Found design unit 1: MaintenanceMode-Behavioral File: /home/rqbin/Documents/ECE/ECE ING 2/Conception FPGA/Projet_S1/FS1.vhd Line: 14
-    Info (12023): Found entity 1: MaintenanceMode File: /home/rqbin/Documents/ECE/ECE ING 2/Conception FPGA/Projet_S1/FS1.vhd Line: 7
-Error (12007): Top-level design entity "FS1" is undefined
-Error: Quartus Prime Analysis & Elaboration was unsuccessful. 1 error, 1 warning
-    Error: Peak virtual memory: 727 megabytes
-    Error: Processing ended: Wed Oct  4 14:53:28 2023
-    Error: Elapsed time: 00:00:06
-    Error: Total CPU time (on all processors): 00:00:14
+Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
+Info (12021): Found 1 design units, including 1 entities, in source file quartus.bdf
+    Info (12023): Found entity 1: Quartus
+Info (12127): Elaborating entity "Quartus" for the top level hierarchy
+Info: Quartus Prime Analysis & Elaboration was successful. 0 errors, 1 warning
+    Info: Peak virtual memory: 4704 megabytes
+    Info: Processing ended: Wed Oct 04 15:03:03 2023
+    Info: Elapsed time: 00:00:11
+    Info: Total CPU time (on all processors): 00:00:11
 
 
