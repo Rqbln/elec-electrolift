@@ -1,0 +1,140 @@
+-- Copyright (C) 2020  Intel Corporation. All rights reserved.
+-- Your use of Intel Corporation's design tools, logic functions 
+-- and other software and tools, and any partner logic 
+-- functions, and any output files from any of the foregoing 
+-- (including device programming or simulation files), and any 
+-- associated documentation or information are expressly subject 
+-- to the terms and conditions of the Intel Program License 
+-- Subscription Agreement, the Intel Quartus Prime License Agreement,
+-- the Intel FPGA IP License Agreement, or other applicable license
+-- agreement, including, without limitation, that your use is for
+-- the sole purpose of programming logic devices manufactured by
+-- Intel and sold by Intel or its authorized distributors.  Please
+-- refer to the applicable agreement for further details, at
+-- https://fpgasoftware.intel.com/eula.
+
+-- PROGRAM		"Quartus Prime"
+-- VERSION		"Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition"
+-- CREATED		"Tue Oct 10 16:29:13 2023"
+
+LIBRARY ieee;
+USE ieee.std_logic_1164.all; 
+
+LIBRARY work;
+
+ENTITY my_7490 IS 
+	PORT
+	(
+		SET9A :  IN  STD_LOGIC;
+		SET9B :  IN  STD_LOGIC;
+		CLRA :  IN  STD_LOGIC;
+		CLRB :  IN  STD_LOGIC;
+		CLKA :  IN  STD_LOGIC;
+		CLKB :  IN  STD_LOGIC;
+		QA :  OUT  STD_LOGIC;
+		QB :  OUT  STD_LOGIC;
+		QC :  OUT  STD_LOGIC;
+		QD :  OUT  STD_LOGIC
+	);
+END my_7490;
+
+ARCHITECTURE bdf_type OF my_7490 IS 
+
+SIGNAL	DFF_7 :  STD_LOGIC;
+SIGNAL	SYNTHESIZED_WIRE_16 :  STD_LOGIC;
+SIGNAL	SYNTHESIZED_WIRE_17 :  STD_LOGIC;
+SIGNAL	SYNTHESIZED_WIRE_2 :  STD_LOGIC;
+SIGNAL	SYNTHESIZED_WIRE_5 :  STD_LOGIC;
+SIGNAL	SYNTHESIZED_WIRE_18 :  STD_LOGIC;
+SIGNAL	SYNTHESIZED_WIRE_19 :  STD_LOGIC;
+SIGNAL	SYNTHESIZED_WIRE_20 :  STD_LOGIC;
+SIGNAL	SYNTHESIZED_WIRE_21 :  STD_LOGIC;
+SIGNAL	SYNTHESIZED_WIRE_10 :  STD_LOGIC;
+SIGNAL	DFF_19 :  STD_LOGIC;
+SIGNAL	SYNTHESIZED_WIRE_13 :  STD_LOGIC;
+SIGNAL	SYNTHESIZED_WIRE_14 :  STD_LOGIC;
+
+
+BEGIN 
+QA <= DFF_7;
+QB <= SYNTHESIZED_WIRE_18;
+QC <= SYNTHESIZED_WIRE_19;
+QD <= DFF_19;
+
+
+
+SYNTHESIZED_WIRE_14 <= NOT(DFF_7);
+
+
+
+PROCESS(SYNTHESIZED_WIRE_17,SYNTHESIZED_WIRE_16)
+BEGIN
+IF (SYNTHESIZED_WIRE_16 = '0') THEN
+	SYNTHESIZED_WIRE_18 <= '0';
+ELSIF (RISING_EDGE(SYNTHESIZED_WIRE_17)) THEN
+	SYNTHESIZED_WIRE_18 <= SYNTHESIZED_WIRE_2;
+END IF;
+END PROCESS;
+
+
+PROCESS(SYNTHESIZED_WIRE_17,SYNTHESIZED_WIRE_16)
+BEGIN
+IF (SYNTHESIZED_WIRE_16 = '0') THEN
+	SYNTHESIZED_WIRE_19 <= '0';
+ELSIF (RISING_EDGE(SYNTHESIZED_WIRE_17)) THEN
+	SYNTHESIZED_WIRE_19 <= SYNTHESIZED_WIRE_5;
+END IF;
+END PROCESS;
+
+
+SYNTHESIZED_WIRE_5 <= SYNTHESIZED_WIRE_18 XOR SYNTHESIZED_WIRE_19;
+
+
+SYNTHESIZED_WIRE_16 <= SYNTHESIZED_WIRE_20 AND SYNTHESIZED_WIRE_21;
+
+
+PROCESS(SYNTHESIZED_WIRE_17,SYNTHESIZED_WIRE_21,SYNTHESIZED_WIRE_20)
+BEGIN
+IF (SYNTHESIZED_WIRE_21 = '0') THEN
+	DFF_19 <= '0';
+ELSIF (SYNTHESIZED_WIRE_20 = '0') THEN
+	DFF_19 <= '1';
+ELSIF (RISING_EDGE(SYNTHESIZED_WIRE_17)) THEN
+	DFF_19 <= SYNTHESIZED_WIRE_10;
+END IF;
+END PROCESS;
+
+
+SYNTHESIZED_WIRE_10 <= SYNTHESIZED_WIRE_19 AND SYNTHESIZED_WIRE_18;
+
+
+SYNTHESIZED_WIRE_2 <= NOT(SYNTHESIZED_WIRE_18 OR DFF_19);
+
+
+SYNTHESIZED_WIRE_13 <= NOT(CLKA);
+
+
+
+SYNTHESIZED_WIRE_17 <= NOT(CLKB);
+
+
+
+PROCESS(SYNTHESIZED_WIRE_13,SYNTHESIZED_WIRE_21,SYNTHESIZED_WIRE_20)
+BEGIN
+IF (SYNTHESIZED_WIRE_21 = '0') THEN
+	DFF_7 <= '0';
+ELSIF (SYNTHESIZED_WIRE_20 = '0') THEN
+	DFF_7 <= '1';
+ELSIF (RISING_EDGE(SYNTHESIZED_WIRE_13)) THEN
+	DFF_7 <= SYNTHESIZED_WIRE_14;
+END IF;
+END PROCESS;
+
+
+SYNTHESIZED_WIRE_20 <= NOT(SET9A AND SET9B);
+
+
+SYNTHESIZED_WIRE_21 <= NOT(CLRA AND CLRB);
+
+
+END bdf_type;
