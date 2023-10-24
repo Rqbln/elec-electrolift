@@ -1,0 +1,184 @@
+/*
+WARNING: Do NOT edit the input and output ports in this file in a text
+editor if you plan to continue editing the block that represents it in
+the Block Editor! File corruption is VERY likely to occur.
+*/
+/*
+Copyright (C) 2020  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
+and other software and tools, and any partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel FPGA IP License Agreement, or other applicable license
+agreement, including, without limitation, that your use is for
+the sole purpose of programming logic devices manufactured by
+Intel and sold by Intel or its authorized distributors.  Please
+refer to the applicable agreement for further details, at
+https://fpgasoftware.intel.com/eula.
+*/
+(header "graphic" (version "1.4"))
+(pin
+	(input)
+	(rect 296 96 464 112)
+	(text "INPUT" (rect 125 0 161 13)(font "Arial" (font_size 6)))
+	(text "CLOCK50" (rect 5 0 71 14)(font "Arial" ))
+	(pt 168 8)
+	(drawing
+		(line (pt 84 12)(pt 109 12))
+		(line (pt 84 4)(pt 109 4))
+		(line (pt 113 8)(pt 168 8))
+		(line (pt 84 12)(pt 84 4))
+		(line (pt 109 4)(pt 113 8))
+		(line (pt 109 12)(pt 113 8))
+	)
+	(text "VCC" (rect 128 7 155 20)(font "Arial" (font_size 6)))
+)
+(symbol
+	(rect 1176 -80 1416 32)
+	(text "counter2s" (rect 5 0 67 14)(font "Arial" ))
+	(text "inst1" (rect 8 96 39 112)(font "Intel Clear" ))
+	(port
+		(pt 0 32)
+		(input)
+		(text "i_Clock" (rect 0 0 47 14)(font "Arial" ))
+		(text "i_Clock" (rect 21 27 68 41)(font "Arial" ))
+		(line (pt 0 32)(pt 16 32))
+	)
+	(port
+		(pt 0 48)
+		(input)
+		(text "i_Reset_n" (rect 0 0 63 14)(font "Arial" ))
+		(text "i_Reset_n" (rect 21 43 84 57)(font "Arial" ))
+		(line (pt 0 48)(pt 16 48))
+	)
+	(port
+		(pt 0 64)
+		(input)
+		(text "i_Echo" (rect 0 0 43 14)(font "Arial" ))
+		(text "i_Echo" (rect 21 59 64 73)(font "Arial" ))
+		(line (pt 0 64)(pt 16 64))
+	)
+	(port
+		(pt 240 32)
+		(output)
+		(text "o_DV_n" (rect 0 0 51 14)(font "Arial" ))
+		(text "o_DV_n" (rect 176 27 227 41)(font "Arial" ))
+		(line (pt 240 32)(pt 224 32))
+	)
+	(port
+		(pt 240 48)
+		(output)
+		(text "o_Echo_pulsetime[26..0]" (rect 0 0 153 14)(font "Arial" ))
+		(text "o_Echo_pulsetime[26..0]" (rect 90 43 243 57)(font "Arial" ))
+		(line (pt 240 48)(pt 224 48)(line_width 3))
+	)
+	(drawing
+		(rectangle (rect 16 16 224 96))
+	)
+)
+(symbol
+	(rect 1872 -32 1936 16)
+	(text "OR2" (rect 1 0 26 13)(font "Arial" (font_size 6)))
+	(text "inst2" (rect 3 37 34 53)(font "Intel Clear" ))
+	(port
+		(pt 0 32)
+		(input)
+		(text "IN2" (rect 2 23 27 37)(font "Courier New" (bold))(invisible))
+		(text "IN2" (rect 2 23 27 37)(font "Courier New" (bold))(invisible))
+		(line (pt 0 32)(pt 15 32))
+	)
+	(port
+		(pt 0 16)
+		(input)
+		(text "IN1" (rect 2 7 27 21)(font "Courier New" (bold))(invisible))
+		(text "IN1" (rect 2 7 27 21)(font "Courier New" (bold))(invisible))
+		(line (pt 0 16)(pt 15 16))
+	)
+	(port
+		(pt 64 24)
+		(output)
+		(text "OUT" (rect 48 15 73 29)(font "Courier New" (bold))(invisible))
+		(text "OUT" (rect 48 15 73 29)(font "Courier New" (bold))(invisible))
+		(line (pt 48 24)(pt 64 24))
+	)
+	(drawing
+		(line (pt 14 36)(pt 25 36))
+		(line (pt 14 13)(pt 25 13))
+		(arc (pt 7 29)(pt 7 19)(rect -14 8 19 41))
+		(arc (pt 49 24)(pt 25 13)(rect -6 13 57 76))
+		(arc (pt 25 35)(pt 49 24)(rect -6 -27 57 36))
+	)
+)
+(connector
+	(pt 1128 -16)
+	(pt 1176 -16)
+)
+(connector
+	(pt 1872 0)
+	(pt 1856 0)
+)
+(connector
+	(pt 1856 -48)
+	(pt 1856 -16)
+)
+(connector
+	(pt 1416 -48)
+	(pt 1856 -48)
+)
+(connector
+	(pt 1856 -16)
+	(pt 1872 -16)
+)
+(connector
+	(pt 1960 -8)
+	(pt 1936 -8)
+)
+(connector
+	(pt 1960 -104)
+	(pt 1136 -104)
+)
+(connector
+	(pt 1176 -32)
+	(pt 1136 -32)
+)
+(connector
+	(pt 1136 -104)
+	(pt 1136 -32)
+)
+(connector
+	(pt 1176 -48)
+	(pt 888 -48)
+)
+(connector
+	(pt 1960 -104)
+	(pt 1960 -8)
+)
+(connector
+	(pt 1960 -8)
+	(pt 1960 56)
+)
+(connector
+	(pt 1856 104)
+	(pt 1856 0)
+)
+(connector
+	(pt 1128 104)
+	(pt 1128 -16)
+)
+(connector
+	(pt 464 104)
+	(pt 1128 104)
+)
+(connector
+	(pt 1128 104)
+	(pt 1856 104)
+)
+(connector
+	(pt 888 112)
+	(pt 888 -48)
+)
+(junction (pt 1960 -8))
+(junction (pt 1128 104))
