@@ -1,0 +1,42 @@
+
+State Machine - |Quartus|counter:inst9|state
+Name state.sending_info state.counting state.idle 
+state.idle 0 0 0 
+state.counting 0 1 1 
+state.sending_info 1 0 1 
+
+State Machine - |Quartus|binary_to_bcd:inst10|state
+Name state.counting state.copying_info state.idle 
+state.idle 0 0 0 
+state.copying_info 0 1 1 
+state.counting 1 0 1 
+
+State Machine - |Quartus|seven_seg_dispayer:inst11|state
+Name state.display_seven_seg state.handle_in_data state.idle 
+state.idle 0 0 0 
+state.handle_in_data 0 1 1 
+state.display_seven_seg 1 0 1 
+
+State Machine - |Quartus|PRESIDENT:pres|fstate
+Name fstate.state12 fstate.state11 fstate.state10 fstate.state9 fstate.state8 fstate.state2 fstate.state3 fstate.state7 fstate.state6 fstate.state5 fstate.state4 fstate.state1 
+fstate.state1 0 0 0 0 0 0 0 0 0 0 0 0 
+fstate.state4 0 0 0 0 0 0 0 0 0 0 1 1 
+fstate.state5 0 0 0 0 0 0 0 0 0 1 0 1 
+fstate.state6 0 0 0 0 0 0 0 0 1 0 0 1 
+fstate.state7 0 0 0 0 0 0 0 1 0 0 0 1 
+fstate.state3 0 0 0 0 0 0 1 0 0 0 0 1 
+fstate.state2 0 0 0 0 0 1 0 0 0 0 0 1 
+fstate.state8 0 0 0 0 1 0 0 0 0 0 0 1 
+fstate.state9 0 0 0 1 0 0 0 0 0 0 0 1 
+fstate.state10 0 0 1 0 0 0 0 0 0 0 0 1 
+fstate.state11 0 1 0 0 0 0 0 0 0 0 0 1 
+fstate.state12 1 0 0 0 0 0 0 0 0 0 0 1 
+
+State Machine - |Quartus|Maintenance:inst|fstate
+Name fstate.state6 fstate.state3 fstate.state2 fstate.state4 fstate.state5 fstate.state1 
+fstate.state1 0 0 0 0 0 0 
+fstate.state5 0 0 0 0 1 1 
+fstate.state4 0 0 0 1 0 1 
+fstate.state2 0 0 1 0 0 1 
+fstate.state3 0 1 0 0 0 1 
+fstate.state6 1 0 0 0 0 1 

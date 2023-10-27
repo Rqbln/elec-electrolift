@@ -21,9 +21,9 @@ https://fpgasoftware.intel.com/eula.
 */
 (header "symbol" (version "1.1"))
 (symbol
-	(rect 16 16 256 128)
-	(text "counter" (rect 5 0 34 12)(font "Arial" ))
-	(text "inst" (rect 8 96 20 108)(font "Arial" ))
+	(rect 16 16 200 96)
+	(text "trigger_generator" (rect 5 0 73 12)(font "Arial" ))
+	(text "inst" (rect 8 64 20 76)(font "Arial" ))
 	(port
 		(pt 0 32)
 		(input)
@@ -39,27 +39,13 @@ https://fpgasoftware.intel.com/eula.
 		(line (pt 0 48)(pt 16 48)(line_width 1))
 	)
 	(port
-		(pt 0 64)
-		(input)
-		(text "i_Echo" (rect 0 0 28 12)(font "Arial" ))
-		(text "i_Echo" (rect 21 59 49 71)(font "Arial" ))
-		(line (pt 0 64)(pt 16 64)(line_width 1))
-	)
-	(port
-		(pt 240 32)
+		(pt 184 32)
 		(output)
-		(text "o_DV_n" (rect 0 0 36 12)(font "Arial" ))
-		(text "o_DV_n" (rect 183 27 219 39)(font "Arial" ))
-		(line (pt 240 32)(pt 224 32)(line_width 1))
-	)
-	(port
-		(pt 240 48)
-		(output)
-		(text "o_Echo_pulsetime[21..0]" (rect 0 0 97 12)(font "Arial" ))
-		(text "o_Echo_pulsetime[21..0]" (rect 122 43 219 55)(font "Arial" ))
-		(line (pt 240 48)(pt 224 48)(line_width 3))
+		(text "o_Trigger" (rect 0 0 38 12)(font "Arial" ))
+		(text "o_Trigger" (rect 125 27 163 39)(font "Arial" ))
+		(line (pt 184 32)(pt 168 32)(line_width 1))
 	)
 	(drawing
-		(rectangle (rect 16 16 224 96)(line_width 1))
+		(rectangle (rect 16 16 168 64)(line_width 1))
 	)
 )
