@@ -17,7 +17,7 @@ state.idle 0 0 0
 state.handle_in_data 0 1 1 
 state.display_seven_seg 1 0 1 
 
-State Machine - |Quartus|PRESIDENT:PRES|fstate
+State Machine - |Quartus|PRESIDENT:pres|fstate
 Name fstate.state12 fstate.state11 fstate.state10 fstate.state9 fstate.state8 fstate.state2 fstate.state3 fstate.state7 fstate.state6 fstate.state5 fstate.state4 fstate.state1 
 fstate.state1 0 0 0 0 0 0 0 0 0 0 0 0 
 fstate.state4 0 0 0 0 0 0 0 0 0 0 1 1 
