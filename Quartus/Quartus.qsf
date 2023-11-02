@@ -39,7 +39,7 @@
 
 set_global_assignment -name FAMILY "MAX 10"
 set_global_assignment -name DEVICE 10M50DAF484C7G
-set_global_assignment -name TOP_LEVEL_ENTITY test
+set_global_assignment -name TOP_LEVEL_ENTITY Quartus
 set_global_assignment -name ORIGINAL_QUARTUS_VERSION 20.1.0
 set_global_assignment -name PROJECT_CREATION_TIME_DATE "14:25:37  OCTOBRE 04, 2023"
 set_global_assignment -name LAST_QUARTUS_VERSION "20.1.0 Lite Edition"
@@ -62,21 +62,78 @@ set_global_assignment -name POWER_BOARD_THERMAL_MODEL "NONE (CONSERVATIVE)"
 set_location_assignment PIN_B8 -to KEY0
 set_location_assignment PIN_A7 -to KEY1
 set_location_assignment PIN_P11 -to Clock
+set_location_assignment PIN_W10 -to i_Echo
+set_location_assignment PIN_B22 -to o_Sev_seg_1[6]
+set_location_assignment PIN_C22 -to o_Sev_seg_1[5]
+set_location_assignment PIN_B21 -to o_Sev_seg_1[4]
+set_location_assignment PIN_A21 -to o_Sev_seg_1[3]
+set_location_assignment PIN_B19 -to o_Sev_seg_1[2]
+set_location_assignment PIN_A20 -to o_Sev_seg_1[1]
+set_location_assignment PIN_B20 -to o_Sev_seg_1[0]
+set_location_assignment PIN_E17 -to o_Sev_seg_2[6]
+set_location_assignment PIN_D19 -to o_Sev_seg_2[5]
+set_location_assignment PIN_C20 -to o_Sev_seg_2[4]
+set_location_assignment PIN_C19 -to o_Sev_seg_2[3]
+set_location_assignment PIN_E21 -to o_Sev_seg_2[2]
+set_location_assignment PIN_E22 -to o_Sev_seg_2[1]
+set_location_assignment PIN_F21 -to o_Sev_seg_2[0]
+set_location_assignment PIN_V10 -to Trigg
+set_location_assignment PIN_AB17 -to BUZZER
+set_location_assignment PIN_AB5 -to LED1
+set_location_assignment PIN_AB6 -to LED2
+set_location_assignment PIN_AB7 -to LED3
+set_location_assignment PIN_AB8 -to LED4
+set_location_assignment PIN_AB9 -to LED5
+set_location_assignment PIN_Y10 -to LED6
+set_location_assignment PIN_AA11 -to LED7
+set_location_assignment PIN_A8 -to LEDR0
+set_location_assignment PIN_A9 -to LEDR1
+set_location_assignment PIN_A10 -to LEDR2
+set_location_assignment PIN_B10 -to LEDR3
+set_location_assignment PIN_D13 -to LEDR4
+set_location_assignment PIN_C13 -to LEDR5
+set_location_assignment PIN_E14 -to LEDR6
+set_location_assignment PIN_D14 -to LEDR7
+set_location_assignment PIN_A11 -to LEDR8
+set_location_assignment PIN_B11 -to LEDR9
+set_location_assignment PIN_AA12 -to LED8
+set_location_assignment PIN_C10 -to SW0
+set_location_assignment PIN_C11 -to SW1
+set_location_assignment PIN_D12 -to SW2
+set_location_assignment PIN_C12 -to SW3
+set_location_assignment PIN_A12 -to SW4
+set_location_assignment PIN_B12 -to SW5
+set_location_assignment PIN_A13 -to SW6
+set_global_assignment -name VHDL_FILE SEVSEG_ETAGE.vhd
+set_global_assignment -name SMF_FILE fs4.smf
+set_global_assignment -name VHDL_FILE ETAGE.vhd
+set_global_assignment -name VHDL_FILE moving_zebitest2.vhd
+set_global_assignment -name SMF_FILE moving_zebitest2.smf
+set_global_assignment -name SMF_FILE moving_zebi.smf
+set_global_assignment -name VHDL_FILE SM2.vhd
+set_global_assignment -name VHDL_FILE PRESIDENT.vhd
 set_global_assignment -name BDF_FILE test.bdf
 set_global_assignment -name VHDL_FILE Maintenance.vhd
 set_global_assignment -name SMF_FILE Maintenance.smf
 set_global_assignment -name BDF_FILE Quartus.bdf
-set_location_assignment PIN_A8 -to LEDR10
-set_location_assignment PIN_A9 -to LEDR11
-set_location_assignment PIN_A10 -to LEDR12
-set_location_assignment PIN_B10 -to LEDR13
-set_location_assignment PIN_D13 -to LEDR14
-set_location_assignment PIN_C13 -to LEDR15
-set_location_assignment PIN_E14 -to LEDR16
-set_location_assignment PIN_D14 -to LEDR17
-set_location_assignment PIN_A11 -to LEDR18
-set_location_assignment PIN_B11 -to LEDR19
+set_global_assignment -name SMF_FILE PRESIDENT.smf
+set_global_assignment -name SMF_FILE SM2.smf
+set_global_assignment -name SMF_FILE ETAGE.smf
+set_location_assignment PIN_C14 -to HEX0
+set_location_assignment PIN_E15 -to HEX1
+set_location_assignment PIN_C15 -to HEX2
+set_location_assignment PIN_C16 -to HEX3
+set_location_assignment PIN_E16 -to HEX4
+set_location_assignment PIN_D17 -to HEX5
+set_location_assignment PIN_C17 -to HEX6
 set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
 set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
 set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
+set_location_assignment PIN_W5 -to D1
+set_location_assignment PIN_AA15 -to D2
+set_location_assignment PIN_AA14 -to D3
+set_location_assignment PIN_W13 -to D4
+set_location_assignment PIN_W12 -to D5
+set_location_assignment PIN_AB13 -to D6
+set_location_assignment PIN_AB12 -to D7
 set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
