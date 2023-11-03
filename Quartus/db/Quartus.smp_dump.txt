@@ -1,10 +1,4 @@
 
-State Machine - |Quartus|counter:inst9|state
-Name state.sending_info state.counting state.idle 
-state.idle 0 0 0 
-state.counting 0 1 1 
-state.sending_info 1 0 1 
-
 State Machine - |Quartus|binary_to_bcd:inst10|state
 Name state.counting state.copying_info state.idle 
 state.idle 0 0 0 
@@ -16,6 +10,32 @@ Name state.display_seven_seg state.handle_in_data state.idle
 state.idle 0 0 0 
 state.handle_in_data 0 1 1 
 state.display_seven_seg 1 0 1 
+
+State Machine - |Quartus|SEVSEG_ETAGE:inst14|fstate
+Name fstate.PREZIDAN fstate.ET6 fstate.ET5 fstate.ET4 fstate.ET3 fstate.ET2 fstate.ET1 fstate.RDC 
+fstate.RDC 0 0 0 0 0 0 0 0 
+fstate.ET1 0 0 0 0 0 0 1 1 
+fstate.ET2 0 0 0 0 0 1 0 1 
+fstate.ET3 0 0 0 0 1 0 0 1 
+fstate.ET4 0 0 0 1 0 0 0 1 
+fstate.ET5 0 0 1 0 0 0 0 1 
+fstate.ET6 0 1 0 0 0 0 0 1 
+fstate.PREZIDAN 1 0 0 0 0 0 0 1 
+
+State Machine - |Quartus|Maintenance:inst|fstate
+Name fstate.state6 fstate.state3 fstate.state2 fstate.state4 fstate.state5 fstate.state1 
+fstate.state1 0 0 0 0 0 0 
+fstate.state5 0 0 0 0 1 1 
+fstate.state4 0 0 0 1 0 1 
+fstate.state2 0 0 1 0 0 1 
+fstate.state3 0 1 0 0 0 1 
+fstate.state6 1 0 0 0 0 1 
+
+State Machine - |Quartus|counter:inst9|state
+Name state.sending_info state.counting state.idle 
+state.idle 0 0 0 
+state.counting 0 1 1 
+state.sending_info 1 0 1 
 
 State Machine - |Quartus|PRESIDENT:pres|fstate
 Name fstate.state12 fstate.state11 fstate.state10 fstate.state9 fstate.state8 fstate.state2 fstate.state3 fstate.state7 fstate.state6 fstate.state5 fstate.state4 fstate.state1 
@@ -32,17 +52,13 @@ fstate.state10 0 0 1 0 0 0 0 0 0 0 0 1
 fstate.state11 0 1 0 0 0 0 0 0 0 0 0 1 
 fstate.state12 1 0 0 0 0 0 0 0 0 0 0 1 
 
-State Machine - |Quartus|moving_zebitest2:MOV|fstate
-Name fstate.E2 fstate.E1 fstate.RDC 
-fstate.RDC 0 0 0 
-fstate.E1 0 1 1 
-fstate.E2 1 0 1 
-
-State Machine - |Quartus|Maintenance:inst|fstate
-Name fstate.state6 fstate.state3 fstate.state2 fstate.state4 fstate.state5 fstate.state1 
-fstate.state1 0 0 0 0 0 0 
-fstate.state5 0 0 0 0 1 1 
-fstate.state4 0 0 0 1 0 1 
-fstate.state2 0 0 1 0 0 1 
-fstate.state3 0 1 0 0 0 1 
-fstate.state6 1 0 0 0 0 1 
+State Machine - |Quartus|ETAGE:inst15|fstate
+Name fstate.ETAGE7 fstate.ETAGE1 fstate.ETAGE2 fstate.ETAGE4 fstate.ETAGE6 fstate.EATGE5 fstate.ETAGE3 fstate.ETAGE0 
+fstate.ETAGE0 0 0 0 0 0 0 0 0 
+fstate.ETAGE3 0 0 0 0 0 0 1 1 
+fstate.EATGE5 0 0 0 0 0 1 0 1 
+fstate.ETAGE6 0 0 0 0 1 0 0 1 
+fstate.ETAGE4 0 0 0 1 0 0 0 1 
+fstate.ETAGE2 0 0 1 0 0 0 0 1 
+fstate.ETAGE1 0 1 0 0 0 0 0 1 
+fstate.ETAGE7 1 0 0 0 0 0 0 1 

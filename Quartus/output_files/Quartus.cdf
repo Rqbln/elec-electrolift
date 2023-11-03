@@ -4,7 +4,7 @@ JedecChain;
 	DefaultMfr(6E);
 
 	P ActionCode(Cfg)
-		Device PartName(10M50DAF484) Path("/home/rqbin/Documents/ECE/ECE ING 2/Conception FPGA/Projet_S1/Quartus/output_files/") File("Quartus.sof") MfrSpec(OpMask(1));
+		Device PartName(10M50DAF484) Path("/home/rqbin/Documents/ECE/ECE ING 2/Conception FPGA/Projet_S1/Quartus0211/output_files/") File("Quartus.sof") MfrSpec(OpMask(1));
 
 ChainEnd;
 

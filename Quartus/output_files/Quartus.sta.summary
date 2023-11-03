@@ -2,759 +2,1215 @@
 Timing Analyzer Summary
 ------------------------------------------------------------
 
-Type  : Slow 1200mV 85C Model Setup '74390:inst|3'
-Slack : -3.105
-TNS   : -3.691
+Type  : Slow 1200mV 85C Model Setup 'Clock'
+Slack : -12.631
+TNS   : -464.195
 
-Type  : Slow 1200mV 85C Model Setup 'CLOCK_50Mhz'
-Slack : -1.726
-TNS   : -2.956
+Type  : Slow 1200mV 85C Model Setup 'DivHorloge:inst3|74390:inst|3'
+Slack : -3.835
+TNS   : -4.405
 
-Type  : Slow 1200mV 85C Model Setup '74390:inst5|34'
-Slack : -1.194
-TNS   : -1.203
+Type  : Slow 1200mV 85C Model Setup 'DivHorloge:inst3|7490:inst10|19'
+Slack : -2.877
+TNS   : -16.831
 
-Type  : Slow 1200mV 85C Model Setup '74390:inst|31'
-Slack : -1.182
-TNS   : -2.036
+Type  : Slow 1200mV 85C Model Setup 'DivHorloge:inst3|74390:inst5|31'
+Slack : -1.819
+TNS   : -2.682
 
-Type  : Slow 1200mV 85C Model Setup '74390:inst3|3'
-Slack : -1.098
-TNS   : -2.061
+Type  : Slow 1200mV 85C Model Setup 'DivHorloge:inst3|74390:inst5|34'
+Slack : -1.326
+TNS   : -1.743
 
-Type  : Slow 1200mV 85C Model Setup '74390:inst5|31'
-Slack : -0.841
-TNS   : -1.584
+Type  : Slow 1200mV 85C Model Setup 'DivHorloge:inst3|7490:inst8|7'
+Slack : -1.272
+TNS   : -2.060
 
-Type  : Slow 1200mV 85C Model Setup '74390:inst5|3'
-Slack : -0.548
-TNS   : -1.070
+Type  : Slow 1200mV 85C Model Setup 'DivHorloge:inst3|74390:inst5|7'
+Slack : -0.923
+TNS   : -1.342
 
-Type  : Slow 1200mV 85C Model Setup '7490:inst8|19'
-Slack : -0.520
+Type  : Slow 1200mV 85C Model Setup 'DivHorloge:inst3|74390:inst5|3'
+Slack : -0.737
+TNS   : -1.254
+
+Type  : Slow 1200mV 85C Model Setup 'DivHorloge:inst3|74390:inst3|31'
+Slack : -0.720
+TNS   : -1.121
+
+Type  : Slow 1200mV 85C Model Setup 'DivHorloge:inst3|74390:inst|7'
+Slack : -0.604
+TNS   : -1.101
+
+Type  : Slow 1200mV 85C Model Setup 'DivHorloge:inst3|74390:inst|31'
+Slack : -0.591
+TNS   : -1.049
+
+Type  : Slow 1200mV 85C Model Setup 'DivHorloge:inst3|74390:inst|34'
+Slack : -0.533
+TNS   : -0.647
+
+Type  : Slow 1200mV 85C Model Setup 'DivHorloge:inst3|7490:inst8|19'
+Slack : -0.522
+TNS   : -0.522
+
+Type  : Slow 1200mV 85C Model Setup 'DivHorloge:inst3|74390:inst3|3'
+Slack : -0.514
+TNS   : -0.875
+
+Type  : Slow 1200mV 85C Model Setup 'DivHorloge:inst3|74390:inst3|7'
+Slack : -0.507
+TNS   : -0.833
+
+Type  : Slow 1200mV 85C Model Setup 'DivHorloge:inst3|74390:inst3|34'
+Slack : -0.493
 TNS   : -0.520
 
-Type  : Slow 1200mV 85C Model Setup '74390:inst3|34'
-Slack : -0.518
-TNS   : -0.858
-
-Type  : Slow 1200mV 85C Model Setup '74390:inst|34'
-Slack : -0.517
-TNS   : -0.830
-
-Type  : Slow 1200mV 85C Model Setup '74390:inst3|31'
-Slack : -0.491
-TNS   : -0.569
-
-Type  : Slow 1200mV 85C Model Setup '74390:inst5|7'
-Slack : -0.457
-TNS   : -0.591
-
-Type  : Slow 1200mV 85C Model Setup '74390:inst3|7'
-Slack : -0.411
-TNS   : -0.615
-
-Type  : Slow 1200mV 85C Model Setup '74390:inst|7'
-Slack : -0.322
-TNS   : -0.500
-
-Type  : Slow 1200mV 85C Model Setup '7490:inst8|7'
-Slack : -0.007
-TNS   : -0.007
-
-Type  : Slow 1200mV 85C Model Setup '74390:inst3|33'
+Type  : Slow 1200mV 85C Model Setup 'D1'
 Slack : 0.298
 TNS   : 0.000
 
-Type  : Slow 1200mV 85C Model Setup '74390:inst3|6'
+Type  : Slow 1200mV 85C Model Setup 'D2'
 Slack : 0.298
 TNS   : 0.000
 
-Type  : Slow 1200mV 85C Model Setup '74390:inst5|33'
+Type  : Slow 1200mV 85C Model Setup 'D3'
 Slack : 0.298
 TNS   : 0.000
 
-Type  : Slow 1200mV 85C Model Setup '74390:inst5|6'
+Type  : Slow 1200mV 85C Model Setup 'D4'
 Slack : 0.298
 TNS   : 0.000
 
-Type  : Slow 1200mV 85C Model Setup '74390:inst|33'
+Type  : Slow 1200mV 85C Model Setup 'D5'
 Slack : 0.298
 TNS   : 0.000
 
-Type  : Slow 1200mV 85C Model Setup '74390:inst|6'
+Type  : Slow 1200mV 85C Model Setup 'D6'
 Slack : 0.298
 TNS   : 0.000
 
-Type  : Slow 1200mV 85C Model Hold '74390:inst3|31'
-Slack : 0.126
+Type  : Slow 1200mV 85C Model Setup 'D7'
+Slack : 0.298
 TNS   : 0.000
 
-Type  : Slow 1200mV 85C Model Hold '74390:inst5|7'
-Slack : 0.275
+Type  : Slow 1200mV 85C Model Setup 'DivHorloge:inst3|74390:inst3|33'
+Slack : 0.298
 TNS   : 0.000
 
-Type  : Slow 1200mV 85C Model Hold '74390:inst|7'
-Slack : 0.296
+Type  : Slow 1200mV 85C Model Setup 'DivHorloge:inst3|74390:inst3|6'
+Slack : 0.298
 TNS   : 0.000
 
-Type  : Slow 1200mV 85C Model Hold '74390:inst5|34'
-Slack : 0.343
+Type  : Slow 1200mV 85C Model Setup 'DivHorloge:inst3|74390:inst5|33'
+Slack : 0.298
 TNS   : 0.000
 
-Type  : Slow 1200mV 85C Model Hold '7490:inst8|7'
+Type  : Slow 1200mV 85C Model Setup 'DivHorloge:inst3|74390:inst5|6'
+Slack : 0.298
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Setup 'DivHorloge:inst3|74390:inst|33'
+Slack : 0.298
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Setup 'DivHorloge:inst3|74390:inst|6'
+Slack : 0.298
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'DivHorloge:inst3|74390:inst3|34'
+Slack : 0.138
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'DivHorloge:inst3|74390:inst|34'
+Slack : 0.236
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'DivHorloge:inst3|74390:inst3|7'
+Slack : 0.251
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'Clock'
+Slack : 0.339
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'DivHorloge:inst3|7490:inst8|7'
+Slack : 0.341
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'DivHorloge:inst3|74390:inst5|34'
 Slack : 0.347
 TNS   : 0.000
 
-Type  : Slow 1200mV 85C Model Hold '74390:inst3|34'
-Slack : 0.374
-TNS   : 0.000
-
-Type  : Slow 1200mV 85C Model Hold '74390:inst3|7'
-Slack : 0.376
-TNS   : 0.000
-
-Type  : Slow 1200mV 85C Model Hold '74390:inst3|33'
+Type  : Slow 1200mV 85C Model Hold 'D1'
 Slack : 0.393
 TNS   : 0.000
 
-Type  : Slow 1200mV 85C Model Hold '74390:inst3|6'
+Type  : Slow 1200mV 85C Model Hold 'D2'
 Slack : 0.393
 TNS   : 0.000
 
-Type  : Slow 1200mV 85C Model Hold '74390:inst5|33'
+Type  : Slow 1200mV 85C Model Hold 'D3'
 Slack : 0.393
 TNS   : 0.000
 
-Type  : Slow 1200mV 85C Model Hold '74390:inst5|6'
+Type  : Slow 1200mV 85C Model Hold 'D4'
 Slack : 0.393
 TNS   : 0.000
 
-Type  : Slow 1200mV 85C Model Hold '74390:inst|33'
+Type  : Slow 1200mV 85C Model Hold 'D5'
 Slack : 0.393
 TNS   : 0.000
 
-Type  : Slow 1200mV 85C Model Hold '74390:inst|6'
+Type  : Slow 1200mV 85C Model Hold 'D6'
 Slack : 0.393
 TNS   : 0.000
 
-Type  : Slow 1200mV 85C Model Hold '74390:inst|34'
-Slack : 0.395
+Type  : Slow 1200mV 85C Model Hold 'D7'
+Slack : 0.393
 TNS   : 0.000
 
-Type  : Slow 1200mV 85C Model Hold '74390:inst5|3'
-Slack : 0.523
+Type  : Slow 1200mV 85C Model Hold 'DivHorloge:inst3|74390:inst3|33'
+Slack : 0.393
 TNS   : 0.000
 
-Type  : Slow 1200mV 85C Model Hold '7490:inst8|19'
+Type  : Slow 1200mV 85C Model Hold 'DivHorloge:inst3|74390:inst3|6'
+Slack : 0.393
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'DivHorloge:inst3|74390:inst5|33'
+Slack : 0.393
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'DivHorloge:inst3|74390:inst5|6'
+Slack : 0.393
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'DivHorloge:inst3|74390:inst|33'
+Slack : 0.393
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'DivHorloge:inst3|74390:inst|6'
+Slack : 0.393
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'DivHorloge:inst3|74390:inst|31'
+Slack : 0.398
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'DivHorloge:inst3|74390:inst|7'
+Slack : 0.411
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'DivHorloge:inst3|74390:inst3|3'
+Slack : 0.514
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'DivHorloge:inst3|74390:inst3|31'
+Slack : 0.521
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'DivHorloge:inst3|74390:inst5|7'
+Slack : 0.541
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'DivHorloge:inst3|7490:inst8|19'
 Slack : 0.559
 TNS   : 0.000
 
-Type  : Slow 1200mV 85C Model Hold '74390:inst|3'
-Slack : 0.688
+Type  : Slow 1200mV 85C Model Hold 'DivHorloge:inst3|74390:inst|3'
+Slack : 0.579
 TNS   : 0.000
 
-Type  : Slow 1200mV 85C Model Hold '74390:inst5|31'
-Slack : 0.726
+Type  : Slow 1200mV 85C Model Hold 'DivHorloge:inst3|74390:inst5|3'
+Slack : 0.580
 TNS   : 0.000
 
-Type  : Slow 1200mV 85C Model Hold '74390:inst|31'
-Slack : 0.976
+Type  : Slow 1200mV 85C Model Hold 'DivHorloge:inst3|7490:inst10|19'
+Slack : 0.672
 TNS   : 0.000
 
-Type  : Slow 1200mV 85C Model Hold '74390:inst3|3'
-Slack : 0.981
+Type  : Slow 1200mV 85C Model Hold 'DivHorloge:inst3|74390:inst5|31'
+Slack : 0.974
 TNS   : 0.000
 
-Type  : Slow 1200mV 85C Model Hold 'CLOCK_50Mhz'
-Slack : 1.238
+Type  : Slow 1200mV 85C Model Recovery 'D4'
+Slack : -1.238
+TNS   : -1.238
+
+Type  : Slow 1200mV 85C Model Recovery 'D7'
+Slack : -1.099
+TNS   : -1.099
+
+Type  : Slow 1200mV 85C Model Recovery 'D5'
+Slack : -1.004
+TNS   : -1.004
+
+Type  : Slow 1200mV 85C Model Recovery 'D6'
+Slack : -0.668
+TNS   : -0.668
+
+Type  : Slow 1200mV 85C Model Recovery 'D3'
+Slack : -0.602
+TNS   : -0.602
+
+Type  : Slow 1200mV 85C Model Recovery 'D2'
+Slack : -0.398
+TNS   : -0.398
+
+Type  : Slow 1200mV 85C Model Recovery 'D1'
+Slack : -0.280
+TNS   : -0.280
+
+Type  : Slow 1200mV 85C Model Removal 'D1'
+Slack : 0.616
 TNS   : 0.000
 
-Type  : Slow 1200mV 85C Model Minimum Pulse Width 'CLOCK_50Mhz'
-Slack : -3.000
-TNS   : -5.806
-
-Type  : Slow 1200mV 85C Model Minimum Pulse Width '74390:inst5|34'
-Slack : -1.403
-TNS   : -4.209
-
-Type  : Slow 1200mV 85C Model Minimum Pulse Width '7490:inst8|7'
-Slack : -1.403
-TNS   : -4.209
-
-Type  : Slow 1200mV 85C Model Minimum Pulse Width '74390:inst3|3'
-Slack : -1.403
-TNS   : -2.806
-
-Type  : Slow 1200mV 85C Model Minimum Pulse Width '74390:inst3|31'
-Slack : -1.403
-TNS   : -2.806
-
-Type  : Slow 1200mV 85C Model Minimum Pulse Width '74390:inst3|34'
-Slack : -1.403
-TNS   : -2.806
-
-Type  : Slow 1200mV 85C Model Minimum Pulse Width '74390:inst3|7'
-Slack : -1.403
-TNS   : -2.806
-
-Type  : Slow 1200mV 85C Model Minimum Pulse Width '74390:inst5|3'
-Slack : -1.403
-TNS   : -2.806
-
-Type  : Slow 1200mV 85C Model Minimum Pulse Width '74390:inst5|31'
-Slack : -1.403
-TNS   : -2.806
-
-Type  : Slow 1200mV 85C Model Minimum Pulse Width '74390:inst5|7'
-Slack : -1.403
-TNS   : -2.806
-
-Type  : Slow 1200mV 85C Model Minimum Pulse Width '74390:inst|3'
-Slack : -1.403
-TNS   : -2.806
-
-Type  : Slow 1200mV 85C Model Minimum Pulse Width '74390:inst|31'
-Slack : -1.403
-TNS   : -2.806
-
-Type  : Slow 1200mV 85C Model Minimum Pulse Width '74390:inst|34'
-Slack : -1.403
-TNS   : -2.806
-
-Type  : Slow 1200mV 85C Model Minimum Pulse Width '74390:inst|7'
-Slack : -1.403
-TNS   : -2.806
-
-Type  : Slow 1200mV 85C Model Minimum Pulse Width '74390:inst3|33'
-Slack : -1.403
-TNS   : -1.403
-
-Type  : Slow 1200mV 85C Model Minimum Pulse Width '74390:inst3|6'
-Slack : -1.403
-TNS   : -1.403
-
-Type  : Slow 1200mV 85C Model Minimum Pulse Width '74390:inst5|33'
-Slack : -1.403
-TNS   : -1.403
-
-Type  : Slow 1200mV 85C Model Minimum Pulse Width '74390:inst5|6'
-Slack : -1.403
-TNS   : -1.403
-
-Type  : Slow 1200mV 85C Model Minimum Pulse Width '74390:inst|33'
-Slack : -1.403
-TNS   : -1.403
-
-Type  : Slow 1200mV 85C Model Minimum Pulse Width '74390:inst|6'
-Slack : -1.403
-TNS   : -1.403
-
-Type  : Slow 1200mV 85C Model Minimum Pulse Width '7490:inst8|19'
-Slack : -1.403
-TNS   : -1.403
-
-Type  : Slow 1200mV 0C Model Setup '74390:inst|3'
-Slack : -2.762
-TNS   : -3.289
-
-Type  : Slow 1200mV 0C Model Setup 'CLOCK_50Mhz'
-Slack : -1.528
-TNS   : -2.580
-
-Type  : Slow 1200mV 0C Model Setup '74390:inst|31'
-Slack : -1.078
-TNS   : -1.799
-
-Type  : Slow 1200mV 0C Model Setup '74390:inst5|34'
-Slack : -1.048
-TNS   : -1.048
-
-Type  : Slow 1200mV 0C Model Setup '74390:inst3|3'
-Slack : -1.002
-TNS   : -1.825
-
-Type  : Slow 1200mV 0C Model Setup '74390:inst5|31'
-Slack : -0.700
-TNS   : -1.374
-
-Type  : Slow 1200mV 0C Model Setup '74390:inst|34'
-Slack : -0.477
-TNS   : -0.735
-
-Type  : Slow 1200mV 0C Model Setup '74390:inst5|3'
-Slack : -0.447
-TNS   : -0.890
-
-Type  : Slow 1200mV 0C Model Setup '7490:inst8|19'
-Slack : -0.447
-TNS   : -0.447
-
-Type  : Slow 1200mV 0C Model Setup '74390:inst3|31'
-Slack : -0.419
-TNS   : -0.419
-
-Type  : Slow 1200mV 0C Model Setup '74390:inst5|7'
-Slack : -0.415
-TNS   : -0.515
-
-Type  : Slow 1200mV 0C Model Setup '74390:inst3|34'
-Slack : -0.411
-TNS   : -0.703
-
-Type  : Slow 1200mV 0C Model Setup '74390:inst3|7'
-Slack : -0.381
-TNS   : -0.521
-
-Type  : Slow 1200mV 0C Model Setup '74390:inst|7'
-Slack : -0.288
-TNS   : -0.433
-
-Type  : Slow 1200mV 0C Model Setup '7490:inst8|7'
-Slack : 0.081
-TNS   : 0.000
-
-Type  : Slow 1200mV 0C Model Setup '74390:inst3|33'
-Slack : 0.361
-TNS   : 0.000
-
-Type  : Slow 1200mV 0C Model Setup '74390:inst3|6'
-Slack : 0.361
-TNS   : 0.000
-
-Type  : Slow 1200mV 0C Model Setup '74390:inst5|33'
-Slack : 0.361
-TNS   : 0.000
-
-Type  : Slow 1200mV 0C Model Setup '74390:inst5|6'
-Slack : 0.361
-TNS   : 0.000
-
-Type  : Slow 1200mV 0C Model Setup '74390:inst|33'
-Slack : 0.361
-TNS   : 0.000
-
-Type  : Slow 1200mV 0C Model Setup '74390:inst|6'
-Slack : 0.361
-TNS   : 0.000
-
-Type  : Slow 1200mV 0C Model Hold '74390:inst3|31'
-Slack : 0.070
-TNS   : 0.000
-
-Type  : Slow 1200mV 0C Model Hold '74390:inst5|7'
-Slack : 0.244
-TNS   : 0.000
-
-Type  : Slow 1200mV 0C Model Hold '74390:inst|7'
-Slack : 0.257
-TNS   : 0.000
-
-Type  : Slow 1200mV 0C Model Hold '74390:inst5|34'
-Slack : 0.306
-TNS   : 0.000
-
-Type  : Slow 1200mV 0C Model Hold '7490:inst8|7'
-Slack : 0.311
-TNS   : 0.000
-
-Type  : Slow 1200mV 0C Model Hold '74390:inst3|34'
-Slack : 0.320
-TNS   : 0.000
-
-Type  : Slow 1200mV 0C Model Hold '74390:inst3|7'
-Slack : 0.331
-TNS   : 0.000
-
-Type  : Slow 1200mV 0C Model Hold '74390:inst3|33'
-Slack : 0.354
-TNS   : 0.000
-
-Type  : Slow 1200mV 0C Model Hold '74390:inst3|6'
-Slack : 0.354
-TNS   : 0.000
-
-Type  : Slow 1200mV 0C Model Hold '74390:inst5|33'
-Slack : 0.354
-TNS   : 0.000
-
-Type  : Slow 1200mV 0C Model Hold '74390:inst5|6'
-Slack : 0.354
-TNS   : 0.000
-
-Type  : Slow 1200mV 0C Model Hold '74390:inst|33'
-Slack : 0.354
-TNS   : 0.000
-
-Type  : Slow 1200mV 0C Model Hold '74390:inst|6'
-Slack : 0.354
-TNS   : 0.000
-
-Type  : Slow 1200mV 0C Model Hold '74390:inst|34'
-Slack : 0.376
-TNS   : 0.000
-
-Type  : Slow 1200mV 0C Model Hold '74390:inst5|3'
-Slack : 0.459
-TNS   : 0.000
-
-Type  : Slow 1200mV 0C Model Hold '7490:inst8|19'
-Slack : 0.523
-TNS   : 0.000
-
-Type  : Slow 1200mV 0C Model Hold '74390:inst|3'
-Slack : 0.665
-TNS   : 0.000
-
-Type  : Slow 1200mV 0C Model Hold '74390:inst5|31'
+Type  : Slow 1200mV 85C Model Removal 'D2'
 Slack : 0.708
 TNS   : 0.000
 
-Type  : Slow 1200mV 0C Model Hold '74390:inst3|3'
-Slack : 0.881
+Type  : Slow 1200mV 85C Model Removal 'D3'
+Slack : 0.974
 TNS   : 0.000
 
-Type  : Slow 1200mV 0C Model Hold '74390:inst|31'
-Slack : 0.887
+Type  : Slow 1200mV 85C Model Removal 'D6'
+Slack : 0.995
 TNS   : 0.000
 
-Type  : Slow 1200mV 0C Model Hold 'CLOCK_50Mhz'
-Slack : 1.078
+Type  : Slow 1200mV 85C Model Removal 'D5'
+Slack : 1.359
 TNS   : 0.000
 
-Type  : Slow 1200mV 0C Model Minimum Pulse Width 'CLOCK_50Mhz'
+Type  : Slow 1200mV 85C Model Removal 'D7'
+Slack : 1.439
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Removal 'D4'
+Slack : 1.603
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'Clock'
 Slack : -3.000
-TNS   : -5.806
+TNS   : -254.137
 
-Type  : Slow 1200mV 0C Model Minimum Pulse Width '74390:inst5|34'
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'D1'
+Slack : -3.000
+TNS   : -4.403
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'D2'
+Slack : -3.000
+TNS   : -4.403
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'D3'
+Slack : -3.000
+TNS   : -4.403
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'D4'
+Slack : -3.000
+TNS   : -4.403
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'D5'
+Slack : -3.000
+TNS   : -4.403
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'D6'
+Slack : -3.000
+TNS   : -4.403
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'D7'
+Slack : -3.000
+TNS   : -4.403
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'DivHorloge:inst3|7490:inst10|19'
+Slack : -1.403
+TNS   : -11.224
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'DivHorloge:inst3|74390:inst5|34'
 Slack : -1.403
 TNS   : -4.209
 
-Type  : Slow 1200mV 0C Model Minimum Pulse Width '7490:inst8|7'
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'DivHorloge:inst3|7490:inst8|7'
 Slack : -1.403
 TNS   : -4.209
 
-Type  : Slow 1200mV 0C Model Minimum Pulse Width '74390:inst3|3'
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'DivHorloge:inst3|74390:inst3|3'
 Slack : -1.403
 TNS   : -2.806
 
-Type  : Slow 1200mV 0C Model Minimum Pulse Width '74390:inst3|31'
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'DivHorloge:inst3|74390:inst3|31'
 Slack : -1.403
 TNS   : -2.806
 
-Type  : Slow 1200mV 0C Model Minimum Pulse Width '74390:inst3|34'
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'DivHorloge:inst3|74390:inst3|34'
 Slack : -1.403
 TNS   : -2.806
 
-Type  : Slow 1200mV 0C Model Minimum Pulse Width '74390:inst3|7'
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'DivHorloge:inst3|74390:inst3|7'
 Slack : -1.403
 TNS   : -2.806
 
-Type  : Slow 1200mV 0C Model Minimum Pulse Width '74390:inst5|3'
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'DivHorloge:inst3|74390:inst5|3'
 Slack : -1.403
 TNS   : -2.806
 
-Type  : Slow 1200mV 0C Model Minimum Pulse Width '74390:inst5|31'
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'DivHorloge:inst3|74390:inst5|31'
 Slack : -1.403
 TNS   : -2.806
 
-Type  : Slow 1200mV 0C Model Minimum Pulse Width '74390:inst5|7'
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'DivHorloge:inst3|74390:inst5|7'
 Slack : -1.403
 TNS   : -2.806
 
-Type  : Slow 1200mV 0C Model Minimum Pulse Width '74390:inst|3'
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'DivHorloge:inst3|74390:inst|3'
 Slack : -1.403
 TNS   : -2.806
 
-Type  : Slow 1200mV 0C Model Minimum Pulse Width '74390:inst|31'
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'DivHorloge:inst3|74390:inst|31'
 Slack : -1.403
 TNS   : -2.806
 
-Type  : Slow 1200mV 0C Model Minimum Pulse Width '74390:inst|34'
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'DivHorloge:inst3|74390:inst|34'
 Slack : -1.403
 TNS   : -2.806
 
-Type  : Slow 1200mV 0C Model Minimum Pulse Width '74390:inst|7'
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'DivHorloge:inst3|74390:inst|7'
 Slack : -1.403
 TNS   : -2.806
 
-Type  : Slow 1200mV 0C Model Minimum Pulse Width '74390:inst3|33'
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'DivHorloge:inst3|74390:inst3|33'
 Slack : -1.403
 TNS   : -1.403
 
-Type  : Slow 1200mV 0C Model Minimum Pulse Width '74390:inst3|6'
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'DivHorloge:inst3|74390:inst3|6'
 Slack : -1.403
 TNS   : -1.403
 
-Type  : Slow 1200mV 0C Model Minimum Pulse Width '74390:inst5|33'
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'DivHorloge:inst3|74390:inst5|33'
 Slack : -1.403
 TNS   : -1.403
 
-Type  : Slow 1200mV 0C Model Minimum Pulse Width '74390:inst5|6'
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'DivHorloge:inst3|74390:inst5|6'
 Slack : -1.403
 TNS   : -1.403
 
-Type  : Slow 1200mV 0C Model Minimum Pulse Width '74390:inst|33'
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'DivHorloge:inst3|74390:inst|33'
 Slack : -1.403
 TNS   : -1.403
 
-Type  : Slow 1200mV 0C Model Minimum Pulse Width '74390:inst|6'
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'DivHorloge:inst3|74390:inst|6'
 Slack : -1.403
 TNS   : -1.403
 
-Type  : Slow 1200mV 0C Model Minimum Pulse Width '7490:inst8|19'
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'DivHorloge:inst3|7490:inst8|19'
 Slack : -1.403
 TNS   : -1.403
 
-Type  : Fast 1200mV 0C Model Setup '74390:inst|3'
-Slack : -1.207
-TNS   : -1.207
+Type  : Slow 1200mV 0C Model Setup 'Clock'
+Slack : -11.452
+TNS   : -411.084
 
-Type  : Fast 1200mV 0C Model Setup 'CLOCK_50Mhz'
-Slack : -0.315
-TNS   : -0.475
+Type  : Slow 1200mV 0C Model Setup 'DivHorloge:inst3|74390:inst|3'
+Slack : -3.463
+TNS   : -3.962
 
-Type  : Fast 1200mV 0C Model Setup '74390:inst3|3'
-Slack : -0.132
-TNS   : -0.206
+Type  : Slow 1200mV 0C Model Setup 'DivHorloge:inst3|7490:inst10|19'
+Slack : -2.645
+TNS   : -15.451
 
-Type  : Fast 1200mV 0C Model Setup '74390:inst|31'
-Slack : -0.095
-TNS   : -0.166
+Type  : Slow 1200mV 0C Model Setup 'DivHorloge:inst3|74390:inst5|31'
+Slack : -1.611
+TNS   : -2.392
 
-Type  : Fast 1200mV 0C Model Setup '74390:inst5|31'
-Slack : -0.071
-TNS   : -0.071
+Type  : Slow 1200mV 0C Model Setup 'DivHorloge:inst3|74390:inst5|34'
+Slack : -1.244
+TNS   : -1.464
 
-Type  : Fast 1200mV 0C Model Setup '74390:inst5|34'
-Slack : 0.069
+Type  : Slow 1200mV 0C Model Setup 'DivHorloge:inst3|7490:inst8|7'
+Slack : -1.122
+TNS   : -1.639
+
+Type  : Slow 1200mV 0C Model Setup 'DivHorloge:inst3|74390:inst5|7'
+Slack : -0.844
+TNS   : -1.203
+
+Type  : Slow 1200mV 0C Model Setup 'DivHorloge:inst3|74390:inst5|3'
+Slack : -0.616
+TNS   : -1.058
+
+Type  : Slow 1200mV 0C Model Setup 'DivHorloge:inst3|74390:inst3|31'
+Slack : -0.614
+TNS   : -0.966
+
+Type  : Slow 1200mV 0C Model Setup 'DivHorloge:inst3|74390:inst|31'
+Slack : -0.525
+TNS   : -0.893
+
+Type  : Slow 1200mV 0C Model Setup 'DivHorloge:inst3|74390:inst|7'
+Slack : -0.488
+TNS   : -0.898
+
+Type  : Slow 1200mV 0C Model Setup 'DivHorloge:inst3|7490:inst8|19'
+Slack : -0.450
+TNS   : -0.450
+
+Type  : Slow 1200mV 0C Model Setup 'DivHorloge:inst3|74390:inst|34'
+Slack : -0.417
+TNS   : -0.476
+
+Type  : Slow 1200mV 0C Model Setup 'DivHorloge:inst3|74390:inst3|3'
+Slack : -0.406
+TNS   : -0.701
+
+Type  : Slow 1200mV 0C Model Setup 'DivHorloge:inst3|74390:inst3|7'
+Slack : -0.392
+TNS   : -0.675
+
+Type  : Slow 1200mV 0C Model Setup 'DivHorloge:inst3|74390:inst3|34'
+Slack : -0.389
+TNS   : -0.391
+
+Type  : Slow 1200mV 0C Model Setup 'D7'
+Slack : 0.361
 TNS   : 0.000
 
-Type  : Fast 1200mV 0C Model Setup '74390:inst5|3'
-Slack : 0.074
+Type  : Slow 1200mV 0C Model Setup 'DivHorloge:inst3|74390:inst3|33'
+Slack : 0.361
 TNS   : 0.000
 
-Type  : Fast 1200mV 0C Model Setup '7490:inst8|19'
-Slack : 0.130
+Type  : Slow 1200mV 0C Model Setup 'DivHorloge:inst3|74390:inst3|6'
+Slack : 0.361
 TNS   : 0.000
 
-Type  : Fast 1200mV 0C Model Setup '74390:inst3|31'
+Type  : Slow 1200mV 0C Model Setup 'DivHorloge:inst3|74390:inst5|33'
+Slack : 0.361
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Setup 'DivHorloge:inst3|74390:inst5|6'
+Slack : 0.361
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Setup 'DivHorloge:inst3|74390:inst|33'
+Slack : 0.361
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Setup 'DivHorloge:inst3|74390:inst|6'
+Slack : 0.361
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Setup 'D1'
+Slack : 0.362
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Setup 'D2'
+Slack : 0.362
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Setup 'D3'
+Slack : 0.362
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Setup 'D4'
+Slack : 0.362
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Setup 'D5'
+Slack : 0.362
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Setup 'D6'
+Slack : 0.362
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'DivHorloge:inst3|74390:inst3|34'
+Slack : 0.143
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'DivHorloge:inst3|74390:inst3|7'
+Slack : 0.216
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'DivHorloge:inst3|74390:inst|34'
+Slack : 0.216
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'Clock'
+Slack : 0.306
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'DivHorloge:inst3|7490:inst8|7'
+Slack : 0.306
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'DivHorloge:inst3|74390:inst5|34'
+Slack : 0.310
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'DivHorloge:inst3|74390:inst|31'
+Slack : 0.353
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'D7'
+Slack : 0.354
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'DivHorloge:inst3|74390:inst3|33'
+Slack : 0.354
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'DivHorloge:inst3|74390:inst3|6'
+Slack : 0.354
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'DivHorloge:inst3|74390:inst5|33'
+Slack : 0.354
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'DivHorloge:inst3|74390:inst5|6'
+Slack : 0.354
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'DivHorloge:inst3|74390:inst|33'
+Slack : 0.354
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'DivHorloge:inst3|74390:inst|6'
+Slack : 0.354
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'D1'
+Slack : 0.355
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'D2'
+Slack : 0.355
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'D3'
+Slack : 0.355
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'D4'
+Slack : 0.355
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'D5'
+Slack : 0.355
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'D6'
+Slack : 0.355
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'DivHorloge:inst3|74390:inst|7'
+Slack : 0.393
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'DivHorloge:inst3|74390:inst3|3'
+Slack : 0.442
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'DivHorloge:inst3|74390:inst3|31'
+Slack : 0.493
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'DivHorloge:inst3|7490:inst8|19'
+Slack : 0.524
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'DivHorloge:inst3|74390:inst5|7'
+Slack : 0.530
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'DivHorloge:inst3|74390:inst5|3'
+Slack : 0.545
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'DivHorloge:inst3|74390:inst|3'
+Slack : 0.548
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'DivHorloge:inst3|7490:inst10|19'
+Slack : 0.627
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'DivHorloge:inst3|74390:inst5|31'
+Slack : 0.934
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Recovery 'D7'
+Slack : -0.936
+TNS   : -0.936
+
+Type  : Slow 1200mV 0C Model Recovery 'D4'
+Slack : -0.929
+TNS   : -0.929
+
+Type  : Slow 1200mV 0C Model Recovery 'D5'
+Slack : -0.707
+TNS   : -0.707
+
+Type  : Slow 1200mV 0C Model Recovery 'D6'
+Slack : -0.406
+TNS   : -0.406
+
+Type  : Slow 1200mV 0C Model Recovery 'D3'
+Slack : -0.347
+TNS   : -0.347
+
+Type  : Slow 1200mV 0C Model Recovery 'D2'
+Slack : -0.162
+TNS   : -0.162
+
+Type  : Slow 1200mV 0C Model Recovery 'D1'
+Slack : -0.068
+TNS   : -0.068
+
+Type  : Slow 1200mV 0C Model Removal 'D1'
+Slack : 0.400
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Removal 'D2'
+Slack : 0.527
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Removal 'D3'
+Slack : 0.783
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Removal 'D6'
+Slack : 0.785
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Removal 'D5'
+Slack : 1.143
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Removal 'D7'
+Slack : 1.332
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Removal 'D4'
+Slack : 1.378
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'Clock'
+Slack : -3.000
+TNS   : -254.137
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'D1'
+Slack : -3.000
+TNS   : -4.403
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'D2'
+Slack : -3.000
+TNS   : -4.403
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'D3'
+Slack : -3.000
+TNS   : -4.403
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'D4'
+Slack : -3.000
+TNS   : -4.403
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'D5'
+Slack : -3.000
+TNS   : -4.403
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'D6'
+Slack : -3.000
+TNS   : -4.403
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'D7'
+Slack : -3.000
+TNS   : -4.403
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'DivHorloge:inst3|7490:inst10|19'
+Slack : -1.403
+TNS   : -11.224
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'DivHorloge:inst3|74390:inst5|34'
+Slack : -1.403
+TNS   : -4.209
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'DivHorloge:inst3|7490:inst8|7'
+Slack : -1.403
+TNS   : -4.209
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'DivHorloge:inst3|74390:inst3|3'
+Slack : -1.403
+TNS   : -2.806
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'DivHorloge:inst3|74390:inst3|31'
+Slack : -1.403
+TNS   : -2.806
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'DivHorloge:inst3|74390:inst3|34'
+Slack : -1.403
+TNS   : -2.806
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'DivHorloge:inst3|74390:inst3|7'
+Slack : -1.403
+TNS   : -2.806
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'DivHorloge:inst3|74390:inst5|3'
+Slack : -1.403
+TNS   : -2.806
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'DivHorloge:inst3|74390:inst5|31'
+Slack : -1.403
+TNS   : -2.806
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'DivHorloge:inst3|74390:inst5|7'
+Slack : -1.403
+TNS   : -2.806
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'DivHorloge:inst3|74390:inst|3'
+Slack : -1.403
+TNS   : -2.806
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'DivHorloge:inst3|74390:inst|31'
+Slack : -1.403
+TNS   : -2.806
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'DivHorloge:inst3|74390:inst|34'
+Slack : -1.403
+TNS   : -2.806
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'DivHorloge:inst3|74390:inst|7'
+Slack : -1.403
+TNS   : -2.806
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'DivHorloge:inst3|74390:inst3|33'
+Slack : -1.403
+TNS   : -1.403
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'DivHorloge:inst3|74390:inst3|6'
+Slack : -1.403
+TNS   : -1.403
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'DivHorloge:inst3|74390:inst5|33'
+Slack : -1.403
+TNS   : -1.403
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'DivHorloge:inst3|74390:inst5|6'
+Slack : -1.403
+TNS   : -1.403
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'DivHorloge:inst3|74390:inst|33'
+Slack : -1.403
+TNS   : -1.403
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'DivHorloge:inst3|74390:inst|6'
+Slack : -1.403
+TNS   : -1.403
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'DivHorloge:inst3|7490:inst8|19'
+Slack : -1.403
+TNS   : -1.403
+
+Type  : Fast 1200mV 0C Model Setup 'Clock'
+Slack : -4.740
+TNS   : -121.646
+
+Type  : Fast 1200mV 0C Model Setup 'DivHorloge:inst3|74390:inst|3'
+Slack : -1.448
+TNS   : -1.448
+
+Type  : Fast 1200mV 0C Model Setup 'DivHorloge:inst3|7490:inst10|19'
+Slack : -1.013
+TNS   : -5.709
+
+Type  : Fast 1200mV 0C Model Setup 'DivHorloge:inst3|74390:inst5|31'
+Slack : -0.529
+TNS   : -0.529
+
+Type  : Fast 1200mV 0C Model Setup 'DivHorloge:inst3|74390:inst5|34'
+Slack : -0.079
+TNS   : -0.079
+
+Type  : Fast 1200mV 0C Model Setup 'DivHorloge:inst3|74390:inst5|3'
+Slack : -0.014
+TNS   : -0.014
+
+Type  : Fast 1200mV 0C Model Setup 'DivHorloge:inst3|7490:inst8|7'
+Slack : -0.014
+TNS   : -0.014
+
+Type  : Fast 1200mV 0C Model Setup 'DivHorloge:inst3|74390:inst3|31'
+Slack : 0.009
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Setup 'DivHorloge:inst3|74390:inst5|7'
+Slack : 0.022
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Setup 'DivHorloge:inst3|74390:inst3|3'
+Slack : 0.075
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Setup 'DivHorloge:inst3|74390:inst|7'
+Slack : 0.100
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Setup 'DivHorloge:inst3|74390:inst|31'
+Slack : 0.107
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Setup 'DivHorloge:inst3|7490:inst8|19'
+Slack : 0.128
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Setup 'DivHorloge:inst3|74390:inst|34'
+Slack : 0.186
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Setup 'DivHorloge:inst3|74390:inst3|7'
+Slack : 0.207
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Setup 'DivHorloge:inst3|74390:inst3|34'
+Slack : 0.243
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Setup 'D7'
+Slack : 0.693
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Setup 'DivHorloge:inst3|74390:inst3|33'
+Slack : 0.693
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Setup 'DivHorloge:inst3|74390:inst3|6'
+Slack : 0.693
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Setup 'DivHorloge:inst3|74390:inst5|33'
+Slack : 0.693
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Setup 'DivHorloge:inst3|74390:inst5|6'
+Slack : 0.693
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Setup 'DivHorloge:inst3|74390:inst|33'
+Slack : 0.693
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Setup 'DivHorloge:inst3|74390:inst|6'
+Slack : 0.693
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Setup 'D1'
+Slack : 0.694
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Setup 'D2'
+Slack : 0.694
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Setup 'D3'
+Slack : 0.694
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Setup 'D4'
+Slack : 0.694
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Setup 'D5'
+Slack : 0.694
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Setup 'D6'
+Slack : 0.694
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'DivHorloge:inst3|74390:inst3|34'
+Slack : -0.012
+TNS   : -0.012
+
+Type  : Fast 1200mV 0C Model Hold 'DivHorloge:inst3|74390:inst3|7'
+Slack : 0.039
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'DivHorloge:inst3|74390:inst|34'
+Slack : 0.071
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'DivHorloge:inst3|74390:inst|7'
+Slack : 0.090
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'DivHorloge:inst3|74390:inst3|31'
+Slack : 0.144
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'Clock'
+Slack : 0.146
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'DivHorloge:inst3|7490:inst8|7'
+Slack : 0.146
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'DivHorloge:inst3|74390:inst5|34'
 Slack : 0.150
 TNS   : 0.000
 
-Type  : Fast 1200mV 0C Model Setup '74390:inst|34'
-Slack : 0.179
+Type  : Fast 1200mV 0C Model Hold 'DivHorloge:inst3|74390:inst|3'
+Slack : 0.159
 TNS   : 0.000
 
-Type  : Fast 1200mV 0C Model Setup '74390:inst3|7'
-Slack : 0.202
+Type  : Fast 1200mV 0C Model Hold 'DivHorloge:inst3|74390:inst5|7'
+Slack : 0.162
 TNS   : 0.000
 
-Type  : Fast 1200mV 0C Model Setup '74390:inst3|34'
-Slack : 0.206
+Type  : Fast 1200mV 0C Model Hold 'DivHorloge:inst3|74390:inst|31'
+Slack : 0.164
 TNS   : 0.000
 
-Type  : Fast 1200mV 0C Model Setup '74390:inst5|7'
-Slack : 0.213
+Type  : Fast 1200mV 0C Model Hold 'DivHorloge:inst3|7490:inst8|19'
+Slack : 0.168
 TNS   : 0.000
 
-Type  : Fast 1200mV 0C Model Setup '74390:inst|7'
-Slack : 0.264
-TNS   : 0.000
-
-Type  : Fast 1200mV 0C Model Setup '7490:inst8|7'
-Slack : 0.576
-TNS   : 0.000
-
-Type  : Fast 1200mV 0C Model Setup '74390:inst3|33'
-Slack : 0.693
-TNS   : 0.000
-
-Type  : Fast 1200mV 0C Model Setup '74390:inst3|6'
-Slack : 0.693
-TNS   : 0.000
-
-Type  : Fast 1200mV 0C Model Setup '74390:inst5|33'
-Slack : 0.693
-TNS   : 0.000
-
-Type  : Fast 1200mV 0C Model Setup '74390:inst5|6'
-Slack : 0.693
-TNS   : 0.000
-
-Type  : Fast 1200mV 0C Model Setup '74390:inst|33'
-Slack : 0.693
-TNS   : 0.000
-
-Type  : Fast 1200mV 0C Model Setup '74390:inst|6'
-Slack : 0.693
-TNS   : 0.000
-
-Type  : Fast 1200mV 0C Model Hold '74390:inst5|7'
-Slack : 0.059
-TNS   : 0.000
-
-Type  : Fast 1200mV 0C Model Hold '74390:inst|7'
-Slack : 0.068
-TNS   : 0.000
-
-Type  : Fast 1200mV 0C Model Hold '74390:inst3|31'
-Slack : 0.072
-TNS   : 0.000
-
-Type  : Fast 1200mV 0C Model Hold '74390:inst3|34'
-Slack : 0.104
-TNS   : 0.000
-
-Type  : Fast 1200mV 0C Model Hold '74390:inst3|7'
-Slack : 0.111
-TNS   : 0.000
-
-Type  : Fast 1200mV 0C Model Hold '74390:inst|34'
-Slack : 0.121
-TNS   : 0.000
-
-Type  : Fast 1200mV 0C Model Hold '74390:inst5|34'
-Slack : 0.147
-TNS   : 0.000
-
-Type  : Fast 1200mV 0C Model Hold '7490:inst8|7'
-Slack : 0.151
-TNS   : 0.000
-
-Type  : Fast 1200mV 0C Model Hold '7490:inst8|19'
-Slack : 0.167
-TNS   : 0.000
-
-Type  : Fast 1200mV 0C Model Hold '74390:inst3|33'
+Type  : Fast 1200mV 0C Model Hold 'D7'
 Slack : 0.169
 TNS   : 0.000
 
-Type  : Fast 1200mV 0C Model Hold '74390:inst3|6'
+Type  : Fast 1200mV 0C Model Hold 'DivHorloge:inst3|74390:inst3|33'
 Slack : 0.169
 TNS   : 0.000
 
-Type  : Fast 1200mV 0C Model Hold '74390:inst5|33'
+Type  : Fast 1200mV 0C Model Hold 'DivHorloge:inst3|74390:inst3|6'
 Slack : 0.169
 TNS   : 0.000
 
-Type  : Fast 1200mV 0C Model Hold '74390:inst5|6'
+Type  : Fast 1200mV 0C Model Hold 'DivHorloge:inst3|74390:inst5|33'
 Slack : 0.169
 TNS   : 0.000
 
-Type  : Fast 1200mV 0C Model Hold '74390:inst|33'
+Type  : Fast 1200mV 0C Model Hold 'DivHorloge:inst3|74390:inst5|6'
 Slack : 0.169
 TNS   : 0.000
 
-Type  : Fast 1200mV 0C Model Hold '74390:inst|6'
+Type  : Fast 1200mV 0C Model Hold 'DivHorloge:inst3|74390:inst|33'
 Slack : 0.169
 TNS   : 0.000
 
-Type  : Fast 1200mV 0C Model Hold '74390:inst5|31'
-Slack : 0.174
+Type  : Fast 1200mV 0C Model Hold 'DivHorloge:inst3|74390:inst|6'
+Slack : 0.169
 TNS   : 0.000
 
-Type  : Fast 1200mV 0C Model Hold '74390:inst5|3'
-Slack : 0.183
+Type  : Fast 1200mV 0C Model Hold 'D1'
+Slack : 0.170
 TNS   : 0.000
 
-Type  : Fast 1200mV 0C Model Hold '74390:inst|3'
-Slack : 0.205
+Type  : Fast 1200mV 0C Model Hold 'D2'
+Slack : 0.170
 TNS   : 0.000
 
-Type  : Fast 1200mV 0C Model Hold '74390:inst3|3'
-Slack : 0.329
+Type  : Fast 1200mV 0C Model Hold 'D3'
+Slack : 0.170
 TNS   : 0.000
 
-Type  : Fast 1200mV 0C Model Hold '74390:inst|31'
-Slack : 0.347
+Type  : Fast 1200mV 0C Model Hold 'D4'
+Slack : 0.170
 TNS   : 0.000
 
-Type  : Fast 1200mV 0C Model Hold 'CLOCK_50Mhz'
-Slack : 0.421
+Type  : Fast 1200mV 0C Model Hold 'D5'
+Slack : 0.170
 TNS   : 0.000
 
-Type  : Fast 1200mV 0C Model Minimum Pulse Width 'CLOCK_50Mhz'
+Type  : Fast 1200mV 0C Model Hold 'D6'
+Slack : 0.170
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'DivHorloge:inst3|74390:inst5|3'
+Slack : 0.181
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'DivHorloge:inst3|74390:inst3|3'
+Slack : 0.191
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'DivHorloge:inst3|7490:inst10|19'
+Slack : 0.238
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'DivHorloge:inst3|74390:inst5|31'
+Slack : 0.290
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Recovery 'D4'
+Slack : -0.298
+TNS   : -0.298
+
+Type  : Fast 1200mV 0C Model Recovery 'D5'
+Slack : -0.191
+TNS   : -0.191
+
+Type  : Fast 1200mV 0C Model Recovery 'D7'
+Slack : -0.104
+TNS   : -0.104
+
+Type  : Fast 1200mV 0C Model Recovery 'D6'
+Slack : -0.026
+TNS   : -0.026
+
+Type  : Fast 1200mV 0C Model Recovery 'D3'
+Slack : 0.010
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Recovery 'D2'
+Slack : 0.118
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Recovery 'D1'
+Slack : 0.129
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Removal 'D1'
+Slack : 0.493
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Removal 'D2'
+Slack : 0.537
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Removal 'D3'
+Slack : 0.662
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Removal 'D6'
+Slack : 0.691
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Removal 'D7'
+Slack : 0.768
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Removal 'D5'
+Slack : 0.826
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Removal 'D4'
+Slack : 0.940
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'Clock'
 Slack : -3.000
-TNS   : -5.178
+TNS   : -188.640
 
-Type  : Fast 1200mV 0C Model Minimum Pulse Width '74390:inst5|34'
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'D1'
+Slack : -3.000
+TNS   : -4.251
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'D2'
+Slack : -3.000
+TNS   : -4.186
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'D3'
+Slack : -3.000
+TNS   : -4.167
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'D7'
+Slack : -3.000
+TNS   : -4.165
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'D5'
+Slack : -3.000
+TNS   : -4.159
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'D4'
+Slack : -3.000
+TNS   : -4.156
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'D6'
+Slack : -3.000
+TNS   : -4.141
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'DivHorloge:inst3|7490:inst10|19'
+Slack : -1.000
+TNS   : -8.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'DivHorloge:inst3|74390:inst5|34'
 Slack : -1.000
 TNS   : -3.000
 
-Type  : Fast 1200mV 0C Model Minimum Pulse Width '7490:inst8|7'
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'DivHorloge:inst3|7490:inst8|7'
 Slack : -1.000
 TNS   : -3.000
 
-Type  : Fast 1200mV 0C Model Minimum Pulse Width '74390:inst3|3'
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'DivHorloge:inst3|74390:inst3|3'
 Slack : -1.000
 TNS   : -2.000
 
-Type  : Fast 1200mV 0C Model Minimum Pulse Width '74390:inst3|31'
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'DivHorloge:inst3|74390:inst3|31'
 Slack : -1.000
 TNS   : -2.000
 
-Type  : Fast 1200mV 0C Model Minimum Pulse Width '74390:inst3|34'
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'DivHorloge:inst3|74390:inst3|34'
 Slack : -1.000
 TNS   : -2.000
 
-Type  : Fast 1200mV 0C Model Minimum Pulse Width '74390:inst3|7'
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'DivHorloge:inst3|74390:inst3|7'
 Slack : -1.000
 TNS   : -2.000
 
-Type  : Fast 1200mV 0C Model Minimum Pulse Width '74390:inst5|3'
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'DivHorloge:inst3|74390:inst5|3'
 Slack : -1.000
 TNS   : -2.000
 
-Type  : Fast 1200mV 0C Model Minimum Pulse Width '74390:inst5|31'
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'DivHorloge:inst3|74390:inst5|31'
 Slack : -1.000
 TNS   : -2.000
 
-Type  : Fast 1200mV 0C Model Minimum Pulse Width '74390:inst5|7'
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'DivHorloge:inst3|74390:inst5|7'
 Slack : -1.000
 TNS   : -2.000
 
-Type  : Fast 1200mV 0C Model Minimum Pulse Width '74390:inst|3'
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'DivHorloge:inst3|74390:inst|3'
 Slack : -1.000
 TNS   : -2.000
 
-Type  : Fast 1200mV 0C Model Minimum Pulse Width '74390:inst|31'
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'DivHorloge:inst3|74390:inst|31'
 Slack : -1.000
 TNS   : -2.000
 
-Type  : Fast 1200mV 0C Model Minimum Pulse Width '74390:inst|34'
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'DivHorloge:inst3|74390:inst|34'
 Slack : -1.000
 TNS   : -2.000
 
-Type  : Fast 1200mV 0C Model Minimum Pulse Width '74390:inst|7'
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'DivHorloge:inst3|74390:inst|7'
 Slack : -1.000
 TNS   : -2.000
 
-Type  : Fast 1200mV 0C Model Minimum Pulse Width '74390:inst3|33'
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'DivHorloge:inst3|74390:inst3|33'
 Slack : -1.000
 TNS   : -1.000
 
-Type  : Fast 1200mV 0C Model Minimum Pulse Width '74390:inst3|6'
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'DivHorloge:inst3|74390:inst3|6'
 Slack : -1.000
 TNS   : -1.000
 
-Type  : Fast 1200mV 0C Model Minimum Pulse Width '74390:inst5|33'
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'DivHorloge:inst3|74390:inst5|33'
 Slack : -1.000
 TNS   : -1.000
 
-Type  : Fast 1200mV 0C Model Minimum Pulse Width '74390:inst5|6'
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'DivHorloge:inst3|74390:inst5|6'
 Slack : -1.000
 TNS   : -1.000
 
-Type  : Fast 1200mV 0C Model Minimum Pulse Width '74390:inst|33'
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'DivHorloge:inst3|74390:inst|33'
 Slack : -1.000
 TNS   : -1.000
 
-Type  : Fast 1200mV 0C Model Minimum Pulse Width '74390:inst|6'
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'DivHorloge:inst3|74390:inst|6'
 Slack : -1.000
 TNS   : -1.000
 
-Type  : Fast 1200mV 0C Model Minimum Pulse Width '7490:inst8|19'
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'DivHorloge:inst3|7490:inst8|19'
 Slack : -1.000
 TNS   : -1.000
 

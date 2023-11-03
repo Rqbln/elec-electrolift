@@ -1,5 +1,5 @@
 Flow report for Quartus
-Thu Oct  5 11:57:23 2023
+Thu Nov 02 18:15:02 2023
 Quartus Prime Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
 
 
@@ -41,21 +41,21 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------------------------------------------+
 ; Flow Summary                                                                     ;
 +------------------------------------+---------------------------------------------+
-; Flow Status                        ; Successful - Thu Oct  5 11:57:23 2023       ;
+; Flow Status                        ; Successful - Thu Nov 02 18:15:02 2023       ;
 ; Quartus Prime Version              ; 20.1.0 Build 711 06/05/2020 SJ Lite Edition ;
 ; Revision Name                      ; Quartus                                     ;
-; Top-level Entity Name              ; DivHorloge                                  ;
+; Top-level Entity Name              ; Quartus                                     ;
 ; Family                             ; MAX 10                                      ;
 ; Device                             ; 10M50DAF484C7G                              ;
 ; Timing Models                      ; Final                                       ;
-; Total logic elements               ; 52 / 49,760 ( < 1 % )                       ;
-;     Total combinational functions  ; 38 / 49,760 ( < 1 % )                       ;
-;     Dedicated logic registers      ; 31 / 49,760 ( < 1 % )                       ;
-; Total registers                    ; 31                                          ;
-; Total pins                         ; 11 / 360 ( 3 % )                            ;
+; Total logic elements               ; 501 / 49,760 ( 1 % )                        ;
+;     Total combinational functions  ; 464 / 49,760 ( < 1 % )                      ;
+;     Dedicated logic registers      ; 223 / 49,760 ( < 1 % )                      ;
+; Total registers                    ; 223                                         ;
+; Total pins                         ; 59 / 360 ( 16 % )                           ;
 ; Total virtual pins                 ; 0                                           ;
 ; Total memory bits                  ; 0 / 1,677,312 ( 0 % )                       ;
-; Embedded Multiplier 9-bit elements ; 0 / 288 ( 0 % )                             ;
+; Embedded Multiplier 9-bit elements ; 8 / 288 ( 3 % )                             ;
 ; Total PLLs                         ; 0 / 4 ( 0 % )                               ;
 ; UFM blocks                         ; 0 / 1 ( 0 % )                               ;
 ; ADC blocks                         ; 0 / 2 ( 0 % )                               ;
@@ -67,7 +67,7 @@ https://fpgasoftware.intel.com/eula.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 10/05/2023 11:57:03 ;
+; Start date & time ; 11/02/2023 18:14:26 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; Quartus             ;
 +-------------------+---------------------+
@@ -78,7 +78,7 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------+----------------------------------------+---------------+-------------+-----------------------------------+
 ; Assignment Name                     ; Value                                  ; Default Value ; Entity Name ; Section Id                        ;
 +-------------------------------------+----------------------------------------+---------------+-------------+-----------------------------------+
-; COMPILER_SIGNATURE_ID               ; 80160633095891.169649982322268         ; --            ; --          ; --                                ;
+; COMPILER_SIGNATURE_ID               ; 10995770589201.169894526616716         ; --            ; --          ; --                                ;
 ; EDA_DESIGN_ENTRY_SYNTHESIS_TOOL     ; Synplify Pro                           ; <None>        ; --          ; --                                ;
 ; EDA_GENERATE_FUNCTIONAL_NETLIST     ; Off                                    ; --            ; --          ; eda_board_design_timing           ;
 ; EDA_GENERATE_FUNCTIONAL_NETLIST     ; Off                                    ; --            ; --          ; eda_board_design_boundary_scan    ;
@@ -91,13 +91,12 @@ https://fpgasoftware.intel.com/eula.
 ; EDA_TIME_SCALE                      ; 1 ps                                   ; --            ; --          ; eda_simulation                    ;
 ; MAX_CORE_JUNCTION_TEMP              ; 85                                     ; --            ; --          ; --                                ;
 ; MIN_CORE_JUNCTION_TEMP              ; 0                                      ; --            ; --          ; --                                ;
-; PARTITION_COLOR                     ; -- (Not supported for targeted family) ; --            ; DivHorloge  ; Top                               ;
-; PARTITION_FITTER_PRESERVATION_LEVEL ; -- (Not supported for targeted family) ; --            ; DivHorloge  ; Top                               ;
-; PARTITION_NETLIST_TYPE              ; -- (Not supported for targeted family) ; --            ; DivHorloge  ; Top                               ;
+; PARTITION_COLOR                     ; -- (Not supported for targeted family) ; --            ; --          ; Top                               ;
+; PARTITION_FITTER_PRESERVATION_LEVEL ; -- (Not supported for targeted family) ; --            ; --          ; Top                               ;
+; PARTITION_NETLIST_TYPE              ; -- (Not supported for targeted family) ; --            ; --          ; Top                               ;
 ; POWER_BOARD_THERMAL_MODEL           ; None (CONSERVATIVE)                    ; --            ; --          ; --                                ;
 ; POWER_PRESET_COOLING_SOLUTION       ; 23 MM HEAT SINK WITH 200 LFPM AIRFLOW  ; --            ; --          ; --                                ;
 ; PROJECT_OUTPUT_DIRECTORY            ; output_files                           ; --            ; --          ; --                                ;
-; TOP_LEVEL_ENTITY                    ; DivHorloge                             ; Quartus       ; --          ; --                                ;
 +-------------------------------------+----------------------------------------+---------------+-------------+-----------------------------------+
 
 
@@ -106,26 +105,26 @@ https://fpgasoftware.intel.com/eula.
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name          ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis ; 00:00:06     ; 1.0                     ; 469 MB              ; 00:00:16                           ;
-; Fitter               ; 00:00:07     ; 1.1                     ; 1664 MB             ; 00:00:13                           ;
-; Assembler            ; 00:00:02     ; 1.0                     ; 354 MB              ; 00:00:02                           ;
-; Timing Analyzer      ; 00:00:02     ; 1.2                     ; 597 MB              ; 00:00:02                           ;
-; EDA Netlist Writer   ; 00:00:00     ; 1.0                     ; 598 MB              ; 00:00:00                           ;
-; Total                ; 00:00:17     ; --                      ; --                  ; 00:00:33                           ;
+; Analysis & Synthesis ; 00:00:13     ; 1.0                     ; 4815 MB             ; 00:00:10                           ;
+; Fitter               ; 00:00:11     ; 1.1                     ; 5672 MB             ; 00:00:07                           ;
+; Assembler            ; 00:00:03     ; 1.0                     ; 4696 MB             ; 00:00:02                           ;
+; Timing Analyzer      ; 00:00:03     ; 1.2                     ; 4833 MB             ; 00:00:02                           ;
+; EDA Netlist Writer   ; 00:00:00     ; 1.0                     ; 4647 MB             ; 00:00:00                           ;
+; Total                ; 00:00:30     ; --                      ; --                  ; 00:00:21                           ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
-+------------------------------------------------------------------------------------------+
-; Flow OS Summary                                                                          ;
-+----------------------+------------------+---------------+---------------+----------------+
-; Module Name          ; Machine Hostname ; OS Name       ; OS Version    ; Processor type ;
-+----------------------+------------------+---------------+---------------+----------------+
-; Analysis & Synthesis ; rqbin-asus       ; Manjaro Linux ; Manjaro Linux ; x86_64         ;
-; Fitter               ; rqbin-asus       ; Manjaro Linux ; Manjaro Linux ; x86_64         ;
-; Assembler            ; rqbin-asus       ; Manjaro Linux ; Manjaro Linux ; x86_64         ;
-; Timing Analyzer      ; rqbin-asus       ; Manjaro Linux ; Manjaro Linux ; x86_64         ;
-; EDA Netlist Writer   ; rqbin-asus       ; Manjaro Linux ; Manjaro Linux ; x86_64         ;
-+----------------------+------------------+---------------+---------------+----------------+
++------------------------------------------------------------------------------------+
+; Flow OS Summary                                                                    ;
++----------------------+------------------+------------+------------+----------------+
+; Module Name          ; Machine Hostname ; OS Name    ; OS Version ; Processor type ;
++----------------------+------------------+------------+------------+----------------+
+; Analysis & Synthesis ; DESKTOP-JCFFFRQ  ; Windows 10 ; 10.0       ; x86_64         ;
+; Fitter               ; DESKTOP-JCFFFRQ  ; Windows 10 ; 10.0       ; x86_64         ;
+; Assembler            ; DESKTOP-JCFFFRQ  ; Windows 10 ; 10.0       ; x86_64         ;
+; Timing Analyzer      ; DESKTOP-JCFFFRQ  ; Windows 10 ; 10.0       ; x86_64         ;
+; EDA Netlist Writer   ; DESKTOP-JCFFFRQ  ; Windows 10 ; 10.0       ; x86_64         ;
++----------------------+------------------+------------+------------+----------------+
 
 
 ------------

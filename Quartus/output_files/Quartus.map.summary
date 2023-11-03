@@ -1,16 +1,16 @@
-Analysis & Synthesis Status : Successful - Thu Oct  5 11:57:10 2023
+Analysis & Synthesis Status : Successful - Thu Nov 02 18:14:39 2023
 Quartus Prime Version : 20.1.0 Build 711 06/05/2020 SJ Lite Edition
 Revision Name : Quartus
-Top-level Entity Name : DivHorloge
+Top-level Entity Name : Quartus
 Family : MAX 10
-Total logic elements : 37
-    Total combinational functions : 37
-    Dedicated logic registers : 31
-Total registers : 31
-Total pins : 11
+Total logic elements : 506
+    Total combinational functions : 463
+    Dedicated logic registers : 223
+Total registers : 223
+Total pins : 59
 Total virtual pins : 0
 Total memory bits : 0
-Embedded Multiplier 9-bit elements : 0
+Embedded Multiplier 9-bit elements : 8
 Total PLLs : 0
 UFM blocks : 0
 ADC blocks : 0
