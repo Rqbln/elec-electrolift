@@ -52,7 +52,7 @@ fstate.state10 0 0 1 0 0 0 0 0 0 0 0 1
 fstate.state11 0 1 0 0 0 0 0 0 0 0 0 1 
 fstate.state12 1 0 0 0 0 0 0 0 0 0 0 1 
 
-State Machine - |Quartus|ETAGE:inst15|fstate
+State Machine - |Quartus|ETAGE:inst2|fstate
 Name fstate.ETAGE7 fstate.ETAGE1 fstate.ETAGE2 fstate.ETAGE4 fstate.ETAGE6 fstate.EATGE5 fstate.ETAGE3 fstate.ETAGE0 
 fstate.ETAGE0 0 0 0 0 0 0 0 0 
 fstate.ETAGE3 0 0 0 0 0 0 1 1 

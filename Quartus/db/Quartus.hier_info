@@ -5,11 +5,12 @@ Clock => reset_n1.CLK
 Clock => reset_n.CLK
 Clock => DivHorloge:inst3.clock
 Clock => PRESIDENT:pres.clock
-Clock => SM2:BUZZ.clock
+Clock => compultrason:inst4.i_Clock
 Clock => counter:inst9.i_Clock
 Clock => echo_pulse2.CLK
 Clock => echo_pulse1.CLK
 Clock => echo_pulse.CLK
+Clock => SM2:BUZZ.clock
 Clock => Maintenance:inst.clock
 Clock => SEVSEG_ETAGE:inst14.clock
 Clock => seven_seg_dispayer:inst11.i_Clock
@@ -126,7 +127,7 @@ i_Reset_n => counter[23].ACLR
 o_Trigger <= o_Trigger.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|Quartus|ETAGE:inst15
+|Quartus|ETAGE:inst2
 reset => reg_fstate.ETAGE0.OUTPUTSELECT
 reset => reg_fstate.ETAGE3.OUTPUTSELECT
 reset => reg_fstate.EATGE5.OUTPUTSELECT
@@ -226,6 +227,14 @@ PRES => process_1.IN1
 PRES => process_1.IN1
 PRES => process_1.IN1
 PRES => process_1.IN1
+COMP => process_1.IN1
+COMP => process_1.IN1
+COMP => process_1.IN1
+COMP => process_1.IN1
+COMP => process_1.IN1
+COMP => process_1.IN1
+COMP => process_1.IN1
+COMP => process_1.IN1
 LEDR0 <= LEDR0.DB_MAX_OUTPUT_PORT_TYPE
 LEDR1 <= LEDR1.DB_MAX_OUTPUT_PORT_TYPE
 LEDR2 <= LEDR2.DB_MAX_OUTPUT_PORT_TYPE
@@ -349,15 +358,61 @@ KEY1 => process_1.IN1
 Z <= Z.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|Quartus|SM2:BUZZ
-reset => reg_fstate.OUTPUTSELECT
-reset => Z.OUTPUTSELECT
-clock => fstate.CLK
-KEY0 => process_1.IN0
-KEY0 => process_1.IN0
-KEY1 => process_1.IN1
-KEY1 => process_1.IN1
-Z <= Z.DB_MAX_OUTPUT_PORT_TYPE
+|Quartus|compultrason:inst4
+i_Clock => o_Object_Detected~reg0.CLK
+i_Clock => state.CLK
+i_Reset_n => state.ACLR
+i_Reset_n => o_Object_Detected~reg0.ENA
+i_Echo_pulse_time[0] => Add0.IN48
+i_Echo_pulse_time[0] => Mult0.IN58
+i_Echo_pulse_time[1] => Add0.IN47
+i_Echo_pulse_time[1] => Mult0.IN57
+i_Echo_pulse_time[2] => Add0.IN45
+i_Echo_pulse_time[2] => Add0.IN46
+i_Echo_pulse_time[3] => Add0.IN43
+i_Echo_pulse_time[3] => Add0.IN44
+i_Echo_pulse_time[4] => Add0.IN41
+i_Echo_pulse_time[4] => Add0.IN42
+i_Echo_pulse_time[5] => Add0.IN39
+i_Echo_pulse_time[5] => Add0.IN40
+i_Echo_pulse_time[6] => Add0.IN37
+i_Echo_pulse_time[6] => Add0.IN38
+i_Echo_pulse_time[7] => Add0.IN35
+i_Echo_pulse_time[7] => Add0.IN36
+i_Echo_pulse_time[8] => Add0.IN33
+i_Echo_pulse_time[8] => Add0.IN34
+i_Echo_pulse_time[9] => Add0.IN31
+i_Echo_pulse_time[9] => Add0.IN32
+i_Echo_pulse_time[10] => Add0.IN29
+i_Echo_pulse_time[10] => Add0.IN30
+i_Echo_pulse_time[11] => Add0.IN27
+i_Echo_pulse_time[11] => Add0.IN28
+i_Echo_pulse_time[12] => Add0.IN25
+i_Echo_pulse_time[12] => Add0.IN26
+i_Echo_pulse_time[13] => Add0.IN23
+i_Echo_pulse_time[13] => Add0.IN24
+i_Echo_pulse_time[14] => Add0.IN21
+i_Echo_pulse_time[14] => Add0.IN22
+i_Echo_pulse_time[15] => Add0.IN19
+i_Echo_pulse_time[15] => Add0.IN20
+i_Echo_pulse_time[16] => Add0.IN17
+i_Echo_pulse_time[16] => Add0.IN18
+i_Echo_pulse_time[17] => Add0.IN15
+i_Echo_pulse_time[17] => Add0.IN16
+i_Echo_pulse_time[18] => Add0.IN13
+i_Echo_pulse_time[18] => Add0.IN14
+i_Echo_pulse_time[19] => Add0.IN11
+i_Echo_pulse_time[19] => Add0.IN12
+i_Echo_pulse_time[20] => Add0.IN9
+i_Echo_pulse_time[20] => Add0.IN10
+i_Echo_pulse_time[21] => Add0.IN7
+i_Echo_pulse_time[21] => Add0.IN8
+i_Echo_pulse_time[22] => Add0.IN5
+i_Echo_pulse_time[22] => Add0.IN6
+i_Echo_pulse_time[23] => Add0.IN3
+i_Echo_pulse_time[23] => Add0.IN4
+i_DV_n => state.DATAB
+o_Object_Detected <= o_Object_Detected~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |Quartus|counter:inst9
@@ -489,6 +544,17 @@ o_Echo_pulse_time[20] <= o_Echo_pulse_time[20]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 o_Echo_pulse_time[21] <= o_Echo_pulse_time[21]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 o_Echo_pulse_time[22] <= o_Echo_pulse_time[22]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 o_Echo_pulse_time[23] <= o_Echo_pulse_time[23]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Quartus|SM2:BUZZ
+reset => reg_fstate.OUTPUTSELECT
+reset => Z.OUTPUTSELECT
+clock => fstate.CLK
+KEY0 => process_1.IN0
+KEY0 => process_1.IN0
+KEY1 => process_1.IN1
+KEY1 => process_1.IN1
+Z <= Z.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |Quartus|Maintenance:inst

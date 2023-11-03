@@ -1,5 +1,5 @@
 Timing Analyzer report for Quartus
-Thu Nov 02 18:15:00 2023
+Fri Nov 03 14:00:55 2023
 Quartus Prime Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
 
 
@@ -94,13 +94,13 @@ https://fpgasoftware.intel.com/eula.
 ; Number detected on machine ; 8           ;
 ; Maximum allowed            ; 4           ;
 ;                            ;             ;
-; Average used               ; 1.18        ;
+; Average used               ; 1.21        ;
 ; Maximum used               ; 4           ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processor 2            ;   6.0%      ;
-;     Processors 3-4         ;   5.9%      ;
+;     Processor 2            ;   7.2%      ;
+;     Processors 3-4         ;   7.1%      ;
 +----------------------------+-------------+
 
 
@@ -146,10 +146,10 @@ https://fpgasoftware.intel.com/eula.
 +------------+-----------------+---------------------------------+---------------------------------------------------------------+
 ; Fmax       ; Restricted Fmax ; Clock Name                      ; Note                                                          ;
 +------------+-----------------+---------------------------------+---------------------------------------------------------------+
-; 73.36 MHz  ; 73.36 MHz       ; Clock                           ;                                                               ;
-; 440.14 MHz ; 416.15 MHz      ; DivHorloge:inst3|7490:inst8|7   ; limit due to minimum period restriction (tmin)                ;
-; 447.83 MHz ; 416.15 MHz      ; DivHorloge:inst3|74390:inst5|34 ; limit due to minimum period restriction (tmin)                ;
-; 487.33 MHz ; 416.15 MHz      ; DivHorloge:inst3|7490:inst10|19 ; limit due to minimum period restriction (tmin)                ;
+; 64.14 MHz  ; 64.14 MHz       ; Clock                           ;                                                               ;
+; 440.72 MHz ; 416.15 MHz      ; DivHorloge:inst3|7490:inst10|19 ; limit due to minimum period restriction (tmin)                ;
+; 447.43 MHz ; 416.15 MHz      ; DivHorloge:inst3|74390:inst5|34 ; limit due to minimum period restriction (tmin)                ;
+; 457.67 MHz ; 416.15 MHz      ; DivHorloge:inst3|7490:inst8|7   ; limit due to minimum period restriction (tmin)                ;
 ; 1424.5 MHz ; 250.0 MHz       ; D1                              ; limit due to minimum period restriction (max I/O toggle rate) ;
 ; 1424.5 MHz ; 250.0 MHz       ; D2                              ; limit due to minimum period restriction (max I/O toggle rate) ;
 ; 1424.5 MHz ; 250.0 MHz       ; D3                              ; limit due to minimum period restriction (max I/O toggle rate) ;
@@ -172,22 +172,22 @@ This panel reports FMAX for every clock in the design, regardless of the user-sp
 +---------------------------------+---------+---------------+
 ; Clock                           ; Slack   ; End Point TNS ;
 +---------------------------------+---------+---------------+
-; Clock                           ; -12.631 ; -464.195      ;
-; DivHorloge:inst3|74390:inst|3   ; -3.835  ; -4.405        ;
-; DivHorloge:inst3|7490:inst10|19 ; -2.877  ; -16.831       ;
-; DivHorloge:inst3|74390:inst5|31 ; -1.819  ; -2.682        ;
-; DivHorloge:inst3|74390:inst5|34 ; -1.326  ; -1.743        ;
-; DivHorloge:inst3|7490:inst8|7   ; -1.272  ; -2.060        ;
-; DivHorloge:inst3|74390:inst5|7  ; -0.923  ; -1.342        ;
-; DivHorloge:inst3|74390:inst5|3  ; -0.737  ; -1.254        ;
-; DivHorloge:inst3|74390:inst3|31 ; -0.720  ; -1.121        ;
-; DivHorloge:inst3|74390:inst|7   ; -0.604  ; -1.101        ;
-; DivHorloge:inst3|74390:inst|31  ; -0.591  ; -1.049        ;
-; DivHorloge:inst3|74390:inst|34  ; -0.533  ; -0.647        ;
-; DivHorloge:inst3|7490:inst8|19  ; -0.522  ; -0.522        ;
-; DivHorloge:inst3|74390:inst3|3  ; -0.514  ; -0.875        ;
-; DivHorloge:inst3|74390:inst3|7  ; -0.507  ; -0.833        ;
-; DivHorloge:inst3|74390:inst3|34 ; -0.493  ; -0.520        ;
+; Clock                           ; -14.590 ; -479.236      ;
+; DivHorloge:inst3|7490:inst10|19 ; -4.400  ; -33.089       ;
+; DivHorloge:inst3|74390:inst|3   ; -3.092  ; -3.601        ;
+; DivHorloge:inst3|7490:inst8|7   ; -1.310  ; -1.815        ;
+; DivHorloge:inst3|74390:inst5|34 ; -1.235  ; -1.864        ;
+; DivHorloge:inst3|74390:inst5|31 ; -0.931  ; -1.403        ;
+; DivHorloge:inst3|74390:inst|34  ; -0.832  ; -1.345        ;
+; DivHorloge:inst3|74390:inst3|31 ; -0.598  ; -1.008        ;
+; DivHorloge:inst3|74390:inst3|34 ; -0.579  ; -0.716        ;
+; DivHorloge:inst3|74390:inst5|3  ; -0.552  ; -0.809        ;
+; DivHorloge:inst3|7490:inst8|19  ; -0.534  ; -0.534        ;
+; DivHorloge:inst3|74390:inst|31  ; -0.528  ; -0.959        ;
+; DivHorloge:inst3|74390:inst3|7  ; -0.509  ; -0.758        ;
+; DivHorloge:inst3|74390:inst|7   ; -0.460  ; -0.460        ;
+; DivHorloge:inst3|74390:inst5|7  ; -0.449  ; -0.499        ;
+; DivHorloge:inst3|74390:inst3|3  ; -0.443  ; -0.876        ;
 ; D1                              ; 0.298   ; 0.000         ;
 ; D2                              ; 0.298   ; 0.000         ;
 ; D3                              ; 0.298   ; 0.000         ;
@@ -209,12 +209,14 @@ This panel reports FMAX for every clock in the design, regardless of the user-sp
 +---------------------------------+-------+---------------+
 ; Clock                           ; Slack ; End Point TNS ;
 +---------------------------------+-------+---------------+
-; DivHorloge:inst3|74390:inst3|34 ; 0.138 ; 0.000         ;
-; DivHorloge:inst3|74390:inst|34  ; 0.236 ; 0.000         ;
-; DivHorloge:inst3|74390:inst3|7  ; 0.251 ; 0.000         ;
-; Clock                           ; 0.339 ; 0.000         ;
-; DivHorloge:inst3|7490:inst8|7   ; 0.341 ; 0.000         ;
+; DivHorloge:inst3|74390:inst|7   ; 0.075 ; 0.000         ;
+; DivHorloge:inst3|74390:inst5|7  ; 0.226 ; 0.000         ;
+; DivHorloge:inst3|74390:inst3|34 ; 0.257 ; 0.000         ;
+; Clock                           ; 0.326 ; 0.000         ;
+; DivHorloge:inst3|74390:inst3|7  ; 0.344 ; 0.000         ;
 ; DivHorloge:inst3|74390:inst5|34 ; 0.347 ; 0.000         ;
+; DivHorloge:inst3|7490:inst8|7   ; 0.348 ; 0.000         ;
+; DivHorloge:inst3|74390:inst|34  ; 0.384 ; 0.000         ;
 ; D1                              ; 0.393 ; 0.000         ;
 ; D2                              ; 0.393 ; 0.000         ;
 ; D3                              ; 0.393 ; 0.000         ;
@@ -228,16 +230,14 @@ This panel reports FMAX for every clock in the design, regardless of the user-sp
 ; DivHorloge:inst3|74390:inst5|6  ; 0.393 ; 0.000         ;
 ; DivHorloge:inst3|74390:inst|33  ; 0.393 ; 0.000         ;
 ; DivHorloge:inst3|74390:inst|6   ; 0.393 ; 0.000         ;
-; DivHorloge:inst3|74390:inst|31  ; 0.398 ; 0.000         ;
-; DivHorloge:inst3|74390:inst|7   ; 0.411 ; 0.000         ;
-; DivHorloge:inst3|74390:inst3|3  ; 0.514 ; 0.000         ;
-; DivHorloge:inst3|74390:inst3|31 ; 0.521 ; 0.000         ;
-; DivHorloge:inst3|74390:inst5|7  ; 0.541 ; 0.000         ;
-; DivHorloge:inst3|7490:inst8|19  ; 0.559 ; 0.000         ;
-; DivHorloge:inst3|74390:inst|3   ; 0.579 ; 0.000         ;
-; DivHorloge:inst3|74390:inst5|3  ; 0.580 ; 0.000         ;
-; DivHorloge:inst3|7490:inst10|19 ; 0.672 ; 0.000         ;
-; DivHorloge:inst3|74390:inst5|31 ; 0.974 ; 0.000         ;
+; DivHorloge:inst3|74390:inst3|3  ; 0.409 ; 0.000         ;
+; DivHorloge:inst3|74390:inst|31  ; 0.528 ; 0.000         ;
+; DivHorloge:inst3|74390:inst3|31 ; 0.537 ; 0.000         ;
+; DivHorloge:inst3|74390:inst5|3  ; 0.542 ; 0.000         ;
+; DivHorloge:inst3|74390:inst5|31 ; 0.566 ; 0.000         ;
+; DivHorloge:inst3|74390:inst|3   ; 0.567 ; 0.000         ;
+; DivHorloge:inst3|7490:inst8|19  ; 0.570 ; 0.000         ;
+; DivHorloge:inst3|7490:inst10|19 ; 0.950 ; 0.000         ;
 +---------------------------------+-------+---------------+
 
 
@@ -246,13 +246,13 @@ This panel reports FMAX for every clock in the design, regardless of the user-sp
 +-------+--------+-----------------------+
 ; Clock ; Slack  ; End Point TNS         ;
 +-------+--------+-----------------------+
-; D4    ; -1.238 ; -1.238                ;
-; D7    ; -1.099 ; -1.099                ;
-; D5    ; -1.004 ; -1.004                ;
-; D6    ; -0.668 ; -0.668                ;
-; D3    ; -0.602 ; -0.602                ;
-; D2    ; -0.398 ; -0.398                ;
-; D1    ; -0.280 ; -0.280                ;
+; D7    ; -0.773 ; -0.773                ;
+; D6    ; -0.433 ; -0.433                ;
+; D2    ; -0.299 ; -0.299                ;
+; D1    ; -0.285 ; -0.285                ;
+; D5    ; -0.281 ; -0.281                ;
+; D3    ; -0.198 ; -0.198                ;
+; D4    ; -0.192 ; -0.192                ;
 +-------+--------+-----------------------+
 
 
@@ -261,13 +261,13 @@ This panel reports FMAX for every clock in the design, regardless of the user-sp
 +-------+-------+-----------------------+
 ; Clock ; Slack ; End Point TNS         ;
 +-------+-------+-----------------------+
-; D1    ; 0.616 ; 0.000                 ;
-; D2    ; 0.708 ; 0.000                 ;
-; D3    ; 0.974 ; 0.000                 ;
-; D6    ; 0.995 ; 0.000                 ;
-; D5    ; 1.359 ; 0.000                 ;
-; D7    ; 1.439 ; 0.000                 ;
-; D4    ; 1.603 ; 0.000                 ;
+; D4    ; 0.562 ; 0.000                 ;
+; D3    ; 0.590 ; 0.000                 ;
+; D5    ; 0.644 ; 0.000                 ;
+; D2    ; 0.679 ; 0.000                 ;
+; D1    ; 0.682 ; 0.000                 ;
+; D6    ; 0.801 ; 0.000                 ;
+; D7    ; 1.178 ; 0.000                 ;
 +-------+-------+-----------------------+
 
 
@@ -276,7 +276,7 @@ This panel reports FMAX for every clock in the design, regardless of the user-sp
 +---------------------------------+--------+---------------+
 ; Clock                           ; Slack  ; End Point TNS ;
 +---------------------------------+--------+---------------+
-; Clock                           ; -3.000 ; -254.137      ;
+; Clock                           ; -3.000 ; -255.540      ;
 ; D1                              ; -3.000 ; -4.403        ;
 ; D2                              ; -3.000 ; -4.403        ;
 ; D3                              ; -3.000 ; -4.403        ;
@@ -320,10 +320,10 @@ Design MTBF is not calculated because the design doesn't meet its timing require
 +-------------+-----------------+---------------------------------+---------------------------------------------------------------+
 ; Fmax        ; Restricted Fmax ; Clock Name                      ; Note                                                          ;
 +-------------+-----------------+---------------------------------+---------------------------------------------------------------+
-; 80.31 MHz   ; 80.31 MHz       ; Clock                           ;                                                               ;
-; 471.25 MHz  ; 416.15 MHz      ; DivHorloge:inst3|7490:inst8|7   ; limit due to minimum period restriction (tmin)                ;
-; 480.54 MHz  ; 416.15 MHz      ; DivHorloge:inst3|74390:inst5|34 ; limit due to minimum period restriction (tmin)                ;
-; 533.9 MHz   ; 416.15 MHz      ; DivHorloge:inst3|7490:inst10|19 ; limit due to minimum period restriction (tmin)                ;
+; 70.77 MHz   ; 70.77 MHz       ; Clock                           ;                                                               ;
+; 478.01 MHz  ; 416.15 MHz      ; DivHorloge:inst3|74390:inst5|34 ; limit due to minimum period restriction (tmin)                ;
+; 481.0 MHz   ; 416.15 MHz      ; DivHorloge:inst3|7490:inst10|19 ; limit due to minimum period restriction (tmin)                ;
+; 495.29 MHz  ; 416.15 MHz      ; DivHorloge:inst3|7490:inst8|7   ; limit due to minimum period restriction (tmin)                ;
 ; 1564.95 MHz ; 250.0 MHz       ; D7                              ; limit due to minimum period restriction (max I/O toggle rate) ;
 ; 1564.95 MHz ; 416.15 MHz      ; DivHorloge:inst3|74390:inst3|33 ; limit due to minimum period restriction (tmin)                ;
 ; 1564.95 MHz ; 416.15 MHz      ; DivHorloge:inst3|74390:inst3|6  ; limit due to minimum period restriction (tmin)                ;
@@ -346,22 +346,22 @@ This panel reports FMAX for every clock in the design, regardless of the user-sp
 +---------------------------------+---------+---------------+
 ; Clock                           ; Slack   ; End Point TNS ;
 +---------------------------------+---------+---------------+
-; Clock                           ; -11.452 ; -411.084      ;
-; DivHorloge:inst3|74390:inst|3   ; -3.463  ; -3.962        ;
-; DivHorloge:inst3|7490:inst10|19 ; -2.645  ; -15.451       ;
-; DivHorloge:inst3|74390:inst5|31 ; -1.611  ; -2.392        ;
-; DivHorloge:inst3|74390:inst5|34 ; -1.244  ; -1.464        ;
-; DivHorloge:inst3|7490:inst8|7   ; -1.122  ; -1.639        ;
-; DivHorloge:inst3|74390:inst5|7  ; -0.844  ; -1.203        ;
-; DivHorloge:inst3|74390:inst5|3  ; -0.616  ; -1.058        ;
-; DivHorloge:inst3|74390:inst3|31 ; -0.614  ; -0.966        ;
-; DivHorloge:inst3|74390:inst|31  ; -0.525  ; -0.893        ;
-; DivHorloge:inst3|74390:inst|7   ; -0.488  ; -0.898        ;
-; DivHorloge:inst3|7490:inst8|19  ; -0.450  ; -0.450        ;
-; DivHorloge:inst3|74390:inst|34  ; -0.417  ; -0.476        ;
-; DivHorloge:inst3|74390:inst3|3  ; -0.406  ; -0.701        ;
-; DivHorloge:inst3|74390:inst3|7  ; -0.392  ; -0.675        ;
-; DivHorloge:inst3|74390:inst3|34 ; -0.389  ; -0.391        ;
+; Clock                           ; -13.130 ; -425.157      ;
+; DivHorloge:inst3|7490:inst10|19 ; -4.131  ; -31.086       ;
+; DivHorloge:inst3|74390:inst|3   ; -2.757  ; -3.194        ;
+; DivHorloge:inst3|7490:inst8|7   ; -1.228  ; -1.563        ;
+; DivHorloge:inst3|74390:inst5|34 ; -1.145  ; -1.529        ;
+; DivHorloge:inst3|74390:inst5|31 ; -0.807  ; -1.215        ;
+; DivHorloge:inst3|74390:inst|34  ; -0.680  ; -1.123        ;
+; DivHorloge:inst3|74390:inst3|34 ; -0.583  ; -0.679        ;
+; DivHorloge:inst3|74390:inst3|31 ; -0.490  ; -0.840        ;
+; DivHorloge:inst3|7490:inst8|19  ; -0.460  ; -0.460        ;
+; DivHorloge:inst3|74390:inst5|3  ; -0.435  ; -0.634        ;
+; DivHorloge:inst3|74390:inst|31  ; -0.421  ; -0.793        ;
+; DivHorloge:inst3|74390:inst|7   ; -0.413  ; -0.413        ;
+; DivHorloge:inst3|74390:inst5|7  ; -0.408  ; -0.437        ;
+; DivHorloge:inst3|74390:inst3|7  ; -0.399  ; -0.600        ;
+; DivHorloge:inst3|74390:inst3|3  ; -0.381  ; -0.721        ;
 ; D7                              ; 0.361   ; 0.000         ;
 ; DivHorloge:inst3|74390:inst3|33 ; 0.361   ; 0.000         ;
 ; DivHorloge:inst3|74390:inst3|6  ; 0.361   ; 0.000         ;
@@ -383,13 +383,15 @@ This panel reports FMAX for every clock in the design, regardless of the user-sp
 +---------------------------------+-------+---------------+
 ; Clock                           ; Slack ; End Point TNS ;
 +---------------------------------+-------+---------------+
-; DivHorloge:inst3|74390:inst3|34 ; 0.143 ; 0.000         ;
-; DivHorloge:inst3|74390:inst3|7  ; 0.216 ; 0.000         ;
-; DivHorloge:inst3|74390:inst|34  ; 0.216 ; 0.000         ;
-; Clock                           ; 0.306 ; 0.000         ;
-; DivHorloge:inst3|7490:inst8|7   ; 0.306 ; 0.000         ;
-; DivHorloge:inst3|74390:inst5|34 ; 0.310 ; 0.000         ;
-; DivHorloge:inst3|74390:inst|31  ; 0.353 ; 0.000         ;
+; DivHorloge:inst3|74390:inst|7   ; 0.078 ; 0.000         ;
+; DivHorloge:inst3|74390:inst5|7  ; 0.227 ; 0.000         ;
+; DivHorloge:inst3|74390:inst3|34 ; 0.237 ; 0.000         ;
+; Clock                           ; 0.293 ; 0.000         ;
+; DivHorloge:inst3|74390:inst3|7  ; 0.297 ; 0.000         ;
+; DivHorloge:inst3|74390:inst5|34 ; 0.311 ; 0.000         ;
+; DivHorloge:inst3|7490:inst8|7   ; 0.311 ; 0.000         ;
+; DivHorloge:inst3|74390:inst|34  ; 0.338 ; 0.000         ;
+; DivHorloge:inst3|74390:inst3|3  ; 0.353 ; 0.000         ;
 ; D7                              ; 0.354 ; 0.000         ;
 ; DivHorloge:inst3|74390:inst3|33 ; 0.354 ; 0.000         ;
 ; DivHorloge:inst3|74390:inst3|6  ; 0.354 ; 0.000         ;
@@ -403,15 +405,13 @@ This panel reports FMAX for every clock in the design, regardless of the user-sp
 ; D4                              ; 0.355 ; 0.000         ;
 ; D5                              ; 0.355 ; 0.000         ;
 ; D6                              ; 0.355 ; 0.000         ;
-; DivHorloge:inst3|74390:inst|7   ; 0.393 ; 0.000         ;
-; DivHorloge:inst3|74390:inst3|3  ; 0.442 ; 0.000         ;
-; DivHorloge:inst3|74390:inst3|31 ; 0.493 ; 0.000         ;
-; DivHorloge:inst3|7490:inst8|19  ; 0.524 ; 0.000         ;
-; DivHorloge:inst3|74390:inst5|7  ; 0.530 ; 0.000         ;
-; DivHorloge:inst3|74390:inst5|3  ; 0.545 ; 0.000         ;
-; DivHorloge:inst3|74390:inst|3   ; 0.548 ; 0.000         ;
-; DivHorloge:inst3|7490:inst10|19 ; 0.627 ; 0.000         ;
-; DivHorloge:inst3|74390:inst5|31 ; 0.934 ; 0.000         ;
+; DivHorloge:inst3|74390:inst|31  ; 0.453 ; 0.000         ;
+; DivHorloge:inst3|74390:inst5|3  ; 0.489 ; 0.000         ;
+; DivHorloge:inst3|74390:inst3|31 ; 0.496 ; 0.000         ;
+; DivHorloge:inst3|74390:inst5|31 ; 0.523 ; 0.000         ;
+; DivHorloge:inst3|74390:inst|3   ; 0.531 ; 0.000         ;
+; DivHorloge:inst3|7490:inst8|19  ; 0.535 ; 0.000         ;
+; DivHorloge:inst3|7490:inst10|19 ; 0.882 ; 0.000         ;
 +---------------------------------+-------+---------------+
 
 
@@ -420,13 +420,13 @@ This panel reports FMAX for every clock in the design, regardless of the user-sp
 +-------+--------+----------------------+
 ; Clock ; Slack  ; End Point TNS        ;
 +-------+--------+----------------------+
-; D7    ; -0.936 ; -0.936               ;
-; D4    ; -0.929 ; -0.929               ;
-; D5    ; -0.707 ; -0.707               ;
-; D6    ; -0.406 ; -0.406               ;
-; D3    ; -0.347 ; -0.347               ;
-; D2    ; -0.162 ; -0.162               ;
-; D1    ; -0.068 ; -0.068               ;
+; D7    ; -0.626 ; -0.626               ;
+; D6    ; -0.180 ; -0.180               ;
+; D1    ; -0.075 ; -0.075               ;
+; D2    ; -0.045 ; -0.045               ;
+; D5    ; -0.019 ; -0.019               ;
+; D3    ; 0.043  ; 0.000                ;
+; D4    ; 0.048  ; 0.000                ;
 +-------+--------+----------------------+
 
 
@@ -435,13 +435,13 @@ This panel reports FMAX for every clock in the design, regardless of the user-sp
 +-------+-------+----------------------+
 ; Clock ; Slack ; End Point TNS        ;
 +-------+-------+----------------------+
-; D1    ; 0.400 ; 0.000                ;
-; D2    ; 0.527 ; 0.000                ;
-; D3    ; 0.783 ; 0.000                ;
-; D6    ; 0.785 ; 0.000                ;
-; D5    ; 1.143 ; 0.000                ;
-; D7    ; 1.332 ; 0.000                ;
-; D4    ; 1.378 ; 0.000                ;
+; D4    ; 0.385 ; 0.000                ;
+; D3    ; 0.420 ; 0.000                ;
+; D1    ; 0.457 ; 0.000                ;
+; D5    ; 0.477 ; 0.000                ;
+; D2    ; 0.505 ; 0.000                ;
+; D6    ; 0.618 ; 0.000                ;
+; D7    ; 1.094 ; 0.000                ;
 +-------+-------+----------------------+
 
 
@@ -450,7 +450,7 @@ This panel reports FMAX for every clock in the design, regardless of the user-sp
 +---------------------------------+--------+---------------+
 ; Clock                           ; Slack  ; End Point TNS ;
 +---------------------------------+--------+---------------+
-; Clock                           ; -3.000 ; -254.137      ;
+; Clock                           ; -3.000 ; -255.540      ;
 ; D1                              ; -3.000 ; -4.403        ;
 ; D2                              ; -3.000 ; -4.403        ;
 ; D3                              ; -3.000 ; -4.403        ;
@@ -494,22 +494,22 @@ Design MTBF is not calculated because the design doesn't meet its timing require
 +---------------------------------+--------+---------------+
 ; Clock                           ; Slack  ; End Point TNS ;
 +---------------------------------+--------+---------------+
-; Clock                           ; -4.740 ; -121.646      ;
-; DivHorloge:inst3|74390:inst|3   ; -1.448 ; -1.448        ;
-; DivHorloge:inst3|7490:inst10|19 ; -1.013 ; -5.709        ;
-; DivHorloge:inst3|74390:inst5|31 ; -0.529 ; -0.529        ;
-; DivHorloge:inst3|74390:inst5|34 ; -0.079 ; -0.079        ;
-; DivHorloge:inst3|74390:inst5|3  ; -0.014 ; -0.014        ;
-; DivHorloge:inst3|7490:inst8|7   ; -0.014 ; -0.014        ;
-; DivHorloge:inst3|74390:inst3|31 ; 0.009  ; 0.000         ;
-; DivHorloge:inst3|74390:inst5|7  ; 0.022  ; 0.000         ;
-; DivHorloge:inst3|74390:inst3|3  ; 0.075  ; 0.000         ;
-; DivHorloge:inst3|74390:inst|7   ; 0.100  ; 0.000         ;
-; DivHorloge:inst3|74390:inst|31  ; 0.107  ; 0.000         ;
-; DivHorloge:inst3|7490:inst8|19  ; 0.128  ; 0.000         ;
-; DivHorloge:inst3|74390:inst|34  ; 0.186  ; 0.000         ;
+; Clock                           ; -5.496 ; -130.219      ;
+; DivHorloge:inst3|7490:inst10|19 ; -1.608 ; -11.792       ;
+; DivHorloge:inst3|74390:inst|3   ; -1.219 ; -1.219        ;
+; DivHorloge:inst3|74390:inst5|31 ; -0.123 ; -0.123        ;
+; DivHorloge:inst3|7490:inst8|7   ; -0.083 ; -0.083        ;
+; DivHorloge:inst3|74390:inst5|34 ; -0.045 ; -0.045        ;
+; DivHorloge:inst3|74390:inst3|31 ; 0.041  ; 0.000         ;
+; DivHorloge:inst3|74390:inst5|3  ; 0.064  ; 0.000         ;
+; DivHorloge:inst3|74390:inst|31  ; 0.065  ; 0.000         ;
+; DivHorloge:inst3|74390:inst|34  ; 0.099  ; 0.000         ;
+; DivHorloge:inst3|74390:inst3|3  ; 0.111  ; 0.000         ;
+; DivHorloge:inst3|7490:inst8|19  ; 0.120  ; 0.000         ;
+; DivHorloge:inst3|74390:inst3|34 ; 0.131  ; 0.000         ;
+; DivHorloge:inst3|74390:inst|7   ; 0.179  ; 0.000         ;
+; DivHorloge:inst3|74390:inst5|7  ; 0.190  ; 0.000         ;
 ; DivHorloge:inst3|74390:inst3|7  ; 0.207  ; 0.000         ;
-; DivHorloge:inst3|74390:inst3|34 ; 0.243  ; 0.000         ;
 ; D7                              ; 0.693  ; 0.000         ;
 ; DivHorloge:inst3|74390:inst3|33 ; 0.693  ; 0.000         ;
 ; DivHorloge:inst3|74390:inst3|6  ; 0.693  ; 0.000         ;
@@ -531,18 +531,14 @@ Design MTBF is not calculated because the design doesn't meet its timing require
 +---------------------------------+--------+---------------+
 ; Clock                           ; Slack  ; End Point TNS ;
 +---------------------------------+--------+---------------+
-; DivHorloge:inst3|74390:inst3|34 ; -0.012 ; -0.012        ;
-; DivHorloge:inst3|74390:inst3|7  ; 0.039  ; 0.000         ;
-; DivHorloge:inst3|74390:inst|34  ; 0.071  ; 0.000         ;
-; DivHorloge:inst3|74390:inst|7   ; 0.090  ; 0.000         ;
-; DivHorloge:inst3|74390:inst3|31 ; 0.144  ; 0.000         ;
-; Clock                           ; 0.146  ; 0.000         ;
-; DivHorloge:inst3|7490:inst8|7   ; 0.146  ; 0.000         ;
-; DivHorloge:inst3|74390:inst5|34 ; 0.150  ; 0.000         ;
-; DivHorloge:inst3|74390:inst|3   ; 0.159  ; 0.000         ;
-; DivHorloge:inst3|74390:inst5|7  ; 0.162  ; 0.000         ;
-; DivHorloge:inst3|74390:inst|31  ; 0.164  ; 0.000         ;
-; DivHorloge:inst3|7490:inst8|19  ; 0.168  ; 0.000         ;
+; DivHorloge:inst3|74390:inst|7   ; -0.007 ; -0.007        ;
+; DivHorloge:inst3|74390:inst5|7  ; 0.067  ; 0.000         ;
+; DivHorloge:inst3|74390:inst3|34 ; 0.076  ; 0.000         ;
+; DivHorloge:inst3|74390:inst3|7  ; 0.079  ; 0.000         ;
+; DivHorloge:inst3|74390:inst|34  ; 0.127  ; 0.000         ;
+; Clock                           ; 0.144  ; 0.000         ;
+; DivHorloge:inst3|74390:inst5|34 ; 0.151  ; 0.000         ;
+; DivHorloge:inst3|7490:inst8|7   ; 0.151  ; 0.000         ;
 ; D7                              ; 0.169  ; 0.000         ;
 ; DivHorloge:inst3|74390:inst3|33 ; 0.169  ; 0.000         ;
 ; DivHorloge:inst3|74390:inst3|6  ; 0.169  ; 0.000         ;
@@ -556,26 +552,30 @@ Design MTBF is not calculated because the design doesn't meet its timing require
 ; D4                              ; 0.170  ; 0.000         ;
 ; D5                              ; 0.170  ; 0.000         ;
 ; D6                              ; 0.170  ; 0.000         ;
-; DivHorloge:inst3|74390:inst5|3  ; 0.181  ; 0.000         ;
-; DivHorloge:inst3|74390:inst3|3  ; 0.191  ; 0.000         ;
-; DivHorloge:inst3|7490:inst10|19 ; 0.238  ; 0.000         ;
-; DivHorloge:inst3|74390:inst5|31 ; 0.290  ; 0.000         ;
+; DivHorloge:inst3|74390:inst5|3  ; 0.173  ; 0.000         ;
+; DivHorloge:inst3|74390:inst3|31 ; 0.174  ; 0.000         ;
+; DivHorloge:inst3|74390:inst|3   ; 0.176  ; 0.000         ;
+; DivHorloge:inst3|7490:inst8|19  ; 0.176  ; 0.000         ;
+; DivHorloge:inst3|74390:inst3|3  ; 0.181  ; 0.000         ;
+; DivHorloge:inst3|74390:inst|31  ; 0.187  ; 0.000         ;
+; DivHorloge:inst3|74390:inst5|31 ; 0.193  ; 0.000         ;
+; DivHorloge:inst3|7490:inst10|19 ; 0.381  ; 0.000         ;
 +---------------------------------+--------+---------------+
 
 
 +---------------------------------------+
 ; Fast 1200mV 0C Model Recovery Summary ;
-+-------+--------+----------------------+
-; Clock ; Slack  ; End Point TNS        ;
-+-------+--------+----------------------+
-; D4    ; -0.298 ; -0.298               ;
-; D5    ; -0.191 ; -0.191               ;
-; D7    ; -0.104 ; -0.104               ;
-; D6    ; -0.026 ; -0.026               ;
-; D3    ; 0.010  ; 0.000                ;
-; D2    ; 0.118  ; 0.000                ;
-; D1    ; 0.129  ; 0.000                ;
-+-------+--------+----------------------+
++-------+-------+-----------------------+
+; Clock ; Slack ; End Point TNS         ;
++-------+-------+-----------------------+
+; D7    ; 0.079 ; 0.000                 ;
+; D6    ; 0.132 ; 0.000                 ;
+; D5    ; 0.185 ; 0.000                 ;
+; D1    ; 0.193 ; 0.000                 ;
+; D2    ; 0.207 ; 0.000                 ;
+; D4    ; 0.218 ; 0.000                 ;
+; D3    ; 0.246 ; 0.000                 ;
++-------+-------+-----------------------+
 
 
 +--------------------------------------+
@@ -583,13 +583,13 @@ Design MTBF is not calculated because the design doesn't meet its timing require
 +-------+-------+----------------------+
 ; Clock ; Slack ; End Point TNS        ;
 +-------+-------+----------------------+
-; D1    ; 0.493 ; 0.000                ;
-; D2    ; 0.537 ; 0.000                ;
-; D3    ; 0.662 ; 0.000                ;
-; D6    ; 0.691 ; 0.000                ;
-; D7    ; 0.768 ; 0.000                ;
-; D5    ; 0.826 ; 0.000                ;
-; D4    ; 0.940 ; 0.000                ;
+; D3    ; 0.416 ; 0.000                ;
+; D2    ; 0.440 ; 0.000                ;
+; D1    ; 0.447 ; 0.000                ;
+; D4    ; 0.447 ; 0.000                ;
+; D5    ; 0.455 ; 0.000                ;
+; D6    ; 0.528 ; 0.000                ;
+; D7    ; 0.598 ; 0.000                ;
 +-------+-------+----------------------+
 
 
@@ -598,14 +598,14 @@ Design MTBF is not calculated because the design doesn't meet its timing require
 +---------------------------------+--------+---------------+
 ; Clock                           ; Slack  ; End Point TNS ;
 +---------------------------------+--------+---------------+
-; Clock                           ; -3.000 ; -188.640      ;
-; D1                              ; -3.000 ; -4.251        ;
-; D2                              ; -3.000 ; -4.186        ;
-; D3                              ; -3.000 ; -4.167        ;
+; Clock                           ; -3.000 ; -189.443      ;
+; D5                              ; -3.000 ; -4.187        ;
+; D3                              ; -3.000 ; -4.180        ;
+; D4                              ; -3.000 ; -4.180        ;
+; D1                              ; -3.000 ; -4.176        ;
+; D2                              ; -3.000 ; -4.174        ;
 ; D7                              ; -3.000 ; -4.165        ;
-; D5                              ; -3.000 ; -4.159        ;
-; D4                              ; -3.000 ; -4.156        ;
-; D6                              ; -3.000 ; -4.141        ;
+; D6                              ; -3.000 ; -4.160        ;
 ; DivHorloge:inst3|7490:inst10|19 ; -1.000 ; -8.000        ;
 ; DivHorloge:inst3|74390:inst5|34 ; -1.000 ; -3.000        ;
 ; DivHorloge:inst3|7490:inst8|7   ; -1.000 ; -3.000        ;
@@ -633,12 +633,7 @@ Design MTBF is not calculated because the design doesn't meet its timing require
 ----------------------------------------------
 ; Fast 1200mV 0C Model Metastability Summary ;
 ----------------------------------------------
-The design MTBF is not calculated because there are no specified synchronizers in the design.
-Number of Synchronizer Chains Found: 1
-Shortest Synchronizer Chain: 3 Registers
-Fraction of Chains for which MTBFs Could Not be Calculated: 1.000
-Worst Case Available Settling Time: 1.691 ns
-
+Design MTBF is not calculated because the design doesn't meet its timing requirements.
 
 
 
@@ -647,66 +642,66 @@ Worst Case Available Settling Time: 1.691 ns
 +----------------------------------+----------+--------+----------+---------+---------------------+
 ; Clock                            ; Setup    ; Hold   ; Recovery ; Removal ; Minimum Pulse Width ;
 +----------------------------------+----------+--------+----------+---------+---------------------+
-; Worst-case Slack                 ; -12.631  ; -0.012 ; -1.238   ; 0.400   ; -3.000              ;
-;  Clock                           ; -12.631  ; 0.146  ; N/A      ; N/A     ; -3.000              ;
-;  D1                              ; 0.298    ; 0.170  ; -0.280   ; 0.400   ; -3.000              ;
-;  D2                              ; 0.298    ; 0.170  ; -0.398   ; 0.527   ; -3.000              ;
-;  D3                              ; 0.298    ; 0.170  ; -0.602   ; 0.662   ; -3.000              ;
-;  D4                              ; 0.298    ; 0.170  ; -1.238   ; 0.940   ; -3.000              ;
-;  D5                              ; 0.298    ; 0.170  ; -1.004   ; 0.826   ; -3.000              ;
-;  D6                              ; 0.298    ; 0.170  ; -0.668   ; 0.691   ; -3.000              ;
-;  D7                              ; 0.298    ; 0.169  ; -1.099   ; 0.768   ; -3.000              ;
-;  DivHorloge:inst3|74390:inst3|3  ; -0.514   ; 0.191  ; N/A      ; N/A     ; -1.403              ;
-;  DivHorloge:inst3|74390:inst3|31 ; -0.720   ; 0.144  ; N/A      ; N/A     ; -1.403              ;
+; Worst-case Slack                 ; -14.590  ; -0.007 ; -0.773   ; 0.385   ; -3.000              ;
+;  Clock                           ; -14.590  ; 0.144  ; N/A      ; N/A     ; -3.000              ;
+;  D1                              ; 0.298    ; 0.170  ; -0.285   ; 0.447   ; -3.000              ;
+;  D2                              ; 0.298    ; 0.170  ; -0.299   ; 0.440   ; -3.000              ;
+;  D3                              ; 0.298    ; 0.170  ; -0.198   ; 0.416   ; -3.000              ;
+;  D4                              ; 0.298    ; 0.170  ; -0.192   ; 0.385   ; -3.000              ;
+;  D5                              ; 0.298    ; 0.170  ; -0.281   ; 0.455   ; -3.000              ;
+;  D6                              ; 0.298    ; 0.170  ; -0.433   ; 0.528   ; -3.000              ;
+;  D7                              ; 0.298    ; 0.169  ; -0.773   ; 0.598   ; -3.000              ;
+;  DivHorloge:inst3|74390:inst3|3  ; -0.443   ; 0.181  ; N/A      ; N/A     ; -1.403              ;
+;  DivHorloge:inst3|74390:inst3|31 ; -0.598   ; 0.174  ; N/A      ; N/A     ; -1.403              ;
 ;  DivHorloge:inst3|74390:inst3|33 ; 0.298    ; 0.169  ; N/A      ; N/A     ; -1.403              ;
-;  DivHorloge:inst3|74390:inst3|34 ; -0.493   ; -0.012 ; N/A      ; N/A     ; -1.403              ;
+;  DivHorloge:inst3|74390:inst3|34 ; -0.583   ; 0.076  ; N/A      ; N/A     ; -1.403              ;
 ;  DivHorloge:inst3|74390:inst3|6  ; 0.298    ; 0.169  ; N/A      ; N/A     ; -1.403              ;
-;  DivHorloge:inst3|74390:inst3|7  ; -0.507   ; 0.039  ; N/A      ; N/A     ; -1.403              ;
-;  DivHorloge:inst3|74390:inst5|3  ; -0.737   ; 0.181  ; N/A      ; N/A     ; -1.403              ;
-;  DivHorloge:inst3|74390:inst5|31 ; -1.819   ; 0.290  ; N/A      ; N/A     ; -1.403              ;
+;  DivHorloge:inst3|74390:inst3|7  ; -0.509   ; 0.079  ; N/A      ; N/A     ; -1.403              ;
+;  DivHorloge:inst3|74390:inst5|3  ; -0.552   ; 0.173  ; N/A      ; N/A     ; -1.403              ;
+;  DivHorloge:inst3|74390:inst5|31 ; -0.931   ; 0.193  ; N/A      ; N/A     ; -1.403              ;
 ;  DivHorloge:inst3|74390:inst5|33 ; 0.298    ; 0.169  ; N/A      ; N/A     ; -1.403              ;
-;  DivHorloge:inst3|74390:inst5|34 ; -1.326   ; 0.150  ; N/A      ; N/A     ; -1.403              ;
+;  DivHorloge:inst3|74390:inst5|34 ; -1.235   ; 0.151  ; N/A      ; N/A     ; -1.403              ;
 ;  DivHorloge:inst3|74390:inst5|6  ; 0.298    ; 0.169  ; N/A      ; N/A     ; -1.403              ;
-;  DivHorloge:inst3|74390:inst5|7  ; -0.923   ; 0.162  ; N/A      ; N/A     ; -1.403              ;
-;  DivHorloge:inst3|74390:inst|3   ; -3.835   ; 0.159  ; N/A      ; N/A     ; -1.403              ;
-;  DivHorloge:inst3|74390:inst|31  ; -0.591   ; 0.164  ; N/A      ; N/A     ; -1.403              ;
+;  DivHorloge:inst3|74390:inst5|7  ; -0.449   ; 0.067  ; N/A      ; N/A     ; -1.403              ;
+;  DivHorloge:inst3|74390:inst|3   ; -3.092   ; 0.176  ; N/A      ; N/A     ; -1.403              ;
+;  DivHorloge:inst3|74390:inst|31  ; -0.528   ; 0.187  ; N/A      ; N/A     ; -1.403              ;
 ;  DivHorloge:inst3|74390:inst|33  ; 0.298    ; 0.169  ; N/A      ; N/A     ; -1.403              ;
-;  DivHorloge:inst3|74390:inst|34  ; -0.533   ; 0.071  ; N/A      ; N/A     ; -1.403              ;
+;  DivHorloge:inst3|74390:inst|34  ; -0.832   ; 0.127  ; N/A      ; N/A     ; -1.403              ;
 ;  DivHorloge:inst3|74390:inst|6   ; 0.298    ; 0.169  ; N/A      ; N/A     ; -1.403              ;
-;  DivHorloge:inst3|74390:inst|7   ; -0.604   ; 0.090  ; N/A      ; N/A     ; -1.403              ;
-;  DivHorloge:inst3|7490:inst10|19 ; -2.877   ; 0.238  ; N/A      ; N/A     ; -1.403              ;
-;  DivHorloge:inst3|7490:inst8|19  ; -0.522   ; 0.168  ; N/A      ; N/A     ; -1.403              ;
-;  DivHorloge:inst3|7490:inst8|7   ; -1.272   ; 0.146  ; N/A      ; N/A     ; -1.403              ;
-; Design-wide TNS                  ; -501.18  ; -0.012 ; -5.289   ; 0.0     ; -345.287            ;
-;  Clock                           ; -464.195 ; 0.000  ; N/A      ; N/A     ; -254.137            ;
-;  D1                              ; 0.000    ; 0.000  ; -0.280   ; 0.000   ; -4.403              ;
-;  D2                              ; 0.000    ; 0.000  ; -0.398   ; 0.000   ; -4.403              ;
-;  D3                              ; 0.000    ; 0.000  ; -0.602   ; 0.000   ; -4.403              ;
-;  D4                              ; 0.000    ; 0.000  ; -1.238   ; 0.000   ; -4.403              ;
-;  D5                              ; 0.000    ; 0.000  ; -1.004   ; 0.000   ; -4.403              ;
-;  D6                              ; 0.000    ; 0.000  ; -0.668   ; 0.000   ; -4.403              ;
-;  D7                              ; 0.000    ; 0.000  ; -1.099   ; 0.000   ; -4.403              ;
-;  DivHorloge:inst3|74390:inst3|3  ; -0.875   ; 0.000  ; N/A      ; N/A     ; -2.806              ;
-;  DivHorloge:inst3|74390:inst3|31 ; -1.121   ; 0.000  ; N/A      ; N/A     ; -2.806              ;
+;  DivHorloge:inst3|74390:inst|7   ; -0.460   ; -0.007 ; N/A      ; N/A     ; -1.403              ;
+;  DivHorloge:inst3|7490:inst10|19 ; -4.400   ; 0.381  ; N/A      ; N/A     ; -1.403              ;
+;  DivHorloge:inst3|7490:inst8|19  ; -0.534   ; 0.176  ; N/A      ; N/A     ; -1.403              ;
+;  DivHorloge:inst3|7490:inst8|7   ; -1.310   ; 0.151  ; N/A      ; N/A     ; -1.403              ;
+; Design-wide TNS                  ; -528.972 ; -0.007 ; -2.461   ; 0.0     ; -346.69             ;
+;  Clock                           ; -479.236 ; 0.000  ; N/A      ; N/A     ; -255.540            ;
+;  D1                              ; 0.000    ; 0.000  ; -0.285   ; 0.000   ; -4.403              ;
+;  D2                              ; 0.000    ; 0.000  ; -0.299   ; 0.000   ; -4.403              ;
+;  D3                              ; 0.000    ; 0.000  ; -0.198   ; 0.000   ; -4.403              ;
+;  D4                              ; 0.000    ; 0.000  ; -0.192   ; 0.000   ; -4.403              ;
+;  D5                              ; 0.000    ; 0.000  ; -0.281   ; 0.000   ; -4.403              ;
+;  D6                              ; 0.000    ; 0.000  ; -0.433   ; 0.000   ; -4.403              ;
+;  D7                              ; 0.000    ; 0.000  ; -0.773   ; 0.000   ; -4.403              ;
+;  DivHorloge:inst3|74390:inst3|3  ; -0.876   ; 0.000  ; N/A      ; N/A     ; -2.806              ;
+;  DivHorloge:inst3|74390:inst3|31 ; -1.008   ; 0.000  ; N/A      ; N/A     ; -2.806              ;
 ;  DivHorloge:inst3|74390:inst3|33 ; 0.000    ; 0.000  ; N/A      ; N/A     ; -1.403              ;
-;  DivHorloge:inst3|74390:inst3|34 ; -0.520   ; -0.012 ; N/A      ; N/A     ; -2.806              ;
+;  DivHorloge:inst3|74390:inst3|34 ; -0.716   ; 0.000  ; N/A      ; N/A     ; -2.806              ;
 ;  DivHorloge:inst3|74390:inst3|6  ; 0.000    ; 0.000  ; N/A      ; N/A     ; -1.403              ;
-;  DivHorloge:inst3|74390:inst3|7  ; -0.833   ; 0.000  ; N/A      ; N/A     ; -2.806              ;
-;  DivHorloge:inst3|74390:inst5|3  ; -1.254   ; 0.000  ; N/A      ; N/A     ; -2.806              ;
-;  DivHorloge:inst3|74390:inst5|31 ; -2.682   ; 0.000  ; N/A      ; N/A     ; -2.806              ;
+;  DivHorloge:inst3|74390:inst3|7  ; -0.758   ; 0.000  ; N/A      ; N/A     ; -2.806              ;
+;  DivHorloge:inst3|74390:inst5|3  ; -0.809   ; 0.000  ; N/A      ; N/A     ; -2.806              ;
+;  DivHorloge:inst3|74390:inst5|31 ; -1.403   ; 0.000  ; N/A      ; N/A     ; -2.806              ;
 ;  DivHorloge:inst3|74390:inst5|33 ; 0.000    ; 0.000  ; N/A      ; N/A     ; -1.403              ;
-;  DivHorloge:inst3|74390:inst5|34 ; -1.743   ; 0.000  ; N/A      ; N/A     ; -4.209              ;
+;  DivHorloge:inst3|74390:inst5|34 ; -1.864   ; 0.000  ; N/A      ; N/A     ; -4.209              ;
 ;  DivHorloge:inst3|74390:inst5|6  ; 0.000    ; 0.000  ; N/A      ; N/A     ; -1.403              ;
-;  DivHorloge:inst3|74390:inst5|7  ; -1.342   ; 0.000  ; N/A      ; N/A     ; -2.806              ;
-;  DivHorloge:inst3|74390:inst|3   ; -4.405   ; 0.000  ; N/A      ; N/A     ; -2.806              ;
-;  DivHorloge:inst3|74390:inst|31  ; -1.049   ; 0.000  ; N/A      ; N/A     ; -2.806              ;
+;  DivHorloge:inst3|74390:inst5|7  ; -0.499   ; 0.000  ; N/A      ; N/A     ; -2.806              ;
+;  DivHorloge:inst3|74390:inst|3   ; -3.601   ; 0.000  ; N/A      ; N/A     ; -2.806              ;
+;  DivHorloge:inst3|74390:inst|31  ; -0.959   ; 0.000  ; N/A      ; N/A     ; -2.806              ;
 ;  DivHorloge:inst3|74390:inst|33  ; 0.000    ; 0.000  ; N/A      ; N/A     ; -1.403              ;
-;  DivHorloge:inst3|74390:inst|34  ; -0.647   ; 0.000  ; N/A      ; N/A     ; -2.806              ;
+;  DivHorloge:inst3|74390:inst|34  ; -1.345   ; 0.000  ; N/A      ; N/A     ; -2.806              ;
 ;  DivHorloge:inst3|74390:inst|6   ; 0.000    ; 0.000  ; N/A      ; N/A     ; -1.403              ;
-;  DivHorloge:inst3|74390:inst|7   ; -1.101   ; 0.000  ; N/A      ; N/A     ; -2.806              ;
-;  DivHorloge:inst3|7490:inst10|19 ; -16.831  ; 0.000  ; N/A      ; N/A     ; -11.224             ;
-;  DivHorloge:inst3|7490:inst8|19  ; -0.522   ; 0.000  ; N/A      ; N/A     ; -1.403              ;
-;  DivHorloge:inst3|7490:inst8|7   ; -2.060   ; 0.000  ; N/A      ; N/A     ; -4.209              ;
+;  DivHorloge:inst3|74390:inst|7   ; -0.460   ; -0.007 ; N/A      ; N/A     ; -2.806              ;
+;  DivHorloge:inst3|7490:inst10|19 ; -33.089  ; 0.000  ; N/A      ; N/A     ; -11.224             ;
+;  DivHorloge:inst3|7490:inst8|19  ; -0.534   ; 0.000  ; N/A      ; N/A     ; -1.403              ;
+;  DivHorloge:inst3|7490:inst8|7   ; -1.815   ; 0.000  ; N/A      ; N/A     ; -4.209              ;
 +----------------------------------+----------+--------+----------+---------+---------------------+
 
 
@@ -766,15 +761,15 @@ Worst Case Available Settling Time: 1.691 ns
 ; Pin                 ; I/O Standard          ; 10-90 Rise Time ; 90-10 Fall Time ;
 +---------------------+-----------------------+-----------------+-----------------+
 ; Clock               ; 2.5 V                 ; 2000 ps         ; 2000 ps         ;
-; SW6                 ; 2.5 V                 ; 2000 ps         ; 2000 ps         ;
-; KEY0                ; 2.5 V                 ; 2000 ps         ; 2000 ps         ;
-; KEY1                ; 2.5 V                 ; 2000 ps         ; 2000 ps         ;
+; SW0                 ; 2.5 V                 ; 2000 ps         ; 2000 ps         ;
 ; SW1                 ; 2.5 V                 ; 2000 ps         ; 2000 ps         ;
 ; SW2                 ; 2.5 V                 ; 2000 ps         ; 2000 ps         ;
 ; SW3                 ; 2.5 V                 ; 2000 ps         ; 2000 ps         ;
-; SW4                 ; 2.5 V                 ; 2000 ps         ; 2000 ps         ;
+; SW6                 ; 2.5 V                 ; 2000 ps         ; 2000 ps         ;
 ; SW5                 ; 2.5 V                 ; 2000 ps         ; 2000 ps         ;
-; SW0                 ; 2.5 V                 ; 2000 ps         ; 2000 ps         ;
+; SW4                 ; 2.5 V                 ; 2000 ps         ; 2000 ps         ;
+; KEY0                ; 2.5 V                 ; 2000 ps         ; 2000 ps         ;
+; KEY1                ; 2.5 V                 ; 2000 ps         ; 2000 ps         ;
 ; D1                  ; 2.5 V                 ; 2000 ps         ; 2000 ps         ;
 ; D6                  ; 2.5 V                 ; 2000 ps         ; 2000 ps         ;
 ; D5                  ; 2.5 V                 ; 2000 ps         ; 2000 ps         ;
@@ -948,7 +943,7 @@ Worst Case Available Settling Time: 1.691 ns
 +---------------------------------+---------------------------------+-----------+----------+----------+----------+
 ; From Clock                      ; To Clock                        ; RR Paths  ; FR Paths ; RF Paths ; FF Paths ;
 +---------------------------------+---------------------------------+-----------+----------+----------+----------+
-; Clock                           ; Clock                           ; 160966813 ; 0        ; 0        ; 0        ;
+; Clock                           ; Clock                           ; 185736235 ; 0        ; 0        ; 0        ;
 ; DivHorloge:inst3|7490:inst10|19 ; Clock                           ; 22        ; 0        ; 0        ; 0        ;
 ; DivHorloge:inst3|74390:inst|3   ; Clock                           ; 0         ; 0        ; 1        ; 1        ;
 ; DivHorloge:inst3|74390:inst|6   ; Clock                           ; 0         ; 0        ; 2        ; 3        ;
@@ -962,14 +957,14 @@ Worst Case Available Settling Time: 1.691 ns
 ; DivHorloge:inst3|7490:inst8|7   ; DivHorloge:inst3|7490:inst8|7   ; 0         ; 0        ; 0        ; 5        ;
 ; DivHorloge:inst3|7490:inst10|19 ; DivHorloge:inst3|7490:inst8|7   ; 0         ; 0        ; 1        ; 1        ;
 ; DivHorloge:inst3|7490:inst8|7   ; DivHorloge:inst3|7490:inst8|19  ; 0         ; 0        ; 1        ; 1        ;
-; Clock                           ; DivHorloge:inst3|7490:inst10|19 ; 14        ; 0        ; 0        ; 0        ;
-; D1                              ; DivHorloge:inst3|7490:inst10|19 ; 2         ; 0        ; 0        ; 0        ;
-; D2                              ; DivHorloge:inst3|7490:inst10|19 ; 5         ; 0        ; 0        ; 0        ;
-; D3                              ; DivHorloge:inst3|7490:inst10|19 ; 7         ; 0        ; 0        ; 0        ;
-; D4                              ; DivHorloge:inst3|7490:inst10|19 ; 8         ; 0        ; 0        ; 0        ;
-; D5                              ; DivHorloge:inst3|7490:inst10|19 ; 10        ; 0        ; 0        ; 0        ;
-; D6                              ; DivHorloge:inst3|7490:inst10|19 ; 12        ; 0        ; 0        ; 0        ;
-; D7                              ; DivHorloge:inst3|7490:inst10|19 ; 0         ; 14       ; 0        ; 0        ;
+; Clock                           ; DivHorloge:inst3|7490:inst10|19 ; 79        ; 0        ; 0        ; 0        ;
+; D1                              ; DivHorloge:inst3|7490:inst10|19 ; 34        ; 0        ; 0        ; 0        ;
+; D2                              ; DivHorloge:inst3|7490:inst10|19 ; 36        ; 0        ; 0        ; 0        ;
+; D3                              ; DivHorloge:inst3|7490:inst10|19 ; 38        ; 0        ; 0        ; 0        ;
+; D4                              ; DivHorloge:inst3|7490:inst10|19 ; 40        ; 0        ; 0        ; 0        ;
+; D5                              ; DivHorloge:inst3|7490:inst10|19 ; 42        ; 0        ; 0        ; 0        ;
+; D6                              ; DivHorloge:inst3|7490:inst10|19 ; 44        ; 0        ; 0        ; 0        ;
+; D7                              ; DivHorloge:inst3|7490:inst10|19 ; 0         ; 46       ; 0        ; 0        ;
 ; DivHorloge:inst3|7490:inst10|19 ; DivHorloge:inst3|7490:inst10|19 ; 22        ; 0        ; 0        ; 0        ;
 ; DivHorloge:inst3|74390:inst3|6  ; DivHorloge:inst3|74390:inst3|3  ; 1         ; 1        ; 0        ; 0        ;
 ; DivHorloge:inst3|74390:inst3|7  ; DivHorloge:inst3|74390:inst3|3  ; 0         ; 0        ; 1        ; 1        ;
@@ -1010,7 +1005,7 @@ Entries labeled "false path" only account for clock-to-clock false paths and not
 +---------------------------------+---------------------------------+-----------+----------+----------+----------+
 ; From Clock                      ; To Clock                        ; RR Paths  ; FR Paths ; RF Paths ; FF Paths ;
 +---------------------------------+---------------------------------+-----------+----------+----------+----------+
-; Clock                           ; Clock                           ; 160966813 ; 0        ; 0        ; 0        ;
+; Clock                           ; Clock                           ; 185736235 ; 0        ; 0        ; 0        ;
 ; DivHorloge:inst3|7490:inst10|19 ; Clock                           ; 22        ; 0        ; 0        ; 0        ;
 ; DivHorloge:inst3|74390:inst|3   ; Clock                           ; 0         ; 0        ; 1        ; 1        ;
 ; DivHorloge:inst3|74390:inst|6   ; Clock                           ; 0         ; 0        ; 2        ; 3        ;
@@ -1024,14 +1019,14 @@ Entries labeled "false path" only account for clock-to-clock false paths and not
 ; DivHorloge:inst3|7490:inst8|7   ; DivHorloge:inst3|7490:inst8|7   ; 0         ; 0        ; 0        ; 5        ;
 ; DivHorloge:inst3|7490:inst10|19 ; DivHorloge:inst3|7490:inst8|7   ; 0         ; 0        ; 1        ; 1        ;
 ; DivHorloge:inst3|7490:inst8|7   ; DivHorloge:inst3|7490:inst8|19  ; 0         ; 0        ; 1        ; 1        ;
-; Clock                           ; DivHorloge:inst3|7490:inst10|19 ; 14        ; 0        ; 0        ; 0        ;
-; D1                              ; DivHorloge:inst3|7490:inst10|19 ; 2         ; 0        ; 0        ; 0        ;
-; D2                              ; DivHorloge:inst3|7490:inst10|19 ; 5         ; 0        ; 0        ; 0        ;
-; D3                              ; DivHorloge:inst3|7490:inst10|19 ; 7         ; 0        ; 0        ; 0        ;
-; D4                              ; DivHorloge:inst3|7490:inst10|19 ; 8         ; 0        ; 0        ; 0        ;
-; D5                              ; DivHorloge:inst3|7490:inst10|19 ; 10        ; 0        ; 0        ; 0        ;
-; D6                              ; DivHorloge:inst3|7490:inst10|19 ; 12        ; 0        ; 0        ; 0        ;
-; D7                              ; DivHorloge:inst3|7490:inst10|19 ; 0         ; 14       ; 0        ; 0        ;
+; Clock                           ; DivHorloge:inst3|7490:inst10|19 ; 79        ; 0        ; 0        ; 0        ;
+; D1                              ; DivHorloge:inst3|7490:inst10|19 ; 34        ; 0        ; 0        ; 0        ;
+; D2                              ; DivHorloge:inst3|7490:inst10|19 ; 36        ; 0        ; 0        ; 0        ;
+; D3                              ; DivHorloge:inst3|7490:inst10|19 ; 38        ; 0        ; 0        ; 0        ;
+; D4                              ; DivHorloge:inst3|7490:inst10|19 ; 40        ; 0        ; 0        ; 0        ;
+; D5                              ; DivHorloge:inst3|7490:inst10|19 ; 42        ; 0        ; 0        ; 0        ;
+; D6                              ; DivHorloge:inst3|7490:inst10|19 ; 44        ; 0        ; 0        ; 0        ;
+; D7                              ; DivHorloge:inst3|7490:inst10|19 ; 0         ; 46       ; 0        ; 0        ;
 ; DivHorloge:inst3|7490:inst10|19 ; DivHorloge:inst3|7490:inst10|19 ; 22        ; 0        ; 0        ; 0        ;
 ; DivHorloge:inst3|74390:inst3|6  ; DivHorloge:inst3|74390:inst3|3  ; 1         ; 1        ; 0        ; 0        ;
 ; DivHorloge:inst3|74390:inst3|7  ; DivHorloge:inst3|74390:inst3|3  ; 0         ; 0        ; 1        ; 1        ;
@@ -1119,7 +1114,7 @@ No non-DPA dedicated SERDES Receiver circuitry present in device or used in desi
 ; Illegal Clocks                  ; 0     ; 0    ;
 ; Unconstrained Clocks            ; 0     ; 0    ;
 ; Unconstrained Input Ports       ; 10    ; 10   ;
-; Unconstrained Input Port Paths  ; 74    ; 74   ;
+; Unconstrained Input Port Paths  ; 95    ; 95   ;
 ; Unconstrained Output Ports      ; 41    ; 41   ;
 ; Unconstrained Output Port Paths ; 111   ; 111  ;
 +---------------------------------+-------+------+
@@ -1302,7 +1297,7 @@ No non-DPA dedicated SERDES Receiver circuitry present in device or used in desi
 Info: *******************************************************************
 Info: Running Quartus Prime Timing Analyzer
     Info: Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
-    Info: Processing started: Thu Nov 02 18:14:57 2023
+    Info: Processing started: Fri Nov 03 14:00:51 2023
 Info: Command: quartus_sta Quartus -c Quartus
 Info: qsta_default_script.tcl version: #1
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
@@ -1314,18 +1309,17 @@ Info (332142): No user constrained base clocks found in the design. Calling "der
 Info (332105): Deriving Clocks
     Info (332105): create_clock -period 1.000 -name Clock Clock
     Info (332105): create_clock -period 1.000 -name DivHorloge:inst3|7490:inst10|19 DivHorloge:inst3|7490:inst10|19
-    Info (332105): create_clock -period 1.000 -name D7 D7
-    Info (332105): create_clock -period 1.000 -name D5 D5
-    Info (332105): create_clock -period 1.000 -name D6 D6
+    Info (332105): create_clock -period 1.000 -name D1 D1
     Info (332105): create_clock -period 1.000 -name D4 D4
+    Info (332105): create_clock -period 1.000 -name D7 D7
     Info (332105): create_clock -period 1.000 -name D3 D3
     Info (332105): create_clock -period 1.000 -name D2 D2
-    Info (332105): create_clock -period 1.000 -name D1 D1
     Info (332105): create_clock -period 1.000 -name DivHorloge:inst3|7490:inst8|7 DivHorloge:inst3|7490:inst8|7
     Info (332105): create_clock -period 1.000 -name DivHorloge:inst3|7490:inst8|19 DivHorloge:inst3|7490:inst8|19
     Info (332105): create_clock -period 1.000 -name DivHorloge:inst3|74390:inst5|34 DivHorloge:inst3|74390:inst5|34
     Info (332105): create_clock -period 1.000 -name DivHorloge:inst3|74390:inst5|31 DivHorloge:inst3|74390:inst5|31
     Info (332105): create_clock -period 1.000 -name DivHorloge:inst3|74390:inst5|7 DivHorloge:inst3|74390:inst5|7
+    Info (332105): create_clock -period 1.000 -name DivHorloge:inst3|74390:inst5|33 DivHorloge:inst3|74390:inst5|33
     Info (332105): create_clock -period 1.000 -name DivHorloge:inst3|74390:inst5|3 DivHorloge:inst3|74390:inst5|3
     Info (332105): create_clock -period 1.000 -name DivHorloge:inst3|74390:inst3|34 DivHorloge:inst3|74390:inst3|34
     Info (332105): create_clock -period 1.000 -name DivHorloge:inst3|74390:inst5|6 DivHorloge:inst3|74390:inst5|6
@@ -1340,32 +1334,33 @@ Info (332105): Deriving Clocks
     Info (332105): create_clock -period 1.000 -name DivHorloge:inst3|74390:inst|33 DivHorloge:inst3|74390:inst|33
     Info (332105): create_clock -period 1.000 -name DivHorloge:inst3|74390:inst|3 DivHorloge:inst3|74390:inst|3
     Info (332105): create_clock -period 1.000 -name DivHorloge:inst3|74390:inst|6 DivHorloge:inst3|74390:inst|6
-    Info (332105): create_clock -period 1.000 -name DivHorloge:inst3|74390:inst5|33 DivHorloge:inst3|74390:inst5|33
+    Info (332105): create_clock -period 1.000 -name D5 D5
+    Info (332105): create_clock -period 1.000 -name D6 D6
 Info (332143): No user constrained clock uncertainty found in the design. Calling "derive_clock_uncertainty"
 Info (332123): Deriving Clock Uncertainty. Please refer to report_sdc in the Timing Analyzer to see clock uncertainties.
 Info: Found TIMING_ANALYZER_REPORT_SCRIPT_INCLUDE_DEFAULT_ANALYSIS = ON
 Info: Analyzing Slow 1200mV 85C Model
 Info: Can't run Report Timing Closure Recommendations. The current device family is not supported.
 Critical Warning (332148): Timing requirements not met
-Info (332146): Worst-case setup slack is -12.631
+Info (332146): Worst-case setup slack is -14.590
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):   -12.631            -464.195 Clock 
-    Info (332119):    -3.835              -4.405 DivHorloge:inst3|74390:inst|3 
-    Info (332119):    -2.877             -16.831 DivHorloge:inst3|7490:inst10|19 
-    Info (332119):    -1.819              -2.682 DivHorloge:inst3|74390:inst5|31 
-    Info (332119):    -1.326              -1.743 DivHorloge:inst3|74390:inst5|34 
-    Info (332119):    -1.272              -2.060 DivHorloge:inst3|7490:inst8|7 
-    Info (332119):    -0.923              -1.342 DivHorloge:inst3|74390:inst5|7 
-    Info (332119):    -0.737              -1.254 DivHorloge:inst3|74390:inst5|3 
-    Info (332119):    -0.720              -1.121 DivHorloge:inst3|74390:inst3|31 
-    Info (332119):    -0.604              -1.101 DivHorloge:inst3|74390:inst|7 
-    Info (332119):    -0.591              -1.049 DivHorloge:inst3|74390:inst|31 
-    Info (332119):    -0.533              -0.647 DivHorloge:inst3|74390:inst|34 
-    Info (332119):    -0.522              -0.522 DivHorloge:inst3|7490:inst8|19 
-    Info (332119):    -0.514              -0.875 DivHorloge:inst3|74390:inst3|3 
-    Info (332119):    -0.507              -0.833 DivHorloge:inst3|74390:inst3|7 
-    Info (332119):    -0.493              -0.520 DivHorloge:inst3|74390:inst3|34 
+    Info (332119):   -14.590            -479.236 Clock 
+    Info (332119):    -4.400             -33.089 DivHorloge:inst3|7490:inst10|19 
+    Info (332119):    -3.092              -3.601 DivHorloge:inst3|74390:inst|3 
+    Info (332119):    -1.310              -1.815 DivHorloge:inst3|7490:inst8|7 
+    Info (332119):    -1.235              -1.864 DivHorloge:inst3|74390:inst5|34 
+    Info (332119):    -0.931              -1.403 DivHorloge:inst3|74390:inst5|31 
+    Info (332119):    -0.832              -1.345 DivHorloge:inst3|74390:inst|34 
+    Info (332119):    -0.598              -1.008 DivHorloge:inst3|74390:inst3|31 
+    Info (332119):    -0.579              -0.716 DivHorloge:inst3|74390:inst3|34 
+    Info (332119):    -0.552              -0.809 DivHorloge:inst3|74390:inst5|3 
+    Info (332119):    -0.534              -0.534 DivHorloge:inst3|7490:inst8|19 
+    Info (332119):    -0.528              -0.959 DivHorloge:inst3|74390:inst|31 
+    Info (332119):    -0.509              -0.758 DivHorloge:inst3|74390:inst3|7 
+    Info (332119):    -0.460              -0.460 DivHorloge:inst3|74390:inst|7 
+    Info (332119):    -0.449              -0.499 DivHorloge:inst3|74390:inst5|7 
+    Info (332119):    -0.443              -0.876 DivHorloge:inst3|74390:inst3|3 
     Info (332119):     0.298               0.000 D1 
     Info (332119):     0.298               0.000 D2 
     Info (332119):     0.298               0.000 D3 
@@ -1379,15 +1374,17 @@ Info (332146): Worst-case setup slack is -12.631
     Info (332119):     0.298               0.000 DivHorloge:inst3|74390:inst5|6 
     Info (332119):     0.298               0.000 DivHorloge:inst3|74390:inst|33 
     Info (332119):     0.298               0.000 DivHorloge:inst3|74390:inst|6 
-Info (332146): Worst-case hold slack is 0.138
+Info (332146): Worst-case hold slack is 0.075
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):     0.138               0.000 DivHorloge:inst3|74390:inst3|34 
-    Info (332119):     0.236               0.000 DivHorloge:inst3|74390:inst|34 
-    Info (332119):     0.251               0.000 DivHorloge:inst3|74390:inst3|7 
-    Info (332119):     0.339               0.000 Clock 
-    Info (332119):     0.341               0.000 DivHorloge:inst3|7490:inst8|7 
+    Info (332119):     0.075               0.000 DivHorloge:inst3|74390:inst|7 
+    Info (332119):     0.226               0.000 DivHorloge:inst3|74390:inst5|7 
+    Info (332119):     0.257               0.000 DivHorloge:inst3|74390:inst3|34 
+    Info (332119):     0.326               0.000 Clock 
+    Info (332119):     0.344               0.000 DivHorloge:inst3|74390:inst3|7 
     Info (332119):     0.347               0.000 DivHorloge:inst3|74390:inst5|34 
+    Info (332119):     0.348               0.000 DivHorloge:inst3|7490:inst8|7 
+    Info (332119):     0.384               0.000 DivHorloge:inst3|74390:inst|34 
     Info (332119):     0.393               0.000 D1 
     Info (332119):     0.393               0.000 D2 
     Info (332119):     0.393               0.000 D3 
@@ -1401,40 +1398,38 @@ Info (332146): Worst-case hold slack is 0.138
     Info (332119):     0.393               0.000 DivHorloge:inst3|74390:inst5|6 
     Info (332119):     0.393               0.000 DivHorloge:inst3|74390:inst|33 
     Info (332119):     0.393               0.000 DivHorloge:inst3|74390:inst|6 
-    Info (332119):     0.398               0.000 DivHorloge:inst3|74390:inst|31 
-    Info (332119):     0.411               0.000 DivHorloge:inst3|74390:inst|7 
-    Info (332119):     0.514               0.000 DivHorloge:inst3|74390:inst3|3 
-    Info (332119):     0.521               0.000 DivHorloge:inst3|74390:inst3|31 
-    Info (332119):     0.541               0.000 DivHorloge:inst3|74390:inst5|7 
-    Info (332119):     0.559               0.000 DivHorloge:inst3|7490:inst8|19 
-    Info (332119):     0.579               0.000 DivHorloge:inst3|74390:inst|3 
-    Info (332119):     0.580               0.000 DivHorloge:inst3|74390:inst5|3 
-    Info (332119):     0.672               0.000 DivHorloge:inst3|7490:inst10|19 
-    Info (332119):     0.974               0.000 DivHorloge:inst3|74390:inst5|31 
-Info (332146): Worst-case recovery slack is -1.238
+    Info (332119):     0.409               0.000 DivHorloge:inst3|74390:inst3|3 
+    Info (332119):     0.528               0.000 DivHorloge:inst3|74390:inst|31 
+    Info (332119):     0.537               0.000 DivHorloge:inst3|74390:inst3|31 
+    Info (332119):     0.542               0.000 DivHorloge:inst3|74390:inst5|3 
+    Info (332119):     0.566               0.000 DivHorloge:inst3|74390:inst5|31 
+    Info (332119):     0.567               0.000 DivHorloge:inst3|74390:inst|3 
+    Info (332119):     0.570               0.000 DivHorloge:inst3|7490:inst8|19 
+    Info (332119):     0.950               0.000 DivHorloge:inst3|7490:inst10|19 
+Info (332146): Worst-case recovery slack is -0.773
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):    -1.238              -1.238 D4 
-    Info (332119):    -1.099              -1.099 D7 
-    Info (332119):    -1.004              -1.004 D5 
-    Info (332119):    -0.668              -0.668 D6 
-    Info (332119):    -0.602              -0.602 D3 
-    Info (332119):    -0.398              -0.398 D2 
-    Info (332119):    -0.280              -0.280 D1 
-Info (332146): Worst-case removal slack is 0.616
+    Info (332119):    -0.773              -0.773 D7 
+    Info (332119):    -0.433              -0.433 D6 
+    Info (332119):    -0.299              -0.299 D2 
+    Info (332119):    -0.285              -0.285 D1 
+    Info (332119):    -0.281              -0.281 D5 
+    Info (332119):    -0.198              -0.198 D3 
+    Info (332119):    -0.192              -0.192 D4 
+Info (332146): Worst-case removal slack is 0.562
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):     0.616               0.000 D1 
-    Info (332119):     0.708               0.000 D2 
-    Info (332119):     0.974               0.000 D3 
-    Info (332119):     0.995               0.000 D6 
-    Info (332119):     1.359               0.000 D5 
-    Info (332119):     1.439               0.000 D7 
-    Info (332119):     1.603               0.000 D4 
+    Info (332119):     0.562               0.000 D4 
+    Info (332119):     0.590               0.000 D3 
+    Info (332119):     0.644               0.000 D5 
+    Info (332119):     0.679               0.000 D2 
+    Info (332119):     0.682               0.000 D1 
+    Info (332119):     0.801               0.000 D6 
+    Info (332119):     1.178               0.000 D7 
 Info (332146): Worst-case minimum pulse width slack is -3.000
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):    -3.000            -254.137 Clock 
+    Info (332119):    -3.000            -255.540 Clock 
     Info (332119):    -3.000              -4.403 D1 
     Info (332119):    -3.000              -4.403 D2 
     Info (332119):    -3.000              -4.403 D3 
@@ -1470,25 +1465,25 @@ Info (334003): Started post-fitting delay annotation
 Info (334004): Delay annotation completed successfully
 Info (332123): Deriving Clock Uncertainty. Please refer to report_sdc in the Timing Analyzer to see clock uncertainties.
 Critical Warning (332148): Timing requirements not met
-Info (332146): Worst-case setup slack is -11.452
+Info (332146): Worst-case setup slack is -13.130
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):   -11.452            -411.084 Clock 
-    Info (332119):    -3.463              -3.962 DivHorloge:inst3|74390:inst|3 
-    Info (332119):    -2.645             -15.451 DivHorloge:inst3|7490:inst10|19 
-    Info (332119):    -1.611              -2.392 DivHorloge:inst3|74390:inst5|31 
-    Info (332119):    -1.244              -1.464 DivHorloge:inst3|74390:inst5|34 
-    Info (332119):    -1.122              -1.639 DivHorloge:inst3|7490:inst8|7 
-    Info (332119):    -0.844              -1.203 DivHorloge:inst3|74390:inst5|7 
-    Info (332119):    -0.616              -1.058 DivHorloge:inst3|74390:inst5|3 
-    Info (332119):    -0.614              -0.966 DivHorloge:inst3|74390:inst3|31 
-    Info (332119):    -0.525              -0.893 DivHorloge:inst3|74390:inst|31 
-    Info (332119):    -0.488              -0.898 DivHorloge:inst3|74390:inst|7 
-    Info (332119):    -0.450              -0.450 DivHorloge:inst3|7490:inst8|19 
-    Info (332119):    -0.417              -0.476 DivHorloge:inst3|74390:inst|34 
-    Info (332119):    -0.406              -0.701 DivHorloge:inst3|74390:inst3|3 
-    Info (332119):    -0.392              -0.675 DivHorloge:inst3|74390:inst3|7 
-    Info (332119):    -0.389              -0.391 DivHorloge:inst3|74390:inst3|34 
+    Info (332119):   -13.130            -425.157 Clock 
+    Info (332119):    -4.131             -31.086 DivHorloge:inst3|7490:inst10|19 
+    Info (332119):    -2.757              -3.194 DivHorloge:inst3|74390:inst|3 
+    Info (332119):    -1.228              -1.563 DivHorloge:inst3|7490:inst8|7 
+    Info (332119):    -1.145              -1.529 DivHorloge:inst3|74390:inst5|34 
+    Info (332119):    -0.807              -1.215 DivHorloge:inst3|74390:inst5|31 
+    Info (332119):    -0.680              -1.123 DivHorloge:inst3|74390:inst|34 
+    Info (332119):    -0.583              -0.679 DivHorloge:inst3|74390:inst3|34 
+    Info (332119):    -0.490              -0.840 DivHorloge:inst3|74390:inst3|31 
+    Info (332119):    -0.460              -0.460 DivHorloge:inst3|7490:inst8|19 
+    Info (332119):    -0.435              -0.634 DivHorloge:inst3|74390:inst5|3 
+    Info (332119):    -0.421              -0.793 DivHorloge:inst3|74390:inst|31 
+    Info (332119):    -0.413              -0.413 DivHorloge:inst3|74390:inst|7 
+    Info (332119):    -0.408              -0.437 DivHorloge:inst3|74390:inst5|7 
+    Info (332119):    -0.399              -0.600 DivHorloge:inst3|74390:inst3|7 
+    Info (332119):    -0.381              -0.721 DivHorloge:inst3|74390:inst3|3 
     Info (332119):     0.361               0.000 D7 
     Info (332119):     0.361               0.000 DivHorloge:inst3|74390:inst3|33 
     Info (332119):     0.361               0.000 DivHorloge:inst3|74390:inst3|6 
@@ -1502,16 +1497,18 @@ Info (332146): Worst-case setup slack is -11.452
     Info (332119):     0.362               0.000 D4 
     Info (332119):     0.362               0.000 D5 
     Info (332119):     0.362               0.000 D6 
-Info (332146): Worst-case hold slack is 0.143
+Info (332146): Worst-case hold slack is 0.078
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):     0.143               0.000 DivHorloge:inst3|74390:inst3|34 
-    Info (332119):     0.216               0.000 DivHorloge:inst3|74390:inst3|7 
-    Info (332119):     0.216               0.000 DivHorloge:inst3|74390:inst|34 
-    Info (332119):     0.306               0.000 Clock 
-    Info (332119):     0.306               0.000 DivHorloge:inst3|7490:inst8|7 
-    Info (332119):     0.310               0.000 DivHorloge:inst3|74390:inst5|34 
-    Info (332119):     0.353               0.000 DivHorloge:inst3|74390:inst|31 
+    Info (332119):     0.078               0.000 DivHorloge:inst3|74390:inst|7 
+    Info (332119):     0.227               0.000 DivHorloge:inst3|74390:inst5|7 
+    Info (332119):     0.237               0.000 DivHorloge:inst3|74390:inst3|34 
+    Info (332119):     0.293               0.000 Clock 
+    Info (332119):     0.297               0.000 DivHorloge:inst3|74390:inst3|7 
+    Info (332119):     0.311               0.000 DivHorloge:inst3|74390:inst5|34 
+    Info (332119):     0.311               0.000 DivHorloge:inst3|7490:inst8|7 
+    Info (332119):     0.338               0.000 DivHorloge:inst3|74390:inst|34 
+    Info (332119):     0.353               0.000 DivHorloge:inst3|74390:inst3|3 
     Info (332119):     0.354               0.000 D7 
     Info (332119):     0.354               0.000 DivHorloge:inst3|74390:inst3|33 
     Info (332119):     0.354               0.000 DivHorloge:inst3|74390:inst3|6 
@@ -1525,39 +1522,37 @@ Info (332146): Worst-case hold slack is 0.143
     Info (332119):     0.355               0.000 D4 
     Info (332119):     0.355               0.000 D5 
     Info (332119):     0.355               0.000 D6 
-    Info (332119):     0.393               0.000 DivHorloge:inst3|74390:inst|7 
-    Info (332119):     0.442               0.000 DivHorloge:inst3|74390:inst3|3 
-    Info (332119):     0.493               0.000 DivHorloge:inst3|74390:inst3|31 
-    Info (332119):     0.524               0.000 DivHorloge:inst3|7490:inst8|19 
-    Info (332119):     0.530               0.000 DivHorloge:inst3|74390:inst5|7 
-    Info (332119):     0.545               0.000 DivHorloge:inst3|74390:inst5|3 
-    Info (332119):     0.548               0.000 DivHorloge:inst3|74390:inst|3 
-    Info (332119):     0.627               0.000 DivHorloge:inst3|7490:inst10|19 
-    Info (332119):     0.934               0.000 DivHorloge:inst3|74390:inst5|31 
-Info (332146): Worst-case recovery slack is -0.936
+    Info (332119):     0.453               0.000 DivHorloge:inst3|74390:inst|31 
+    Info (332119):     0.489               0.000 DivHorloge:inst3|74390:inst5|3 
+    Info (332119):     0.496               0.000 DivHorloge:inst3|74390:inst3|31 
+    Info (332119):     0.523               0.000 DivHorloge:inst3|74390:inst5|31 
+    Info (332119):     0.531               0.000 DivHorloge:inst3|74390:inst|3 
+    Info (332119):     0.535               0.000 DivHorloge:inst3|7490:inst8|19 
+    Info (332119):     0.882               0.000 DivHorloge:inst3|7490:inst10|19 
+Info (332146): Worst-case recovery slack is -0.626
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):    -0.936              -0.936 D7 
-    Info (332119):    -0.929              -0.929 D4 
-    Info (332119):    -0.707              -0.707 D5 
-    Info (332119):    -0.406              -0.406 D6 
-    Info (332119):    -0.347              -0.347 D3 
-    Info (332119):    -0.162              -0.162 D2 
-    Info (332119):    -0.068              -0.068 D1 
-Info (332146): Worst-case removal slack is 0.400
+    Info (332119):    -0.626              -0.626 D7 
+    Info (332119):    -0.180              -0.180 D6 
+    Info (332119):    -0.075              -0.075 D1 
+    Info (332119):    -0.045              -0.045 D2 
+    Info (332119):    -0.019              -0.019 D5 
+    Info (332119):     0.043               0.000 D3 
+    Info (332119):     0.048               0.000 D4 
+Info (332146): Worst-case removal slack is 0.385
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):     0.400               0.000 D1 
-    Info (332119):     0.527               0.000 D2 
-    Info (332119):     0.783               0.000 D3 
-    Info (332119):     0.785               0.000 D6 
-    Info (332119):     1.143               0.000 D5 
-    Info (332119):     1.332               0.000 D7 
-    Info (332119):     1.378               0.000 D4 
+    Info (332119):     0.385               0.000 D4 
+    Info (332119):     0.420               0.000 D3 
+    Info (332119):     0.457               0.000 D1 
+    Info (332119):     0.477               0.000 D5 
+    Info (332119):     0.505               0.000 D2 
+    Info (332119):     0.618               0.000 D6 
+    Info (332119):     1.094               0.000 D7 
 Info (332146): Worst-case minimum pulse width slack is -3.000
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):    -3.000            -254.137 Clock 
+    Info (332119):    -3.000            -255.540 Clock 
     Info (332119):    -3.000              -4.403 D1 
     Info (332119):    -3.000              -4.403 D2 
     Info (332119):    -3.000              -4.403 D3 
@@ -1591,25 +1586,25 @@ Info (332114): Report Metastability: Found 1 synchronizer chains.
 Info: Analyzing Fast 1200mV 0C Model
 Info (332123): Deriving Clock Uncertainty. Please refer to report_sdc in the Timing Analyzer to see clock uncertainties.
 Critical Warning (332148): Timing requirements not met
-Info (332146): Worst-case setup slack is -4.740
+Info (332146): Worst-case setup slack is -5.496
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):    -4.740            -121.646 Clock 
-    Info (332119):    -1.448              -1.448 DivHorloge:inst3|74390:inst|3 
-    Info (332119):    -1.013              -5.709 DivHorloge:inst3|7490:inst10|19 
-    Info (332119):    -0.529              -0.529 DivHorloge:inst3|74390:inst5|31 
-    Info (332119):    -0.079              -0.079 DivHorloge:inst3|74390:inst5|34 
-    Info (332119):    -0.014              -0.014 DivHorloge:inst3|74390:inst5|3 
-    Info (332119):    -0.014              -0.014 DivHorloge:inst3|7490:inst8|7 
-    Info (332119):     0.009               0.000 DivHorloge:inst3|74390:inst3|31 
-    Info (332119):     0.022               0.000 DivHorloge:inst3|74390:inst5|7 
-    Info (332119):     0.075               0.000 DivHorloge:inst3|74390:inst3|3 
-    Info (332119):     0.100               0.000 DivHorloge:inst3|74390:inst|7 
-    Info (332119):     0.107               0.000 DivHorloge:inst3|74390:inst|31 
-    Info (332119):     0.128               0.000 DivHorloge:inst3|7490:inst8|19 
-    Info (332119):     0.186               0.000 DivHorloge:inst3|74390:inst|34 
+    Info (332119):    -5.496            -130.219 Clock 
+    Info (332119):    -1.608             -11.792 DivHorloge:inst3|7490:inst10|19 
+    Info (332119):    -1.219              -1.219 DivHorloge:inst3|74390:inst|3 
+    Info (332119):    -0.123              -0.123 DivHorloge:inst3|74390:inst5|31 
+    Info (332119):    -0.083              -0.083 DivHorloge:inst3|7490:inst8|7 
+    Info (332119):    -0.045              -0.045 DivHorloge:inst3|74390:inst5|34 
+    Info (332119):     0.041               0.000 DivHorloge:inst3|74390:inst3|31 
+    Info (332119):     0.064               0.000 DivHorloge:inst3|74390:inst5|3 
+    Info (332119):     0.065               0.000 DivHorloge:inst3|74390:inst|31 
+    Info (332119):     0.099               0.000 DivHorloge:inst3|74390:inst|34 
+    Info (332119):     0.111               0.000 DivHorloge:inst3|74390:inst3|3 
+    Info (332119):     0.120               0.000 DivHorloge:inst3|7490:inst8|19 
+    Info (332119):     0.131               0.000 DivHorloge:inst3|74390:inst3|34 
+    Info (332119):     0.179               0.000 DivHorloge:inst3|74390:inst|7 
+    Info (332119):     0.190               0.000 DivHorloge:inst3|74390:inst5|7 
     Info (332119):     0.207               0.000 DivHorloge:inst3|74390:inst3|7 
-    Info (332119):     0.243               0.000 DivHorloge:inst3|74390:inst3|34 
     Info (332119):     0.693               0.000 D7 
     Info (332119):     0.693               0.000 DivHorloge:inst3|74390:inst3|33 
     Info (332119):     0.693               0.000 DivHorloge:inst3|74390:inst3|6 
@@ -1623,21 +1618,17 @@ Info (332146): Worst-case setup slack is -4.740
     Info (332119):     0.694               0.000 D4 
     Info (332119):     0.694               0.000 D5 
     Info (332119):     0.694               0.000 D6 
-Info (332146): Worst-case hold slack is -0.012
+Info (332146): Worst-case hold slack is -0.007
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):    -0.012              -0.012 DivHorloge:inst3|74390:inst3|34 
-    Info (332119):     0.039               0.000 DivHorloge:inst3|74390:inst3|7 
-    Info (332119):     0.071               0.000 DivHorloge:inst3|74390:inst|34 
-    Info (332119):     0.090               0.000 DivHorloge:inst3|74390:inst|7 
-    Info (332119):     0.144               0.000 DivHorloge:inst3|74390:inst3|31 
-    Info (332119):     0.146               0.000 Clock 
-    Info (332119):     0.146               0.000 DivHorloge:inst3|7490:inst8|7 
-    Info (332119):     0.150               0.000 DivHorloge:inst3|74390:inst5|34 
-    Info (332119):     0.159               0.000 DivHorloge:inst3|74390:inst|3 
-    Info (332119):     0.162               0.000 DivHorloge:inst3|74390:inst5|7 
-    Info (332119):     0.164               0.000 DivHorloge:inst3|74390:inst|31 
-    Info (332119):     0.168               0.000 DivHorloge:inst3|7490:inst8|19 
+    Info (332119):    -0.007              -0.007 DivHorloge:inst3|74390:inst|7 
+    Info (332119):     0.067               0.000 DivHorloge:inst3|74390:inst5|7 
+    Info (332119):     0.076               0.000 DivHorloge:inst3|74390:inst3|34 
+    Info (332119):     0.079               0.000 DivHorloge:inst3|74390:inst3|7 
+    Info (332119):     0.127               0.000 DivHorloge:inst3|74390:inst|34 
+    Info (332119):     0.144               0.000 Clock 
+    Info (332119):     0.151               0.000 DivHorloge:inst3|74390:inst5|34 
+    Info (332119):     0.151               0.000 DivHorloge:inst3|7490:inst8|7 
     Info (332119):     0.169               0.000 D7 
     Info (332119):     0.169               0.000 DivHorloge:inst3|74390:inst3|33 
     Info (332119):     0.169               0.000 DivHorloge:inst3|74390:inst3|6 
@@ -1651,41 +1642,45 @@ Info (332146): Worst-case hold slack is -0.012
     Info (332119):     0.170               0.000 D4 
     Info (332119):     0.170               0.000 D5 
     Info (332119):     0.170               0.000 D6 
-    Info (332119):     0.181               0.000 DivHorloge:inst3|74390:inst5|3 
-    Info (332119):     0.191               0.000 DivHorloge:inst3|74390:inst3|3 
-    Info (332119):     0.238               0.000 DivHorloge:inst3|7490:inst10|19 
-    Info (332119):     0.290               0.000 DivHorloge:inst3|74390:inst5|31 
-Info (332146): Worst-case recovery slack is -0.298
+    Info (332119):     0.173               0.000 DivHorloge:inst3|74390:inst5|3 
+    Info (332119):     0.174               0.000 DivHorloge:inst3|74390:inst3|31 
+    Info (332119):     0.176               0.000 DivHorloge:inst3|74390:inst|3 
+    Info (332119):     0.176               0.000 DivHorloge:inst3|7490:inst8|19 
+    Info (332119):     0.181               0.000 DivHorloge:inst3|74390:inst3|3 
+    Info (332119):     0.187               0.000 DivHorloge:inst3|74390:inst|31 
+    Info (332119):     0.193               0.000 DivHorloge:inst3|74390:inst5|31 
+    Info (332119):     0.381               0.000 DivHorloge:inst3|7490:inst10|19 
+Info (332146): Worst-case recovery slack is 0.079
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):    -0.298              -0.298 D4 
-    Info (332119):    -0.191              -0.191 D5 
-    Info (332119):    -0.104              -0.104 D7 
-    Info (332119):    -0.026              -0.026 D6 
-    Info (332119):     0.010               0.000 D3 
-    Info (332119):     0.118               0.000 D2 
-    Info (332119):     0.129               0.000 D1 
-Info (332146): Worst-case removal slack is 0.493
+    Info (332119):     0.079               0.000 D7 
+    Info (332119):     0.132               0.000 D6 
+    Info (332119):     0.185               0.000 D5 
+    Info (332119):     0.193               0.000 D1 
+    Info (332119):     0.207               0.000 D2 
+    Info (332119):     0.218               0.000 D4 
+    Info (332119):     0.246               0.000 D3 
+Info (332146): Worst-case removal slack is 0.416
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):     0.493               0.000 D1 
-    Info (332119):     0.537               0.000 D2 
-    Info (332119):     0.662               0.000 D3 
-    Info (332119):     0.691               0.000 D6 
-    Info (332119):     0.768               0.000 D7 
-    Info (332119):     0.826               0.000 D5 
-    Info (332119):     0.940               0.000 D4 
+    Info (332119):     0.416               0.000 D3 
+    Info (332119):     0.440               0.000 D2 
+    Info (332119):     0.447               0.000 D1 
+    Info (332119):     0.447               0.000 D4 
+    Info (332119):     0.455               0.000 D5 
+    Info (332119):     0.528               0.000 D6 
+    Info (332119):     0.598               0.000 D7 
 Info (332146): Worst-case minimum pulse width slack is -3.000
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):    -3.000            -188.640 Clock 
-    Info (332119):    -3.000              -4.251 D1 
-    Info (332119):    -3.000              -4.186 D2 
-    Info (332119):    -3.000              -4.167 D3 
+    Info (332119):    -3.000            -189.443 Clock 
+    Info (332119):    -3.000              -4.187 D5 
+    Info (332119):    -3.000              -4.180 D3 
+    Info (332119):    -3.000              -4.180 D4 
+    Info (332119):    -3.000              -4.176 D1 
+    Info (332119):    -3.000              -4.174 D2 
     Info (332119):    -3.000              -4.165 D7 
-    Info (332119):    -3.000              -4.159 D5 
-    Info (332119):    -3.000              -4.156 D4 
-    Info (332119):    -3.000              -4.141 D6 
+    Info (332119):    -3.000              -4.160 D6 
     Info (332119):    -1.000              -8.000 DivHorloge:inst3|7490:inst10|19 
     Info (332119):    -1.000              -3.000 DivHorloge:inst3|74390:inst5|34 
     Info (332119):    -1.000              -3.000 DivHorloge:inst3|7490:inst8|7 
@@ -1708,18 +1703,13 @@ Info (332146): Worst-case minimum pulse width slack is -3.000
     Info (332119):    -1.000              -1.000 DivHorloge:inst3|74390:inst|6 
     Info (332119):    -1.000              -1.000 DivHorloge:inst3|7490:inst8|19 
 Info (332114): Report Metastability: Found 1 synchronizer chains.
-    Info (332114): The design MTBF is not calculated because there are no specified synchronizers in the design.
-    Info (332114): Number of Synchronizer Chains Found: 1
-    Info (332114): Shortest Synchronizer Chain: 3 Registers
-    Info (332114): Fraction of Chains for which MTBFs Could Not be Calculated: 1.000
-    Info (332114): Worst Case Available Settling Time: 1.691 ns
-    Info (332114): 
+    Info (332114): Design MTBF is not calculated because the design doesn't meet its timing requirements.
 Info (332102): Design is not fully constrained for setup requirements
 Info (332102): Design is not fully constrained for hold requirements
 Info: Quartus Prime Timing Analyzer was successful. 0 errors, 5 warnings
-    Info: Peak virtual memory: 4833 megabytes
-    Info: Processing ended: Thu Nov 02 18:15:00 2023
-    Info: Elapsed time: 00:00:03
+    Info: Peak virtual memory: 4835 megabytes
+    Info: Processing ended: Fri Nov 03 14:00:55 2023
+    Info: Elapsed time: 00:00:04
     Info: Total CPU time (on all processors): 00:00:02
 
 
