@@ -118,6 +118,24 @@ set_location_assignment PIN_W13 -to D4
 set_location_assignment PIN_W12 -to D5
 set_location_assignment PIN_AB13 -to D6
 set_location_assignment PIN_AB12 -to D7
+set_location_assignment PIN_F18 -to HEX40
+set_location_assignment PIN_E20 -to HEX41
+set_location_assignment PIN_E19 -to HEX42
+set_location_assignment PIN_J18 -to HEX43
+set_location_assignment PIN_H19 -to HEX44
+set_location_assignment PIN_F19 -to HEX45
+set_location_assignment PIN_F20 -to HEX46
+set_location_assignment PIN_J20 -to HEX50
+set_location_assignment PIN_K20 -to HEX51
+set_location_assignment PIN_L18 -to HEX52
+set_location_assignment PIN_N18 -to HEX53
+set_location_assignment PIN_M20 -to HEX54
+set_location_assignment PIN_N19 -to HEX55
+set_location_assignment PIN_N20 -to HEX56
+set_global_assignment -name SMF_FILE AlarmeClock.smf
+set_global_assignment -name BDF_FILE Div2Hz05s.bdf
+set_global_assignment -name VHDL_FILE AffichagePorte.vhd
+set_global_assignment -name SMF_FILE SEVSEG_ETAGE.smf
 set_global_assignment -name VHDL_FILE ETAGE.vhd
 set_global_assignment -name SMF_FILE ETAGE.smf
 set_global_assignment -name VHDL_FILE compultrason.vhd
@@ -125,6 +143,7 @@ set_global_assignment -name SMF_FILE AlarMaintenance.smf
 set_global_assignment -name BDF_FILE DivHorloge.bdf
 set_global_assignment -name BDF_FILE "DivHorloge Robin.bdf"
 set_global_assignment -name BDF_FILE Quartus.bdf
+set_global_assignment -name SMF_FILE AffichagePorte.smf
 set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
 set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
 set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top

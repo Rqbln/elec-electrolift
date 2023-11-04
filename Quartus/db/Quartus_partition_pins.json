@@ -112,6 +112,38 @@
 					"strict" : false
 				},
 				{
+					"name" : "HEX40",
+					"strict" : false
+				},
+				{
+					"name" : "HEX43",
+					"strict" : false
+				},
+				{
+					"name" : "HEX44",
+					"strict" : false
+				},
+				{
+					"name" : "HEX45",
+					"strict" : false
+				},
+				{
+					"name" : "HEX50",
+					"strict" : false
+				},
+				{
+					"name" : "HEX51",
+					"strict" : false
+				},
+				{
+					"name" : "HEX52",
+					"strict" : false
+				},
+				{
+					"name" : "HEX53",
+					"strict" : false
+				},
+				{
 					"name" : "o_Sev_seg_1[6]",
 					"strict" : false
 				},
@@ -172,18 +204,6 @@
 					"strict" : false
 				},
 				{
-					"name" : "SW0",
-					"strict" : false
-				},
-				{
-					"name" : "SW1",
-					"strict" : false
-				},
-				{
-					"name" : "SW2",
-					"strict" : false
-				},
-				{
 					"name" : "SW3",
 					"strict" : false
 				},
@@ -192,19 +212,23 @@
 					"strict" : false
 				},
 				{
-					"name" : "SW5",
-					"strict" : false
-				},
-				{
 					"name" : "SW4",
 					"strict" : false
 				},
 				{
-					"name" : "KEY0",
+					"name" : "SW5",
 					"strict" : false
 				},
 				{
-					"name" : "KEY1",
+					"name" : "SW2",
+					"strict" : false
+				},
+				{
+					"name" : "SW0",
+					"strict" : false
+				},
+				{
+					"name" : "SW1",
 					"strict" : false
 				},
 				{
@@ -233,6 +257,14 @@
 				},
 				{
 					"name" : "D7",
+					"strict" : false
+				},
+				{
+					"name" : "KEY0",
+					"strict" : false
+				},
+				{
+					"name" : "KEY1",
 					"strict" : false
 				},
 				{

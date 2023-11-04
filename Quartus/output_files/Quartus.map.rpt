@@ -1,5 +1,5 @@
 Analysis & Synthesis report for Quartus
-Fri Nov 03 14:00:29 2023
+Sat Nov 04 16:11:34 2023
 Quartus Prime Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
 
 
@@ -17,21 +17,24 @@ Quartus Prime Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
   9. State Machine - |Quartus|binary_to_bcd:inst10|state
  10. State Machine - |Quartus|seven_seg_dispayer:inst11|state
  11. State Machine - |Quartus|SEVSEG_ETAGE:inst14|fstate
- 12. State Machine - |Quartus|Maintenance:inst|fstate
- 13. State Machine - |Quartus|counter:inst9|state
+ 12. State Machine - |Quartus|counter:inst9|state
+ 13. State Machine - |Quartus|AffichagePorte:inst42|fstate
  14. State Machine - |Quartus|PRESIDENT:pres|fstate
- 15. State Machine - |Quartus|ETAGE:inst2|fstate
- 16. Registers Removed During Synthesis
- 17. Removed Registers Triggering Further Register Optimizations
- 18. General Register Statistics
- 19. Inverted Register Statistics
- 20. Parameter Settings for User Entity Instance: compultrason:inst4
- 21. Parameter Settings for User Entity Instance: measurement_cal:inst1
- 22. Parameter Settings for Inferred Entity Instance: compultrason:inst4|lpm_mult:Mult0
- 23. lpm_mult Parameter Settings by Entity Instance
- 24. Post-Synthesis Netlist Statistics for Top Partition
- 25. Elapsed Time Per Partition
- 26. Analysis & Synthesis Messages
+ 15. State Machine - |Quartus|ETAGE:inst47|fstate
+ 16. State Machine - |Quartus|Alarme:inst45|AlarmeClock:ALARM|fstate
+ 17. State Machine - |Quartus|Maintenance:inst|fstate
+ 18. State Machine - |Quartus|AlarMaintenance:inst44|fstate
+ 19. Registers Removed During Synthesis
+ 20. Removed Registers Triggering Further Register Optimizations
+ 21. General Register Statistics
+ 22. Inverted Register Statistics
+ 23. Parameter Settings for User Entity Instance: compultrason:inst4
+ 24. Parameter Settings for User Entity Instance: measurement_cal:inst1
+ 25. Parameter Settings for Inferred Entity Instance: compultrason:inst4|lpm_mult:Mult0
+ 26. lpm_mult Parameter Settings by Entity Instance
+ 27. Post-Synthesis Netlist Statistics for Top Partition
+ 28. Elapsed Time Per Partition
+ 29. Analysis & Synthesis Messages
 
 
 
@@ -58,16 +61,16 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Fri Nov 03 14:00:29 2023       ;
+; Analysis & Synthesis Status        ; Successful - Sat Nov 04 16:11:34 2023       ;
 ; Quartus Prime Version              ; 20.1.0 Build 711 06/05/2020 SJ Lite Edition ;
 ; Revision Name                      ; Quartus                                     ;
 ; Top-level Entity Name              ; Quartus                                     ;
 ; Family                             ; MAX 10                                      ;
-; Total logic elements               ; 549                                         ;
-;     Total combinational functions  ; 506                                         ;
-;     Dedicated logic registers      ; 224                                         ;
-; Total registers                    ; 224                                         ;
-; Total pins                         ; 59                                          ;
+; Total logic elements               ; 635                                         ;
+;     Total combinational functions  ; 592                                         ;
+;     Dedicated logic registers      ; 292                                         ;
+; Total registers                    ; 292                                         ;
+; Total pins                         ; 73                                          ;
 ; Total virtual pins                 ; 0                                           ;
 ; Total memory bits                  ; 0                                           ;
 ; Embedded Multiplier 9-bit elements ; 8                                           ;
@@ -186,34 +189,38 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------+-------------+
 
 
-+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                                                                                          ;
-+----------------------------------+-----------------+------------------------------------+-----------------------------------------------------------------------------------------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type                          ; File Name with Absolute Path                                                                                                ; Library ;
-+----------------------------------+-----------------+------------------------------------+-----------------------------------------------------------------------------------------------------------------------------+---------+
-; ETAGE.vhd                        ; yes             ; User VHDL File                     ; C:/Users/tomgo/Documents/Electronique 2 annee/Projet/Projet semestrielle S1/elec-electrolift/Quartus/ETAGE.vhd              ;         ;
-; compultrason.vhd                 ; yes             ; User VHDL File                     ; C:/Users/tomgo/Documents/Electronique 2 annee/Projet/Projet semestrielle S1/elec-electrolift/Quartus/compultrason.vhd       ;         ;
-; DivHorloge.bdf                   ; yes             ; User Block Diagram/Schematic File  ; C:/Users/tomgo/Documents/Electronique 2 annee/Projet/Projet semestrielle S1/elec-electrolift/Quartus/DivHorloge.bdf         ;         ;
-; Quartus.bdf                      ; yes             ; User Block Diagram/Schematic File  ; C:/Users/tomgo/Documents/Electronique 2 annee/Projet/Projet semestrielle S1/elec-electrolift/Quartus/Quartus.bdf            ;         ;
-; trigger_generator.vhd            ; yes             ; Auto-Found VHDL File               ; C:/Users/tomgo/Documents/Electronique 2 annee/Projet/Projet semestrielle S1/elec-electrolift/Quartus/trigger_generator.vhd  ;         ;
-; 7490.bdf                         ; yes             ; Megafunction                       ; c:/intelfpga_lite/20.1/quartus/libraries/others/maxplus2/7490.bdf                                                           ;         ;
-; 74390.bdf                        ; yes             ; Megafunction                       ; c:/intelfpga_lite/20.1/quartus/libraries/others/maxplus2/74390.bdf                                                          ;         ;
-; president.vhd                    ; yes             ; Auto-Found VHDL File               ; C:/Users/tomgo/Documents/Electronique 2 annee/Projet/Projet semestrielle S1/elec-electrolift/Quartus/president.vhd          ;         ;
-; counter.vhd                      ; yes             ; Auto-Found VHDL File               ; C:/Users/tomgo/Documents/Electronique 2 annee/Projet/Projet semestrielle S1/elec-electrolift/Quartus/counter.vhd            ;         ;
-; sm2.vhd                          ; yes             ; Auto-Found VHDL File               ; C:/Users/tomgo/Documents/Electronique 2 annee/Projet/Projet semestrielle S1/elec-electrolift/Quartus/sm2.vhd                ;         ;
-; maintenance.vhd                  ; yes             ; Auto-Found VHDL File               ; C:/Users/tomgo/Documents/Electronique 2 annee/Projet/Projet semestrielle S1/elec-electrolift/Quartus/maintenance.vhd        ;         ;
-; sevseg_etage.vhd                 ; yes             ; Auto-Found VHDL File               ; C:/Users/tomgo/Documents/Electronique 2 annee/Projet/Projet semestrielle S1/elec-electrolift/Quartus/sevseg_etage.vhd       ;         ;
-; seven_seg_dispayer.vhd           ; yes             ; Auto-Found VHDL File               ; C:/Users/tomgo/Documents/Electronique 2 annee/Projet/Projet semestrielle S1/elec-electrolift/Quartus/seven_seg_dispayer.vhd ;         ;
-; binary_to_bcd.vhd                ; yes             ; Auto-Found VHDL File               ; C:/Users/tomgo/Documents/Electronique 2 annee/Projet/Projet semestrielle S1/elec-electrolift/Quartus/binary_to_bcd.vhd      ;         ;
-; measurement_cal.vhd              ; yes             ; Auto-Found VHDL File               ; C:/Users/tomgo/Documents/Electronique 2 annee/Projet/Projet semestrielle S1/elec-electrolift/Quartus/measurement_cal.vhd    ;         ;
-; lpm_mult.tdf                     ; yes             ; Megafunction                       ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/lpm_mult.tdf                                                         ;         ;
-; aglobal201.inc                   ; yes             ; Megafunction                       ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/aglobal201.inc                                                       ;         ;
-; lpm_add_sub.inc                  ; yes             ; Megafunction                       ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/lpm_add_sub.inc                                                      ;         ;
-; multcore.inc                     ; yes             ; Megafunction                       ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/multcore.inc                                                         ;         ;
-; bypassff.inc                     ; yes             ; Megafunction                       ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/bypassff.inc                                                         ;         ;
-; altshift.inc                     ; yes             ; Megafunction                       ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/altshift.inc                                                         ;         ;
-; db/mult_prs.tdf                  ; yes             ; Auto-Generated Megafunction        ; C:/Users/tomgo/Documents/Electronique 2 annee/Projet/Projet semestrielle S1/elec-electrolift/Quartus/db/mult_prs.tdf        ;         ;
-+----------------------------------+-----------------+------------------------------------+-----------------------------------------------------------------------------------------------------------------------------+---------+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                                                                                ;
++----------------------------------+-----------------+------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type                                ; File Name with Absolute Path                                                                                                ; Library ;
++----------------------------------+-----------------+------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------+---------+
+; AffichagePorte.vhd               ; yes             ; User VHDL File                           ; C:/Users/tomgo/Documents/Electronique 2 annee/Projet/Projet semestrielle S1/elec-electrolift/Quartus/AffichagePorte.vhd     ;         ;
+; ETAGE.vhd                        ; yes             ; User VHDL File                           ; C:/Users/tomgo/Documents/Electronique 2 annee/Projet/Projet semestrielle S1/elec-electrolift/Quartus/ETAGE.vhd              ;         ;
+; compultrason.vhd                 ; yes             ; User VHDL File                           ; C:/Users/tomgo/Documents/Electronique 2 annee/Projet/Projet semestrielle S1/elec-electrolift/Quartus/compultrason.vhd       ;         ;
+; DivHorloge.bdf                   ; yes             ; User Block Diagram/Schematic File        ; C:/Users/tomgo/Documents/Electronique 2 annee/Projet/Projet semestrielle S1/elec-electrolift/Quartus/DivHorloge.bdf         ;         ;
+; Quartus.bdf                      ; yes             ; User Block Diagram/Schematic File        ; C:/Users/tomgo/Documents/Electronique 2 annee/Projet/Projet semestrielle S1/elec-electrolift/Quartus/Quartus.bdf            ;         ;
+; trigger_generator.vhd            ; yes             ; Auto-Found VHDL File                     ; C:/Users/tomgo/Documents/Electronique 2 annee/Projet/Projet semestrielle S1/elec-electrolift/Quartus/trigger_generator.vhd  ;         ;
+; alarmaintenance.vhd              ; yes             ; Auto-Found VHDL File                     ; C:/Users/tomgo/Documents/Electronique 2 annee/Projet/Projet semestrielle S1/elec-electrolift/Quartus/alarmaintenance.vhd    ;         ;
+; maintenance.vhd                  ; yes             ; Auto-Found VHDL File                     ; C:/Users/tomgo/Documents/Electronique 2 annee/Projet/Projet semestrielle S1/elec-electrolift/Quartus/maintenance.vhd        ;         ;
+; alarme.bdf                       ; yes             ; Auto-Found Block Diagram/Schematic File  ; C:/Users/tomgo/Documents/Electronique 2 annee/Projet/Projet semestrielle S1/elec-electrolift/Quartus/alarme.bdf             ;         ;
+; alarmeclock.vhd                  ; yes             ; Auto-Found VHDL File                     ; C:/Users/tomgo/Documents/Electronique 2 annee/Projet/Projet semestrielle S1/elec-electrolift/Quartus/alarmeclock.vhd        ;         ;
+; divhorloge_enable.bdf            ; yes             ; Auto-Found Block Diagram/Schematic File  ; C:/Users/tomgo/Documents/Electronique 2 annee/Projet/Projet semestrielle S1/elec-electrolift/Quartus/divhorloge_enable.bdf  ;         ;
+; 7490.bdf                         ; yes             ; Megafunction                             ; c:/intelfpga_lite/20.1/quartus/libraries/others/maxplus2/7490.bdf                                                           ;         ;
+; 74390.bdf                        ; yes             ; Megafunction                             ; c:/intelfpga_lite/20.1/quartus/libraries/others/maxplus2/74390.bdf                                                          ;         ;
+; president.vhd                    ; yes             ; Auto-Found VHDL File                     ; C:/Users/tomgo/Documents/Electronique 2 annee/Projet/Projet semestrielle S1/elec-electrolift/Quartus/president.vhd          ;         ;
+; counter.vhd                      ; yes             ; Auto-Found VHDL File                     ; C:/Users/tomgo/Documents/Electronique 2 annee/Projet/Projet semestrielle S1/elec-electrolift/Quartus/counter.vhd            ;         ;
+; sevseg_etage.vhd                 ; yes             ; Auto-Found VHDL File                     ; C:/Users/tomgo/Documents/Electronique 2 annee/Projet/Projet semestrielle S1/elec-electrolift/Quartus/sevseg_etage.vhd       ;         ;
+; seven_seg_dispayer.vhd           ; yes             ; Auto-Found VHDL File                     ; C:/Users/tomgo/Documents/Electronique 2 annee/Projet/Projet semestrielle S1/elec-electrolift/Quartus/seven_seg_dispayer.vhd ;         ;
+; binary_to_bcd.vhd                ; yes             ; Auto-Found VHDL File                     ; C:/Users/tomgo/Documents/Electronique 2 annee/Projet/Projet semestrielle S1/elec-electrolift/Quartus/binary_to_bcd.vhd      ;         ;
+; measurement_cal.vhd              ; yes             ; Auto-Found VHDL File                     ; C:/Users/tomgo/Documents/Electronique 2 annee/Projet/Projet semestrielle S1/elec-electrolift/Quartus/measurement_cal.vhd    ;         ;
+; lpm_mult.tdf                     ; yes             ; Megafunction                             ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/lpm_mult.tdf                                                         ;         ;
+; aglobal201.inc                   ; yes             ; Megafunction                             ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/aglobal201.inc                                                       ;         ;
+; lpm_add_sub.inc                  ; yes             ; Megafunction                             ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/lpm_add_sub.inc                                                      ;         ;
+; multcore.inc                     ; yes             ; Megafunction                             ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/multcore.inc                                                         ;         ;
+; bypassff.inc                     ; yes             ; Megafunction                             ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/bypassff.inc                                                         ;         ;
+; altshift.inc                     ; yes             ; Megafunction                             ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/altshift.inc                                                         ;         ;
+; db/mult_prs.tdf                  ; yes             ; Auto-Generated Megafunction              ; C:/Users/tomgo/Documents/Electronique 2 annee/Projet/Projet semestrielle S1/elec-electrolift/Quartus/db/mult_prs.tdf        ;         ;
++----------------------------------+-----------------+------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------+---------+
 
 
 +-----------------------------------------------------------+
@@ -221,30 +228,30 @@ https://fpgasoftware.intel.com/eula.
 +---------------------------------------------+-------------+
 ; Resource                                    ; Usage       ;
 +---------------------------------------------+-------------+
-; Estimated Total logic elements              ; 549         ;
+; Estimated Total logic elements              ; 635         ;
 ;                                             ;             ;
-; Total combinational functions               ; 506         ;
+; Total combinational functions               ; 592         ;
 ; Logic element usage by number of LUT inputs ;             ;
-;     -- 4 input functions                    ; 227         ;
-;     -- 3 input functions                    ; 133         ;
-;     -- <=2 input functions                  ; 146         ;
+;     -- 4 input functions                    ; 235         ;
+;     -- 3 input functions                    ; 142         ;
+;     -- <=2 input functions                  ; 215         ;
 ;                                             ;             ;
 ; Logic elements by mode                      ;             ;
-;     -- normal mode                          ; 366         ;
+;     -- normal mode                          ; 452         ;
 ;     -- arithmetic mode                      ; 140         ;
 ;                                             ;             ;
-; Total registers                             ; 224         ;
-;     -- Dedicated logic registers            ; 224         ;
+; Total registers                             ; 292         ;
+;     -- Dedicated logic registers            ; 292         ;
 ;     -- I/O registers                        ; 0           ;
 ;                                             ;             ;
-; I/O pins                                    ; 59          ;
+; I/O pins                                    ; 73          ;
 ;                                             ;             ;
 ; Embedded Multiplier 9-bit elements          ; 8           ;
 ;                                             ;             ;
 ; Maximum fan-out node                        ; Clock~input ;
-; Maximum fan-out                             ; 180         ;
-; Total fan-out                               ; 2257        ;
-; Average fan-out                             ; 2.64        ;
+; Maximum fan-out                             ; 188         ;
+; Total fan-out                               ; 2575        ;
+; Average fan-out                             ; 2.48        ;
 +---------------------------------------------+-------------+
 
 
@@ -253,18 +260,32 @@ https://fpgasoftware.intel.com/eula.
 +------------------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+--------------------------------------------------------------------+--------------------+--------------+
 ; Compilation Hierarchy Node         ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; UFM Blocks ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; ADC blocks ; Full Hierarchy Name                                                ; Entity Name        ; Library Name ;
 +------------------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+--------------------------------------------------------------------+--------------------+--------------+
-; |Quartus                           ; 506 (28)            ; 224 (10)                  ; 0           ; 0          ; 8            ; 0       ; 4         ; 59   ; 0            ; 0          ; |Quartus                                                           ; Quartus            ; work         ;
+; |Quartus                           ; 592 (27)            ; 292 (10)                  ; 0           ; 0          ; 8            ; 0       ; 4         ; 73   ; 0            ; 0          ; |Quartus                                                           ; Quartus            ; work         ;
+;    |74390:inst13|                  ; 10 (10)             ; 8 (8)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |Quartus|74390:inst13                                              ; 74390              ; work         ;
+;    |74390:inst32|                  ; 10 (10)             ; 8 (8)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |Quartus|74390:inst32                                              ; 74390              ; work         ;
+;    |74390:inst33|                  ; 10 (10)             ; 8 (8)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |Quartus|74390:inst33                                              ; 74390              ; work         ;
+;    |7490:inst35|                   ; 3 (3)               ; 3 (3)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |Quartus|7490:inst35                                               ; 7490               ; work         ;
+;    |7490:inst37|                   ; 3 (3)               ; 3 (3)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |Quartus|7490:inst37                                               ; 7490               ; work         ;
+;    |AffichagePorte:inst42|         ; 2 (2)               ; 2 (2)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |Quartus|AffichagePorte:inst42                                     ; AffichagePorte     ; work         ;
+;    |AlarMaintenance:inst44|        ; 5 (5)               ; 4 (4)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |Quartus|AlarMaintenance:inst44                                    ; AlarMaintenance    ; work         ;
+;    |Alarme:inst45|                 ; 40 (0)              ; 33 (0)                    ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |Quartus|Alarme:inst45                                             ; Alarme             ; work         ;
+;       |AlarmeClock:ALARM|          ; 2 (2)               ; 2 (2)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |Quartus|Alarme:inst45|AlarmeClock:ALARM                           ; AlarmeClock        ; work         ;
+;       |DivHorloge_enable:DIVENA|   ; 38 (1)              ; 31 (0)                    ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |Quartus|Alarme:inst45|DivHorloge_enable:DIVENA                    ; DivHorloge_enable  ; work         ;
+;          |74390:inst3|             ; 10 (10)             ; 8 (8)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |Quartus|Alarme:inst45|DivHorloge_enable:DIVENA|74390:inst3        ; 74390              ; work         ;
+;          |74390:inst5|             ; 10 (10)             ; 8 (8)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |Quartus|Alarme:inst45|DivHorloge_enable:DIVENA|74390:inst5        ; 74390              ; work         ;
+;          |74390:inst|              ; 10 (10)             ; 8 (8)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |Quartus|Alarme:inst45|DivHorloge_enable:DIVENA|74390:inst         ; 74390              ; work         ;
+;          |7490:inst10|             ; 3 (3)               ; 3 (3)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |Quartus|Alarme:inst45|DivHorloge_enable:DIVENA|7490:inst10        ; 7490               ; work         ;
+;          |7490:inst8|              ; 4 (4)               ; 4 (4)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |Quartus|Alarme:inst45|DivHorloge_enable:DIVENA|7490:inst8         ; 7490               ; work         ;
 ;    |DivHorloge:inst3|              ; 37 (0)              ; 31 (0)                    ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |Quartus|DivHorloge:inst3                                          ; DivHorloge         ; work         ;
 ;       |74390:inst3|                ; 10 (10)             ; 8 (8)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |Quartus|DivHorloge:inst3|74390:inst3                              ; 74390              ; work         ;
 ;       |74390:inst5|                ; 10 (10)             ; 8 (8)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |Quartus|DivHorloge:inst3|74390:inst5                              ; 74390              ; work         ;
 ;       |74390:inst|                 ; 10 (10)             ; 8 (8)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |Quartus|DivHorloge:inst3|74390:inst                               ; 74390              ; work         ;
 ;       |7490:inst10|                ; 3 (3)               ; 3 (3)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |Quartus|DivHorloge:inst3|7490:inst10                              ; 7490               ; work         ;
 ;       |7490:inst8|                 ; 4 (4)               ; 4 (4)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |Quartus|DivHorloge:inst3|7490:inst8                               ; 7490               ; work         ;
-;    |ETAGE:inst2|                   ; 46 (46)             ; 8 (8)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |Quartus|ETAGE:inst2                                               ; ETAGE              ; work         ;
+;    |ETAGE:inst47|                  ; 51 (51)             ; 8 (8)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |Quartus|ETAGE:inst47                                              ; ETAGE              ; work         ;
 ;    |Maintenance:inst|              ; 6 (6)               ; 6 (6)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |Quartus|Maintenance:inst                                          ; Maintenance        ; work         ;
 ;    |PRESIDENT:pres|                ; 14 (14)             ; 12 (12)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |Quartus|PRESIDENT:pres                                            ; PRESIDENT          ; work         ;
 ;    |SEVSEG_ETAGE:inst14|           ; 20 (20)             ; 8 (8)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |Quartus|SEVSEG_ETAGE:inst14                                       ; SEVSEG_ETAGE       ; work         ;
-;    |SM2:BUZZ|                      ; 1 (1)               ; 1 (1)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |Quartus|SM2:BUZZ                                                  ; SM2                ; work         ;
 ;    |binary_to_bcd:inst10|          ; 130 (130)           ; 25 (25)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |Quartus|binary_to_bcd:inst10                                      ; binary_to_bcd      ; work         ;
 ;    |compultrason:inst4|            ; 101 (29)            ; 1 (1)                     ; 0           ; 0          ; 8            ; 0       ; 4         ; 0    ; 0            ; 0          ; |Quartus|compultrason:inst4                                        ; compultrason       ; work         ;
 ;       |lpm_mult:Mult0|             ; 72 (0)              ; 0 (0)                     ; 0           ; 0          ; 8            ; 0       ; 4         ; 0    ; 0            ; 0          ; |Quartus|compultrason:inst4|lpm_mult:Mult0                         ; lpm_mult           ; work         ;
@@ -337,21 +358,6 @@ Encoding Type:  One-Hot
 
 
 Encoding Type:  One-Hot
-+---------------------------------------------------------------------------------------------------------------+
-; State Machine - |Quartus|Maintenance:inst|fstate                                                              ;
-+---------------+---------------+---------------+---------------+---------------+---------------+---------------+
-; Name          ; fstate.state6 ; fstate.state3 ; fstate.state2 ; fstate.state4 ; fstate.state5 ; fstate.state1 ;
-+---------------+---------------+---------------+---------------+---------------+---------------+---------------+
-; fstate.state1 ; 0             ; 0             ; 0             ; 0             ; 0             ; 0             ;
-; fstate.state5 ; 0             ; 0             ; 0             ; 0             ; 1             ; 1             ;
-; fstate.state4 ; 0             ; 0             ; 0             ; 1             ; 0             ; 1             ;
-; fstate.state2 ; 0             ; 0             ; 1             ; 0             ; 0             ; 1             ;
-; fstate.state3 ; 0             ; 1             ; 0             ; 0             ; 0             ; 1             ;
-; fstate.state6 ; 1             ; 0             ; 0             ; 0             ; 0             ; 1             ;
-+---------------+---------------+---------------+---------------+---------------+---------------+---------------+
-
-
-Encoding Type:  One-Hot
 +-----------------------------------------------------------------------+
 ; State Machine - |Quartus|counter:inst9|state                          ;
 +--------------------+--------------------+----------------+------------+
@@ -361,6 +367,18 @@ Encoding Type:  One-Hot
 ; state.counting     ; 0                  ; 1              ; 1          ;
 ; state.sending_info ; 1                  ; 0              ; 1          ;
 +--------------------+--------------------+----------------+------------+
+
+
+Encoding Type:  One-Hot
++----------------------------------------------------------------------+
+; State Machine - |Quartus|AffichagePorte:inst42|fstate                ;
++-------------------+---------------+-------------------+--------------+
+; Name              ; fstate.OUVERT ; fstate.SEMIOUVERT ; fstate.ferme ;
++-------------------+---------------+-------------------+--------------+
+; fstate.ferme      ; 0             ; 0                 ; 0            ;
+; fstate.SEMIOUVERT ; 0             ; 1                 ; 1            ;
+; fstate.OUVERT     ; 1             ; 0                 ; 1            ;
++-------------------+---------------+-------------------+--------------+
 
 
 Encoding Type:  One-Hot
@@ -386,7 +404,7 @@ Encoding Type:  One-Hot
 
 Encoding Type:  One-Hot
 +-----------------------------------------------------------------------------------------------------------------------------------------------+
-; State Machine - |Quartus|ETAGE:inst2|fstate                                                                                                   ;
+; State Machine - |Quartus|ETAGE:inst47|fstate                                                                                                  ;
 +---------------+---------------+---------------+---------------+---------------+---------------+---------------+---------------+---------------+
 ; Name          ; fstate.ETAGE7 ; fstate.ETAGE1 ; fstate.ETAGE2 ; fstate.ETAGE4 ; fstate.ETAGE6 ; fstate.EATGE5 ; fstate.ETAGE3 ; fstate.ETAGE0 ;
 +---------------+---------------+---------------+---------------+---------------+---------------+---------------+---------------+---------------+
@@ -401,24 +419,66 @@ Encoding Type:  One-Hot
 +---------------+---------------+---------------+---------------+---------------+---------------+---------------+---------------+---------------+
 
 
-+-------------------------------------------------------------------------------------------------+
-; Registers Removed During Synthesis                                                              ;
-+----------------------------------------+--------------------------------------------------------+
-; Register name                          ; Reason for Removal                                     ;
-+----------------------------------------+--------------------------------------------------------+
-; reset_n                                ; Stuck at VCC due to stuck port data_in                 ;
-; reset_n1                               ; Stuck at VCC due to stuck port data_in                 ;
-; compultrason:inst4|state               ; Merged with measurement_cal:inst1|state                ;
-; binary_to_bcd:inst10|bcd_signal[3]     ; Merged with binary_to_bcd:inst10|\double_dabble:bcd[3] ;
-; binary_to_bcd:inst10|bcd_signal[2]     ; Merged with binary_to_bcd:inst10|\double_dabble:bcd[2] ;
-; binary_to_bcd:inst10|bcd_signal[1]     ; Merged with binary_to_bcd:inst10|\double_dabble:bcd[1] ;
-; binary_to_bcd:inst10|bcd_signal[7]     ; Merged with binary_to_bcd:inst10|\double_dabble:bcd[7] ;
-; binary_to_bcd:inst10|bcd_signal[6]     ; Merged with binary_to_bcd:inst10|\double_dabble:bcd[6] ;
-; binary_to_bcd:inst10|bcd_signal[5]     ; Merged with binary_to_bcd:inst10|\double_dabble:bcd[5] ;
-; binary_to_bcd:inst10|bcd_signal[4]     ; Merged with binary_to_bcd:inst10|\double_dabble:bcd[4] ;
-; binary_to_bcd:inst10|bcd_signal[0]     ; Merged with binary_to_bcd:inst10|\double_dabble:bcd[0] ;
-; Total Number of Removed Registers = 11 ;                                                        ;
-+----------------------------------------+--------------------------------------------------------+
+Encoding Type:  One-Hot
++-----------------------------------------------------------------+
+; State Machine - |Quartus|Alarme:inst45|AlarmeClock:ALARM|fstate ;
++---------------+---------------+---------------+-----------------+
+; Name          ; fstate.state3 ; fstate.state2 ; fstate.state1   ;
++---------------+---------------+---------------+-----------------+
+; fstate.state1 ; 0             ; 0             ; 0               ;
+; fstate.state2 ; 0             ; 1             ; 1               ;
+; fstate.state3 ; 1             ; 0             ; 1               ;
++---------------+---------------+---------------+-----------------+
+
+
+Encoding Type:  One-Hot
++---------------------------------------------------------------------------------------------------------------+
+; State Machine - |Quartus|Maintenance:inst|fstate                                                              ;
++---------------+---------------+---------------+---------------+---------------+---------------+---------------+
+; Name          ; fstate.state6 ; fstate.state3 ; fstate.state2 ; fstate.state4 ; fstate.state5 ; fstate.state1 ;
++---------------+---------------+---------------+---------------+---------------+---------------+---------------+
+; fstate.state1 ; 0             ; 0             ; 0             ; 0             ; 0             ; 0             ;
+; fstate.state5 ; 0             ; 0             ; 0             ; 0             ; 1             ; 1             ;
+; fstate.state4 ; 0             ; 0             ; 0             ; 1             ; 0             ; 1             ;
+; fstate.state2 ; 0             ; 0             ; 1             ; 0             ; 0             ; 1             ;
+; fstate.state3 ; 0             ; 1             ; 0             ; 0             ; 0             ; 1             ;
+; fstate.state6 ; 1             ; 0             ; 0             ; 0             ; 0             ; 1             ;
++---------------+---------------+---------------+---------------+---------------+---------------+---------------+
+
+
+Encoding Type:  One-Hot
++-------------------------------------------------------------------------------+
+; State Machine - |Quartus|AlarMaintenance:inst44|fstate                        ;
++---------------+---------------+---------------+---------------+---------------+
+; Name          ; fstate.state4 ; fstate.state3 ; fstate.state2 ; fstate.state1 ;
++---------------+---------------+---------------+---------------+---------------+
+; fstate.state1 ; 0             ; 0             ; 0             ; 0             ;
+; fstate.state2 ; 0             ; 0             ; 1             ; 1             ;
+; fstate.state3 ; 0             ; 1             ; 0             ; 1             ;
+; fstate.state4 ; 1             ; 0             ; 0             ; 1             ;
++---------------+---------------+---------------+---------------+---------------+
+
+
++--------------------------------------------------------------------------------------------------------+
+; Registers Removed During Synthesis                                                                     ;
++-----------------------------------------------+--------------------------------------------------------+
+; Register name                                 ; Reason for Removal                                     ;
++-----------------------------------------------+--------------------------------------------------------+
+; reset_n                                       ; Stuck at VCC due to stuck port data_in                 ;
+; reset_n1                                      ; Stuck at VCC due to stuck port data_in                 ;
+; compultrason:inst4|state                      ; Merged with measurement_cal:inst1|state                ;
+; binary_to_bcd:inst10|bcd_signal[3]            ; Merged with binary_to_bcd:inst10|\double_dabble:bcd[3] ;
+; binary_to_bcd:inst10|bcd_signal[2]            ; Merged with binary_to_bcd:inst10|\double_dabble:bcd[2] ;
+; binary_to_bcd:inst10|bcd_signal[1]            ; Merged with binary_to_bcd:inst10|\double_dabble:bcd[1] ;
+; binary_to_bcd:inst10|bcd_signal[7]            ; Merged with binary_to_bcd:inst10|\double_dabble:bcd[7] ;
+; binary_to_bcd:inst10|bcd_signal[6]            ; Merged with binary_to_bcd:inst10|\double_dabble:bcd[6] ;
+; binary_to_bcd:inst10|bcd_signal[5]            ; Merged with binary_to_bcd:inst10|\double_dabble:bcd[5] ;
+; binary_to_bcd:inst10|bcd_signal[4]            ; Merged with binary_to_bcd:inst10|\double_dabble:bcd[4] ;
+; binary_to_bcd:inst10|bcd_signal[0]            ; Merged with binary_to_bcd:inst10|\double_dabble:bcd[0] ;
+; AffichagePorte:inst42|fstate.SEMIOUVERT       ; Lost fanout                                            ;
+; Alarme:inst45|AlarmeClock:ALARM|fstate.state3 ; Lost fanout                                            ;
+; Total Number of Removed Registers = 13        ;                                                        ;
++-----------------------------------------------+--------------------------------------------------------+
 
 
 +------------------------------------------------------------------------------------+
@@ -436,7 +496,7 @@ Encoding Type:  One-Hot
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 224   ;
+; Total registers                              ; 292   ;
 ; Number of registers using Synchronous Clear  ; 25    ;
 ; Number of registers using Synchronous Load   ; 0     ;
 ; Number of registers using Asynchronous Clear ; 7     ;
@@ -451,7 +511,7 @@ Encoding Type:  One-Hot
 +----------------------------------------+---------+
 ; Inverted Register                      ; Fan out ;
 +----------------------------------------+---------+
-; counter:inst9|o_DV_n                   ; 3       ;
+; counter:inst9|o_DV_n                   ; 2       ;
 ; Total number of inverted registers = 1 ;         ;
 +----------------------------------------+---------+
 
@@ -538,27 +598,27 @@ Note: In order to hide this table in the UI and the text report file, please set
 +-----------------------+-----------------------------+
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
-; boundary_port         ; 59                          ;
-; cycloneiii_ff         ; 224                         ;
+; boundary_port         ; 73                          ;
+; cycloneiii_ff         ; 292                         ;
 ;     CLR               ; 7                           ;
 ;     ENA               ; 53                          ;
 ;     SCLR              ; 25                          ;
-;     plain             ; 139                         ;
-; cycloneiii_lcell_comb ; 511                         ;
+;     plain             ; 207                         ;
+; cycloneiii_lcell_comb ; 599                         ;
 ;     arith             ; 140                         ;
 ;         2 data inputs ; 58                          ;
 ;         3 data inputs ; 82                          ;
-;     normal            ; 371                         ;
-;         0 data inputs ; 2                           ;
-;         1 data inputs ; 34                          ;
-;         2 data inputs ; 57                          ;
-;         3 data inputs ; 51                          ;
-;         4 data inputs ; 227                         ;
+;     normal            ; 459                         ;
+;         0 data inputs ; 4                           ;
+;         1 data inputs ; 71                          ;
+;         2 data inputs ; 89                          ;
+;         3 data inputs ; 60                          ;
+;         4 data inputs ; 235                         ;
 ; cycloneiii_mac_mult   ; 4                           ;
 ; cycloneiii_mac_out    ; 4                           ;
 ;                       ;                             ;
 ; Max LUT depth         ; 16.00                       ;
-; Average LUT depth     ; 4.90                        ;
+; Average LUT depth     ; 4.44                        ;
 +-----------------------+-----------------------------+
 
 
@@ -567,7 +627,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:01     ;
+; Top            ; 00:00:02     ;
 +----------------+--------------+
 
 
@@ -577,12 +637,17 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
-    Info: Processing started: Fri Nov 03 14:00:17 2023
+    Info: Processing started: Sat Nov 04 16:11:18 2023
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Quartus -c Quartus
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
+Info (12021): Found 1 design units, including 1 entities, in source file div2hz05s.bdf
+    Info (12023): Found entity 1: Div2Hz05s
+Info (12021): Found 2 design units, including 1 entities, in source file affichageporte.vhd
+    Info (12022): Found design unit 1: AffichagePorte-BEHAVIOR File: C:/Users/tomgo/Documents/Electronique 2 annee/Projet/Projet semestrielle S1/elec-electrolift/Quartus/AffichagePorte.vhd Line: 45
+    Info (12023): Found entity 1: AffichagePorte File: C:/Users/tomgo/Documents/Electronique 2 annee/Projet/Projet semestrielle S1/elec-electrolift/Quartus/AffichagePorte.vhd Line: 22
 Info (12021): Found 2 design units, including 1 entities, in source file etage.vhd
-    Info (12022): Found design unit 1: ETAGE-BEHAVIOR File: C:/Users/tomgo/Documents/Electronique 2 annee/Projet/Projet semestrielle S1/elec-electrolift/Quartus/ETAGE.vhd Line: 47
+    Info (12022): Found design unit 1: ETAGE-BEHAVIOR File: C:/Users/tomgo/Documents/Electronique 2 annee/Projet/Projet semestrielle S1/elec-electrolift/Quartus/ETAGE.vhd Line: 48
     Info (12023): Found entity 1: ETAGE File: C:/Users/tomgo/Documents/Electronique 2 annee/Projet/Projet semestrielle S1/elec-electrolift/Quartus/ETAGE.vhd Line: 22
 Info (12021): Found 2 design units, including 1 entities, in source file compultrason.vhd
     Info (12022): Found design unit 1: compultrason-Behavioral File: C:/Users/tomgo/Documents/Electronique 2 annee/Projet/Projet semestrielle S1/elec-electrolift/Quartus/compultrason.vhd Line: 23
@@ -598,29 +663,40 @@ Warning (12125): Using design file trigger_generator.vhd, which is not specified
     Info (12022): Found design unit 1: trigger_generator-Behavioral File: C:/Users/tomgo/Documents/Electronique 2 annee/Projet/Projet semestrielle S1/elec-electrolift/Quartus/trigger_generator.vhd Line: 10
     Info (12023): Found entity 1: trigger_generator File: C:/Users/tomgo/Documents/Electronique 2 annee/Projet/Projet semestrielle S1/elec-electrolift/Quartus/trigger_generator.vhd Line: 4
 Info (12128): Elaborating entity "trigger_generator" for hierarchy "trigger_generator:inst8"
-Info (12128): Elaborating entity "ETAGE" for hierarchy "ETAGE:inst2"
+Warning (12125): Using design file alarmaintenance.vhd, which is not specified as a design file for the current project, but contains definitions for 2 design units and 1 entities in project
+    Info (12022): Found design unit 1: AlarMaintenance-BEHAVIOR File: C:/Users/tomgo/Documents/Electronique 2 annee/Projet/Projet semestrielle S1/elec-electrolift/Quartus/alarmaintenance.vhd Line: 35
+    Info (12023): Found entity 1: AlarMaintenance File: C:/Users/tomgo/Documents/Electronique 2 annee/Projet/Projet semestrielle S1/elec-electrolift/Quartus/alarmaintenance.vhd Line: 22
+Info (12128): Elaborating entity "AlarMaintenance" for hierarchy "AlarMaintenance:inst44"
+Warning (12125): Using design file maintenance.vhd, which is not specified as a design file for the current project, but contains definitions for 2 design units and 1 entities in project
+    Info (12022): Found design unit 1: Maintenance-BEHAVIOR File: C:/Users/tomgo/Documents/Electronique 2 annee/Projet/Projet semestrielle S1/elec-electrolift/Quartus/maintenance.vhd Line: 32
+    Info (12023): Found entity 1: Maintenance File: C:/Users/tomgo/Documents/Electronique 2 annee/Projet/Projet semestrielle S1/elec-electrolift/Quartus/maintenance.vhd Line: 22
+Info (12128): Elaborating entity "Maintenance" for hierarchy "Maintenance:inst"
+Warning (12125): Using design file alarme.bdf, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
+    Info (12023): Found entity 1: Alarme
+Info (12128): Elaborating entity "Alarme" for hierarchy "Alarme:inst45"
+Warning (12125): Using design file alarmeclock.vhd, which is not specified as a design file for the current project, but contains definitions for 2 design units and 1 entities in project
+    Info (12022): Found design unit 1: AlarmeClock-BEHAVIOR File: C:/Users/tomgo/Documents/Electronique 2 annee/Projet/Projet semestrielle S1/elec-electrolift/Quartus/alarmeclock.vhd Line: 32
+    Info (12023): Found entity 1: AlarmeClock File: C:/Users/tomgo/Documents/Electronique 2 annee/Projet/Projet semestrielle S1/elec-electrolift/Quartus/alarmeclock.vhd Line: 22
+Info (12128): Elaborating entity "AlarmeClock" for hierarchy "Alarme:inst45|AlarmeClock:ALARM"
+Warning (12125): Using design file divhorloge_enable.bdf, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
+    Info (12023): Found entity 1: DivHorloge_enable
+Info (12128): Elaborating entity "DivHorloge_enable" for hierarchy "Alarme:inst45|DivHorloge_enable:DIVENA"
+Info (12128): Elaborating entity "7490" for hierarchy "Alarme:inst45|DivHorloge_enable:DIVENA|7490:inst10"
+Info (12130): Elaborated megafunction instantiation "Alarme:inst45|DivHorloge_enable:DIVENA|7490:inst10"
+Info (12128): Elaborating entity "74390" for hierarchy "Alarme:inst45|DivHorloge_enable:DIVENA|74390:inst5"
+Info (12130): Elaborated megafunction instantiation "Alarme:inst45|DivHorloge_enable:DIVENA|74390:inst5"
+Info (12128): Elaborating entity "ETAGE" for hierarchy "ETAGE:inst47"
 Info (12128): Elaborating entity "DivHorloge" for hierarchy "DivHorloge:inst3"
-Info (12128): Elaborating entity "7490" for hierarchy "DivHorloge:inst3|7490:inst10"
-Info (12130): Elaborated megafunction instantiation "DivHorloge:inst3|7490:inst10"
-Info (12128): Elaborating entity "74390" for hierarchy "DivHorloge:inst3|74390:inst5"
-Info (12130): Elaborated megafunction instantiation "DivHorloge:inst3|74390:inst5"
 Warning (12125): Using design file president.vhd, which is not specified as a design file for the current project, but contains definitions for 2 design units and 1 entities in project
     Info (12022): Found design unit 1: PRESIDENT-BEHAVIOR File: C:/Users/tomgo/Documents/Electronique 2 annee/Projet/Projet semestrielle S1/elec-electrolift/Quartus/president.vhd Line: 32
     Info (12023): Found entity 1: PRESIDENT File: C:/Users/tomgo/Documents/Electronique 2 annee/Projet/Projet semestrielle S1/elec-electrolift/Quartus/president.vhd Line: 22
 Info (12128): Elaborating entity "PRESIDENT" for hierarchy "PRESIDENT:pres"
+Info (12128): Elaborating entity "AffichagePorte" for hierarchy "AffichagePorte:inst42"
 Info (12128): Elaborating entity "compultrason" for hierarchy "compultrason:inst4"
 Warning (12125): Using design file counter.vhd, which is not specified as a design file for the current project, but contains definitions for 2 design units and 1 entities in project
     Info (12022): Found design unit 1: counter-Behavioral File: C:/Users/tomgo/Documents/Electronique 2 annee/Projet/Projet semestrielle S1/elec-electrolift/Quartus/counter.vhd Line: 14
     Info (12023): Found entity 1: counter File: C:/Users/tomgo/Documents/Electronique 2 annee/Projet/Projet semestrielle S1/elec-electrolift/Quartus/counter.vhd Line: 4
 Info (12128): Elaborating entity "counter" for hierarchy "counter:inst9"
-Warning (12125): Using design file sm2.vhd, which is not specified as a design file for the current project, but contains definitions for 2 design units and 1 entities in project
-    Info (12022): Found design unit 1: SM2-BEHAVIOR File: C:/Users/tomgo/Documents/Electronique 2 annee/Projet/Projet semestrielle S1/elec-electrolift/Quartus/sm2.vhd Line: 32
-    Info (12023): Found entity 1: SM2 File: C:/Users/tomgo/Documents/Electronique 2 annee/Projet/Projet semestrielle S1/elec-electrolift/Quartus/sm2.vhd Line: 22
-Info (12128): Elaborating entity "SM2" for hierarchy "SM2:BUZZ"
-Warning (12125): Using design file maintenance.vhd, which is not specified as a design file for the current project, but contains definitions for 2 design units and 1 entities in project
-    Info (12022): Found design unit 1: Maintenance-BEHAVIOR File: C:/Users/tomgo/Documents/Electronique 2 annee/Projet/Projet semestrielle S1/elec-electrolift/Quartus/maintenance.vhd Line: 31
-    Info (12023): Found entity 1: Maintenance File: C:/Users/tomgo/Documents/Electronique 2 annee/Projet/Projet semestrielle S1/elec-electrolift/Quartus/maintenance.vhd Line: 22
-Info (12128): Elaborating entity "Maintenance" for hierarchy "Maintenance:inst"
 Warning (12125): Using design file sevseg_etage.vhd, which is not specified as a design file for the current project, but contains definitions for 2 design units and 1 entities in project
     Info (12022): Found design unit 1: SEVSEG_ETAGE-BEHAVIOR File: C:/Users/tomgo/Documents/Electronique 2 annee/Projet/Projet semestrielle S1/elec-electrolift/Quartus/sevseg_etage.vhd Line: 44
     Info (12023): Found entity 1: SEVSEG_ETAGE File: C:/Users/tomgo/Documents/Electronique 2 annee/Projet/Projet semestrielle S1/elec-electrolift/Quartus/sevseg_etage.vhd Line: 22
@@ -654,18 +730,26 @@ Info (12021): Found 1 design units, including 1 entities, in source file db/mult
     Info (12023): Found entity 1: mult_prs File: C:/Users/tomgo/Documents/Electronique 2 annee/Projet/Projet semestrielle S1/elec-electrolift/Quartus/db/mult_prs.tdf Line: 31
 Info (13014): Ignored 176 buffer(s)
     Info (13019): Ignored 176 SOFT buffer(s)
+Warning (13024): Output pins are stuck at VCC or GND
+    Warning (13410): Pin "HEX41" is stuck at GND
+    Warning (13410): Pin "HEX42" is stuck at GND
+    Warning (13410): Pin "HEX46" is stuck at VCC
+    Warning (13410): Pin "HEX54" is stuck at GND
+    Warning (13410): Pin "HEX55" is stuck at GND
+    Warning (13410): Pin "HEX56" is stuck at VCC
 Info (286030): Timing-Driven Synthesis is running
+Info (17049): 2 registers lost all their fanouts during netlist optimizations.
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 616 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 716 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 18 input pins
-    Info (21059): Implemented 41 output pins
-    Info (21061): Implemented 549 logic cells
+    Info (21059): Implemented 55 output pins
+    Info (21061): Implemented 635 logic cells
     Info (21062): Implemented 8 DSP elements
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 10 warnings
-    Info: Peak virtual memory: 4815 megabytes
-    Info: Processing ended: Fri Nov 03 14:00:29 2023
-    Info: Elapsed time: 00:00:12
-    Info: Total CPU time (on all processors): 00:00:09
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 20 warnings
+    Info: Peak virtual memory: 4814 megabytes
+    Info: Processing ended: Sat Nov 04 16:11:34 2023
+    Info: Elapsed time: 00:00:16
+    Info: Total CPU time (on all processors): 00:00:13
 
 
