@@ -1,5 +1,5 @@
 Timing Analyzer report for Quartus
-Sat Nov 04 16:12:00 2023
+Sun Nov  5 11:09:20 2023
 Quartus Prime Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
 
 
@@ -91,16 +91,16 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------+-------------+
 ; Processors                 ; Number      ;
 +----------------------------+-------------+
-; Number detected on machine ; 8           ;
-; Maximum allowed            ; 4           ;
+; Number detected on machine ; 16          ;
+; Maximum allowed            ; 12          ;
 ;                            ;             ;
-; Average used               ; 1.28        ;
-; Maximum used               ; 4           ;
+; Average used               ; 1.73        ;
+; Maximum used               ; 12          ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processor 2            ;   9.2%      ;
-;     Processors 3-4         ;   9.1%      ;
+;     Processor 2            ;   6.7%      ;
+;     Processors 3-12        ;   6.6%      ;
 +----------------------------+-------------+
 
 
@@ -181,46 +181,46 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------------------------+------+--------+------------+-------+-------+------------+-----------+-------------+-------+--------+-----------+------------+----------+--------+--------+-----------------------------------------------------------+
 
 
-+-------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Slow 1200mV 85C Model Fmax Summary                                                                                                                    ;
-+-------------+-----------------+-------------------------------------------------------+---------------------------------------------------------------+
-; Fmax        ; Restricted Fmax ; Clock Name                                            ; Note                                                          ;
-+-------------+-----------------+-------------------------------------------------------+---------------------------------------------------------------+
-; 63.97 MHz   ; 63.97 MHz       ; Clock                                                 ;                                                               ;
-; 356.63 MHz  ; 356.63 MHz      ; DivHorloge:inst3|7490:inst10|19                       ;                                                               ;
-; 422.12 MHz  ; 416.15 MHz      ; 74390:inst33|34                                       ; limit due to minimum period restriction (tmin)                ;
-; 441.7 MHz   ; 416.15 MHz      ; DivHorloge:inst3|74390:inst5|34                       ; limit due to minimum period restriction (tmin)                ;
-; 445.24 MHz  ; 416.15 MHz      ; 7490:inst37|19                                        ; limit due to minimum period restriction (tmin)                ;
-; 452.69 MHz  ; 416.15 MHz      ; DivHorloge:inst3|7490:inst8|7                         ; limit due to minimum period restriction (tmin)                ;
-; 467.07 MHz  ; 416.15 MHz      ; Alarme:inst45|DivHorloge_enable:DIVENA|74390:inst5|34 ; limit due to minimum period restriction (tmin)                ;
-; 996.02 MHz  ; 416.15 MHz      ; Alarme:inst45|DivHorloge_enable:DIVENA|7490:inst8|7   ; limit due to minimum period restriction (tmin)                ;
-; 1187.65 MHz ; 416.15 MHz      ; 7490:inst35|19                                        ; limit due to minimum period restriction (tmin)                ;
-; 1424.5 MHz  ; 416.15 MHz      ; 74390:inst13|6                                        ; limit due to minimum period restriction (tmin)                ;
-; 1424.5 MHz  ; 416.15 MHz      ; 74390:inst32|33                                       ; limit due to minimum period restriction (tmin)                ;
-; 1424.5 MHz  ; 416.15 MHz      ; 74390:inst32|6                                        ; limit due to minimum period restriction (tmin)                ;
-; 1424.5 MHz  ; 416.15 MHz      ; 74390:inst33|33                                       ; limit due to minimum period restriction (tmin)                ;
-; 1424.5 MHz  ; 416.15 MHz      ; 74390:inst33|6                                        ; limit due to minimum period restriction (tmin)                ;
-; 1424.5 MHz  ; 416.15 MHz      ; Alarme:inst45|DivHorloge_enable:DIVENA|74390:inst3|33 ; limit due to minimum period restriction (tmin)                ;
-; 1424.5 MHz  ; 416.15 MHz      ; Alarme:inst45|DivHorloge_enable:DIVENA|74390:inst3|6  ; limit due to minimum period restriction (tmin)                ;
-; 1424.5 MHz  ; 416.15 MHz      ; Alarme:inst45|DivHorloge_enable:DIVENA|74390:inst5|33 ; limit due to minimum period restriction (tmin)                ;
-; 1424.5 MHz  ; 416.15 MHz      ; Alarme:inst45|DivHorloge_enable:DIVENA|74390:inst5|6  ; limit due to minimum period restriction (tmin)                ;
-; 1424.5 MHz  ; 416.15 MHz      ; Alarme:inst45|DivHorloge_enable:DIVENA|74390:inst|33  ; limit due to minimum period restriction (tmin)                ;
-; 1424.5 MHz  ; 250.0 MHz       ; D1                                                    ; limit due to minimum period restriction (max I/O toggle rate) ;
-; 1424.5 MHz  ; 250.0 MHz       ; D2                                                    ; limit due to minimum period restriction (max I/O toggle rate) ;
-; 1424.5 MHz  ; 250.0 MHz       ; D3                                                    ; limit due to minimum period restriction (max I/O toggle rate) ;
-; 1424.5 MHz  ; 250.0 MHz       ; D4                                                    ; limit due to minimum period restriction (max I/O toggle rate) ;
-; 1424.5 MHz  ; 250.0 MHz       ; D5                                                    ; limit due to minimum period restriction (max I/O toggle rate) ;
-; 1424.5 MHz  ; 250.0 MHz       ; D6                                                    ; limit due to minimum period restriction (max I/O toggle rate) ;
-; 1424.5 MHz  ; 250.0 MHz       ; D7                                                    ; limit due to minimum period restriction (max I/O toggle rate) ;
-; 1424.5 MHz  ; 416.15 MHz      ; DivHorloge:inst3|74390:inst3|33                       ; limit due to minimum period restriction (tmin)                ;
-; 1424.5 MHz  ; 416.15 MHz      ; DivHorloge:inst3|74390:inst3|6                        ; limit due to minimum period restriction (tmin)                ;
-; 1424.5 MHz  ; 416.15 MHz      ; DivHorloge:inst3|74390:inst5|33                       ; limit due to minimum period restriction (tmin)                ;
-; 1424.5 MHz  ; 416.15 MHz      ; DivHorloge:inst3|74390:inst5|6                        ; limit due to minimum period restriction (tmin)                ;
-; 1424.5 MHz  ; 416.15 MHz      ; DivHorloge:inst3|74390:inst|33                        ; limit due to minimum period restriction (tmin)                ;
-; 1424.5 MHz  ; 416.15 MHz      ; DivHorloge:inst3|74390:inst|6                         ; limit due to minimum period restriction (tmin)                ;
-; 1424.5 MHz  ; 416.15 MHz      ; Alarme:inst45|DivHorloge_enable:DIVENA|74390:inst|6   ; limit due to minimum period restriction (tmin)                ;
-; 1424.5 MHz  ; 416.15 MHz      ; 74390:inst13|33                                       ; limit due to minimum period restriction (tmin)                ;
-+-------------+-----------------+-------------------------------------------------------+---------------------------------------------------------------+
++------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Slow 1200mV 85C Model Fmax Summary                                                                                                                   ;
++------------+-----------------+-------------------------------------------------------+---------------------------------------------------------------+
+; Fmax       ; Restricted Fmax ; Clock Name                                            ; Note                                                          ;
++------------+-----------------+-------------------------------------------------------+---------------------------------------------------------------+
+; 66.57 MHz  ; 66.57 MHz       ; Clock                                                 ;                                                               ;
+; 361.79 MHz ; 361.79 MHz      ; DivHorloge:inst3|7490:inst10|19                       ;                                                               ;
+; 402.25 MHz ; 402.25 MHz      ; 74390:inst33|34                                       ;                                                               ;
+; 418.24 MHz ; 416.15 MHz      ; Alarme:inst45|DivHorloge_enable:DIVENA|74390:inst5|34 ; limit due to minimum period restriction (tmin)                ;
+; 438.79 MHz ; 416.15 MHz      ; DivHorloge:inst3|74390:inst5|34                       ; limit due to minimum period restriction (tmin)                ;
+; 445.24 MHz ; 416.15 MHz      ; DivHorloge:inst3|7490:inst8|7                         ; limit due to minimum period restriction (tmin)                ;
+; 467.29 MHz ; 416.15 MHz      ; 7490:inst37|19                                        ; limit due to minimum period restriction (tmin)                ;
+; 970.87 MHz ; 416.15 MHz      ; 7490:inst35|19                                        ; limit due to minimum period restriction (tmin)                ;
+; 992.06 MHz ; 416.15 MHz      ; Alarme:inst45|DivHorloge_enable:DIVENA|7490:inst8|7   ; limit due to minimum period restriction (tmin)                ;
+; 1424.5 MHz ; 416.15 MHz      ; 74390:inst13|33                                       ; limit due to minimum period restriction (tmin)                ;
+; 1424.5 MHz ; 416.15 MHz      ; 74390:inst33|6                                        ; limit due to minimum period restriction (tmin)                ;
+; 1424.5 MHz ; 416.15 MHz      ; 74390:inst13|6                                        ; limit due to minimum period restriction (tmin)                ;
+; 1424.5 MHz ; 416.15 MHz      ; DivHorloge:inst3|74390:inst|6                         ; limit due to minimum period restriction (tmin)                ;
+; 1424.5 MHz ; 416.15 MHz      ; DivHorloge:inst3|74390:inst|33                        ; limit due to minimum period restriction (tmin)                ;
+; 1424.5 MHz ; 416.15 MHz      ; DivHorloge:inst3|74390:inst5|6                        ; limit due to minimum period restriction (tmin)                ;
+; 1424.5 MHz ; 416.15 MHz      ; 74390:inst32|33                                       ; limit due to minimum period restriction (tmin)                ;
+; 1424.5 MHz ; 416.15 MHz      ; DivHorloge:inst3|74390:inst5|33                       ; limit due to minimum period restriction (tmin)                ;
+; 1424.5 MHz ; 416.15 MHz      ; DivHorloge:inst3|74390:inst3|6                        ; limit due to minimum period restriction (tmin)                ;
+; 1424.5 MHz ; 416.15 MHz      ; DivHorloge:inst3|74390:inst3|33                       ; limit due to minimum period restriction (tmin)                ;
+; 1424.5 MHz ; 250.0 MHz       ; D7                                                    ; limit due to minimum period restriction (max I/O toggle rate) ;
+; 1424.5 MHz ; 250.0 MHz       ; D6                                                    ; limit due to minimum period restriction (max I/O toggle rate) ;
+; 1424.5 MHz ; 250.0 MHz       ; D5                                                    ; limit due to minimum period restriction (max I/O toggle rate) ;
+; 1424.5 MHz ; 250.0 MHz       ; D4                                                    ; limit due to minimum period restriction (max I/O toggle rate) ;
+; 1424.5 MHz ; 250.0 MHz       ; D3                                                    ; limit due to minimum period restriction (max I/O toggle rate) ;
+; 1424.5 MHz ; 250.0 MHz       ; D2                                                    ; limit due to minimum period restriction (max I/O toggle rate) ;
+; 1424.5 MHz ; 250.0 MHz       ; D1                                                    ; limit due to minimum period restriction (max I/O toggle rate) ;
+; 1424.5 MHz ; 416.15 MHz      ; 74390:inst32|6                                        ; limit due to minimum period restriction (tmin)                ;
+; 1424.5 MHz ; 416.15 MHz      ; Alarme:inst45|DivHorloge_enable:DIVENA|74390:inst|6   ; limit due to minimum period restriction (tmin)                ;
+; 1424.5 MHz ; 416.15 MHz      ; Alarme:inst45|DivHorloge_enable:DIVENA|74390:inst|33  ; limit due to minimum period restriction (tmin)                ;
+; 1424.5 MHz ; 416.15 MHz      ; Alarme:inst45|DivHorloge_enable:DIVENA|74390:inst5|6  ; limit due to minimum period restriction (tmin)                ;
+; 1424.5 MHz ; 416.15 MHz      ; 74390:inst33|33                                       ; limit due to minimum period restriction (tmin)                ;
+; 1424.5 MHz ; 416.15 MHz      ; Alarme:inst45|DivHorloge_enable:DIVENA|74390:inst5|33 ; limit due to minimum period restriction (tmin)                ;
+; 1424.5 MHz ; 416.15 MHz      ; Alarme:inst45|DivHorloge_enable:DIVENA|74390:inst3|6  ; limit due to minimum period restriction (tmin)                ;
+; 1424.5 MHz ; 416.15 MHz      ; Alarme:inst45|DivHorloge_enable:DIVENA|74390:inst3|33 ; limit due to minimum period restriction (tmin)                ;
++------------+-----------------+-------------------------------------------------------+---------------------------------------------------------------+
 This panel reports FMAX for every clock in the design, regardless of the user-specified clock periods.  FMAX is only computed for paths where the source and destination registers or ports are driven by the same clock.  Paths of different clocks, including generated clocks, are ignored.  For paths between a clock and its inversion, FMAX is computed as if the rising and falling edges are scaled along with FMAX, such that the duty cycle (in terms of a percentage) is maintained. Altera recommends that you always use clock constraints and other slack reports for sign-off analysis.
 
 
@@ -229,50 +229,50 @@ This panel reports FMAX for every clock in the design, regardless of the user-sp
 +-------------------------------------------------------+---------+---------------+
 ; Clock                                                 ; Slack   ; End Point TNS ;
 +-------------------------------------------------------+---------+---------------+
-; Clock                                                 ; -14.633 ; -523.429      ;
-; Alarme:inst45|DivHorloge_enable:DIVENA|74390:inst|3   ; -5.594  ; -6.346        ;
-; DivHorloge:inst3|7490:inst10|19                       ; -5.121  ; -38.246       ;
-; 74390:inst32|3                                        ; -3.387  ; -3.883        ;
-; DivHorloge:inst3|74390:inst|3                         ; -3.347  ; -4.141        ;
-; 7490:inst35|19                                        ; -2.571  ; -5.136        ;
-; DivHorloge:inst3|7490:inst8|7                         ; -1.653  ; -1.653        ;
-; DivHorloge:inst3|74390:inst5|31                       ; -1.581  ; -2.062        ;
-; 7490:inst37|19                                        ; -1.387  ; -1.700        ;
-; 74390:inst33|34                                       ; -1.377  ; -1.736        ;
-; 74390:inst33|31                                       ; -1.298  ; -1.737        ;
-; DivHorloge:inst3|74390:inst5|34                       ; -1.264  ; -1.815        ;
-; Alarme:inst45|DivHorloge_enable:DIVENA|74390:inst5|34 ; -1.141  ; -1.660        ;
-; DivHorloge:inst3|74390:inst|31                        ; -0.968  ; -1.252        ;
-; Alarme:inst45|DivHorloge_enable:DIVENA|74390:inst5|31 ; -0.847  ; -1.301        ;
-; Alarme:inst45|DivHorloge_enable:DIVENA|74390:inst|7   ; -0.845  ; -1.262        ;
-; 74390:inst13|31                                       ; -0.828  ; -1.420        ;
-; 74390:inst33|3                                        ; -0.804  ; -1.471        ;
-; Alarme:inst45|DivHorloge_enable:DIVENA|74390:inst3|7  ; -0.747  ; -0.747        ;
-; DivHorloge:inst3|74390:inst3|34                       ; -0.744  ; -1.056        ;
-; Alarme:inst45|DivHorloge_enable:DIVENA|74390:inst3|3  ; -0.727  ; -1.240        ;
-; DivHorloge:inst3|74390:inst3|31                       ; -0.717  ; -1.344        ;
-; DivHorloge:inst3|74390:inst|7                         ; -0.698  ; -1.011        ;
-; DivHorloge:inst3|74390:inst3|3                        ; -0.672  ; -1.200        ;
-; 74390:inst32|34                                       ; -0.661  ; -1.183        ;
-; Alarme:inst45|DivHorloge_enable:DIVENA|74390:inst|31  ; -0.656  ; -1.159        ;
-; Alarme:inst45|DivHorloge_enable:DIVENA|74390:inst5|7  ; -0.648  ; -0.867        ;
-; DivHorloge:inst3|74390:inst5|3                        ; -0.640  ; -1.172        ;
-; Alarme:inst45|DivHorloge_enable:DIVENA|74390:inst5|3  ; -0.639  ; -1.204        ;
-; 74390:inst13|7                                        ; -0.627  ; -0.771        ;
-; 74390:inst32|31                                       ; -0.580  ; -1.108        ;
-; DivHorloge:inst3|7490:inst8|19                        ; -0.580  ; -0.580        ;
-; 74390:inst33|7                                        ; -0.563  ; -0.915        ;
-; Alarme:inst45|DivHorloge_enable:DIVENA|74390:inst3|31 ; -0.552  ; -1.045        ;
-; Alarme:inst45|DivHorloge_enable:DIVENA|74390:inst3|34 ; -0.546  ; -0.546        ;
-; DivHorloge:inst3|74390:inst5|7                        ; -0.535  ; -1.070        ;
-; 74390:inst13|34                                       ; -0.533  ; -0.901        ;
-; 74390:inst32|7                                        ; -0.532  ; -0.880        ;
-; Alarme:inst45|DivHorloge_enable:DIVENA|74390:inst|34  ; -0.528  ; -0.535        ;
-; Alarme:inst45|DivHorloge_enable:DIVENA|7490:inst8|19  ; -0.519  ; -0.519        ;
-; DivHorloge:inst3|74390:inst|34                        ; -0.513  ; -0.957        ;
-; 74390:inst13|3                                        ; -0.498  ; -0.906        ;
-; DivHorloge:inst3|74390:inst3|7                        ; -0.411  ; -0.691        ;
-; Alarme:inst45|DivHorloge_enable:DIVENA|7490:inst8|7   ; -0.004  ; -0.004        ;
+; Clock                                                 ; -14.021 ; -513.682      ;
+; DivHorloge:inst3|7490:inst10|19                       ; -5.776  ; -42.995       ;
+; Alarme:inst45|DivHorloge_enable:DIVENA|74390:inst|3   ; -5.450  ; -5.785        ;
+; 74390:inst32|3                                        ; -3.876  ; -4.570        ;
+; DivHorloge:inst3|74390:inst|3                         ; -3.414  ; -4.008        ;
+; 74390:inst13|31                                       ; -2.256  ; -2.771        ;
+; 7490:inst35|19                                        ; -2.028  ; -4.055        ;
+; Alarme:inst45|DivHorloge_enable:DIVENA|74390:inst5|34 ; -1.639  ; -2.158        ;
+; DivHorloge:inst3|74390:inst3|31                       ; -1.601  ; -2.029        ;
+; 74390:inst33|34                                       ; -1.486  ; -1.777        ;
+; DivHorloge:inst3|7490:inst8|7                         ; -1.433  ; -1.434        ;
+; DivHorloge:inst3|74390:inst5|34                       ; -1.279  ; -1.952        ;
+; 7490:inst37|19                                        ; -1.142  ; -1.661        ;
+; DivHorloge:inst3|74390:inst|31                        ; -1.014  ; -1.372        ;
+; 74390:inst13|7                                        ; -0.825  ; -1.268        ;
+; DivHorloge:inst3|74390:inst3|34                       ; -0.789  ; -0.994        ;
+; Alarme:inst45|DivHorloge_enable:DIVENA|74390:inst3|3  ; -0.773  ; -1.056        ;
+; 74390:inst33|31                                       ; -0.753  ; -1.201        ;
+; DivHorloge:inst3|74390:inst5|3                        ; -0.747  ; -1.262        ;
+; Alarme:inst45|DivHorloge_enable:DIVENA|74390:inst5|3  ; -0.743  ; -1.236        ;
+; 74390:inst32|7                                        ; -0.718  ; -1.062        ;
+; Alarme:inst45|DivHorloge_enable:DIVENA|74390:inst|31  ; -0.692  ; -0.859        ;
+; 74390:inst33|3                                        ; -0.689  ; -1.086        ;
+; 74390:inst32|34                                       ; -0.681  ; -1.255        ;
+; Alarme:inst45|DivHorloge_enable:DIVENA|74390:inst3|31 ; -0.677  ; -1.132        ;
+; Alarme:inst45|DivHorloge_enable:DIVENA|74390:inst|7   ; -0.646  ; -1.073        ;
+; DivHorloge:inst3|74390:inst5|31                       ; -0.639  ; -1.113        ;
+; Alarme:inst45|DivHorloge_enable:DIVENA|74390:inst3|34 ; -0.628  ; -0.817        ;
+; DivHorloge:inst3|74390:inst5|7                        ; -0.607  ; -0.618        ;
+; DivHorloge:inst3|74390:inst3|7                        ; -0.591  ; -1.166        ;
+; 74390:inst32|31                                       ; -0.577  ; -0.798        ;
+; DivHorloge:inst3|74390:inst|7                         ; -0.570  ; -0.841        ;
+; DivHorloge:inst3|74390:inst|34                        ; -0.561  ; -1.036        ;
+; 74390:inst13|3                                        ; -0.524  ; -1.046        ;
+; DivHorloge:inst3|7490:inst8|19                        ; -0.521  ; -0.521        ;
+; DivHorloge:inst3|74390:inst3|3                        ; -0.496  ; -0.817        ;
+; Alarme:inst45|DivHorloge_enable:DIVENA|74390:inst3|7  ; -0.495  ; -0.805        ;
+; Alarme:inst45|DivHorloge_enable:DIVENA|74390:inst|34  ; -0.494  ; -0.598        ;
+; 74390:inst13|34                                       ; -0.474  ; -0.671        ;
+; 74390:inst33|7                                        ; -0.471  ; -0.635        ;
+; Alarme:inst45|DivHorloge_enable:DIVENA|74390:inst5|31 ; -0.447  ; -0.879        ;
+; Alarme:inst45|DivHorloge_enable:DIVENA|7490:inst8|19  ; -0.431  ; -0.431        ;
+; Alarme:inst45|DivHorloge_enable:DIVENA|74390:inst5|7  ; -0.344  ; -0.536        ;
+; Alarme:inst45|DivHorloge_enable:DIVENA|7490:inst8|7   ; -0.008  ; -0.008        ;
 ; 74390:inst13|33                                       ; 0.298   ; 0.000         ;
 ; 74390:inst13|6                                        ; 0.298   ; 0.000         ;
 ; 74390:inst32|33                                       ; 0.298   ; 0.000         ;
@@ -306,24 +306,26 @@ This panel reports FMAX for every clock in the design, regardless of the user-sp
 +-------------------------------------------------------+-------+---------------+
 ; Clock                                                 ; Slack ; End Point TNS ;
 +-------------------------------------------------------+-------+---------------+
-; Alarme:inst45|DivHorloge_enable:DIVENA|74390:inst3|34 ; 0.022 ; 0.000         ;
-; Alarme:inst45|DivHorloge_enable:DIVENA|74390:inst|34  ; 0.101 ; 0.000         ;
-; Alarme:inst45|DivHorloge_enable:DIVENA|74390:inst3|7  ; 0.176 ; 0.000         ;
-; 74390:inst13|7                                        ; 0.242 ; 0.000         ;
-; 74390:inst13|34                                       ; 0.296 ; 0.000         ;
-; Alarme:inst45|DivHorloge_enable:DIVENA|74390:inst5|7  ; 0.309 ; 0.000         ;
-; DivHorloge:inst3|74390:inst3|7                        ; 0.327 ; 0.000         ;
-; DivHorloge:inst3|74390:inst3|34                       ; 0.337 ; 0.000         ;
-; 74390:inst33|34                                       ; 0.339 ; 0.000         ;
-; Clock                                                 ; 0.341 ; 0.000         ;
-; DivHorloge:inst3|74390:inst5|34                       ; 0.341 ; 0.000         ;
-; 7490:inst37|19                                        ; 0.342 ; 0.000         ;
+; Alarme:inst45|DivHorloge_enable:DIVENA|74390:inst|34  ; 0.204 ; 0.000         ;
+; DivHorloge:inst3|74390:inst5|7                        ; 0.233 ; 0.000         ;
+; 74390:inst13|34                                       ; 0.242 ; 0.000         ;
+; 74390:inst33|7                                        ; 0.256 ; 0.000         ;
+; DivHorloge:inst3|74390:inst3|34                       ; 0.293 ; 0.000         ;
+; Alarme:inst45|DivHorloge_enable:DIVENA|74390:inst3|34 ; 0.295 ; 0.000         ;
+; Alarme:inst45|DivHorloge_enable:DIVENA|74390:inst5|7  ; 0.319 ; 0.000         ;
+; DivHorloge:inst3|74390:inst|7                         ; 0.321 ; 0.000         ;
+; Clock                                                 ; 0.323 ; 0.000         ;
+; Alarme:inst45|DivHorloge_enable:DIVENA|74390:inst3|7  ; 0.332 ; 0.000         ;
+; DivHorloge:inst3|74390:inst5|34                       ; 0.343 ; 0.000         ;
+; 74390:inst33|34                                       ; 0.347 ; 0.000         ;
+; Alarme:inst45|DivHorloge_enable:DIVENA|7490:inst8|7   ; 0.347 ; 0.000         ;
+; DivHorloge:inst3|7490:inst8|7                         ; 0.347 ; 0.000         ;
+; 7490:inst37|19                                        ; 0.348 ; 0.000         ;
 ; Alarme:inst45|DivHorloge_enable:DIVENA|74390:inst5|34 ; 0.348 ; 0.000         ;
-; Alarme:inst45|DivHorloge_enable:DIVENA|7490:inst8|7   ; 0.348 ; 0.000         ;
 ; DivHorloge:inst3|7490:inst10|19                       ; 0.348 ; 0.000         ;
-; DivHorloge:inst3|7490:inst8|7                         ; 0.349 ; 0.000         ;
-; DivHorloge:inst3|74390:inst5|7                        ; 0.370 ; 0.000         ;
-; 74390:inst32|7                                        ; 0.371 ; 0.000         ;
+; Alarme:inst45|DivHorloge_enable:DIVENA|74390:inst|31  ; 0.371 ; 0.000         ;
+; Alarme:inst45|DivHorloge_enable:DIVENA|74390:inst|7   ; 0.378 ; 0.000         ;
+; DivHorloge:inst3|74390:inst3|3                        ; 0.384 ; 0.000         ;
 ; 74390:inst13|33                                       ; 0.393 ; 0.000         ;
 ; 74390:inst13|6                                        ; 0.393 ; 0.000         ;
 ; 74390:inst32|33                                       ; 0.393 ; 0.000         ;
@@ -349,32 +351,30 @@ This panel reports FMAX for every clock in the design, regardless of the user-sp
 ; DivHorloge:inst3|74390:inst5|6                        ; 0.393 ; 0.000         ;
 ; DivHorloge:inst3|74390:inst|33                        ; 0.393 ; 0.000         ;
 ; DivHorloge:inst3|74390:inst|6                         ; 0.393 ; 0.000         ;
-; DivHorloge:inst3|74390:inst|31                        ; 0.429 ; 0.000         ;
-; 74390:inst13|3                                        ; 0.434 ; 0.000         ;
-; 7490:inst35|19                                        ; 0.448 ; 0.000         ;
-; Alarme:inst45|DivHorloge_enable:DIVENA|74390:inst|7   ; 0.452 ; 0.000         ;
-; DivHorloge:inst3|74390:inst|7                         ; 0.453 ; 0.000         ;
-; 74390:inst33|31                                       ; 0.456 ; 0.000         ;
-; 74390:inst33|7                                        ; 0.467 ; 0.000         ;
-; 74390:inst32|34                                       ; 0.470 ; 0.000         ;
-; DivHorloge:inst3|74390:inst|34                        ; 0.501 ; 0.000         ;
-; 74390:inst32|31                                       ; 0.518 ; 0.000         ;
-; Alarme:inst45|DivHorloge_enable:DIVENA|7490:inst8|19  ; 0.558 ; 0.000         ;
-; DivHorloge:inst3|74390:inst5|3                        ; 0.584 ; 0.000         ;
-; DivHorloge:inst3|7490:inst8|19                        ; 0.606 ; 0.000         ;
-; DivHorloge:inst3|74390:inst3|3                        ; 0.643 ; 0.000         ;
-; Alarme:inst45|DivHorloge_enable:DIVENA|74390:inst5|31 ; 0.645 ; 0.000         ;
-; DivHorloge:inst3|74390:inst3|31                       ; 0.646 ; 0.000         ;
-; 74390:inst13|31                                       ; 0.652 ; 0.000         ;
-; Alarme:inst45|DivHorloge_enable:DIVENA|74390:inst5|3  ; 0.657 ; 0.000         ;
-; Alarme:inst45|DivHorloge_enable:DIVENA|74390:inst|31  ; 0.658 ; 0.000         ;
-; 74390:inst32|3                                        ; 0.663 ; 0.000         ;
-; DivHorloge:inst3|74390:inst5|31                       ; 0.666 ; 0.000         ;
-; Alarme:inst45|DivHorloge_enable:DIVENA|74390:inst3|31 ; 0.679 ; 0.000         ;
-; Alarme:inst45|DivHorloge_enable:DIVENA|74390:inst3|3  ; 0.738 ; 0.000         ;
-; 74390:inst33|3                                        ; 0.779 ; 0.000         ;
-; DivHorloge:inst3|74390:inst|3                         ; 0.810 ; 0.000         ;
-; Alarme:inst45|DivHorloge_enable:DIVENA|74390:inst|3   ; 0.815 ; 0.000         ;
+; Alarme:inst45|DivHorloge_enable:DIVENA|74390:inst5|31 ; 0.408 ; 0.000         ;
+; DivHorloge:inst3|74390:inst|34                        ; 0.411 ; 0.000         ;
+; Alarme:inst45|DivHorloge_enable:DIVENA|74390:inst3|3  ; 0.422 ; 0.000         ;
+; 74390:inst32|34                                       ; 0.435 ; 0.000         ;
+; 74390:inst32|31                                       ; 0.436 ; 0.000         ;
+; Alarme:inst45|DivHorloge_enable:DIVENA|74390:inst|3   ; 0.468 ; 0.000         ;
+; 74390:inst13|7                                        ; 0.488 ; 0.000         ;
+; DivHorloge:inst3|74390:inst|31                        ; 0.499 ; 0.000         ;
+; 74390:inst13|3                                        ; 0.514 ; 0.000         ;
+; 74390:inst33|3                                        ; 0.515 ; 0.000         ;
+; DivHorloge:inst3|74390:inst5|31                       ; 0.519 ; 0.000         ;
+; 74390:inst32|7                                        ; 0.532 ; 0.000         ;
+; Alarme:inst45|DivHorloge_enable:DIVENA|7490:inst8|19  ; 0.533 ; 0.000         ;
+; 74390:inst33|31                                       ; 0.536 ; 0.000         ;
+; Alarme:inst45|DivHorloge_enable:DIVENA|74390:inst5|3  ; 0.551 ; 0.000         ;
+; DivHorloge:inst3|74390:inst3|31                       ; 0.561 ; 0.000         ;
+; DivHorloge:inst3|74390:inst5|3                        ; 0.565 ; 0.000         ;
+; DivHorloge:inst3|7490:inst8|19                        ; 0.565 ; 0.000         ;
+; 74390:inst13|31                                       ; 0.571 ; 0.000         ;
+; 7490:inst35|19                                        ; 0.576 ; 0.000         ;
+; Alarme:inst45|DivHorloge_enable:DIVENA|74390:inst3|31 ; 0.660 ; 0.000         ;
+; DivHorloge:inst3|74390:inst3|7                        ; 0.683 ; 0.000         ;
+; DivHorloge:inst3|74390:inst|3                         ; 0.741 ; 0.000         ;
+; 74390:inst32|3                                        ; 0.817 ; 0.000         ;
 +-------------------------------------------------------+-------+---------------+
 
 
@@ -383,13 +383,13 @@ This panel reports FMAX for every clock in the design, regardless of the user-sp
 +-------+--------+-----------------------+
 ; Clock ; Slack  ; End Point TNS         ;
 +-------+--------+-----------------------+
-; D4    ; -0.383 ; -0.383                ;
-; D5    ; -0.339 ; -0.339                ;
-; D1    ; -0.322 ; -0.322                ;
-; D6    ; -0.277 ; -0.277                ;
-; D7    ; -0.251 ; -0.251                ;
-; D2    ; -0.182 ; -0.182                ;
-; D3    ; -0.122 ; -0.122                ;
+; D1    ; -0.848 ; -0.848                ;
+; D7    ; -0.520 ; -0.520                ;
+; D6    ; -0.366 ; -0.366                ;
+; D2    ; -0.327 ; -0.327                ;
+; D3    ; -0.316 ; -0.316                ;
+; D5    ; -0.271 ; -0.271                ;
+; D4    ; -0.244 ; -0.244                ;
 +-------+--------+-----------------------+
 
 
@@ -398,13 +398,13 @@ This panel reports FMAX for every clock in the design, regardless of the user-sp
 +-------+-------+-----------------------+
 ; Clock ; Slack ; End Point TNS         ;
 +-------+-------+-----------------------+
-; D3    ; 0.482 ; 0.000                 ;
-; D2    ; 0.519 ; 0.000                 ;
-; D7    ; 0.607 ; 0.000                 ;
-; D1    ; 0.625 ; 0.000                 ;
-; D6    ; 0.634 ; 0.000                 ;
-; D5    ; 0.706 ; 0.000                 ;
-; D4    ; 0.744 ; 0.000                 ;
+; D4    ; 0.622 ; 0.000                 ;
+; D5    ; 0.664 ; 0.000                 ;
+; D3    ; 0.688 ; 0.000                 ;
+; D6    ; 0.714 ; 0.000                 ;
+; D2    ; 0.720 ; 0.000                 ;
+; D7    ; 0.880 ; 0.000                 ;
+; D1    ; 1.026 ; 0.000                 ;
 +-------+-------+-----------------------+
 
 
@@ -497,40 +497,40 @@ Design MTBF is not calculated because the design doesn't meet its timing require
 +-------------+-----------------+-------------------------------------------------------+---------------------------------------------------------------+
 ; Fmax        ; Restricted Fmax ; Clock Name                                            ; Note                                                          ;
 +-------------+-----------------+-------------------------------------------------------+---------------------------------------------------------------+
-; 70.19 MHz   ; 70.19 MHz       ; Clock                                                 ;                                                               ;
-; 391.54 MHz  ; 391.54 MHz      ; DivHorloge:inst3|7490:inst10|19                       ;                                                               ;
-; 452.08 MHz  ; 416.15 MHz      ; 74390:inst33|34                                       ; limit due to minimum period restriction (tmin)                ;
-; 472.14 MHz  ; 416.15 MHz      ; DivHorloge:inst3|74390:inst5|34                       ; limit due to minimum period restriction (tmin)                ;
-; 475.29 MHz  ; 416.15 MHz      ; 7490:inst37|19                                        ; limit due to minimum period restriction (tmin)                ;
-; 484.26 MHz  ; 416.15 MHz      ; DivHorloge:inst3|7490:inst8|7                         ; limit due to minimum period restriction (tmin)                ;
-; 500.5 MHz   ; 416.15 MHz      ; Alarme:inst45|DivHorloge_enable:DIVENA|74390:inst5|34 ; limit due to minimum period restriction (tmin)                ;
-; 1091.7 MHz  ; 416.15 MHz      ; Alarme:inst45|DivHorloge_enable:DIVENA|7490:inst8|7   ; limit due to minimum period restriction (tmin)                ;
-; 1302.08 MHz ; 416.15 MHz      ; 7490:inst35|19                                        ; limit due to minimum period restriction (tmin)                ;
-; 1564.95 MHz ; 416.15 MHz      ; 74390:inst13|6                                        ; limit due to minimum period restriction (tmin)                ;
-; 1564.95 MHz ; 416.15 MHz      ; 74390:inst32|33                                       ; limit due to minimum period restriction (tmin)                ;
-; 1564.95 MHz ; 416.15 MHz      ; 74390:inst32|6                                        ; limit due to minimum period restriction (tmin)                ;
-; 1564.95 MHz ; 416.15 MHz      ; 74390:inst33|33                                       ; limit due to minimum period restriction (tmin)                ;
-; 1564.95 MHz ; 416.15 MHz      ; 74390:inst33|6                                        ; limit due to minimum period restriction (tmin)                ;
-; 1564.95 MHz ; 416.15 MHz      ; Alarme:inst45|DivHorloge_enable:DIVENA|74390:inst3|33 ; limit due to minimum period restriction (tmin)                ;
-; 1564.95 MHz ; 416.15 MHz      ; Alarme:inst45|DivHorloge_enable:DIVENA|74390:inst3|6  ; limit due to minimum period restriction (tmin)                ;
-; 1564.95 MHz ; 416.15 MHz      ; Alarme:inst45|DivHorloge_enable:DIVENA|74390:inst5|33 ; limit due to minimum period restriction (tmin)                ;
-; 1564.95 MHz ; 416.15 MHz      ; Alarme:inst45|DivHorloge_enable:DIVENA|74390:inst5|6  ; limit due to minimum period restriction (tmin)                ;
-; 1564.95 MHz ; 416.15 MHz      ; Alarme:inst45|DivHorloge_enable:DIVENA|74390:inst|33  ; limit due to minimum period restriction (tmin)                ;
-; 1564.95 MHz ; 250.0 MHz       ; D7                                                    ; limit due to minimum period restriction (max I/O toggle rate) ;
-; 1564.95 MHz ; 416.15 MHz      ; DivHorloge:inst3|74390:inst3|33                       ; limit due to minimum period restriction (tmin)                ;
-; 1564.95 MHz ; 416.15 MHz      ; DivHorloge:inst3|74390:inst3|6                        ; limit due to minimum period restriction (tmin)                ;
-; 1564.95 MHz ; 416.15 MHz      ; DivHorloge:inst3|74390:inst5|33                       ; limit due to minimum period restriction (tmin)                ;
-; 1564.95 MHz ; 416.15 MHz      ; DivHorloge:inst3|74390:inst5|6                        ; limit due to minimum period restriction (tmin)                ;
-; 1564.95 MHz ; 416.15 MHz      ; DivHorloge:inst3|74390:inst|33                        ; limit due to minimum period restriction (tmin)                ;
-; 1564.95 MHz ; 416.15 MHz      ; DivHorloge:inst3|74390:inst|6                         ; limit due to minimum period restriction (tmin)                ;
-; 1564.95 MHz ; 416.15 MHz      ; Alarme:inst45|DivHorloge_enable:DIVENA|74390:inst|6   ; limit due to minimum period restriction (tmin)                ;
+; 73.1 MHz    ; 73.1 MHz        ; Clock                                                 ;                                                               ;
+; 387.15 MHz  ; 387.15 MHz      ; DivHorloge:inst3|7490:inst10|19                       ;                                                               ;
+; 431.97 MHz  ; 416.15 MHz      ; 74390:inst33|34                                       ; limit due to minimum period restriction (tmin)                ;
+; 449.24 MHz  ; 416.15 MHz      ; Alarme:inst45|DivHorloge_enable:DIVENA|74390:inst5|34 ; limit due to minimum period restriction (tmin)                ;
+; 469.7 MHz   ; 416.15 MHz      ; DivHorloge:inst3|74390:inst5|34                       ; limit due to minimum period restriction (tmin)                ;
+; 477.1 MHz   ; 416.15 MHz      ; DivHorloge:inst3|7490:inst8|7                         ; limit due to minimum period restriction (tmin)                ;
+; 502.01 MHz  ; 416.15 MHz      ; 7490:inst37|19                                        ; limit due to minimum period restriction (tmin)                ;
+; 1061.57 MHz ; 416.15 MHz      ; 7490:inst35|19                                        ; limit due to minimum period restriction (tmin)                ;
+; 1086.96 MHz ; 416.15 MHz      ; Alarme:inst45|DivHorloge_enable:DIVENA|7490:inst8|7   ; limit due to minimum period restriction (tmin)                ;
 ; 1564.95 MHz ; 416.15 MHz      ; 74390:inst13|33                                       ; limit due to minimum period restriction (tmin)                ;
-; 1567.4 MHz  ; 250.0 MHz       ; D1                                                    ; limit due to minimum period restriction (max I/O toggle rate) ;
-; 1567.4 MHz  ; 250.0 MHz       ; D2                                                    ; limit due to minimum period restriction (max I/O toggle rate) ;
+; 1564.95 MHz ; 416.15 MHz      ; 74390:inst33|6                                        ; limit due to minimum period restriction (tmin)                ;
+; 1564.95 MHz ; 416.15 MHz      ; 74390:inst13|6                                        ; limit due to minimum period restriction (tmin)                ;
+; 1564.95 MHz ; 416.15 MHz      ; DivHorloge:inst3|74390:inst|6                         ; limit due to minimum period restriction (tmin)                ;
+; 1564.95 MHz ; 416.15 MHz      ; DivHorloge:inst3|74390:inst|33                        ; limit due to minimum period restriction (tmin)                ;
+; 1564.95 MHz ; 416.15 MHz      ; DivHorloge:inst3|74390:inst5|6                        ; limit due to minimum period restriction (tmin)                ;
+; 1564.95 MHz ; 416.15 MHz      ; 74390:inst32|33                                       ; limit due to minimum period restriction (tmin)                ;
+; 1564.95 MHz ; 416.15 MHz      ; DivHorloge:inst3|74390:inst5|33                       ; limit due to minimum period restriction (tmin)                ;
+; 1564.95 MHz ; 416.15 MHz      ; DivHorloge:inst3|74390:inst3|6                        ; limit due to minimum period restriction (tmin)                ;
+; 1564.95 MHz ; 416.15 MHz      ; DivHorloge:inst3|74390:inst3|33                       ; limit due to minimum period restriction (tmin)                ;
+; 1564.95 MHz ; 250.0 MHz       ; D7                                                    ; limit due to minimum period restriction (max I/O toggle rate) ;
+; 1564.95 MHz ; 416.15 MHz      ; 74390:inst32|6                                        ; limit due to minimum period restriction (tmin)                ;
+; 1564.95 MHz ; 416.15 MHz      ; Alarme:inst45|DivHorloge_enable:DIVENA|74390:inst|6   ; limit due to minimum period restriction (tmin)                ;
+; 1564.95 MHz ; 416.15 MHz      ; Alarme:inst45|DivHorloge_enable:DIVENA|74390:inst|33  ; limit due to minimum period restriction (tmin)                ;
+; 1564.95 MHz ; 416.15 MHz      ; Alarme:inst45|DivHorloge_enable:DIVENA|74390:inst5|6  ; limit due to minimum period restriction (tmin)                ;
+; 1564.95 MHz ; 416.15 MHz      ; 74390:inst33|33                                       ; limit due to minimum period restriction (tmin)                ;
+; 1564.95 MHz ; 416.15 MHz      ; Alarme:inst45|DivHorloge_enable:DIVENA|74390:inst5|33 ; limit due to minimum period restriction (tmin)                ;
+; 1564.95 MHz ; 416.15 MHz      ; Alarme:inst45|DivHorloge_enable:DIVENA|74390:inst3|6  ; limit due to minimum period restriction (tmin)                ;
+; 1564.95 MHz ; 416.15 MHz      ; Alarme:inst45|DivHorloge_enable:DIVENA|74390:inst3|33 ; limit due to minimum period restriction (tmin)                ;
 ; 1567.4 MHz  ; 250.0 MHz       ; D3                                                    ; limit due to minimum period restriction (max I/O toggle rate) ;
 ; 1567.4 MHz  ; 250.0 MHz       ; D4                                                    ; limit due to minimum period restriction (max I/O toggle rate) ;
 ; 1567.4 MHz  ; 250.0 MHz       ; D5                                                    ; limit due to minimum period restriction (max I/O toggle rate) ;
 ; 1567.4 MHz  ; 250.0 MHz       ; D6                                                    ; limit due to minimum period restriction (max I/O toggle rate) ;
+; 1567.4 MHz  ; 250.0 MHz       ; D2                                                    ; limit due to minimum period restriction (max I/O toggle rate) ;
+; 1567.4 MHz  ; 250.0 MHz       ; D1                                                    ; limit due to minimum period restriction (max I/O toggle rate) ;
 +-------------+-----------------+-------------------------------------------------------+---------------------------------------------------------------+
 This panel reports FMAX for every clock in the design, regardless of the user-specified clock periods.  FMAX is only computed for paths where the source and destination registers or ports are driven by the same clock.  Paths of different clocks, including generated clocks, are ignored.  For paths between a clock and its inversion, FMAX is computed as if the rising and falling edges are scaled along with FMAX, such that the duty cycle (in terms of a percentage) is maintained. Altera recommends that you always use clock constraints and other slack reports for sign-off analysis.
 
@@ -540,50 +540,50 @@ This panel reports FMAX for every clock in the design, regardless of the user-sp
 +-------------------------------------------------------+---------+---------------+
 ; Clock                                                 ; Slack   ; End Point TNS ;
 +-------------------------------------------------------+---------+---------------+
-; Clock                                                 ; -13.247 ; -465.849      ;
-; Alarme:inst45|DivHorloge_enable:DIVENA|74390:inst|3   ; -5.083  ; -5.742        ;
-; DivHorloge:inst3|7490:inst10|19                       ; -4.679  ; -34.833       ;
-; 74390:inst32|3                                        ; -3.007  ; -3.447        ;
-; DivHorloge:inst3|74390:inst|3                         ; -2.984  ; -3.688        ;
-; 7490:inst35|19                                        ; -2.250  ; -4.498        ;
-; DivHorloge:inst3|7490:inst8|7                         ; -1.543  ; -1.543        ;
-; DivHorloge:inst3|74390:inst5|31                       ; -1.408  ; -1.816        ;
-; 74390:inst33|34                                       ; -1.316  ; -1.534        ;
-; 7490:inst37|19                                        ; -1.294  ; -1.449        ;
-; 74390:inst33|31                                       ; -1.128  ; -1.509        ;
-; DivHorloge:inst3|74390:inst5|34                       ; -1.118  ; -1.433        ;
-; Alarme:inst45|DivHorloge_enable:DIVENA|74390:inst5|34 ; -0.998  ; -1.287        ;
-; DivHorloge:inst3|74390:inst|31                        ; -0.837  ; -1.076        ;
-; Alarme:inst45|DivHorloge_enable:DIVENA|74390:inst5|31 ; -0.713  ; -1.097        ;
-; 74390:inst13|31                                       ; -0.696  ; -1.207        ;
-; 74390:inst33|3                                        ; -0.668  ; -1.246        ;
-; Alarme:inst45|DivHorloge_enable:DIVENA|74390:inst|7   ; -0.662  ; -1.006        ;
-; Alarme:inst45|DivHorloge_enable:DIVENA|74390:inst3|7  ; -0.620  ; -0.620        ;
-; DivHorloge:inst3|74390:inst3|34                       ; -0.605  ; -0.838        ;
-; Alarme:inst45|DivHorloge_enable:DIVENA|74390:inst3|3  ; -0.603  ; -1.055        ;
-; DivHorloge:inst3|74390:inst3|31                       ; -0.599  ; -1.159        ;
-; Alarme:inst45|DivHorloge_enable:DIVENA|74390:inst5|7  ; -0.586  ; -0.774        ;
-; DivHorloge:inst3|74390:inst|7                         ; -0.569  ; -0.822        ;
-; DivHorloge:inst3|74390:inst3|3                        ; -0.551  ; -1.010        ;
-; Alarme:inst45|DivHorloge_enable:DIVENA|74390:inst|31  ; -0.544  ; -0.978        ;
-; DivHorloge:inst3|74390:inst5|3                        ; -0.540  ; -1.001        ;
-; Alarme:inst45|DivHorloge_enable:DIVENA|74390:inst5|3  ; -0.519  ; -1.006        ;
-; 74390:inst32|34                                       ; -0.516  ; -0.956        ;
-; 74390:inst33|7                                        ; -0.506  ; -0.809        ;
-; DivHorloge:inst3|7490:inst8|19                        ; -0.506  ; -0.506        ;
-; DivHorloge:inst3|74390:inst5|7                        ; -0.494  ; -0.967        ;
-; Alarme:inst45|DivHorloge_enable:DIVENA|74390:inst3|34 ; -0.491  ; -0.491        ;
-; 74390:inst13|7                                        ; -0.484  ; -0.586        ;
-; DivHorloge:inst3|74390:inst|34                        ; -0.477  ; -0.864        ;
-; Alarme:inst45|DivHorloge_enable:DIVENA|74390:inst|34  ; -0.477  ; -0.477        ;
-; 74390:inst32|31                                       ; -0.472  ; -0.942        ;
-; 74390:inst13|34                                       ; -0.457  ; -0.785        ;
-; Alarme:inst45|DivHorloge_enable:DIVENA|74390:inst3|31 ; -0.451  ; -0.881        ;
-; Alarme:inst45|DivHorloge_enable:DIVENA|7490:inst8|19  ; -0.446  ; -0.446        ;
-; 74390:inst32|7                                        ; -0.431  ; -0.691        ;
-; 74390:inst13|3                                        ; -0.426  ; -0.746        ;
-; DivHorloge:inst3|74390:inst3|7                        ; -0.375  ; -0.607        ;
-; Alarme:inst45|DivHorloge_enable:DIVENA|7490:inst8|7   ; 0.084   ; 0.000         ;
+; Clock                                                 ; -12.679 ; -456.274      ;
+; DivHorloge:inst3|7490:inst10|19                       ; -5.200  ; -39.073       ;
+; Alarme:inst45|DivHorloge_enable:DIVENA|74390:inst|3   ; -4.954  ; -5.234        ;
+; 74390:inst32|3                                        ; -3.478  ; -4.093        ;
+; DivHorloge:inst3|74390:inst|3                         ; -3.070  ; -3.589        ;
+; 74390:inst13|31                                       ; -1.994  ; -2.436        ;
+; 7490:inst35|19                                        ; -1.797  ; -3.592        ;
+; Alarme:inst45|DivHorloge_enable:DIVENA|74390:inst5|34 ; -1.558  ; -1.848        ;
+; DivHorloge:inst3|74390:inst3|31                       ; -1.399  ; -1.767        ;
+; DivHorloge:inst3|7490:inst8|7                         ; -1.332  ; -1.332        ;
+; 74390:inst33|34                                       ; -1.323  ; -1.473        ;
+; DivHorloge:inst3|74390:inst5|34                       ; -1.131  ; -1.560        ;
+; 7490:inst37|19                                        ; -1.059  ; -1.346        ;
+; DivHorloge:inst3|74390:inst|31                        ; -0.881  ; -1.187        ;
+; 74390:inst13|7                                        ; -0.756  ; -1.156        ;
+; Alarme:inst45|DivHorloge_enable:DIVENA|74390:inst3|3  ; -0.660  ; -0.902        ;
+; DivHorloge:inst3|74390:inst3|34                       ; -0.652  ; -0.818        ;
+; 74390:inst33|31                                       ; -0.642  ; -1.037        ;
+; DivHorloge:inst3|74390:inst5|3                        ; -0.624  ; -1.068        ;
+; Alarme:inst45|DivHorloge_enable:DIVENA|74390:inst5|3  ; -0.623  ; -1.043        ;
+; 74390:inst32|34                                       ; -0.601  ; -1.055        ;
+; 74390:inst32|7                                        ; -0.597  ; -0.864        ;
+; 74390:inst33|3                                        ; -0.583  ; -0.931        ;
+; Alarme:inst45|DivHorloge_enable:DIVENA|74390:inst3|31 ; -0.576  ; -0.966        ;
+; Alarme:inst45|DivHorloge_enable:DIVENA|74390:inst|31  ; -0.576  ; -0.704        ;
+; DivHorloge:inst3|74390:inst3|7                        ; -0.567  ; -1.058        ;
+; DivHorloge:inst3|74390:inst5|31                       ; -0.533  ; -0.946        ;
+; DivHorloge:inst3|74390:inst|34                        ; -0.517  ; -0.914        ;
+; Alarme:inst45|DivHorloge_enable:DIVENA|74390:inst3|34 ; -0.507  ; -0.645        ;
+; Alarme:inst45|DivHorloge_enable:DIVENA|74390:inst|7   ; -0.490  ; -0.838        ;
+; Alarme:inst45|DivHorloge_enable:DIVENA|74390:inst|34  ; -0.483  ; -0.551        ;
+; 74390:inst32|31                                       ; -0.473  ; -0.658        ;
+; DivHorloge:inst3|74390:inst5|7                        ; -0.455  ; -0.455        ;
+; DivHorloge:inst3|74390:inst|7                         ; -0.451  ; -0.666        ;
+; Alarme:inst45|DivHorloge_enable:DIVENA|74390:inst3|7  ; -0.449  ; -0.712        ;
+; 74390:inst13|3                                        ; -0.447  ; -0.868        ;
+; DivHorloge:inst3|7490:inst8|19                        ; -0.444  ; -0.444        ;
+; DivHorloge:inst3|74390:inst3|3                        ; -0.432  ; -0.664        ;
+; 74390:inst33|7                                        ; -0.414  ; -0.550        ;
+; Alarme:inst45|DivHorloge_enable:DIVENA|7490:inst8|19  ; -0.376  ; -0.376        ;
+; Alarme:inst45|DivHorloge_enable:DIVENA|74390:inst5|31 ; -0.373  ; -0.713        ;
+; 74390:inst13|34                                       ; -0.367  ; -0.523        ;
+; Alarme:inst45|DivHorloge_enable:DIVENA|74390:inst5|7  ; -0.299  ; -0.436        ;
+; Alarme:inst45|DivHorloge_enable:DIVENA|7490:inst8|7   ; 0.080   ; 0.000         ;
 ; 74390:inst13|33                                       ; 0.361   ; 0.000         ;
 ; 74390:inst13|6                                        ; 0.361   ; 0.000         ;
 ; 74390:inst32|33                                       ; 0.361   ; 0.000         ;
@@ -617,24 +617,26 @@ This panel reports FMAX for every clock in the design, regardless of the user-sp
 +-------------------------------------------------------+-------+---------------+
 ; Clock                                                 ; Slack ; End Point TNS ;
 +-------------------------------------------------------+-------+---------------+
-; Alarme:inst45|DivHorloge_enable:DIVENA|74390:inst3|34 ; 0.025 ; 0.000         ;
-; Alarme:inst45|DivHorloge_enable:DIVENA|74390:inst|34  ; 0.103 ; 0.000         ;
-; Alarme:inst45|DivHorloge_enable:DIVENA|74390:inst3|7  ; 0.164 ; 0.000         ;
-; 74390:inst13|7                                        ; 0.230 ; 0.000         ;
-; 74390:inst13|34                                       ; 0.259 ; 0.000         ;
-; DivHorloge:inst3|74390:inst3|7                        ; 0.288 ; 0.000         ;
-; Alarme:inst45|DivHorloge_enable:DIVENA|74390:inst5|7  ; 0.296 ; 0.000         ;
-; 74390:inst33|34                                       ; 0.305 ; 0.000         ;
-; 7490:inst37|19                                        ; 0.305 ; 0.000         ;
-; DivHorloge:inst3|74390:inst5|34                       ; 0.305 ; 0.000         ;
-; Clock                                                 ; 0.306 ; 0.000         ;
-; DivHorloge:inst3|74390:inst3|34                       ; 0.307 ; 0.000         ;
+; 74390:inst13|34                                       ; 0.203 ; 0.000         ;
+; Alarme:inst45|DivHorloge_enable:DIVENA|74390:inst|34  ; 0.205 ; 0.000         ;
+; DivHorloge:inst3|74390:inst5|7                        ; 0.229 ; 0.000         ;
+; 74390:inst33|7                                        ; 0.260 ; 0.000         ;
+; Alarme:inst45|DivHorloge_enable:DIVENA|74390:inst5|7  ; 0.271 ; 0.000         ;
+; DivHorloge:inst3|74390:inst3|34                       ; 0.279 ; 0.000         ;
+; DivHorloge:inst3|74390:inst|7                         ; 0.282 ; 0.000         ;
+; Alarme:inst45|DivHorloge_enable:DIVENA|74390:inst3|34 ; 0.284 ; 0.000         ;
+; Clock                                                 ; 0.289 ; 0.000         ;
+; Alarme:inst45|DivHorloge_enable:DIVENA|74390:inst3|7  ; 0.292 ; 0.000         ;
+; DivHorloge:inst3|74390:inst5|34                       ; 0.306 ; 0.000         ;
+; 74390:inst33|34                                       ; 0.311 ; 0.000         ;
 ; Alarme:inst45|DivHorloge_enable:DIVENA|74390:inst5|34 ; 0.311 ; 0.000         ;
+; Alarme:inst45|DivHorloge_enable:DIVENA|7490:inst8|7   ; 0.311 ; 0.000         ;
+; DivHorloge:inst3|7490:inst10|19                       ; 0.311 ; 0.000         ;
 ; DivHorloge:inst3|7490:inst8|7                         ; 0.311 ; 0.000         ;
-; Alarme:inst45|DivHorloge_enable:DIVENA|7490:inst8|7   ; 0.312 ; 0.000         ;
-; DivHorloge:inst3|7490:inst10|19                       ; 0.312 ; 0.000         ;
-; DivHorloge:inst3|74390:inst5|7                        ; 0.314 ; 0.000         ;
-; 74390:inst32|7                                        ; 0.317 ; 0.000         ;
+; 7490:inst37|19                                        ; 0.312 ; 0.000         ;
+; DivHorloge:inst3|74390:inst3|3                        ; 0.318 ; 0.000         ;
+; Alarme:inst45|DivHorloge_enable:DIVENA|74390:inst|7   ; 0.331 ; 0.000         ;
+; Alarme:inst45|DivHorloge_enable:DIVENA|74390:inst5|31 ; 0.337 ; 0.000         ;
 ; 74390:inst13|33                                       ; 0.354 ; 0.000         ;
 ; 74390:inst13|6                                        ; 0.354 ; 0.000         ;
 ; 74390:inst32|33                                       ; 0.354 ; 0.000         ;
@@ -660,32 +662,30 @@ This panel reports FMAX for every clock in the design, regardless of the user-sp
 ; D4                                                    ; 0.355 ; 0.000         ;
 ; D5                                                    ; 0.355 ; 0.000         ;
 ; D6                                                    ; 0.355 ; 0.000         ;
-; 74390:inst13|3                                        ; 0.369 ; 0.000         ;
-; DivHorloge:inst3|74390:inst|31                        ; 0.403 ; 0.000         ;
-; 7490:inst35|19                                        ; 0.416 ; 0.000         ;
-; 74390:inst32|34                                       ; 0.424 ; 0.000         ;
-; DivHorloge:inst3|74390:inst|7                         ; 0.425 ; 0.000         ;
-; 74390:inst33|31                                       ; 0.432 ; 0.000         ;
-; Alarme:inst45|DivHorloge_enable:DIVENA|74390:inst|7   ; 0.432 ; 0.000         ;
-; DivHorloge:inst3|74390:inst|34                        ; 0.436 ; 0.000         ;
-; 74390:inst33|7                                        ; 0.443 ; 0.000         ;
-; 74390:inst32|31                                       ; 0.453 ; 0.000         ;
-; DivHorloge:inst3|74390:inst5|3                        ; 0.519 ; 0.000         ;
-; Alarme:inst45|DivHorloge_enable:DIVENA|7490:inst8|19  ; 0.522 ; 0.000         ;
-; DivHorloge:inst3|7490:inst8|19                        ; 0.566 ; 0.000         ;
-; DivHorloge:inst3|74390:inst3|3                        ; 0.568 ; 0.000         ;
-; Alarme:inst45|DivHorloge_enable:DIVENA|74390:inst5|3  ; 0.585 ; 0.000         ;
-; 74390:inst13|31                                       ; 0.607 ; 0.000         ;
-; Alarme:inst45|DivHorloge_enable:DIVENA|74390:inst3|31 ; 0.610 ; 0.000         ;
-; Alarme:inst45|DivHorloge_enable:DIVENA|74390:inst|31  ; 0.610 ; 0.000         ;
-; Alarme:inst45|DivHorloge_enable:DIVENA|74390:inst5|31 ; 0.611 ; 0.000         ;
-; DivHorloge:inst3|74390:inst3|31                       ; 0.618 ; 0.000         ;
-; DivHorloge:inst3|74390:inst5|31                       ; 0.631 ; 0.000         ;
-; 74390:inst32|3                                        ; 0.638 ; 0.000         ;
-; Alarme:inst45|DivHorloge_enable:DIVENA|74390:inst3|3  ; 0.677 ; 0.000         ;
-; 74390:inst33|3                                        ; 0.681 ; 0.000         ;
-; DivHorloge:inst3|74390:inst|3                         ; 0.765 ; 0.000         ;
-; Alarme:inst45|DivHorloge_enable:DIVENA|74390:inst|3   ; 0.782 ; 0.000         ;
+; DivHorloge:inst3|74390:inst|34                        ; 0.362 ; 0.000         ;
+; Alarme:inst45|DivHorloge_enable:DIVENA|74390:inst|31  ; 0.367 ; 0.000         ;
+; 74390:inst32|34                                       ; 0.382 ; 0.000         ;
+; Alarme:inst45|DivHorloge_enable:DIVENA|74390:inst3|3  ; 0.399 ; 0.000         ;
+; 74390:inst32|31                                       ; 0.424 ; 0.000         ;
+; Alarme:inst45|DivHorloge_enable:DIVENA|74390:inst|3   ; 0.439 ; 0.000         ;
+; 74390:inst13|3                                        ; 0.449 ; 0.000         ;
+; DivHorloge:inst3|74390:inst|31                        ; 0.464 ; 0.000         ;
+; 74390:inst13|7                                        ; 0.465 ; 0.000         ;
+; 74390:inst32|7                                        ; 0.467 ; 0.000         ;
+; 74390:inst33|3                                        ; 0.483 ; 0.000         ;
+; DivHorloge:inst3|74390:inst5|31                       ; 0.494 ; 0.000         ;
+; 74390:inst33|31                                       ; 0.502 ; 0.000         ;
+; Alarme:inst45|DivHorloge_enable:DIVENA|7490:inst8|19  ; 0.502 ; 0.000         ;
+; Alarme:inst45|DivHorloge_enable:DIVENA|74390:inst5|3  ; 0.515 ; 0.000         ;
+; DivHorloge:inst3|74390:inst3|31                       ; 0.517 ; 0.000         ;
+; DivHorloge:inst3|7490:inst8|19                        ; 0.526 ; 0.000         ;
+; DivHorloge:inst3|74390:inst5|3                        ; 0.530 ; 0.000         ;
+; 7490:inst35|19                                        ; 0.531 ; 0.000         ;
+; 74390:inst13|31                                       ; 0.534 ; 0.000         ;
+; DivHorloge:inst3|74390:inst3|7                        ; 0.591 ; 0.000         ;
+; Alarme:inst45|DivHorloge_enable:DIVENA|74390:inst3|31 ; 0.593 ; 0.000         ;
+; DivHorloge:inst3|74390:inst|3                         ; 0.716 ; 0.000         ;
+; 74390:inst32|3                                        ; 0.764 ; 0.000         ;
 +-------------------------------------------------------+-------+---------------+
 
 
@@ -694,13 +694,13 @@ This panel reports FMAX for every clock in the design, regardless of the user-sp
 +-------+--------+----------------------+
 ; Clock ; Slack  ; End Point TNS        ;
 +-------+--------+----------------------+
-; D7    ; -0.173 ; -0.173               ;
-; D4    ; -0.135 ; -0.135               ;
-; D1    ; -0.127 ; -0.127               ;
-; D5    ; -0.093 ; -0.093               ;
-; D6    ; -0.039 ; -0.039               ;
-; D2    ; 0.076  ; 0.000                ;
-; D3    ; 0.119  ; 0.000                ;
+; D1    ; -0.617 ; -0.617               ;
+; D7    ; -0.478 ; -0.478               ;
+; D6    ; -0.144 ; -0.144               ;
+; D2    ; -0.112 ; -0.112               ;
+; D3    ; -0.092 ; -0.092               ;
+; D5    ; -0.053 ; -0.053               ;
+; D4    ; -0.010 ; -0.010               ;
 +-------+--------+----------------------+
 
 
@@ -709,13 +709,13 @@ This panel reports FMAX for every clock in the design, regardless of the user-sp
 +-------+-------+----------------------+
 ; Clock ; Slack ; End Point TNS        ;
 +-------+-------+----------------------+
-; D3    ; 0.331 ; 0.000                ;
-; D2    ; 0.354 ; 0.000                ;
-; D1    ; 0.375 ; 0.000                ;
-; D6    ; 0.455 ; 0.000                ;
-; D5    ; 0.544 ; 0.000                ;
-; D4    ; 0.577 ; 0.000                ;
-; D7    ; 0.607 ; 0.000                ;
+; D4    ; 0.442 ; 0.000                ;
+; D6    ; 0.494 ; 0.000                ;
+; D5    ; 0.496 ; 0.000                ;
+; D3    ; 0.497 ; 0.000                ;
+; D2    ; 0.505 ; 0.000                ;
+; D1    ; 0.734 ; 0.000                ;
+; D7    ; 0.832 ; 0.000                ;
 +-------+-------+----------------------+
 
 
@@ -808,50 +808,50 @@ Design MTBF is not calculated because the design doesn't meet its timing require
 +-------------------------------------------------------+--------+---------------+
 ; Clock                                                 ; Slack  ; End Point TNS ;
 +-------------------------------------------------------+--------+---------------+
-; Clock                                                 ; -5.489 ; -144.380      ;
-; Alarme:inst45|DivHorloge_enable:DIVENA|74390:inst|3   ; -2.363 ; -2.363        ;
-; DivHorloge:inst3|7490:inst10|19                       ; -2.094 ; -15.641       ;
-; 74390:inst32|3                                        ; -1.368 ; -1.368        ;
-; DivHorloge:inst3|74390:inst|3                         ; -1.364 ; -1.364        ;
-; 7490:inst35|19                                        ; -0.704 ; -1.406        ;
-; DivHorloge:inst3|74390:inst5|31                       ; -0.396 ; -0.396        ;
-; 74390:inst33|31                                       ; -0.305 ; -0.305        ;
-; DivHorloge:inst3|7490:inst8|7                         ; -0.223 ; -0.223        ;
-; 7490:inst37|19                                        ; -0.137 ; -0.137        ;
-; DivHorloge:inst3|74390:inst|31                        ; -0.117 ; -0.117        ;
-; 74390:inst33|34                                       ; -0.112 ; -0.112        ;
-; 74390:inst33|3                                        ; -0.072 ; -0.072        ;
-; Alarme:inst45|DivHorloge_enable:DIVENA|74390:inst5|31 ; -0.072 ; -0.072        ;
-; 74390:inst13|31                                       ; -0.063 ; -0.063        ;
-; Alarme:inst45|DivHorloge_enable:DIVENA|74390:inst3|3  ; -0.011 ; -0.011        ;
-; DivHorloge:inst3|74390:inst3|31                       ; -0.007 ; -0.007        ;
-; DivHorloge:inst3|74390:inst3|3                        ; 0.005  ; 0.000         ;
-; Alarme:inst45|DivHorloge_enable:DIVENA|74390:inst5|3  ; 0.009  ; 0.000         ;
-; Alarme:inst45|DivHorloge_enable:DIVENA|74390:inst|31  ; 0.013  ; 0.000         ;
-; DivHorloge:inst3|74390:inst5|34                       ; 0.043  ; 0.000         ;
-; DivHorloge:inst3|74390:inst5|3                        ; 0.048  ; 0.000         ;
-; 74390:inst32|31                                       ; 0.058  ; 0.000         ;
-; 74390:inst32|34                                       ; 0.077  ; 0.000         ;
-; 74390:inst13|34                                       ; 0.084  ; 0.000         ;
-; Alarme:inst45|DivHorloge_enable:DIVENA|74390:inst3|31 ; 0.085  ; 0.000         ;
-; DivHorloge:inst3|74390:inst|7                         ; 0.085  ; 0.000         ;
-; DivHorloge:inst3|74390:inst5|7                        ; 0.089  ; 0.000         ;
-; DivHorloge:inst3|7490:inst8|19                        ; 0.104  ; 0.000         ;
-; Alarme:inst45|DivHorloge_enable:DIVENA|74390:inst5|7  ; 0.110  ; 0.000         ;
-; Alarme:inst45|DivHorloge_enable:DIVENA|74390:inst5|34 ; 0.119  ; 0.000         ;
+; Clock                                                 ; -5.329 ; -144.142      ;
+; Alarme:inst45|DivHorloge_enable:DIVENA|74390:inst|3   ; -2.457 ; -2.457        ;
+; DivHorloge:inst3|7490:inst10|19                       ; -2.431 ; -18.116       ;
+; 74390:inst32|3                                        ; -1.559 ; -1.559        ;
+; DivHorloge:inst3|74390:inst|3                         ; -1.346 ; -1.346        ;
+; 74390:inst13|31                                       ; -0.786 ; -0.786        ;
+; 7490:inst35|19                                        ; -0.462 ; -0.923        ;
+; DivHorloge:inst3|74390:inst3|31                       ; -0.418 ; -0.418        ;
+; Alarme:inst45|DivHorloge_enable:DIVENA|74390:inst5|34 ; -0.156 ; -0.156        ;
+; DivHorloge:inst3|7490:inst8|7                         ; -0.152 ; -0.152        ;
+; 74390:inst33|34                                       ; -0.134 ; -0.134        ;
+; DivHorloge:inst3|74390:inst|31                        ; -0.113 ; -0.113        ;
+; Alarme:inst45|DivHorloge_enable:DIVENA|74390:inst3|3  ; -0.033 ; -0.033        ;
+; DivHorloge:inst3|74390:inst5|3                        ; -0.018 ; -0.018        ;
+; 74390:inst33|31                                       ; -0.017 ; -0.017        ;
+; 7490:inst37|19                                        ; -0.017 ; -0.017        ;
+; DivHorloge:inst3|74390:inst5|34                       ; -0.015 ; -0.015        ;
+; Alarme:inst45|DivHorloge_enable:DIVENA|74390:inst5|3  ; -0.014 ; -0.014        ;
+; Alarme:inst45|DivHorloge_enable:DIVENA|74390:inst3|31 ; 0.007  ; 0.000         ;
+; Alarme:inst45|DivHorloge_enable:DIVENA|74390:inst|31  ; 0.008  ; 0.000         ;
+; 74390:inst33|3                                        ; 0.012  ; 0.000         ;
+; 74390:inst32|34                                       ; 0.018  ; 0.000         ;
+; DivHorloge:inst3|74390:inst5|31                       ; 0.037  ; 0.000         ;
+; 74390:inst32|31                                       ; 0.050  ; 0.000         ;
+; DivHorloge:inst3|74390:inst3|7                        ; 0.050  ; 0.000         ;
+; 74390:inst13|3                                        ; 0.063  ; 0.000         ;
+; 74390:inst13|7                                        ; 0.069  ; 0.000         ;
+; Alarme:inst45|DivHorloge_enable:DIVENA|74390:inst5|31 ; 0.104  ; 0.000         ;
+; DivHorloge:inst3|74390:inst|34                        ; 0.113  ; 0.000         ;
 ; Alarme:inst45|DivHorloge_enable:DIVENA|74390:inst|7   ; 0.123  ; 0.000         ;
-; 74390:inst13|3                                        ; 0.131  ; 0.000         ;
-; Alarme:inst45|DivHorloge_enable:DIVENA|7490:inst8|19  ; 0.132  ; 0.000         ;
-; DivHorloge:inst3|74390:inst|34                        ; 0.142  ; 0.000         ;
-; 74390:inst32|7                                        ; 0.150  ; 0.000         ;
-; Alarme:inst45|DivHorloge_enable:DIVENA|74390:inst|34  ; 0.152  ; 0.000         ;
-; 74390:inst33|7                                        ; 0.159  ; 0.000         ;
-; Alarme:inst45|DivHorloge_enable:DIVENA|74390:inst3|7  ; 0.162  ; 0.000         ;
-; Alarme:inst45|DivHorloge_enable:DIVENA|74390:inst3|34 ; 0.166  ; 0.000         ;
-; DivHorloge:inst3|74390:inst3|34                       ; 0.176  ; 0.000         ;
-; 74390:inst13|7                                        ; 0.187  ; 0.000         ;
-; DivHorloge:inst3|74390:inst3|7                        ; 0.196  ; 0.000         ;
-; Alarme:inst45|DivHorloge_enable:DIVENA|7490:inst8|7   ; 0.578  ; 0.000         ;
+; DivHorloge:inst3|7490:inst8|19                        ; 0.128  ; 0.000         ;
+; 74390:inst32|7                                        ; 0.143  ; 0.000         ;
+; DivHorloge:inst3|74390:inst3|3                        ; 0.159  ; 0.000         ;
+; Alarme:inst45|DivHorloge_enable:DIVENA|7490:inst8|19  ; 0.172  ; 0.000         ;
+; DivHorloge:inst3|74390:inst3|34                       ; 0.173  ; 0.000         ;
+; 74390:inst33|7                                        ; 0.182  ; 0.000         ;
+; Alarme:inst45|DivHorloge_enable:DIVENA|74390:inst3|7  ; 0.195  ; 0.000         ;
+; Alarme:inst45|DivHorloge_enable:DIVENA|74390:inst|34  ; 0.203  ; 0.000         ;
+; Alarme:inst45|DivHorloge_enable:DIVENA|74390:inst3|34 ; 0.204  ; 0.000         ;
+; DivHorloge:inst3|74390:inst|7                         ; 0.212  ; 0.000         ;
+; Alarme:inst45|DivHorloge_enable:DIVENA|74390:inst5|7  ; 0.245  ; 0.000         ;
+; 74390:inst13|34                                       ; 0.257  ; 0.000         ;
+; DivHorloge:inst3|74390:inst5|7                        ; 0.270  ; 0.000         ;
+; Alarme:inst45|DivHorloge_enable:DIVENA|7490:inst8|7   ; 0.575  ; 0.000         ;
 ; 74390:inst13|33                                       ; 0.693  ; 0.000         ;
 ; 74390:inst13|6                                        ; 0.693  ; 0.000         ;
 ; 74390:inst32|33                                       ; 0.693  ; 0.000         ;
@@ -880,96 +880,96 @@ Design MTBF is not calculated because the design doesn't meet its timing require
 +-------------------------------------------------------+--------+---------------+
 
 
-+--------------------------------------------------------------------------------+
-; Fast 1200mV 0C Model Hold Summary                                              ;
-+-------------------------------------------------------+--------+---------------+
-; Clock                                                 ; Slack  ; End Point TNS ;
-+-------------------------------------------------------+--------+---------------+
-; Alarme:inst45|DivHorloge_enable:DIVENA|74390:inst3|34 ; -0.037 ; -0.037        ;
-; Alarme:inst45|DivHorloge_enable:DIVENA|74390:inst|34  ; -0.023 ; -0.023        ;
-; Alarme:inst45|DivHorloge_enable:DIVENA|74390:inst3|7  ; 0.027  ; 0.000         ;
-; 74390:inst13|7                                        ; 0.056  ; 0.000         ;
-; 74390:inst13|34                                       ; 0.070  ; 0.000         ;
-; Alarme:inst45|DivHorloge_enable:DIVENA|74390:inst5|7  ; 0.087  ; 0.000         ;
-; DivHorloge:inst3|74390:inst3|7                        ; 0.087  ; 0.000         ;
-; DivHorloge:inst3|74390:inst5|7                        ; 0.099  ; 0.000         ;
-; 74390:inst32|7                                        ; 0.113  ; 0.000         ;
-; 74390:inst33|31                                       ; 0.118  ; 0.000         ;
-; Alarme:inst45|DivHorloge_enable:DIVENA|74390:inst|7   ; 0.118  ; 0.000         ;
-; DivHorloge:inst3|74390:inst3|34                       ; 0.121  ; 0.000         ;
-; DivHorloge:inst3|74390:inst|31                        ; 0.122  ; 0.000         ;
-; DivHorloge:inst3|74390:inst|34                        ; 0.143  ; 0.000         ;
-; 74390:inst33|34                                       ; 0.145  ; 0.000         ;
-; DivHorloge:inst3|74390:inst5|34                       ; 0.146  ; 0.000         ;
-; 7490:inst37|19                                        ; 0.147  ; 0.000         ;
-; Clock                                                 ; 0.148  ; 0.000         ;
-; Alarme:inst45|DivHorloge_enable:DIVENA|74390:inst5|34 ; 0.151  ; 0.000         ;
-; Alarme:inst45|DivHorloge_enable:DIVENA|7490:inst8|7   ; 0.151  ; 0.000         ;
-; DivHorloge:inst3|7490:inst10|19                       ; 0.152  ; 0.000         ;
-; DivHorloge:inst3|7490:inst8|7                         ; 0.152  ; 0.000         ;
-; 74390:inst32|3                                        ; 0.157  ; 0.000         ;
-; 74390:inst33|7                                        ; 0.160  ; 0.000         ;
-; DivHorloge:inst3|74390:inst|7                         ; 0.162  ; 0.000         ;
-; Alarme:inst45|DivHorloge_enable:DIVENA|7490:inst8|19  ; 0.165  ; 0.000         ;
-; 74390:inst13|33                                       ; 0.169  ; 0.000         ;
-; 74390:inst13|6                                        ; 0.169  ; 0.000         ;
-; 74390:inst32|33                                       ; 0.169  ; 0.000         ;
-; 74390:inst32|6                                        ; 0.169  ; 0.000         ;
-; 74390:inst33|33                                       ; 0.169  ; 0.000         ;
-; 74390:inst33|6                                        ; 0.169  ; 0.000         ;
-; Alarme:inst45|DivHorloge_enable:DIVENA|74390:inst3|33 ; 0.169  ; 0.000         ;
-; Alarme:inst45|DivHorloge_enable:DIVENA|74390:inst3|6  ; 0.169  ; 0.000         ;
-; Alarme:inst45|DivHorloge_enable:DIVENA|74390:inst5|33 ; 0.169  ; 0.000         ;
-; Alarme:inst45|DivHorloge_enable:DIVENA|74390:inst5|6  ; 0.169  ; 0.000         ;
-; Alarme:inst45|DivHorloge_enable:DIVENA|74390:inst|33  ; 0.169  ; 0.000         ;
-; Alarme:inst45|DivHorloge_enable:DIVENA|74390:inst|6   ; 0.169  ; 0.000         ;
-; D7                                                    ; 0.169  ; 0.000         ;
-; DivHorloge:inst3|74390:inst3|33                       ; 0.169  ; 0.000         ;
-; DivHorloge:inst3|74390:inst3|6                        ; 0.169  ; 0.000         ;
-; DivHorloge:inst3|74390:inst5|33                       ; 0.169  ; 0.000         ;
-; DivHorloge:inst3|74390:inst5|6                        ; 0.169  ; 0.000         ;
-; DivHorloge:inst3|74390:inst|33                        ; 0.169  ; 0.000         ;
-; DivHorloge:inst3|74390:inst|6                         ; 0.169  ; 0.000         ;
-; D1                                                    ; 0.170  ; 0.000         ;
-; D2                                                    ; 0.170  ; 0.000         ;
-; D3                                                    ; 0.170  ; 0.000         ;
-; D4                                                    ; 0.170  ; 0.000         ;
-; D5                                                    ; 0.170  ; 0.000         ;
-; D6                                                    ; 0.170  ; 0.000         ;
-; DivHorloge:inst3|74390:inst3|31                       ; 0.171  ; 0.000         ;
-; 7490:inst35|19                                        ; 0.172  ; 0.000         ;
-; 74390:inst32|34                                       ; 0.175  ; 0.000         ;
-; 74390:inst32|31                                       ; 0.176  ; 0.000         ;
-; DivHorloge:inst3|74390:inst5|31                       ; 0.184  ; 0.000         ;
-; DivHorloge:inst3|74390:inst5|3                        ; 0.186  ; 0.000         ;
-; DivHorloge:inst3|7490:inst8|19                        ; 0.192  ; 0.000         ;
-; Alarme:inst45|DivHorloge_enable:DIVENA|74390:inst5|31 ; 0.193  ; 0.000         ;
-; Alarme:inst45|DivHorloge_enable:DIVENA|74390:inst|31  ; 0.195  ; 0.000         ;
-; 74390:inst13|3                                        ; 0.202  ; 0.000         ;
-; Alarme:inst45|DivHorloge_enable:DIVENA|74390:inst5|3  ; 0.210  ; 0.000         ;
-; Alarme:inst45|DivHorloge_enable:DIVENA|74390:inst3|31 ; 0.212  ; 0.000         ;
-; Alarme:inst45|DivHorloge_enable:DIVENA|74390:inst3|3  ; 0.221  ; 0.000         ;
-; DivHorloge:inst3|74390:inst3|3                        ; 0.223  ; 0.000         ;
-; 74390:inst13|31                                       ; 0.225  ; 0.000         ;
-; Alarme:inst45|DivHorloge_enable:DIVENA|74390:inst|3   ; 0.235  ; 0.000         ;
-; DivHorloge:inst3|74390:inst|3                         ; 0.293  ; 0.000         ;
-; 74390:inst33|3                                        ; 0.315  ; 0.000         ;
-+-------------------------------------------------------+--------+---------------+
++-------------------------------------------------------------------------------+
+; Fast 1200mV 0C Model Hold Summary                                             ;
++-------------------------------------------------------+-------+---------------+
+; Clock                                                 ; Slack ; End Point TNS ;
++-------------------------------------------------------+-------+---------------+
+; Alarme:inst45|DivHorloge_enable:DIVENA|74390:inst|34  ; 0.019 ; 0.000         ;
+; DivHorloge:inst3|74390:inst5|7                        ; 0.038 ; 0.000         ;
+; 74390:inst13|34                                       ; 0.041 ; 0.000         ;
+; Alarme:inst45|DivHorloge_enable:DIVENA|74390:inst|31  ; 0.045 ; 0.000         ;
+; 74390:inst33|7                                        ; 0.054 ; 0.000         ;
+; Alarme:inst45|DivHorloge_enable:DIVENA|74390:inst3|34 ; 0.068 ; 0.000         ;
+; 74390:inst32|31                                       ; 0.069 ; 0.000         ;
+; DivHorloge:inst3|74390:inst3|34                       ; 0.075 ; 0.000         ;
+; Alarme:inst45|DivHorloge_enable:DIVENA|74390:inst5|7  ; 0.081 ; 0.000         ;
+; DivHorloge:inst3|74390:inst|7                         ; 0.083 ; 0.000         ;
+; Alarme:inst45|DivHorloge_enable:DIVENA|74390:inst3|7  ; 0.087 ; 0.000         ;
+; Alarme:inst45|DivHorloge_enable:DIVENA|74390:inst|7   ; 0.110 ; 0.000         ;
+; Alarme:inst45|DivHorloge_enable:DIVENA|74390:inst3|3  ; 0.115 ; 0.000         ;
+; DivHorloge:inst3|74390:inst|34                        ; 0.132 ; 0.000         ;
+; 74390:inst32|34                                       ; 0.138 ; 0.000         ;
+; Alarme:inst45|DivHorloge_enable:DIVENA|74390:inst|3   ; 0.140 ; 0.000         ;
+; Clock                                                 ; 0.140 ; 0.000         ;
+; 74390:inst33|3                                        ; 0.142 ; 0.000         ;
+; 74390:inst33|31                                       ; 0.142 ; 0.000         ;
+; DivHorloge:inst3|74390:inst5|31                       ; 0.144 ; 0.000         ;
+; 74390:inst13|7                                        ; 0.146 ; 0.000         ;
+; DivHorloge:inst3|74390:inst5|34                       ; 0.147 ; 0.000         ;
+; Alarme:inst45|DivHorloge_enable:DIVENA|7490:inst8|19  ; 0.149 ; 0.000         ;
+; DivHorloge:inst3|7490:inst8|7                         ; 0.150 ; 0.000         ;
+; 74390:inst33|34                                       ; 0.151 ; 0.000         ;
+; 7490:inst37|19                                        ; 0.151 ; 0.000         ;
+; Alarme:inst45|DivHorloge_enable:DIVENA|74390:inst5|34 ; 0.151 ; 0.000         ;
+; Alarme:inst45|DivHorloge_enable:DIVENA|7490:inst8|7   ; 0.151 ; 0.000         ;
+; DivHorloge:inst3|7490:inst10|19                       ; 0.152 ; 0.000         ;
+; DivHorloge:inst3|74390:inst|31                        ; 0.162 ; 0.000         ;
+; 74390:inst13|33                                       ; 0.169 ; 0.000         ;
+; 74390:inst13|6                                        ; 0.169 ; 0.000         ;
+; 74390:inst32|33                                       ; 0.169 ; 0.000         ;
+; 74390:inst32|6                                        ; 0.169 ; 0.000         ;
+; 74390:inst33|33                                       ; 0.169 ; 0.000         ;
+; 74390:inst33|6                                        ; 0.169 ; 0.000         ;
+; Alarme:inst45|DivHorloge_enable:DIVENA|74390:inst3|33 ; 0.169 ; 0.000         ;
+; Alarme:inst45|DivHorloge_enable:DIVENA|74390:inst3|6  ; 0.169 ; 0.000         ;
+; Alarme:inst45|DivHorloge_enable:DIVENA|74390:inst5|3  ; 0.169 ; 0.000         ;
+; Alarme:inst45|DivHorloge_enable:DIVENA|74390:inst5|33 ; 0.169 ; 0.000         ;
+; Alarme:inst45|DivHorloge_enable:DIVENA|74390:inst5|6  ; 0.169 ; 0.000         ;
+; Alarme:inst45|DivHorloge_enable:DIVENA|74390:inst|33  ; 0.169 ; 0.000         ;
+; Alarme:inst45|DivHorloge_enable:DIVENA|74390:inst|6   ; 0.169 ; 0.000         ;
+; D7                                                    ; 0.169 ; 0.000         ;
+; DivHorloge:inst3|74390:inst3|33                       ; 0.169 ; 0.000         ;
+; DivHorloge:inst3|74390:inst3|6                        ; 0.169 ; 0.000         ;
+; DivHorloge:inst3|74390:inst5|33                       ; 0.169 ; 0.000         ;
+; DivHorloge:inst3|74390:inst5|6                        ; 0.169 ; 0.000         ;
+; DivHorloge:inst3|74390:inst|33                        ; 0.169 ; 0.000         ;
+; DivHorloge:inst3|74390:inst|6                         ; 0.169 ; 0.000         ;
+; D1                                                    ; 0.170 ; 0.000         ;
+; D2                                                    ; 0.170 ; 0.000         ;
+; D3                                                    ; 0.170 ; 0.000         ;
+; D4                                                    ; 0.170 ; 0.000         ;
+; D5                                                    ; 0.170 ; 0.000         ;
+; D6                                                    ; 0.170 ; 0.000         ;
+; DivHorloge:inst3|7490:inst8|19                        ; 0.170 ; 0.000         ;
+; Alarme:inst45|DivHorloge_enable:DIVENA|74390:inst5|31 ; 0.173 ; 0.000         ;
+; DivHorloge:inst3|74390:inst5|3                        ; 0.174 ; 0.000         ;
+; 74390:inst13|31                                       ; 0.178 ; 0.000         ;
+; DivHorloge:inst3|74390:inst3|3                        ; 0.178 ; 0.000         ;
+; 74390:inst13|3                                        ; 0.182 ; 0.000         ;
+; DivHorloge:inst3|74390:inst3|31                       ; 0.184 ; 0.000         ;
+; 74390:inst32|7                                        ; 0.199 ; 0.000         ;
+; Alarme:inst45|DivHorloge_enable:DIVENA|74390:inst3|31 ; 0.201 ; 0.000         ;
+; DivHorloge:inst3|74390:inst3|7                        ; 0.213 ; 0.000         ;
+; 7490:inst35|19                                        ; 0.215 ; 0.000         ;
+; DivHorloge:inst3|74390:inst|3                         ; 0.227 ; 0.000         ;
+; 74390:inst32|3                                        ; 0.252 ; 0.000         ;
++-------------------------------------------------------+-------+---------------+
 
 
 +---------------------------------------+
 ; Fast 1200mV 0C Model Recovery Summary ;
-+-------+-------+-----------------------+
-; Clock ; Slack ; End Point TNS         ;
-+-------+-------+-----------------------+
-; D1    ; 0.082 ; 0.000                 ;
-; D4    ; 0.098 ; 0.000                 ;
-; D5    ; 0.136 ; 0.000                 ;
-; D6    ; 0.169 ; 0.000                 ;
-; D2    ; 0.187 ; 0.000                 ;
-; D3    ; 0.232 ; 0.000                 ;
-; D7    ; 0.316 ; 0.000                 ;
-+-------+-------+-----------------------+
++-------+--------+----------------------+
+; Clock ; Slack  ; End Point TNS        ;
++-------+--------+----------------------+
+; D1    ; -0.122 ; -0.122               ;
+; D6    ; 0.084  ; 0.000                ;
+; D3    ; 0.129  ; 0.000                ;
+; D2    ; 0.137  ; 0.000                ;
+; D4    ; 0.170  ; 0.000                ;
+; D5    ; 0.172  ; 0.000                ;
+; D7    ; 0.176  ; 0.000                ;
++-------+--------+----------------------+
 
 
 +--------------------------------------+
@@ -977,13 +977,13 @@ Design MTBF is not calculated because the design doesn't meet its timing require
 +-------+-------+----------------------+
 ; Clock ; Slack ; End Point TNS        ;
 +-------+-------+----------------------+
-; D7    ; 0.311 ; 0.000                ;
-; D3    ; 0.397 ; 0.000                ;
-; D2    ; 0.419 ; 0.000                ;
-; D6    ; 0.447 ; 0.000                ;
-; D1    ; 0.465 ; 0.000                ;
-; D5    ; 0.504 ; 0.000                ;
-; D4    ; 0.537 ; 0.000                ;
+; D7    ; 0.392 ; 0.000                ;
+; D4    ; 0.457 ; 0.000                ;
+; D5    ; 0.464 ; 0.000                ;
+; D6    ; 0.477 ; 0.000                ;
+; D3    ; 0.478 ; 0.000                ;
+; D2    ; 0.482 ; 0.000                ;
+; D1    ; 0.616 ; 0.000                ;
 +-------+-------+----------------------+
 
 
@@ -992,14 +992,14 @@ Design MTBF is not calculated because the design doesn't meet its timing require
 +-------------------------------------------------------+--------+---------------+
 ; Clock                                                 ; Slack  ; End Point TNS ;
 +-------------------------------------------------------+--------+---------------+
-; Clock                                                 ; -3.000 ; -198.029      ;
-; D1                                                    ; -3.000 ; -4.305        ;
-; D7                                                    ; -3.000 ; -4.253        ;
-; D6                                                    ; -3.000 ; -4.207        ;
+; Clock                                                 ; -3.000 ; -198.094      ;
+; D1                                                    ; -3.000 ; -4.353        ;
+; D7                                                    ; -3.000 ; -4.259        ;
+; D6                                                    ; -3.000 ; -4.225        ;
 ; D2                                                    ; -3.000 ; -4.193        ;
-; D3                                                    ; -3.000 ; -4.193        ;
-; D4                                                    ; -3.000 ; -4.189        ;
-; D5                                                    ; -3.000 ; -4.178        ;
+; D3                                                    ; -3.000 ; -4.186        ;
+; D5                                                    ; -3.000 ; -4.180        ;
+; D4                                                    ; -3.000 ; -4.179        ;
 ; DivHorloge:inst3|7490:inst10|19                       ; -1.000 ; -8.000        ;
 ; 74390:inst33|34                                       ; -1.000 ; -3.000        ;
 ; 7490:inst37|19                                        ; -1.000 ; -3.000        ;
@@ -1071,152 +1071,152 @@ Design MTBF is not calculated because the design doesn't meet its timing require
 
 
 
-+-----------------------------------------------------------------------------------------------------------------------+
-; Multicorner Timing Analysis Summary                                                                                   ;
-+--------------------------------------------------------+----------+--------+----------+---------+---------------------+
-; Clock                                                  ; Setup    ; Hold   ; Recovery ; Removal ; Minimum Pulse Width ;
-+--------------------------------------------------------+----------+--------+----------+---------+---------------------+
-; Worst-case Slack                                       ; -14.633  ; -0.037 ; -0.383   ; 0.311   ; -3.000              ;
-;  74390:inst13|3                                        ; -0.498   ; 0.202  ; N/A      ; N/A     ; -1.403              ;
-;  74390:inst13|31                                       ; -0.828   ; 0.225  ; N/A      ; N/A     ; -1.403              ;
-;  74390:inst13|33                                       ; 0.298    ; 0.169  ; N/A      ; N/A     ; -1.403              ;
-;  74390:inst13|34                                       ; -0.533   ; 0.070  ; N/A      ; N/A     ; -1.403              ;
-;  74390:inst13|6                                        ; 0.298    ; 0.169  ; N/A      ; N/A     ; -1.403              ;
-;  74390:inst13|7                                        ; -0.627   ; 0.056  ; N/A      ; N/A     ; -1.403              ;
-;  74390:inst32|3                                        ; -3.387   ; 0.157  ; N/A      ; N/A     ; -1.403              ;
-;  74390:inst32|31                                       ; -0.580   ; 0.176  ; N/A      ; N/A     ; -1.403              ;
-;  74390:inst32|33                                       ; 0.298    ; 0.169  ; N/A      ; N/A     ; -1.403              ;
-;  74390:inst32|34                                       ; -0.661   ; 0.175  ; N/A      ; N/A     ; -1.403              ;
-;  74390:inst32|6                                        ; 0.298    ; 0.169  ; N/A      ; N/A     ; -1.403              ;
-;  74390:inst32|7                                        ; -0.532   ; 0.113  ; N/A      ; N/A     ; -1.403              ;
-;  74390:inst33|3                                        ; -0.804   ; 0.315  ; N/A      ; N/A     ; -1.403              ;
-;  74390:inst33|31                                       ; -1.298   ; 0.118  ; N/A      ; N/A     ; -1.403              ;
-;  74390:inst33|33                                       ; 0.298    ; 0.169  ; N/A      ; N/A     ; -1.403              ;
-;  74390:inst33|34                                       ; -1.377   ; 0.145  ; N/A      ; N/A     ; -1.403              ;
-;  74390:inst33|6                                        ; 0.298    ; 0.169  ; N/A      ; N/A     ; -1.403              ;
-;  74390:inst33|7                                        ; -0.563   ; 0.160  ; N/A      ; N/A     ; -1.403              ;
-;  7490:inst35|19                                        ; -2.571   ; 0.172  ; N/A      ; N/A     ; -1.403              ;
-;  7490:inst37|19                                        ; -1.387   ; 0.147  ; N/A      ; N/A     ; -1.403              ;
-;  Alarme:inst45|DivHorloge_enable:DIVENA|74390:inst3|3  ; -0.727   ; 0.221  ; N/A      ; N/A     ; -1.403              ;
-;  Alarme:inst45|DivHorloge_enable:DIVENA|74390:inst3|31 ; -0.552   ; 0.212  ; N/A      ; N/A     ; -1.403              ;
-;  Alarme:inst45|DivHorloge_enable:DIVENA|74390:inst3|33 ; 0.298    ; 0.169  ; N/A      ; N/A     ; -1.403              ;
-;  Alarme:inst45|DivHorloge_enable:DIVENA|74390:inst3|34 ; -0.546   ; -0.037 ; N/A      ; N/A     ; -1.403              ;
-;  Alarme:inst45|DivHorloge_enable:DIVENA|74390:inst3|6  ; 0.298    ; 0.169  ; N/A      ; N/A     ; -1.403              ;
-;  Alarme:inst45|DivHorloge_enable:DIVENA|74390:inst3|7  ; -0.747   ; 0.027  ; N/A      ; N/A     ; -1.403              ;
-;  Alarme:inst45|DivHorloge_enable:DIVENA|74390:inst5|3  ; -0.639   ; 0.210  ; N/A      ; N/A     ; -1.403              ;
-;  Alarme:inst45|DivHorloge_enable:DIVENA|74390:inst5|31 ; -0.847   ; 0.193  ; N/A      ; N/A     ; -1.403              ;
-;  Alarme:inst45|DivHorloge_enable:DIVENA|74390:inst5|33 ; 0.298    ; 0.169  ; N/A      ; N/A     ; -1.403              ;
-;  Alarme:inst45|DivHorloge_enable:DIVENA|74390:inst5|34 ; -1.141   ; 0.151  ; N/A      ; N/A     ; -1.403              ;
-;  Alarme:inst45|DivHorloge_enable:DIVENA|74390:inst5|6  ; 0.298    ; 0.169  ; N/A      ; N/A     ; -1.403              ;
-;  Alarme:inst45|DivHorloge_enable:DIVENA|74390:inst5|7  ; -0.648   ; 0.087  ; N/A      ; N/A     ; -1.403              ;
-;  Alarme:inst45|DivHorloge_enable:DIVENA|74390:inst|3   ; -5.594   ; 0.235  ; N/A      ; N/A     ; -1.403              ;
-;  Alarme:inst45|DivHorloge_enable:DIVENA|74390:inst|31  ; -0.656   ; 0.195  ; N/A      ; N/A     ; -1.403              ;
-;  Alarme:inst45|DivHorloge_enable:DIVENA|74390:inst|33  ; 0.298    ; 0.169  ; N/A      ; N/A     ; -1.403              ;
-;  Alarme:inst45|DivHorloge_enable:DIVENA|74390:inst|34  ; -0.528   ; -0.023 ; N/A      ; N/A     ; -1.403              ;
-;  Alarme:inst45|DivHorloge_enable:DIVENA|74390:inst|6   ; 0.298    ; 0.169  ; N/A      ; N/A     ; -1.403              ;
-;  Alarme:inst45|DivHorloge_enable:DIVENA|74390:inst|7   ; -0.845   ; 0.118  ; N/A      ; N/A     ; -1.403              ;
-;  Alarme:inst45|DivHorloge_enable:DIVENA|7490:inst8|19  ; -0.519   ; 0.165  ; N/A      ; N/A     ; -1.403              ;
-;  Alarme:inst45|DivHorloge_enable:DIVENA|7490:inst8|7   ; -0.004   ; 0.151  ; N/A      ; N/A     ; -1.403              ;
-;  Clock                                                 ; -14.633  ; 0.148  ; N/A      ; N/A     ; -3.000              ;
-;  D1                                                    ; 0.298    ; 0.170  ; -0.322   ; 0.375   ; -3.000              ;
-;  D2                                                    ; 0.298    ; 0.170  ; -0.182   ; 0.354   ; -3.000              ;
-;  D3                                                    ; 0.298    ; 0.170  ; -0.122   ; 0.331   ; -3.000              ;
-;  D4                                                    ; 0.298    ; 0.170  ; -0.383   ; 0.537   ; -3.000              ;
-;  D5                                                    ; 0.298    ; 0.170  ; -0.339   ; 0.504   ; -3.000              ;
-;  D6                                                    ; 0.298    ; 0.170  ; -0.277   ; 0.447   ; -3.000              ;
-;  D7                                                    ; 0.298    ; 0.169  ; -0.251   ; 0.311   ; -3.000              ;
-;  DivHorloge:inst3|74390:inst3|3                        ; -0.672   ; 0.223  ; N/A      ; N/A     ; -1.403              ;
-;  DivHorloge:inst3|74390:inst3|31                       ; -0.717   ; 0.171  ; N/A      ; N/A     ; -1.403              ;
-;  DivHorloge:inst3|74390:inst3|33                       ; 0.298    ; 0.169  ; N/A      ; N/A     ; -1.403              ;
-;  DivHorloge:inst3|74390:inst3|34                       ; -0.744   ; 0.121  ; N/A      ; N/A     ; -1.403              ;
-;  DivHorloge:inst3|74390:inst3|6                        ; 0.298    ; 0.169  ; N/A      ; N/A     ; -1.403              ;
-;  DivHorloge:inst3|74390:inst3|7                        ; -0.411   ; 0.087  ; N/A      ; N/A     ; -1.403              ;
-;  DivHorloge:inst3|74390:inst5|3                        ; -0.640   ; 0.186  ; N/A      ; N/A     ; -1.403              ;
-;  DivHorloge:inst3|74390:inst5|31                       ; -1.581   ; 0.184  ; N/A      ; N/A     ; -1.403              ;
-;  DivHorloge:inst3|74390:inst5|33                       ; 0.298    ; 0.169  ; N/A      ; N/A     ; -1.403              ;
-;  DivHorloge:inst3|74390:inst5|34                       ; -1.264   ; 0.146  ; N/A      ; N/A     ; -1.403              ;
-;  DivHorloge:inst3|74390:inst5|6                        ; 0.298    ; 0.169  ; N/A      ; N/A     ; -1.403              ;
-;  DivHorloge:inst3|74390:inst5|7                        ; -0.535   ; 0.099  ; N/A      ; N/A     ; -1.403              ;
-;  DivHorloge:inst3|74390:inst|3                         ; -3.347   ; 0.293  ; N/A      ; N/A     ; -1.403              ;
-;  DivHorloge:inst3|74390:inst|31                        ; -0.968   ; 0.122  ; N/A      ; N/A     ; -1.403              ;
-;  DivHorloge:inst3|74390:inst|33                        ; 0.298    ; 0.169  ; N/A      ; N/A     ; -1.403              ;
-;  DivHorloge:inst3|74390:inst|34                        ; -0.513   ; 0.143  ; N/A      ; N/A     ; -1.403              ;
-;  DivHorloge:inst3|74390:inst|6                         ; 0.298    ; 0.169  ; N/A      ; N/A     ; -1.403              ;
-;  DivHorloge:inst3|74390:inst|7                         ; -0.698   ; 0.162  ; N/A      ; N/A     ; -1.403              ;
-;  DivHorloge:inst3|7490:inst10|19                       ; -5.121   ; 0.152  ; N/A      ; N/A     ; -1.403              ;
-;  DivHorloge:inst3|7490:inst8|19                        ; -0.580   ; 0.192  ; N/A      ; N/A     ; -1.403              ;
-;  DivHorloge:inst3|7490:inst8|7                         ; -1.653   ; 0.152  ; N/A      ; N/A     ; -1.403              ;
-; Design-wide TNS                                        ; -623.861 ; -0.06  ; -1.876   ; 0.0     ; -458.93             ;
-;  74390:inst13|3                                        ; -0.906   ; 0.000  ; N/A      ; N/A     ; -2.806              ;
-;  74390:inst13|31                                       ; -1.420   ; 0.000  ; N/A      ; N/A     ; -2.806              ;
-;  74390:inst13|33                                       ; 0.000    ; 0.000  ; N/A      ; N/A     ; -1.403              ;
-;  74390:inst13|34                                       ; -0.901   ; 0.000  ; N/A      ; N/A     ; -2.806              ;
-;  74390:inst13|6                                        ; 0.000    ; 0.000  ; N/A      ; N/A     ; -1.403              ;
-;  74390:inst13|7                                        ; -0.771   ; 0.000  ; N/A      ; N/A     ; -2.806              ;
-;  74390:inst32|3                                        ; -3.883   ; 0.000  ; N/A      ; N/A     ; -2.806              ;
-;  74390:inst32|31                                       ; -1.108   ; 0.000  ; N/A      ; N/A     ; -2.806              ;
-;  74390:inst32|33                                       ; 0.000    ; 0.000  ; N/A      ; N/A     ; -1.403              ;
-;  74390:inst32|34                                       ; -1.183   ; 0.000  ; N/A      ; N/A     ; -2.806              ;
-;  74390:inst32|6                                        ; 0.000    ; 0.000  ; N/A      ; N/A     ; -1.403              ;
-;  74390:inst32|7                                        ; -0.880   ; 0.000  ; N/A      ; N/A     ; -2.806              ;
-;  74390:inst33|3                                        ; -1.471   ; 0.000  ; N/A      ; N/A     ; -2.806              ;
-;  74390:inst33|31                                       ; -1.737   ; 0.000  ; N/A      ; N/A     ; -2.806              ;
-;  74390:inst33|33                                       ; 0.000    ; 0.000  ; N/A      ; N/A     ; -1.403              ;
-;  74390:inst33|34                                       ; -1.736   ; 0.000  ; N/A      ; N/A     ; -4.209              ;
-;  74390:inst33|6                                        ; 0.000    ; 0.000  ; N/A      ; N/A     ; -1.403              ;
-;  74390:inst33|7                                        ; -0.915   ; 0.000  ; N/A      ; N/A     ; -2.806              ;
-;  7490:inst35|19                                        ; -5.136   ; 0.000  ; N/A      ; N/A     ; -2.806              ;
-;  7490:inst37|19                                        ; -1.700   ; 0.000  ; N/A      ; N/A     ; -4.209              ;
-;  Alarme:inst45|DivHorloge_enable:DIVENA|74390:inst3|3  ; -1.240   ; 0.000  ; N/A      ; N/A     ; -2.806              ;
-;  Alarme:inst45|DivHorloge_enable:DIVENA|74390:inst3|31 ; -1.045   ; 0.000  ; N/A      ; N/A     ; -2.806              ;
-;  Alarme:inst45|DivHorloge_enable:DIVENA|74390:inst3|33 ; 0.000    ; 0.000  ; N/A      ; N/A     ; -1.403              ;
-;  Alarme:inst45|DivHorloge_enable:DIVENA|74390:inst3|34 ; -0.546   ; -0.037 ; N/A      ; N/A     ; -2.806              ;
-;  Alarme:inst45|DivHorloge_enable:DIVENA|74390:inst3|6  ; 0.000    ; 0.000  ; N/A      ; N/A     ; -1.403              ;
-;  Alarme:inst45|DivHorloge_enable:DIVENA|74390:inst3|7  ; -0.747   ; 0.000  ; N/A      ; N/A     ; -2.806              ;
-;  Alarme:inst45|DivHorloge_enable:DIVENA|74390:inst5|3  ; -1.204   ; 0.000  ; N/A      ; N/A     ; -2.806              ;
-;  Alarme:inst45|DivHorloge_enable:DIVENA|74390:inst5|31 ; -1.301   ; 0.000  ; N/A      ; N/A     ; -2.806              ;
-;  Alarme:inst45|DivHorloge_enable:DIVENA|74390:inst5|33 ; 0.000    ; 0.000  ; N/A      ; N/A     ; -1.403              ;
-;  Alarme:inst45|DivHorloge_enable:DIVENA|74390:inst5|34 ; -1.660   ; 0.000  ; N/A      ; N/A     ; -4.209              ;
-;  Alarme:inst45|DivHorloge_enable:DIVENA|74390:inst5|6  ; 0.000    ; 0.000  ; N/A      ; N/A     ; -1.403              ;
-;  Alarme:inst45|DivHorloge_enable:DIVENA|74390:inst5|7  ; -0.867   ; 0.000  ; N/A      ; N/A     ; -2.806              ;
-;  Alarme:inst45|DivHorloge_enable:DIVENA|74390:inst|3   ; -6.346   ; 0.000  ; N/A      ; N/A     ; -2.806              ;
-;  Alarme:inst45|DivHorloge_enable:DIVENA|74390:inst|31  ; -1.159   ; 0.000  ; N/A      ; N/A     ; -2.806              ;
-;  Alarme:inst45|DivHorloge_enable:DIVENA|74390:inst|33  ; 0.000    ; 0.000  ; N/A      ; N/A     ; -1.403              ;
-;  Alarme:inst45|DivHorloge_enable:DIVENA|74390:inst|34  ; -0.535   ; -0.023 ; N/A      ; N/A     ; -2.806              ;
-;  Alarme:inst45|DivHorloge_enable:DIVENA|74390:inst|6   ; 0.000    ; 0.000  ; N/A      ; N/A     ; -1.403              ;
-;  Alarme:inst45|DivHorloge_enable:DIVENA|74390:inst|7   ; -1.262   ; 0.000  ; N/A      ; N/A     ; -2.806              ;
-;  Alarme:inst45|DivHorloge_enable:DIVENA|7490:inst8|19  ; -0.519   ; 0.000  ; N/A      ; N/A     ; -1.403              ;
-;  Alarme:inst45|DivHorloge_enable:DIVENA|7490:inst8|7   ; -0.004   ; 0.000  ; N/A      ; N/A     ; -4.209              ;
-;  Clock                                                 ; -523.429 ; 0.000  ; N/A      ; N/A     ; -268.167            ;
-;  D1                                                    ; 0.000    ; 0.000  ; -0.322   ; 0.000   ; -4.403              ;
-;  D2                                                    ; 0.000    ; 0.000  ; -0.182   ; 0.000   ; -4.403              ;
-;  D3                                                    ; 0.000    ; 0.000  ; -0.122   ; 0.000   ; -4.403              ;
-;  D4                                                    ; 0.000    ; 0.000  ; -0.383   ; 0.000   ; -4.403              ;
-;  D5                                                    ; 0.000    ; 0.000  ; -0.339   ; 0.000   ; -4.403              ;
-;  D6                                                    ; 0.000    ; 0.000  ; -0.277   ; 0.000   ; -4.403              ;
-;  D7                                                    ; 0.000    ; 0.000  ; -0.251   ; 0.000   ; -4.403              ;
-;  DivHorloge:inst3|74390:inst3|3                        ; -1.200   ; 0.000  ; N/A      ; N/A     ; -2.806              ;
-;  DivHorloge:inst3|74390:inst3|31                       ; -1.344   ; 0.000  ; N/A      ; N/A     ; -2.806              ;
-;  DivHorloge:inst3|74390:inst3|33                       ; 0.000    ; 0.000  ; N/A      ; N/A     ; -1.403              ;
-;  DivHorloge:inst3|74390:inst3|34                       ; -1.056   ; 0.000  ; N/A      ; N/A     ; -2.806              ;
-;  DivHorloge:inst3|74390:inst3|6                        ; 0.000    ; 0.000  ; N/A      ; N/A     ; -1.403              ;
-;  DivHorloge:inst3|74390:inst3|7                        ; -0.691   ; 0.000  ; N/A      ; N/A     ; -2.806              ;
-;  DivHorloge:inst3|74390:inst5|3                        ; -1.172   ; 0.000  ; N/A      ; N/A     ; -2.806              ;
-;  DivHorloge:inst3|74390:inst5|31                       ; -2.062   ; 0.000  ; N/A      ; N/A     ; -2.806              ;
-;  DivHorloge:inst3|74390:inst5|33                       ; 0.000    ; 0.000  ; N/A      ; N/A     ; -1.403              ;
-;  DivHorloge:inst3|74390:inst5|34                       ; -1.815   ; 0.000  ; N/A      ; N/A     ; -4.209              ;
-;  DivHorloge:inst3|74390:inst5|6                        ; 0.000    ; 0.000  ; N/A      ; N/A     ; -1.403              ;
-;  DivHorloge:inst3|74390:inst5|7                        ; -1.070   ; 0.000  ; N/A      ; N/A     ; -2.806              ;
-;  DivHorloge:inst3|74390:inst|3                         ; -4.141   ; 0.000  ; N/A      ; N/A     ; -2.806              ;
-;  DivHorloge:inst3|74390:inst|31                        ; -1.252   ; 0.000  ; N/A      ; N/A     ; -2.806              ;
-;  DivHorloge:inst3|74390:inst|33                        ; 0.000    ; 0.000  ; N/A      ; N/A     ; -1.403              ;
-;  DivHorloge:inst3|74390:inst|34                        ; -0.957   ; 0.000  ; N/A      ; N/A     ; -2.806              ;
-;  DivHorloge:inst3|74390:inst|6                         ; 0.000    ; 0.000  ; N/A      ; N/A     ; -1.403              ;
-;  DivHorloge:inst3|74390:inst|7                         ; -1.011   ; 0.000  ; N/A      ; N/A     ; -2.806              ;
-;  DivHorloge:inst3|7490:inst10|19                       ; -38.246  ; 0.000  ; N/A      ; N/A     ; -11.224             ;
-;  DivHorloge:inst3|7490:inst8|19                        ; -0.580   ; 0.000  ; N/A      ; N/A     ; -1.403              ;
-;  DivHorloge:inst3|7490:inst8|7                         ; -1.653   ; 0.000  ; N/A      ; N/A     ; -4.209              ;
-+--------------------------------------------------------+----------+--------+----------+---------+---------------------+
++----------------------------------------------------------------------------------------------------------------------+
+; Multicorner Timing Analysis Summary                                                                                  ;
++--------------------------------------------------------+----------+-------+----------+---------+---------------------+
+; Clock                                                  ; Setup    ; Hold  ; Recovery ; Removal ; Minimum Pulse Width ;
++--------------------------------------------------------+----------+-------+----------+---------+---------------------+
+; Worst-case Slack                                       ; -14.021  ; 0.019 ; -0.848   ; 0.392   ; -3.000              ;
+;  74390:inst13|3                                        ; -0.524   ; 0.182 ; N/A      ; N/A     ; -1.403              ;
+;  74390:inst13|31                                       ; -2.256   ; 0.178 ; N/A      ; N/A     ; -1.403              ;
+;  74390:inst13|33                                       ; 0.298    ; 0.169 ; N/A      ; N/A     ; -1.403              ;
+;  74390:inst13|34                                       ; -0.474   ; 0.041 ; N/A      ; N/A     ; -1.403              ;
+;  74390:inst13|6                                        ; 0.298    ; 0.169 ; N/A      ; N/A     ; -1.403              ;
+;  74390:inst13|7                                        ; -0.825   ; 0.146 ; N/A      ; N/A     ; -1.403              ;
+;  74390:inst32|3                                        ; -3.876   ; 0.252 ; N/A      ; N/A     ; -1.403              ;
+;  74390:inst32|31                                       ; -0.577   ; 0.069 ; N/A      ; N/A     ; -1.403              ;
+;  74390:inst32|33                                       ; 0.298    ; 0.169 ; N/A      ; N/A     ; -1.403              ;
+;  74390:inst32|34                                       ; -0.681   ; 0.138 ; N/A      ; N/A     ; -1.403              ;
+;  74390:inst32|6                                        ; 0.298    ; 0.169 ; N/A      ; N/A     ; -1.403              ;
+;  74390:inst32|7                                        ; -0.718   ; 0.199 ; N/A      ; N/A     ; -1.403              ;
+;  74390:inst33|3                                        ; -0.689   ; 0.142 ; N/A      ; N/A     ; -1.403              ;
+;  74390:inst33|31                                       ; -0.753   ; 0.142 ; N/A      ; N/A     ; -1.403              ;
+;  74390:inst33|33                                       ; 0.298    ; 0.169 ; N/A      ; N/A     ; -1.403              ;
+;  74390:inst33|34                                       ; -1.486   ; 0.151 ; N/A      ; N/A     ; -1.403              ;
+;  74390:inst33|6                                        ; 0.298    ; 0.169 ; N/A      ; N/A     ; -1.403              ;
+;  74390:inst33|7                                        ; -0.471   ; 0.054 ; N/A      ; N/A     ; -1.403              ;
+;  7490:inst35|19                                        ; -2.028   ; 0.215 ; N/A      ; N/A     ; -1.403              ;
+;  7490:inst37|19                                        ; -1.142   ; 0.151 ; N/A      ; N/A     ; -1.403              ;
+;  Alarme:inst45|DivHorloge_enable:DIVENA|74390:inst3|3  ; -0.773   ; 0.115 ; N/A      ; N/A     ; -1.403              ;
+;  Alarme:inst45|DivHorloge_enable:DIVENA|74390:inst3|31 ; -0.677   ; 0.201 ; N/A      ; N/A     ; -1.403              ;
+;  Alarme:inst45|DivHorloge_enable:DIVENA|74390:inst3|33 ; 0.298    ; 0.169 ; N/A      ; N/A     ; -1.403              ;
+;  Alarme:inst45|DivHorloge_enable:DIVENA|74390:inst3|34 ; -0.628   ; 0.068 ; N/A      ; N/A     ; -1.403              ;
+;  Alarme:inst45|DivHorloge_enable:DIVENA|74390:inst3|6  ; 0.298    ; 0.169 ; N/A      ; N/A     ; -1.403              ;
+;  Alarme:inst45|DivHorloge_enable:DIVENA|74390:inst3|7  ; -0.495   ; 0.087 ; N/A      ; N/A     ; -1.403              ;
+;  Alarme:inst45|DivHorloge_enable:DIVENA|74390:inst5|3  ; -0.743   ; 0.169 ; N/A      ; N/A     ; -1.403              ;
+;  Alarme:inst45|DivHorloge_enable:DIVENA|74390:inst5|31 ; -0.447   ; 0.173 ; N/A      ; N/A     ; -1.403              ;
+;  Alarme:inst45|DivHorloge_enable:DIVENA|74390:inst5|33 ; 0.298    ; 0.169 ; N/A      ; N/A     ; -1.403              ;
+;  Alarme:inst45|DivHorloge_enable:DIVENA|74390:inst5|34 ; -1.639   ; 0.151 ; N/A      ; N/A     ; -1.403              ;
+;  Alarme:inst45|DivHorloge_enable:DIVENA|74390:inst5|6  ; 0.298    ; 0.169 ; N/A      ; N/A     ; -1.403              ;
+;  Alarme:inst45|DivHorloge_enable:DIVENA|74390:inst5|7  ; -0.344   ; 0.081 ; N/A      ; N/A     ; -1.403              ;
+;  Alarme:inst45|DivHorloge_enable:DIVENA|74390:inst|3   ; -5.450   ; 0.140 ; N/A      ; N/A     ; -1.403              ;
+;  Alarme:inst45|DivHorloge_enable:DIVENA|74390:inst|31  ; -0.692   ; 0.045 ; N/A      ; N/A     ; -1.403              ;
+;  Alarme:inst45|DivHorloge_enable:DIVENA|74390:inst|33  ; 0.298    ; 0.169 ; N/A      ; N/A     ; -1.403              ;
+;  Alarme:inst45|DivHorloge_enable:DIVENA|74390:inst|34  ; -0.494   ; 0.019 ; N/A      ; N/A     ; -1.403              ;
+;  Alarme:inst45|DivHorloge_enable:DIVENA|74390:inst|6   ; 0.298    ; 0.169 ; N/A      ; N/A     ; -1.403              ;
+;  Alarme:inst45|DivHorloge_enable:DIVENA|74390:inst|7   ; -0.646   ; 0.110 ; N/A      ; N/A     ; -1.403              ;
+;  Alarme:inst45|DivHorloge_enable:DIVENA|7490:inst8|19  ; -0.431   ; 0.149 ; N/A      ; N/A     ; -1.403              ;
+;  Alarme:inst45|DivHorloge_enable:DIVENA|7490:inst8|7   ; -0.008   ; 0.151 ; N/A      ; N/A     ; -1.403              ;
+;  Clock                                                 ; -14.021  ; 0.140 ; N/A      ; N/A     ; -3.000              ;
+;  D1                                                    ; 0.298    ; 0.170 ; -0.848   ; 0.616   ; -3.000              ;
+;  D2                                                    ; 0.298    ; 0.170 ; -0.327   ; 0.482   ; -3.000              ;
+;  D3                                                    ; 0.298    ; 0.170 ; -0.316   ; 0.478   ; -3.000              ;
+;  D4                                                    ; 0.298    ; 0.170 ; -0.244   ; 0.442   ; -3.000              ;
+;  D5                                                    ; 0.298    ; 0.170 ; -0.271   ; 0.464   ; -3.000              ;
+;  D6                                                    ; 0.298    ; 0.170 ; -0.366   ; 0.477   ; -3.000              ;
+;  D7                                                    ; 0.298    ; 0.169 ; -0.520   ; 0.392   ; -3.000              ;
+;  DivHorloge:inst3|74390:inst3|3                        ; -0.496   ; 0.178 ; N/A      ; N/A     ; -1.403              ;
+;  DivHorloge:inst3|74390:inst3|31                       ; -1.601   ; 0.184 ; N/A      ; N/A     ; -1.403              ;
+;  DivHorloge:inst3|74390:inst3|33                       ; 0.298    ; 0.169 ; N/A      ; N/A     ; -1.403              ;
+;  DivHorloge:inst3|74390:inst3|34                       ; -0.789   ; 0.075 ; N/A      ; N/A     ; -1.403              ;
+;  DivHorloge:inst3|74390:inst3|6                        ; 0.298    ; 0.169 ; N/A      ; N/A     ; -1.403              ;
+;  DivHorloge:inst3|74390:inst3|7                        ; -0.591   ; 0.213 ; N/A      ; N/A     ; -1.403              ;
+;  DivHorloge:inst3|74390:inst5|3                        ; -0.747   ; 0.174 ; N/A      ; N/A     ; -1.403              ;
+;  DivHorloge:inst3|74390:inst5|31                       ; -0.639   ; 0.144 ; N/A      ; N/A     ; -1.403              ;
+;  DivHorloge:inst3|74390:inst5|33                       ; 0.298    ; 0.169 ; N/A      ; N/A     ; -1.403              ;
+;  DivHorloge:inst3|74390:inst5|34                       ; -1.279   ; 0.147 ; N/A      ; N/A     ; -1.403              ;
+;  DivHorloge:inst3|74390:inst5|6                        ; 0.298    ; 0.169 ; N/A      ; N/A     ; -1.403              ;
+;  DivHorloge:inst3|74390:inst5|7                        ; -0.607   ; 0.038 ; N/A      ; N/A     ; -1.403              ;
+;  DivHorloge:inst3|74390:inst|3                         ; -3.414   ; 0.227 ; N/A      ; N/A     ; -1.403              ;
+;  DivHorloge:inst3|74390:inst|31                        ; -1.014   ; 0.162 ; N/A      ; N/A     ; -1.403              ;
+;  DivHorloge:inst3|74390:inst|33                        ; 0.298    ; 0.169 ; N/A      ; N/A     ; -1.403              ;
+;  DivHorloge:inst3|74390:inst|34                        ; -0.561   ; 0.132 ; N/A      ; N/A     ; -1.403              ;
+;  DivHorloge:inst3|74390:inst|6                         ; 0.298    ; 0.169 ; N/A      ; N/A     ; -1.403              ;
+;  DivHorloge:inst3|74390:inst|7                         ; -0.570   ; 0.083 ; N/A      ; N/A     ; -1.403              ;
+;  DivHorloge:inst3|7490:inst10|19                       ; -5.776   ; 0.152 ; N/A      ; N/A     ; -1.403              ;
+;  DivHorloge:inst3|7490:inst8|19                        ; -0.521   ; 0.170 ; N/A      ; N/A     ; -1.403              ;
+;  DivHorloge:inst3|7490:inst8|7                         ; -1.433   ; 0.150 ; N/A      ; N/A     ; -1.403              ;
+; Design-wide TNS                                        ; -617.069 ; 0.0   ; -2.892   ; 0.0     ; -458.93             ;
+;  74390:inst13|3                                        ; -1.046   ; 0.000 ; N/A      ; N/A     ; -2.806              ;
+;  74390:inst13|31                                       ; -2.771   ; 0.000 ; N/A      ; N/A     ; -2.806              ;
+;  74390:inst13|33                                       ; 0.000    ; 0.000 ; N/A      ; N/A     ; -1.403              ;
+;  74390:inst13|34                                       ; -0.671   ; 0.000 ; N/A      ; N/A     ; -2.806              ;
+;  74390:inst13|6                                        ; 0.000    ; 0.000 ; N/A      ; N/A     ; -1.403              ;
+;  74390:inst13|7                                        ; -1.268   ; 0.000 ; N/A      ; N/A     ; -2.806              ;
+;  74390:inst32|3                                        ; -4.570   ; 0.000 ; N/A      ; N/A     ; -2.806              ;
+;  74390:inst32|31                                       ; -0.798   ; 0.000 ; N/A      ; N/A     ; -2.806              ;
+;  74390:inst32|33                                       ; 0.000    ; 0.000 ; N/A      ; N/A     ; -1.403              ;
+;  74390:inst32|34                                       ; -1.255   ; 0.000 ; N/A      ; N/A     ; -2.806              ;
+;  74390:inst32|6                                        ; 0.000    ; 0.000 ; N/A      ; N/A     ; -1.403              ;
+;  74390:inst32|7                                        ; -1.062   ; 0.000 ; N/A      ; N/A     ; -2.806              ;
+;  74390:inst33|3                                        ; -1.086   ; 0.000 ; N/A      ; N/A     ; -2.806              ;
+;  74390:inst33|31                                       ; -1.201   ; 0.000 ; N/A      ; N/A     ; -2.806              ;
+;  74390:inst33|33                                       ; 0.000    ; 0.000 ; N/A      ; N/A     ; -1.403              ;
+;  74390:inst33|34                                       ; -1.777   ; 0.000 ; N/A      ; N/A     ; -4.209              ;
+;  74390:inst33|6                                        ; 0.000    ; 0.000 ; N/A      ; N/A     ; -1.403              ;
+;  74390:inst33|7                                        ; -0.635   ; 0.000 ; N/A      ; N/A     ; -2.806              ;
+;  7490:inst35|19                                        ; -4.055   ; 0.000 ; N/A      ; N/A     ; -2.806              ;
+;  7490:inst37|19                                        ; -1.661   ; 0.000 ; N/A      ; N/A     ; -4.209              ;
+;  Alarme:inst45|DivHorloge_enable:DIVENA|74390:inst3|3  ; -1.056   ; 0.000 ; N/A      ; N/A     ; -2.806              ;
+;  Alarme:inst45|DivHorloge_enable:DIVENA|74390:inst3|31 ; -1.132   ; 0.000 ; N/A      ; N/A     ; -2.806              ;
+;  Alarme:inst45|DivHorloge_enable:DIVENA|74390:inst3|33 ; 0.000    ; 0.000 ; N/A      ; N/A     ; -1.403              ;
+;  Alarme:inst45|DivHorloge_enable:DIVENA|74390:inst3|34 ; -0.817   ; 0.000 ; N/A      ; N/A     ; -2.806              ;
+;  Alarme:inst45|DivHorloge_enable:DIVENA|74390:inst3|6  ; 0.000    ; 0.000 ; N/A      ; N/A     ; -1.403              ;
+;  Alarme:inst45|DivHorloge_enable:DIVENA|74390:inst3|7  ; -0.805   ; 0.000 ; N/A      ; N/A     ; -2.806              ;
+;  Alarme:inst45|DivHorloge_enable:DIVENA|74390:inst5|3  ; -1.236   ; 0.000 ; N/A      ; N/A     ; -2.806              ;
+;  Alarme:inst45|DivHorloge_enable:DIVENA|74390:inst5|31 ; -0.879   ; 0.000 ; N/A      ; N/A     ; -2.806              ;
+;  Alarme:inst45|DivHorloge_enable:DIVENA|74390:inst5|33 ; 0.000    ; 0.000 ; N/A      ; N/A     ; -1.403              ;
+;  Alarme:inst45|DivHorloge_enable:DIVENA|74390:inst5|34 ; -2.158   ; 0.000 ; N/A      ; N/A     ; -4.209              ;
+;  Alarme:inst45|DivHorloge_enable:DIVENA|74390:inst5|6  ; 0.000    ; 0.000 ; N/A      ; N/A     ; -1.403              ;
+;  Alarme:inst45|DivHorloge_enable:DIVENA|74390:inst5|7  ; -0.536   ; 0.000 ; N/A      ; N/A     ; -2.806              ;
+;  Alarme:inst45|DivHorloge_enable:DIVENA|74390:inst|3   ; -5.785   ; 0.000 ; N/A      ; N/A     ; -2.806              ;
+;  Alarme:inst45|DivHorloge_enable:DIVENA|74390:inst|31  ; -0.859   ; 0.000 ; N/A      ; N/A     ; -2.806              ;
+;  Alarme:inst45|DivHorloge_enable:DIVENA|74390:inst|33  ; 0.000    ; 0.000 ; N/A      ; N/A     ; -1.403              ;
+;  Alarme:inst45|DivHorloge_enable:DIVENA|74390:inst|34  ; -0.598   ; 0.000 ; N/A      ; N/A     ; -2.806              ;
+;  Alarme:inst45|DivHorloge_enable:DIVENA|74390:inst|6   ; 0.000    ; 0.000 ; N/A      ; N/A     ; -1.403              ;
+;  Alarme:inst45|DivHorloge_enable:DIVENA|74390:inst|7   ; -1.073   ; 0.000 ; N/A      ; N/A     ; -2.806              ;
+;  Alarme:inst45|DivHorloge_enable:DIVENA|7490:inst8|19  ; -0.431   ; 0.000 ; N/A      ; N/A     ; -1.403              ;
+;  Alarme:inst45|DivHorloge_enable:DIVENA|7490:inst8|7   ; -0.008   ; 0.000 ; N/A      ; N/A     ; -4.209              ;
+;  Clock                                                 ; -513.682 ; 0.000 ; N/A      ; N/A     ; -268.167            ;
+;  D1                                                    ; 0.000    ; 0.000 ; -0.848   ; 0.000   ; -4.403              ;
+;  D2                                                    ; 0.000    ; 0.000 ; -0.327   ; 0.000   ; -4.403              ;
+;  D3                                                    ; 0.000    ; 0.000 ; -0.316   ; 0.000   ; -4.403              ;
+;  D4                                                    ; 0.000    ; 0.000 ; -0.244   ; 0.000   ; -4.403              ;
+;  D5                                                    ; 0.000    ; 0.000 ; -0.271   ; 0.000   ; -4.403              ;
+;  D6                                                    ; 0.000    ; 0.000 ; -0.366   ; 0.000   ; -4.403              ;
+;  D7                                                    ; 0.000    ; 0.000 ; -0.520   ; 0.000   ; -4.403              ;
+;  DivHorloge:inst3|74390:inst3|3                        ; -0.817   ; 0.000 ; N/A      ; N/A     ; -2.806              ;
+;  DivHorloge:inst3|74390:inst3|31                       ; -2.029   ; 0.000 ; N/A      ; N/A     ; -2.806              ;
+;  DivHorloge:inst3|74390:inst3|33                       ; 0.000    ; 0.000 ; N/A      ; N/A     ; -1.403              ;
+;  DivHorloge:inst3|74390:inst3|34                       ; -0.994   ; 0.000 ; N/A      ; N/A     ; -2.806              ;
+;  DivHorloge:inst3|74390:inst3|6                        ; 0.000    ; 0.000 ; N/A      ; N/A     ; -1.403              ;
+;  DivHorloge:inst3|74390:inst3|7                        ; -1.166   ; 0.000 ; N/A      ; N/A     ; -2.806              ;
+;  DivHorloge:inst3|74390:inst5|3                        ; -1.262   ; 0.000 ; N/A      ; N/A     ; -2.806              ;
+;  DivHorloge:inst3|74390:inst5|31                       ; -1.113   ; 0.000 ; N/A      ; N/A     ; -2.806              ;
+;  DivHorloge:inst3|74390:inst5|33                       ; 0.000    ; 0.000 ; N/A      ; N/A     ; -1.403              ;
+;  DivHorloge:inst3|74390:inst5|34                       ; -1.952   ; 0.000 ; N/A      ; N/A     ; -4.209              ;
+;  DivHorloge:inst3|74390:inst5|6                        ; 0.000    ; 0.000 ; N/A      ; N/A     ; -1.403              ;
+;  DivHorloge:inst3|74390:inst5|7                        ; -0.618   ; 0.000 ; N/A      ; N/A     ; -2.806              ;
+;  DivHorloge:inst3|74390:inst|3                         ; -4.008   ; 0.000 ; N/A      ; N/A     ; -2.806              ;
+;  DivHorloge:inst3|74390:inst|31                        ; -1.372   ; 0.000 ; N/A      ; N/A     ; -2.806              ;
+;  DivHorloge:inst3|74390:inst|33                        ; 0.000    ; 0.000 ; N/A      ; N/A     ; -1.403              ;
+;  DivHorloge:inst3|74390:inst|34                        ; -1.036   ; 0.000 ; N/A      ; N/A     ; -2.806              ;
+;  DivHorloge:inst3|74390:inst|6                         ; 0.000    ; 0.000 ; N/A      ; N/A     ; -1.403              ;
+;  DivHorloge:inst3|74390:inst|7                         ; -0.841   ; 0.000 ; N/A      ; N/A     ; -2.806              ;
+;  DivHorloge:inst3|7490:inst10|19                       ; -42.995  ; 0.000 ; N/A      ; N/A     ; -11.224             ;
+;  DivHorloge:inst3|7490:inst8|19                        ; -0.521   ; 0.000 ; N/A      ; N/A     ; -1.403              ;
+;  DivHorloge:inst3|7490:inst8|7                         ; -1.434   ; 0.000 ; N/A      ; N/A     ; -4.209              ;
++--------------------------------------------------------+----------+-------+----------+---------+---------------------+
 
 
 +-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -2067,11 +2067,11 @@ No non-DPA dedicated SERDES Receiver circuitry present in device or used in desi
 Info: *******************************************************************
 Info: Running Quartus Prime Timing Analyzer
     Info: Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
-    Info: Processing started: Sat Nov 04 16:11:56 2023
+    Info: Processing started: Sun Nov  5 11:09:18 2023
 Info: Command: quartus_sta Quartus -c Quartus
 Info: qsta_default_script.tcl version: #1
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
-Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
+Info (20030): Parallel compilation is enabled and will use 12 of the 12 processors detected
 Info (21077): Low junction temperature is 0 degrees C
 Info (21077): High junction temperature is 85 degrees C
 Critical Warning (332012): Synopsys Design Constraints File file not found: 'Quartus.sdc'. A Synopsys Design Constraints File is required by the Timing Analyzer to get proper timing constraints. Without it, the Compiler will not properly optimize the design.
@@ -2109,7 +2109,6 @@ Info (332105): Deriving Clocks
     Info (332105): create_clock -period 1.000 -name DivHorloge:inst3|74390:inst5|6 DivHorloge:inst3|74390:inst5|6
     Info (332105): create_clock -period 1.000 -name DivHorloge:inst3|74390:inst3|31 DivHorloge:inst3|74390:inst3|31
     Info (332105): create_clock -period 1.000 -name DivHorloge:inst3|74390:inst3|7 DivHorloge:inst3|74390:inst3|7
-    Info (332105): create_clock -period 1.000 -name DivHorloge:inst3|74390:inst3|33 DivHorloge:inst3|74390:inst3|33
     Info (332105): create_clock -period 1.000 -name DivHorloge:inst3|74390:inst3|3 DivHorloge:inst3|74390:inst3|3
     Info (332105): create_clock -period 1.000 -name DivHorloge:inst3|74390:inst|34 DivHorloge:inst3|74390:inst|34
     Info (332105): create_clock -period 1.000 -name DivHorloge:inst3|74390:inst3|6 DivHorloge:inst3|74390:inst3|6
@@ -2118,7 +2117,12 @@ Info (332105): Deriving Clocks
     Info (332105): create_clock -period 1.000 -name DivHorloge:inst3|74390:inst|33 DivHorloge:inst3|74390:inst|33
     Info (332105): create_clock -period 1.000 -name DivHorloge:inst3|74390:inst|3 DivHorloge:inst3|74390:inst|3
     Info (332105): create_clock -period 1.000 -name DivHorloge:inst3|74390:inst|6 DivHorloge:inst3|74390:inst|6
+    Info (332105): create_clock -period 1.000 -name DivHorloge:inst3|74390:inst3|33 DivHorloge:inst3|74390:inst3|33
     Info (332105): create_clock -period 1.000 -name DivHorloge:inst3|7490:inst10|19 DivHorloge:inst3|7490:inst10|19
+    Info (332105): create_clock -period 1.000 -name D1 D1
+    Info (332105): create_clock -period 1.000 -name D2 D2
+    Info (332105): create_clock -period 1.000 -name D7 D7
+    Info (332105): create_clock -period 1.000 -name D3 D3
     Info (332105): create_clock -period 1.000 -name 7490:inst35|19 7490:inst35|19
     Info (332105): create_clock -period 1.000 -name 7490:inst37|19 7490:inst37|19
     Info (332105): create_clock -period 1.000 -name 74390:inst33|34 74390:inst33|34
@@ -2130,7 +2134,6 @@ Info (332105): Deriving Clocks
     Info (332105): create_clock -period 1.000 -name 74390:inst33|6 74390:inst33|6
     Info (332105): create_clock -period 1.000 -name 74390:inst13|31 74390:inst13|31
     Info (332105): create_clock -period 1.000 -name 74390:inst13|7 74390:inst13|7
-    Info (332105): create_clock -period 1.000 -name 74390:inst13|33 74390:inst13|33
     Info (332105): create_clock -period 1.000 -name 74390:inst13|3 74390:inst13|3
     Info (332105): create_clock -period 1.000 -name 74390:inst32|34 74390:inst32|34
     Info (332105): create_clock -period 1.000 -name 74390:inst13|6 74390:inst13|6
@@ -2139,66 +2142,63 @@ Info (332105): Deriving Clocks
     Info (332105): create_clock -period 1.000 -name 74390:inst32|33 74390:inst32|33
     Info (332105): create_clock -period 1.000 -name 74390:inst32|3 74390:inst32|3
     Info (332105): create_clock -period 1.000 -name 74390:inst32|6 74390:inst32|6
-    Info (332105): create_clock -period 1.000 -name D7 D7
-    Info (332105): create_clock -period 1.000 -name D6 D6
-    Info (332105): create_clock -period 1.000 -name D3 D3
-    Info (332105): create_clock -period 1.000 -name D5 D5
-    Info (332105): create_clock -period 1.000 -name D2 D2
-    Info (332105): create_clock -period 1.000 -name D1 D1
+    Info (332105): create_clock -period 1.000 -name 74390:inst13|33 74390:inst13|33
     Info (332105): create_clock -period 1.000 -name D4 D4
+    Info (332105): create_clock -period 1.000 -name D5 D5
+    Info (332105): create_clock -period 1.000 -name D6 D6
 Info (332143): No user constrained clock uncertainty found in the design. Calling "derive_clock_uncertainty"
 Info (332123): Deriving Clock Uncertainty. Please refer to report_sdc in the Timing Analyzer to see clock uncertainties.
 Info: Found TIMING_ANALYZER_REPORT_SCRIPT_INCLUDE_DEFAULT_ANALYSIS = ON
 Info: Analyzing Slow 1200mV 85C Model
 Info: Can't run Report Timing Closure Recommendations. The current device family is not supported.
 Critical Warning (332148): Timing requirements not met
-Info (332146): Worst-case setup slack is -14.633
+Info (332146): Worst-case setup slack is -14.021
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):   -14.633            -523.429 Clock 
-    Info (332119):    -5.594              -6.346 Alarme:inst45|DivHorloge_enable:DIVENA|74390:inst|3 
-    Info (332119):    -5.121             -38.246 DivHorloge:inst3|7490:inst10|19 
-    Info (332119):    -3.387              -3.883 74390:inst32|3 
-    Info (332119):    -3.347              -4.141 DivHorloge:inst3|74390:inst|3 
-    Info (332119):    -2.571              -5.136 7490:inst35|19 
-    Info (332119):    -1.653              -1.653 DivHorloge:inst3|7490:inst8|7 
-    Info (332119):    -1.581              -2.062 DivHorloge:inst3|74390:inst5|31 
-    Info (332119):    -1.387              -1.700 7490:inst37|19 
-    Info (332119):    -1.377              -1.736 74390:inst33|34 
-    Info (332119):    -1.298              -1.737 74390:inst33|31 
-    Info (332119):    -1.264              -1.815 DivHorloge:inst3|74390:inst5|34 
-    Info (332119):    -1.141              -1.660 Alarme:inst45|DivHorloge_enable:DIVENA|74390:inst5|34 
-    Info (332119):    -0.968              -1.252 DivHorloge:inst3|74390:inst|31 
-    Info (332119):    -0.847              -1.301 Alarme:inst45|DivHorloge_enable:DIVENA|74390:inst5|31 
-    Info (332119):    -0.845              -1.262 Alarme:inst45|DivHorloge_enable:DIVENA|74390:inst|7 
-    Info (332119):    -0.828              -1.420 74390:inst13|31 
-    Info (332119):    -0.804              -1.471 74390:inst33|3 
-    Info (332119):    -0.747              -0.747 Alarme:inst45|DivHorloge_enable:DIVENA|74390:inst3|7 
-    Info (332119):    -0.744              -1.056 DivHorloge:inst3|74390:inst3|34 
-    Info (332119):    -0.727              -1.240 Alarme:inst45|DivHorloge_enable:DIVENA|74390:inst3|3 
-    Info (332119):    -0.717              -1.344 DivHorloge:inst3|74390:inst3|31 
-    Info (332119):    -0.698              -1.011 DivHorloge:inst3|74390:inst|7 
-    Info (332119):    -0.672              -1.200 DivHorloge:inst3|74390:inst3|3 
-    Info (332119):    -0.661              -1.183 74390:inst32|34 
-    Info (332119):    -0.656              -1.159 Alarme:inst45|DivHorloge_enable:DIVENA|74390:inst|31 
-    Info (332119):    -0.648              -0.867 Alarme:inst45|DivHorloge_enable:DIVENA|74390:inst5|7 
-    Info (332119):    -0.640              -1.172 DivHorloge:inst3|74390:inst5|3 
-    Info (332119):    -0.639              -1.204 Alarme:inst45|DivHorloge_enable:DIVENA|74390:inst5|3 
-    Info (332119):    -0.627              -0.771 74390:inst13|7 
-    Info (332119):    -0.580              -1.108 74390:inst32|31 
-    Info (332119):    -0.580              -0.580 DivHorloge:inst3|7490:inst8|19 
-    Info (332119):    -0.563              -0.915 74390:inst33|7 
-    Info (332119):    -0.552              -1.045 Alarme:inst45|DivHorloge_enable:DIVENA|74390:inst3|31 
-    Info (332119):    -0.546              -0.546 Alarme:inst45|DivHorloge_enable:DIVENA|74390:inst3|34 
-    Info (332119):    -0.535              -1.070 DivHorloge:inst3|74390:inst5|7 
-    Info (332119):    -0.533              -0.901 74390:inst13|34 
-    Info (332119):    -0.532              -0.880 74390:inst32|7 
-    Info (332119):    -0.528              -0.535 Alarme:inst45|DivHorloge_enable:DIVENA|74390:inst|34 
-    Info (332119):    -0.519              -0.519 Alarme:inst45|DivHorloge_enable:DIVENA|7490:inst8|19 
-    Info (332119):    -0.513              -0.957 DivHorloge:inst3|74390:inst|34 
-    Info (332119):    -0.498              -0.906 74390:inst13|3 
-    Info (332119):    -0.411              -0.691 DivHorloge:inst3|74390:inst3|7 
-    Info (332119):    -0.004              -0.004 Alarme:inst45|DivHorloge_enable:DIVENA|7490:inst8|7 
+    Info (332119):   -14.021            -513.682 Clock 
+    Info (332119):    -5.776             -42.995 DivHorloge:inst3|7490:inst10|19 
+    Info (332119):    -5.450              -5.785 Alarme:inst45|DivHorloge_enable:DIVENA|74390:inst|3 
+    Info (332119):    -3.876              -4.570 74390:inst32|3 
+    Info (332119):    -3.414              -4.008 DivHorloge:inst3|74390:inst|3 
+    Info (332119):    -2.256              -2.771 74390:inst13|31 
+    Info (332119):    -2.028              -4.055 7490:inst35|19 
+    Info (332119):    -1.639              -2.158 Alarme:inst45|DivHorloge_enable:DIVENA|74390:inst5|34 
+    Info (332119):    -1.601              -2.029 DivHorloge:inst3|74390:inst3|31 
+    Info (332119):    -1.486              -1.777 74390:inst33|34 
+    Info (332119):    -1.433              -1.434 DivHorloge:inst3|7490:inst8|7 
+    Info (332119):    -1.279              -1.952 DivHorloge:inst3|74390:inst5|34 
+    Info (332119):    -1.142              -1.661 7490:inst37|19 
+    Info (332119):    -1.014              -1.372 DivHorloge:inst3|74390:inst|31 
+    Info (332119):    -0.825              -1.268 74390:inst13|7 
+    Info (332119):    -0.789              -0.994 DivHorloge:inst3|74390:inst3|34 
+    Info (332119):    -0.773              -1.056 Alarme:inst45|DivHorloge_enable:DIVENA|74390:inst3|3 
+    Info (332119):    -0.753              -1.201 74390:inst33|31 
+    Info (332119):    -0.747              -1.262 DivHorloge:inst3|74390:inst5|3 
+    Info (332119):    -0.743              -1.236 Alarme:inst45|DivHorloge_enable:DIVENA|74390:inst5|3 
+    Info (332119):    -0.718              -1.062 74390:inst32|7 
+    Info (332119):    -0.692              -0.859 Alarme:inst45|DivHorloge_enable:DIVENA|74390:inst|31 
+    Info (332119):    -0.689              -1.086 74390:inst33|3 
+    Info (332119):    -0.681              -1.255 74390:inst32|34 
+    Info (332119):    -0.677              -1.132 Alarme:inst45|DivHorloge_enable:DIVENA|74390:inst3|31 
+    Info (332119):    -0.646              -1.073 Alarme:inst45|DivHorloge_enable:DIVENA|74390:inst|7 
+    Info (332119):    -0.639              -1.113 DivHorloge:inst3|74390:inst5|31 
+    Info (332119):    -0.628              -0.817 Alarme:inst45|DivHorloge_enable:DIVENA|74390:inst3|34 
+    Info (332119):    -0.607              -0.618 DivHorloge:inst3|74390:inst5|7 
+    Info (332119):    -0.591              -1.166 DivHorloge:inst3|74390:inst3|7 
+    Info (332119):    -0.577              -0.798 74390:inst32|31 
+    Info (332119):    -0.570              -0.841 DivHorloge:inst3|74390:inst|7 
+    Info (332119):    -0.561              -1.036 DivHorloge:inst3|74390:inst|34 
+    Info (332119):    -0.524              -1.046 74390:inst13|3 
+    Info (332119):    -0.521              -0.521 DivHorloge:inst3|7490:inst8|19 
+    Info (332119):    -0.496              -0.817 DivHorloge:inst3|74390:inst3|3 
+    Info (332119):    -0.495              -0.805 Alarme:inst45|DivHorloge_enable:DIVENA|74390:inst3|7 
+    Info (332119):    -0.494              -0.598 Alarme:inst45|DivHorloge_enable:DIVENA|74390:inst|34 
+    Info (332119):    -0.474              -0.671 74390:inst13|34 
+    Info (332119):    -0.471              -0.635 74390:inst33|7 
+    Info (332119):    -0.447              -0.879 Alarme:inst45|DivHorloge_enable:DIVENA|74390:inst5|31 
+    Info (332119):    -0.431              -0.431 Alarme:inst45|DivHorloge_enable:DIVENA|7490:inst8|19 
+    Info (332119):    -0.344              -0.536 Alarme:inst45|DivHorloge_enable:DIVENA|74390:inst5|7 
+    Info (332119):    -0.008              -0.008 Alarme:inst45|DivHorloge_enable:DIVENA|7490:inst8|7 
     Info (332119):     0.298               0.000 74390:inst13|33 
     Info (332119):     0.298               0.000 74390:inst13|6 
     Info (332119):     0.298               0.000 74390:inst32|33 
@@ -2224,27 +2224,29 @@ Info (332146): Worst-case setup slack is -14.633
     Info (332119):     0.298               0.000 DivHorloge:inst3|74390:inst5|6 
     Info (332119):     0.298               0.000 DivHorloge:inst3|74390:inst|33 
     Info (332119):     0.298               0.000 DivHorloge:inst3|74390:inst|6 
-Info (332146): Worst-case hold slack is 0.022
+Info (332146): Worst-case hold slack is 0.204
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):     0.022               0.000 Alarme:inst45|DivHorloge_enable:DIVENA|74390:inst3|34 
-    Info (332119):     0.101               0.000 Alarme:inst45|DivHorloge_enable:DIVENA|74390:inst|34 
-    Info (332119):     0.176               0.000 Alarme:inst45|DivHorloge_enable:DIVENA|74390:inst3|7 
-    Info (332119):     0.242               0.000 74390:inst13|7 
-    Info (332119):     0.296               0.000 74390:inst13|34 
-    Info (332119):     0.309               0.000 Alarme:inst45|DivHorloge_enable:DIVENA|74390:inst5|7 
-    Info (332119):     0.327               0.000 DivHorloge:inst3|74390:inst3|7 
-    Info (332119):     0.337               0.000 DivHorloge:inst3|74390:inst3|34 
-    Info (332119):     0.339               0.000 74390:inst33|34 
-    Info (332119):     0.341               0.000 Clock 
-    Info (332119):     0.341               0.000 DivHorloge:inst3|74390:inst5|34 
-    Info (332119):     0.342               0.000 7490:inst37|19 
+    Info (332119):     0.204               0.000 Alarme:inst45|DivHorloge_enable:DIVENA|74390:inst|34 
+    Info (332119):     0.233               0.000 DivHorloge:inst3|74390:inst5|7 
+    Info (332119):     0.242               0.000 74390:inst13|34 
+    Info (332119):     0.256               0.000 74390:inst33|7 
+    Info (332119):     0.293               0.000 DivHorloge:inst3|74390:inst3|34 
+    Info (332119):     0.295               0.000 Alarme:inst45|DivHorloge_enable:DIVENA|74390:inst3|34 
+    Info (332119):     0.319               0.000 Alarme:inst45|DivHorloge_enable:DIVENA|74390:inst5|7 
+    Info (332119):     0.321               0.000 DivHorloge:inst3|74390:inst|7 
+    Info (332119):     0.323               0.000 Clock 
+    Info (332119):     0.332               0.000 Alarme:inst45|DivHorloge_enable:DIVENA|74390:inst3|7 
+    Info (332119):     0.343               0.000 DivHorloge:inst3|74390:inst5|34 
+    Info (332119):     0.347               0.000 74390:inst33|34 
+    Info (332119):     0.347               0.000 Alarme:inst45|DivHorloge_enable:DIVENA|7490:inst8|7 
+    Info (332119):     0.347               0.000 DivHorloge:inst3|7490:inst8|7 
+    Info (332119):     0.348               0.000 7490:inst37|19 
     Info (332119):     0.348               0.000 Alarme:inst45|DivHorloge_enable:DIVENA|74390:inst5|34 
-    Info (332119):     0.348               0.000 Alarme:inst45|DivHorloge_enable:DIVENA|7490:inst8|7 
     Info (332119):     0.348               0.000 DivHorloge:inst3|7490:inst10|19 
-    Info (332119):     0.349               0.000 DivHorloge:inst3|7490:inst8|7 
-    Info (332119):     0.370               0.000 DivHorloge:inst3|74390:inst5|7 
-    Info (332119):     0.371               0.000 74390:inst32|7 
+    Info (332119):     0.371               0.000 Alarme:inst45|DivHorloge_enable:DIVENA|74390:inst|31 
+    Info (332119):     0.378               0.000 Alarme:inst45|DivHorloge_enable:DIVENA|74390:inst|7 
+    Info (332119):     0.384               0.000 DivHorloge:inst3|74390:inst3|3 
     Info (332119):     0.393               0.000 74390:inst13|33 
     Info (332119):     0.393               0.000 74390:inst13|6 
     Info (332119):     0.393               0.000 74390:inst32|33 
@@ -2270,52 +2272,50 @@ Info (332146): Worst-case hold slack is 0.022
     Info (332119):     0.393               0.000 DivHorloge:inst3|74390:inst5|6 
     Info (332119):     0.393               0.000 DivHorloge:inst3|74390:inst|33 
     Info (332119):     0.393               0.000 DivHorloge:inst3|74390:inst|6 
-    Info (332119):     0.429               0.000 DivHorloge:inst3|74390:inst|31 
-    Info (332119):     0.434               0.000 74390:inst13|3 
-    Info (332119):     0.448               0.000 7490:inst35|19 
-    Info (332119):     0.452               0.000 Alarme:inst45|DivHorloge_enable:DIVENA|74390:inst|7 
-    Info (332119):     0.453               0.000 DivHorloge:inst3|74390:inst|7 
-    Info (332119):     0.456               0.000 74390:inst33|31 
-    Info (332119):     0.467               0.000 74390:inst33|7 
-    Info (332119):     0.470               0.000 74390:inst32|34 
-    Info (332119):     0.501               0.000 DivHorloge:inst3|74390:inst|34 
-    Info (332119):     0.518               0.000 74390:inst32|31 
-    Info (332119):     0.558               0.000 Alarme:inst45|DivHorloge_enable:DIVENA|7490:inst8|19 
-    Info (332119):     0.584               0.000 DivHorloge:inst3|74390:inst5|3 
-    Info (332119):     0.606               0.000 DivHorloge:inst3|7490:inst8|19 
-    Info (332119):     0.643               0.000 DivHorloge:inst3|74390:inst3|3 
-    Info (332119):     0.645               0.000 Alarme:inst45|DivHorloge_enable:DIVENA|74390:inst5|31 
-    Info (332119):     0.646               0.000 DivHorloge:inst3|74390:inst3|31 
-    Info (332119):     0.652               0.000 74390:inst13|31 
-    Info (332119):     0.657               0.000 Alarme:inst45|DivHorloge_enable:DIVENA|74390:inst5|3 
-    Info (332119):     0.658               0.000 Alarme:inst45|DivHorloge_enable:DIVENA|74390:inst|31 
-    Info (332119):     0.663               0.000 74390:inst32|3 
-    Info (332119):     0.666               0.000 DivHorloge:inst3|74390:inst5|31 
-    Info (332119):     0.679               0.000 Alarme:inst45|DivHorloge_enable:DIVENA|74390:inst3|31 
-    Info (332119):     0.738               0.000 Alarme:inst45|DivHorloge_enable:DIVENA|74390:inst3|3 
-    Info (332119):     0.779               0.000 74390:inst33|3 
-    Info (332119):     0.810               0.000 DivHorloge:inst3|74390:inst|3 
-    Info (332119):     0.815               0.000 Alarme:inst45|DivHorloge_enable:DIVENA|74390:inst|3 
-Info (332146): Worst-case recovery slack is -0.383
+    Info (332119):     0.408               0.000 Alarme:inst45|DivHorloge_enable:DIVENA|74390:inst5|31 
+    Info (332119):     0.411               0.000 DivHorloge:inst3|74390:inst|34 
+    Info (332119):     0.422               0.000 Alarme:inst45|DivHorloge_enable:DIVENA|74390:inst3|3 
+    Info (332119):     0.435               0.000 74390:inst32|34 
+    Info (332119):     0.436               0.000 74390:inst32|31 
+    Info (332119):     0.468               0.000 Alarme:inst45|DivHorloge_enable:DIVENA|74390:inst|3 
+    Info (332119):     0.488               0.000 74390:inst13|7 
+    Info (332119):     0.499               0.000 DivHorloge:inst3|74390:inst|31 
+    Info (332119):     0.514               0.000 74390:inst13|3 
+    Info (332119):     0.515               0.000 74390:inst33|3 
+    Info (332119):     0.519               0.000 DivHorloge:inst3|74390:inst5|31 
+    Info (332119):     0.532               0.000 74390:inst32|7 
+    Info (332119):     0.533               0.000 Alarme:inst45|DivHorloge_enable:DIVENA|7490:inst8|19 
+    Info (332119):     0.536               0.000 74390:inst33|31 
+    Info (332119):     0.551               0.000 Alarme:inst45|DivHorloge_enable:DIVENA|74390:inst5|3 
+    Info (332119):     0.561               0.000 DivHorloge:inst3|74390:inst3|31 
+    Info (332119):     0.565               0.000 DivHorloge:inst3|74390:inst5|3 
+    Info (332119):     0.565               0.000 DivHorloge:inst3|7490:inst8|19 
+    Info (332119):     0.571               0.000 74390:inst13|31 
+    Info (332119):     0.576               0.000 7490:inst35|19 
+    Info (332119):     0.660               0.000 Alarme:inst45|DivHorloge_enable:DIVENA|74390:inst3|31 
+    Info (332119):     0.683               0.000 DivHorloge:inst3|74390:inst3|7 
+    Info (332119):     0.741               0.000 DivHorloge:inst3|74390:inst|3 
+    Info (332119):     0.817               0.000 74390:inst32|3 
+Info (332146): Worst-case recovery slack is -0.848
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):    -0.383              -0.383 D4 
-    Info (332119):    -0.339              -0.339 D5 
-    Info (332119):    -0.322              -0.322 D1 
-    Info (332119):    -0.277              -0.277 D6 
-    Info (332119):    -0.251              -0.251 D7 
-    Info (332119):    -0.182              -0.182 D2 
-    Info (332119):    -0.122              -0.122 D3 
-Info (332146): Worst-case removal slack is 0.482
+    Info (332119):    -0.848              -0.848 D1 
+    Info (332119):    -0.520              -0.520 D7 
+    Info (332119):    -0.366              -0.366 D6 
+    Info (332119):    -0.327              -0.327 D2 
+    Info (332119):    -0.316              -0.316 D3 
+    Info (332119):    -0.271              -0.271 D5 
+    Info (332119):    -0.244              -0.244 D4 
+Info (332146): Worst-case removal slack is 0.622
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):     0.482               0.000 D3 
-    Info (332119):     0.519               0.000 D2 
-    Info (332119):     0.607               0.000 D7 
-    Info (332119):     0.625               0.000 D1 
-    Info (332119):     0.634               0.000 D6 
-    Info (332119):     0.706               0.000 D5 
-    Info (332119):     0.744               0.000 D4 
+    Info (332119):     0.622               0.000 D4 
+    Info (332119):     0.664               0.000 D5 
+    Info (332119):     0.688               0.000 D3 
+    Info (332119):     0.714               0.000 D6 
+    Info (332119):     0.720               0.000 D2 
+    Info (332119):     0.880               0.000 D7 
+    Info (332119):     1.026               0.000 D1 
 Info (332146): Worst-case minimum pulse width slack is -3.000
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
@@ -2395,53 +2395,53 @@ Info (334003): Started post-fitting delay annotation
 Info (334004): Delay annotation completed successfully
 Info (332123): Deriving Clock Uncertainty. Please refer to report_sdc in the Timing Analyzer to see clock uncertainties.
 Critical Warning (332148): Timing requirements not met
-Info (332146): Worst-case setup slack is -13.247
+Info (332146): Worst-case setup slack is -12.679
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):   -13.247            -465.849 Clock 
-    Info (332119):    -5.083              -5.742 Alarme:inst45|DivHorloge_enable:DIVENA|74390:inst|3 
-    Info (332119):    -4.679             -34.833 DivHorloge:inst3|7490:inst10|19 
-    Info (332119):    -3.007              -3.447 74390:inst32|3 
-    Info (332119):    -2.984              -3.688 DivHorloge:inst3|74390:inst|3 
-    Info (332119):    -2.250              -4.498 7490:inst35|19 
-    Info (332119):    -1.543              -1.543 DivHorloge:inst3|7490:inst8|7 
-    Info (332119):    -1.408              -1.816 DivHorloge:inst3|74390:inst5|31 
-    Info (332119):    -1.316              -1.534 74390:inst33|34 
-    Info (332119):    -1.294              -1.449 7490:inst37|19 
-    Info (332119):    -1.128              -1.509 74390:inst33|31 
-    Info (332119):    -1.118              -1.433 DivHorloge:inst3|74390:inst5|34 
-    Info (332119):    -0.998              -1.287 Alarme:inst45|DivHorloge_enable:DIVENA|74390:inst5|34 
-    Info (332119):    -0.837              -1.076 DivHorloge:inst3|74390:inst|31 
-    Info (332119):    -0.713              -1.097 Alarme:inst45|DivHorloge_enable:DIVENA|74390:inst5|31 
-    Info (332119):    -0.696              -1.207 74390:inst13|31 
-    Info (332119):    -0.668              -1.246 74390:inst33|3 
-    Info (332119):    -0.662              -1.006 Alarme:inst45|DivHorloge_enable:DIVENA|74390:inst|7 
-    Info (332119):    -0.620              -0.620 Alarme:inst45|DivHorloge_enable:DIVENA|74390:inst3|7 
-    Info (332119):    -0.605              -0.838 DivHorloge:inst3|74390:inst3|34 
-    Info (332119):    -0.603              -1.055 Alarme:inst45|DivHorloge_enable:DIVENA|74390:inst3|3 
-    Info (332119):    -0.599              -1.159 DivHorloge:inst3|74390:inst3|31 
-    Info (332119):    -0.586              -0.774 Alarme:inst45|DivHorloge_enable:DIVENA|74390:inst5|7 
-    Info (332119):    -0.569              -0.822 DivHorloge:inst3|74390:inst|7 
-    Info (332119):    -0.551              -1.010 DivHorloge:inst3|74390:inst3|3 
-    Info (332119):    -0.544              -0.978 Alarme:inst45|DivHorloge_enable:DIVENA|74390:inst|31 
-    Info (332119):    -0.540              -1.001 DivHorloge:inst3|74390:inst5|3 
-    Info (332119):    -0.519              -1.006 Alarme:inst45|DivHorloge_enable:DIVENA|74390:inst5|3 
-    Info (332119):    -0.516              -0.956 74390:inst32|34 
-    Info (332119):    -0.506              -0.809 74390:inst33|7 
-    Info (332119):    -0.506              -0.506 DivHorloge:inst3|7490:inst8|19 
-    Info (332119):    -0.494              -0.967 DivHorloge:inst3|74390:inst5|7 
-    Info (332119):    -0.491              -0.491 Alarme:inst45|DivHorloge_enable:DIVENA|74390:inst3|34 
-    Info (332119):    -0.484              -0.586 74390:inst13|7 
-    Info (332119):    -0.477              -0.864 DivHorloge:inst3|74390:inst|34 
-    Info (332119):    -0.477              -0.477 Alarme:inst45|DivHorloge_enable:DIVENA|74390:inst|34 
-    Info (332119):    -0.472              -0.942 74390:inst32|31 
-    Info (332119):    -0.457              -0.785 74390:inst13|34 
-    Info (332119):    -0.451              -0.881 Alarme:inst45|DivHorloge_enable:DIVENA|74390:inst3|31 
-    Info (332119):    -0.446              -0.446 Alarme:inst45|DivHorloge_enable:DIVENA|7490:inst8|19 
-    Info (332119):    -0.431              -0.691 74390:inst32|7 
-    Info (332119):    -0.426              -0.746 74390:inst13|3 
-    Info (332119):    -0.375              -0.607 DivHorloge:inst3|74390:inst3|7 
-    Info (332119):     0.084               0.000 Alarme:inst45|DivHorloge_enable:DIVENA|7490:inst8|7 
+    Info (332119):   -12.679            -456.274 Clock 
+    Info (332119):    -5.200             -39.073 DivHorloge:inst3|7490:inst10|19 
+    Info (332119):    -4.954              -5.234 Alarme:inst45|DivHorloge_enable:DIVENA|74390:inst|3 
+    Info (332119):    -3.478              -4.093 74390:inst32|3 
+    Info (332119):    -3.070              -3.589 DivHorloge:inst3|74390:inst|3 
+    Info (332119):    -1.994              -2.436 74390:inst13|31 
+    Info (332119):    -1.797              -3.592 7490:inst35|19 
+    Info (332119):    -1.558              -1.848 Alarme:inst45|DivHorloge_enable:DIVENA|74390:inst5|34 
+    Info (332119):    -1.399              -1.767 DivHorloge:inst3|74390:inst3|31 
+    Info (332119):    -1.332              -1.332 DivHorloge:inst3|7490:inst8|7 
+    Info (332119):    -1.323              -1.473 74390:inst33|34 
+    Info (332119):    -1.131              -1.560 DivHorloge:inst3|74390:inst5|34 
+    Info (332119):    -1.059              -1.346 7490:inst37|19 
+    Info (332119):    -0.881              -1.187 DivHorloge:inst3|74390:inst|31 
+    Info (332119):    -0.756              -1.156 74390:inst13|7 
+    Info (332119):    -0.660              -0.902 Alarme:inst45|DivHorloge_enable:DIVENA|74390:inst3|3 
+    Info (332119):    -0.652              -0.818 DivHorloge:inst3|74390:inst3|34 
+    Info (332119):    -0.642              -1.037 74390:inst33|31 
+    Info (332119):    -0.624              -1.068 DivHorloge:inst3|74390:inst5|3 
+    Info (332119):    -0.623              -1.043 Alarme:inst45|DivHorloge_enable:DIVENA|74390:inst5|3 
+    Info (332119):    -0.601              -1.055 74390:inst32|34 
+    Info (332119):    -0.597              -0.864 74390:inst32|7 
+    Info (332119):    -0.583              -0.931 74390:inst33|3 
+    Info (332119):    -0.576              -0.966 Alarme:inst45|DivHorloge_enable:DIVENA|74390:inst3|31 
+    Info (332119):    -0.576              -0.704 Alarme:inst45|DivHorloge_enable:DIVENA|74390:inst|31 
+    Info (332119):    -0.567              -1.058 DivHorloge:inst3|74390:inst3|7 
+    Info (332119):    -0.533              -0.946 DivHorloge:inst3|74390:inst5|31 
+    Info (332119):    -0.517              -0.914 DivHorloge:inst3|74390:inst|34 
+    Info (332119):    -0.507              -0.645 Alarme:inst45|DivHorloge_enable:DIVENA|74390:inst3|34 
+    Info (332119):    -0.490              -0.838 Alarme:inst45|DivHorloge_enable:DIVENA|74390:inst|7 
+    Info (332119):    -0.483              -0.551 Alarme:inst45|DivHorloge_enable:DIVENA|74390:inst|34 
+    Info (332119):    -0.473              -0.658 74390:inst32|31 
+    Info (332119):    -0.455              -0.455 DivHorloge:inst3|74390:inst5|7 
+    Info (332119):    -0.451              -0.666 DivHorloge:inst3|74390:inst|7 
+    Info (332119):    -0.449              -0.712 Alarme:inst45|DivHorloge_enable:DIVENA|74390:inst3|7 
+    Info (332119):    -0.447              -0.868 74390:inst13|3 
+    Info (332119):    -0.444              -0.444 DivHorloge:inst3|7490:inst8|19 
+    Info (332119):    -0.432              -0.664 DivHorloge:inst3|74390:inst3|3 
+    Info (332119):    -0.414              -0.550 74390:inst33|7 
+    Info (332119):    -0.376              -0.376 Alarme:inst45|DivHorloge_enable:DIVENA|7490:inst8|19 
+    Info (332119):    -0.373              -0.713 Alarme:inst45|DivHorloge_enable:DIVENA|74390:inst5|31 
+    Info (332119):    -0.367              -0.523 74390:inst13|34 
+    Info (332119):    -0.299              -0.436 Alarme:inst45|DivHorloge_enable:DIVENA|74390:inst5|7 
+    Info (332119):     0.080               0.000 Alarme:inst45|DivHorloge_enable:DIVENA|7490:inst8|7 
     Info (332119):     0.361               0.000 74390:inst13|33 
     Info (332119):     0.361               0.000 74390:inst13|6 
     Info (332119):     0.361               0.000 74390:inst32|33 
@@ -2467,27 +2467,29 @@ Info (332146): Worst-case setup slack is -13.247
     Info (332119):     0.362               0.000 D4 
     Info (332119):     0.362               0.000 D5 
     Info (332119):     0.362               0.000 D6 
-Info (332146): Worst-case hold slack is 0.025
+Info (332146): Worst-case hold slack is 0.203
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):     0.025               0.000 Alarme:inst45|DivHorloge_enable:DIVENA|74390:inst3|34 
-    Info (332119):     0.103               0.000 Alarme:inst45|DivHorloge_enable:DIVENA|74390:inst|34 
-    Info (332119):     0.164               0.000 Alarme:inst45|DivHorloge_enable:DIVENA|74390:inst3|7 
-    Info (332119):     0.230               0.000 74390:inst13|7 
-    Info (332119):     0.259               0.000 74390:inst13|34 
-    Info (332119):     0.288               0.000 DivHorloge:inst3|74390:inst3|7 
-    Info (332119):     0.296               0.000 Alarme:inst45|DivHorloge_enable:DIVENA|74390:inst5|7 
-    Info (332119):     0.305               0.000 74390:inst33|34 
-    Info (332119):     0.305               0.000 7490:inst37|19 
-    Info (332119):     0.305               0.000 DivHorloge:inst3|74390:inst5|34 
-    Info (332119):     0.306               0.000 Clock 
-    Info (332119):     0.307               0.000 DivHorloge:inst3|74390:inst3|34 
+    Info (332119):     0.203               0.000 74390:inst13|34 
+    Info (332119):     0.205               0.000 Alarme:inst45|DivHorloge_enable:DIVENA|74390:inst|34 
+    Info (332119):     0.229               0.000 DivHorloge:inst3|74390:inst5|7 
+    Info (332119):     0.260               0.000 74390:inst33|7 
+    Info (332119):     0.271               0.000 Alarme:inst45|DivHorloge_enable:DIVENA|74390:inst5|7 
+    Info (332119):     0.279               0.000 DivHorloge:inst3|74390:inst3|34 
+    Info (332119):     0.282               0.000 DivHorloge:inst3|74390:inst|7 
+    Info (332119):     0.284               0.000 Alarme:inst45|DivHorloge_enable:DIVENA|74390:inst3|34 
+    Info (332119):     0.289               0.000 Clock 
+    Info (332119):     0.292               0.000 Alarme:inst45|DivHorloge_enable:DIVENA|74390:inst3|7 
+    Info (332119):     0.306               0.000 DivHorloge:inst3|74390:inst5|34 
+    Info (332119):     0.311               0.000 74390:inst33|34 
     Info (332119):     0.311               0.000 Alarme:inst45|DivHorloge_enable:DIVENA|74390:inst5|34 
+    Info (332119):     0.311               0.000 Alarme:inst45|DivHorloge_enable:DIVENA|7490:inst8|7 
+    Info (332119):     0.311               0.000 DivHorloge:inst3|7490:inst10|19 
     Info (332119):     0.311               0.000 DivHorloge:inst3|7490:inst8|7 
-    Info (332119):     0.312               0.000 Alarme:inst45|DivHorloge_enable:DIVENA|7490:inst8|7 
-    Info (332119):     0.312               0.000 DivHorloge:inst3|7490:inst10|19 
-    Info (332119):     0.314               0.000 DivHorloge:inst3|74390:inst5|7 
-    Info (332119):     0.317               0.000 74390:inst32|7 
+    Info (332119):     0.312               0.000 7490:inst37|19 
+    Info (332119):     0.318               0.000 DivHorloge:inst3|74390:inst3|3 
+    Info (332119):     0.331               0.000 Alarme:inst45|DivHorloge_enable:DIVENA|74390:inst|7 
+    Info (332119):     0.337               0.000 Alarme:inst45|DivHorloge_enable:DIVENA|74390:inst5|31 
     Info (332119):     0.354               0.000 74390:inst13|33 
     Info (332119):     0.354               0.000 74390:inst13|6 
     Info (332119):     0.354               0.000 74390:inst32|33 
@@ -2513,52 +2515,50 @@ Info (332146): Worst-case hold slack is 0.025
     Info (332119):     0.355               0.000 D4 
     Info (332119):     0.355               0.000 D5 
     Info (332119):     0.355               0.000 D6 
-    Info (332119):     0.369               0.000 74390:inst13|3 
-    Info (332119):     0.403               0.000 DivHorloge:inst3|74390:inst|31 
-    Info (332119):     0.416               0.000 7490:inst35|19 
-    Info (332119):     0.424               0.000 74390:inst32|34 
-    Info (332119):     0.425               0.000 DivHorloge:inst3|74390:inst|7 
-    Info (332119):     0.432               0.000 74390:inst33|31 
-    Info (332119):     0.432               0.000 Alarme:inst45|DivHorloge_enable:DIVENA|74390:inst|7 
-    Info (332119):     0.436               0.000 DivHorloge:inst3|74390:inst|34 
-    Info (332119):     0.443               0.000 74390:inst33|7 
-    Info (332119):     0.453               0.000 74390:inst32|31 
-    Info (332119):     0.519               0.000 DivHorloge:inst3|74390:inst5|3 
-    Info (332119):     0.522               0.000 Alarme:inst45|DivHorloge_enable:DIVENA|7490:inst8|19 
-    Info (332119):     0.566               0.000 DivHorloge:inst3|7490:inst8|19 
-    Info (332119):     0.568               0.000 DivHorloge:inst3|74390:inst3|3 
-    Info (332119):     0.585               0.000 Alarme:inst45|DivHorloge_enable:DIVENA|74390:inst5|3 
-    Info (332119):     0.607               0.000 74390:inst13|31 
-    Info (332119):     0.610               0.000 Alarme:inst45|DivHorloge_enable:DIVENA|74390:inst3|31 
-    Info (332119):     0.610               0.000 Alarme:inst45|DivHorloge_enable:DIVENA|74390:inst|31 
-    Info (332119):     0.611               0.000 Alarme:inst45|DivHorloge_enable:DIVENA|74390:inst5|31 
-    Info (332119):     0.618               0.000 DivHorloge:inst3|74390:inst3|31 
-    Info (332119):     0.631               0.000 DivHorloge:inst3|74390:inst5|31 
-    Info (332119):     0.638               0.000 74390:inst32|3 
-    Info (332119):     0.677               0.000 Alarme:inst45|DivHorloge_enable:DIVENA|74390:inst3|3 
-    Info (332119):     0.681               0.000 74390:inst33|3 
-    Info (332119):     0.765               0.000 DivHorloge:inst3|74390:inst|3 
-    Info (332119):     0.782               0.000 Alarme:inst45|DivHorloge_enable:DIVENA|74390:inst|3 
-Info (332146): Worst-case recovery slack is -0.173
+    Info (332119):     0.362               0.000 DivHorloge:inst3|74390:inst|34 
+    Info (332119):     0.367               0.000 Alarme:inst45|DivHorloge_enable:DIVENA|74390:inst|31 
+    Info (332119):     0.382               0.000 74390:inst32|34 
+    Info (332119):     0.399               0.000 Alarme:inst45|DivHorloge_enable:DIVENA|74390:inst3|3 
+    Info (332119):     0.424               0.000 74390:inst32|31 
+    Info (332119):     0.439               0.000 Alarme:inst45|DivHorloge_enable:DIVENA|74390:inst|3 
+    Info (332119):     0.449               0.000 74390:inst13|3 
+    Info (332119):     0.464               0.000 DivHorloge:inst3|74390:inst|31 
+    Info (332119):     0.465               0.000 74390:inst13|7 
+    Info (332119):     0.467               0.000 74390:inst32|7 
+    Info (332119):     0.483               0.000 74390:inst33|3 
+    Info (332119):     0.494               0.000 DivHorloge:inst3|74390:inst5|31 
+    Info (332119):     0.502               0.000 74390:inst33|31 
+    Info (332119):     0.502               0.000 Alarme:inst45|DivHorloge_enable:DIVENA|7490:inst8|19 
+    Info (332119):     0.515               0.000 Alarme:inst45|DivHorloge_enable:DIVENA|74390:inst5|3 
+    Info (332119):     0.517               0.000 DivHorloge:inst3|74390:inst3|31 
+    Info (332119):     0.526               0.000 DivHorloge:inst3|7490:inst8|19 
+    Info (332119):     0.530               0.000 DivHorloge:inst3|74390:inst5|3 
+    Info (332119):     0.531               0.000 7490:inst35|19 
+    Info (332119):     0.534               0.000 74390:inst13|31 
+    Info (332119):     0.591               0.000 DivHorloge:inst3|74390:inst3|7 
+    Info (332119):     0.593               0.000 Alarme:inst45|DivHorloge_enable:DIVENA|74390:inst3|31 
+    Info (332119):     0.716               0.000 DivHorloge:inst3|74390:inst|3 
+    Info (332119):     0.764               0.000 74390:inst32|3 
+Info (332146): Worst-case recovery slack is -0.617
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):    -0.173              -0.173 D7 
-    Info (332119):    -0.135              -0.135 D4 
-    Info (332119):    -0.127              -0.127 D1 
-    Info (332119):    -0.093              -0.093 D5 
-    Info (332119):    -0.039              -0.039 D6 
-    Info (332119):     0.076               0.000 D2 
-    Info (332119):     0.119               0.000 D3 
-Info (332146): Worst-case removal slack is 0.331
+    Info (332119):    -0.617              -0.617 D1 
+    Info (332119):    -0.478              -0.478 D7 
+    Info (332119):    -0.144              -0.144 D6 
+    Info (332119):    -0.112              -0.112 D2 
+    Info (332119):    -0.092              -0.092 D3 
+    Info (332119):    -0.053              -0.053 D5 
+    Info (332119):    -0.010              -0.010 D4 
+Info (332146): Worst-case removal slack is 0.442
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):     0.331               0.000 D3 
-    Info (332119):     0.354               0.000 D2 
-    Info (332119):     0.375               0.000 D1 
-    Info (332119):     0.455               0.000 D6 
-    Info (332119):     0.544               0.000 D5 
-    Info (332119):     0.577               0.000 D4 
-    Info (332119):     0.607               0.000 D7 
+    Info (332119):     0.442               0.000 D4 
+    Info (332119):     0.494               0.000 D6 
+    Info (332119):     0.496               0.000 D5 
+    Info (332119):     0.497               0.000 D3 
+    Info (332119):     0.505               0.000 D2 
+    Info (332119):     0.734               0.000 D1 
+    Info (332119):     0.832               0.000 D7 
 Info (332146): Worst-case minimum pulse width slack is -3.000
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
@@ -2636,53 +2636,53 @@ Info (332114): Report Metastability: Found 1 synchronizer chains.
 Info: Analyzing Fast 1200mV 0C Model
 Info (332123): Deriving Clock Uncertainty. Please refer to report_sdc in the Timing Analyzer to see clock uncertainties.
 Critical Warning (332148): Timing requirements not met
-Info (332146): Worst-case setup slack is -5.489
+Info (332146): Worst-case setup slack is -5.329
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):    -5.489            -144.380 Clock 
-    Info (332119):    -2.363              -2.363 Alarme:inst45|DivHorloge_enable:DIVENA|74390:inst|3 
-    Info (332119):    -2.094             -15.641 DivHorloge:inst3|7490:inst10|19 
-    Info (332119):    -1.368              -1.368 74390:inst32|3 
-    Info (332119):    -1.364              -1.364 DivHorloge:inst3|74390:inst|3 
-    Info (332119):    -0.704              -1.406 7490:inst35|19 
-    Info (332119):    -0.396              -0.396 DivHorloge:inst3|74390:inst5|31 
-    Info (332119):    -0.305              -0.305 74390:inst33|31 
-    Info (332119):    -0.223              -0.223 DivHorloge:inst3|7490:inst8|7 
-    Info (332119):    -0.137              -0.137 7490:inst37|19 
-    Info (332119):    -0.117              -0.117 DivHorloge:inst3|74390:inst|31 
-    Info (332119):    -0.112              -0.112 74390:inst33|34 
-    Info (332119):    -0.072              -0.072 74390:inst33|3 
-    Info (332119):    -0.072              -0.072 Alarme:inst45|DivHorloge_enable:DIVENA|74390:inst5|31 
-    Info (332119):    -0.063              -0.063 74390:inst13|31 
-    Info (332119):    -0.011              -0.011 Alarme:inst45|DivHorloge_enable:DIVENA|74390:inst3|3 
-    Info (332119):    -0.007              -0.007 DivHorloge:inst3|74390:inst3|31 
-    Info (332119):     0.005               0.000 DivHorloge:inst3|74390:inst3|3 
-    Info (332119):     0.009               0.000 Alarme:inst45|DivHorloge_enable:DIVENA|74390:inst5|3 
-    Info (332119):     0.013               0.000 Alarme:inst45|DivHorloge_enable:DIVENA|74390:inst|31 
-    Info (332119):     0.043               0.000 DivHorloge:inst3|74390:inst5|34 
-    Info (332119):     0.048               0.000 DivHorloge:inst3|74390:inst5|3 
-    Info (332119):     0.058               0.000 74390:inst32|31 
-    Info (332119):     0.077               0.000 74390:inst32|34 
-    Info (332119):     0.084               0.000 74390:inst13|34 
-    Info (332119):     0.085               0.000 Alarme:inst45|DivHorloge_enable:DIVENA|74390:inst3|31 
-    Info (332119):     0.085               0.000 DivHorloge:inst3|74390:inst|7 
-    Info (332119):     0.089               0.000 DivHorloge:inst3|74390:inst5|7 
-    Info (332119):     0.104               0.000 DivHorloge:inst3|7490:inst8|19 
-    Info (332119):     0.110               0.000 Alarme:inst45|DivHorloge_enable:DIVENA|74390:inst5|7 
-    Info (332119):     0.119               0.000 Alarme:inst45|DivHorloge_enable:DIVENA|74390:inst5|34 
+    Info (332119):    -5.329            -144.142 Clock 
+    Info (332119):    -2.457              -2.457 Alarme:inst45|DivHorloge_enable:DIVENA|74390:inst|3 
+    Info (332119):    -2.431             -18.116 DivHorloge:inst3|7490:inst10|19 
+    Info (332119):    -1.559              -1.559 74390:inst32|3 
+    Info (332119):    -1.346              -1.346 DivHorloge:inst3|74390:inst|3 
+    Info (332119):    -0.786              -0.786 74390:inst13|31 
+    Info (332119):    -0.462              -0.923 7490:inst35|19 
+    Info (332119):    -0.418              -0.418 DivHorloge:inst3|74390:inst3|31 
+    Info (332119):    -0.156              -0.156 Alarme:inst45|DivHorloge_enable:DIVENA|74390:inst5|34 
+    Info (332119):    -0.152              -0.152 DivHorloge:inst3|7490:inst8|7 
+    Info (332119):    -0.134              -0.134 74390:inst33|34 
+    Info (332119):    -0.113              -0.113 DivHorloge:inst3|74390:inst|31 
+    Info (332119):    -0.033              -0.033 Alarme:inst45|DivHorloge_enable:DIVENA|74390:inst3|3 
+    Info (332119):    -0.018              -0.018 DivHorloge:inst3|74390:inst5|3 
+    Info (332119):    -0.017              -0.017 74390:inst33|31 
+    Info (332119):    -0.017              -0.017 7490:inst37|19 
+    Info (332119):    -0.015              -0.015 DivHorloge:inst3|74390:inst5|34 
+    Info (332119):    -0.014              -0.014 Alarme:inst45|DivHorloge_enable:DIVENA|74390:inst5|3 
+    Info (332119):     0.007               0.000 Alarme:inst45|DivHorloge_enable:DIVENA|74390:inst3|31 
+    Info (332119):     0.008               0.000 Alarme:inst45|DivHorloge_enable:DIVENA|74390:inst|31 
+    Info (332119):     0.012               0.000 74390:inst33|3 
+    Info (332119):     0.018               0.000 74390:inst32|34 
+    Info (332119):     0.037               0.000 DivHorloge:inst3|74390:inst5|31 
+    Info (332119):     0.050               0.000 74390:inst32|31 
+    Info (332119):     0.050               0.000 DivHorloge:inst3|74390:inst3|7 
+    Info (332119):     0.063               0.000 74390:inst13|3 
+    Info (332119):     0.069               0.000 74390:inst13|7 
+    Info (332119):     0.104               0.000 Alarme:inst45|DivHorloge_enable:DIVENA|74390:inst5|31 
+    Info (332119):     0.113               0.000 DivHorloge:inst3|74390:inst|34 
     Info (332119):     0.123               0.000 Alarme:inst45|DivHorloge_enable:DIVENA|74390:inst|7 
-    Info (332119):     0.131               0.000 74390:inst13|3 
-    Info (332119):     0.132               0.000 Alarme:inst45|DivHorloge_enable:DIVENA|7490:inst8|19 
-    Info (332119):     0.142               0.000 DivHorloge:inst3|74390:inst|34 
-    Info (332119):     0.150               0.000 74390:inst32|7 
-    Info (332119):     0.152               0.000 Alarme:inst45|DivHorloge_enable:DIVENA|74390:inst|34 
-    Info (332119):     0.159               0.000 74390:inst33|7 
-    Info (332119):     0.162               0.000 Alarme:inst45|DivHorloge_enable:DIVENA|74390:inst3|7 
-    Info (332119):     0.166               0.000 Alarme:inst45|DivHorloge_enable:DIVENA|74390:inst3|34 
-    Info (332119):     0.176               0.000 DivHorloge:inst3|74390:inst3|34 
-    Info (332119):     0.187               0.000 74390:inst13|7 
-    Info (332119):     0.196               0.000 DivHorloge:inst3|74390:inst3|7 
-    Info (332119):     0.578               0.000 Alarme:inst45|DivHorloge_enable:DIVENA|7490:inst8|7 
+    Info (332119):     0.128               0.000 DivHorloge:inst3|7490:inst8|19 
+    Info (332119):     0.143               0.000 74390:inst32|7 
+    Info (332119):     0.159               0.000 DivHorloge:inst3|74390:inst3|3 
+    Info (332119):     0.172               0.000 Alarme:inst45|DivHorloge_enable:DIVENA|7490:inst8|19 
+    Info (332119):     0.173               0.000 DivHorloge:inst3|74390:inst3|34 
+    Info (332119):     0.182               0.000 74390:inst33|7 
+    Info (332119):     0.195               0.000 Alarme:inst45|DivHorloge_enable:DIVENA|74390:inst3|7 
+    Info (332119):     0.203               0.000 Alarme:inst45|DivHorloge_enable:DIVENA|74390:inst|34 
+    Info (332119):     0.204               0.000 Alarme:inst45|DivHorloge_enable:DIVENA|74390:inst3|34 
+    Info (332119):     0.212               0.000 DivHorloge:inst3|74390:inst|7 
+    Info (332119):     0.245               0.000 Alarme:inst45|DivHorloge_enable:DIVENA|74390:inst5|7 
+    Info (332119):     0.257               0.000 74390:inst13|34 
+    Info (332119):     0.270               0.000 DivHorloge:inst3|74390:inst5|7 
+    Info (332119):     0.575               0.000 Alarme:inst45|DivHorloge_enable:DIVENA|7490:inst8|7 
     Info (332119):     0.693               0.000 74390:inst13|33 
     Info (332119):     0.693               0.000 74390:inst13|6 
     Info (332119):     0.693               0.000 74390:inst32|33 
@@ -2708,35 +2708,39 @@ Info (332146): Worst-case setup slack is -5.489
     Info (332119):     0.694               0.000 D4 
     Info (332119):     0.694               0.000 D5 
     Info (332119):     0.694               0.000 D6 
-Info (332146): Worst-case hold slack is -0.037
+Info (332146): Worst-case hold slack is 0.019
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):    -0.037              -0.037 Alarme:inst45|DivHorloge_enable:DIVENA|74390:inst3|34 
-    Info (332119):    -0.023              -0.023 Alarme:inst45|DivHorloge_enable:DIVENA|74390:inst|34 
-    Info (332119):     0.027               0.000 Alarme:inst45|DivHorloge_enable:DIVENA|74390:inst3|7 
-    Info (332119):     0.056               0.000 74390:inst13|7 
-    Info (332119):     0.070               0.000 74390:inst13|34 
-    Info (332119):     0.087               0.000 Alarme:inst45|DivHorloge_enable:DIVENA|74390:inst5|7 
-    Info (332119):     0.087               0.000 DivHorloge:inst3|74390:inst3|7 
-    Info (332119):     0.099               0.000 DivHorloge:inst3|74390:inst5|7 
-    Info (332119):     0.113               0.000 74390:inst32|7 
-    Info (332119):     0.118               0.000 74390:inst33|31 
-    Info (332119):     0.118               0.000 Alarme:inst45|DivHorloge_enable:DIVENA|74390:inst|7 
-    Info (332119):     0.121               0.000 DivHorloge:inst3|74390:inst3|34 
-    Info (332119):     0.122               0.000 DivHorloge:inst3|74390:inst|31 
-    Info (332119):     0.143               0.000 DivHorloge:inst3|74390:inst|34 
-    Info (332119):     0.145               0.000 74390:inst33|34 
-    Info (332119):     0.146               0.000 DivHorloge:inst3|74390:inst5|34 
-    Info (332119):     0.147               0.000 7490:inst37|19 
-    Info (332119):     0.148               0.000 Clock 
+    Info (332119):     0.019               0.000 Alarme:inst45|DivHorloge_enable:DIVENA|74390:inst|34 
+    Info (332119):     0.038               0.000 DivHorloge:inst3|74390:inst5|7 
+    Info (332119):     0.041               0.000 74390:inst13|34 
+    Info (332119):     0.045               0.000 Alarme:inst45|DivHorloge_enable:DIVENA|74390:inst|31 
+    Info (332119):     0.054               0.000 74390:inst33|7 
+    Info (332119):     0.068               0.000 Alarme:inst45|DivHorloge_enable:DIVENA|74390:inst3|34 
+    Info (332119):     0.069               0.000 74390:inst32|31 
+    Info (332119):     0.075               0.000 DivHorloge:inst3|74390:inst3|34 
+    Info (332119):     0.081               0.000 Alarme:inst45|DivHorloge_enable:DIVENA|74390:inst5|7 
+    Info (332119):     0.083               0.000 DivHorloge:inst3|74390:inst|7 
+    Info (332119):     0.087               0.000 Alarme:inst45|DivHorloge_enable:DIVENA|74390:inst3|7 
+    Info (332119):     0.110               0.000 Alarme:inst45|DivHorloge_enable:DIVENA|74390:inst|7 
+    Info (332119):     0.115               0.000 Alarme:inst45|DivHorloge_enable:DIVENA|74390:inst3|3 
+    Info (332119):     0.132               0.000 DivHorloge:inst3|74390:inst|34 
+    Info (332119):     0.138               0.000 74390:inst32|34 
+    Info (332119):     0.140               0.000 Alarme:inst45|DivHorloge_enable:DIVENA|74390:inst|3 
+    Info (332119):     0.140               0.000 Clock 
+    Info (332119):     0.142               0.000 74390:inst33|3 
+    Info (332119):     0.142               0.000 74390:inst33|31 
+    Info (332119):     0.144               0.000 DivHorloge:inst3|74390:inst5|31 
+    Info (332119):     0.146               0.000 74390:inst13|7 
+    Info (332119):     0.147               0.000 DivHorloge:inst3|74390:inst5|34 
+    Info (332119):     0.149               0.000 Alarme:inst45|DivHorloge_enable:DIVENA|7490:inst8|19 
+    Info (332119):     0.150               0.000 DivHorloge:inst3|7490:inst8|7 
+    Info (332119):     0.151               0.000 74390:inst33|34 
+    Info (332119):     0.151               0.000 7490:inst37|19 
     Info (332119):     0.151               0.000 Alarme:inst45|DivHorloge_enable:DIVENA|74390:inst5|34 
     Info (332119):     0.151               0.000 Alarme:inst45|DivHorloge_enable:DIVENA|7490:inst8|7 
     Info (332119):     0.152               0.000 DivHorloge:inst3|7490:inst10|19 
-    Info (332119):     0.152               0.000 DivHorloge:inst3|7490:inst8|7 
-    Info (332119):     0.157               0.000 74390:inst32|3 
-    Info (332119):     0.160               0.000 74390:inst33|7 
-    Info (332119):     0.162               0.000 DivHorloge:inst3|74390:inst|7 
-    Info (332119):     0.165               0.000 Alarme:inst45|DivHorloge_enable:DIVENA|7490:inst8|19 
+    Info (332119):     0.162               0.000 DivHorloge:inst3|74390:inst|31 
     Info (332119):     0.169               0.000 74390:inst13|33 
     Info (332119):     0.169               0.000 74390:inst13|6 
     Info (332119):     0.169               0.000 74390:inst32|33 
@@ -2745,6 +2749,7 @@ Info (332146): Worst-case hold slack is -0.037
     Info (332119):     0.169               0.000 74390:inst33|6 
     Info (332119):     0.169               0.000 Alarme:inst45|DivHorloge_enable:DIVENA|74390:inst3|33 
     Info (332119):     0.169               0.000 Alarme:inst45|DivHorloge_enable:DIVENA|74390:inst3|6 
+    Info (332119):     0.169               0.000 Alarme:inst45|DivHorloge_enable:DIVENA|74390:inst5|3 
     Info (332119):     0.169               0.000 Alarme:inst45|DivHorloge_enable:DIVENA|74390:inst5|33 
     Info (332119):     0.169               0.000 Alarme:inst45|DivHorloge_enable:DIVENA|74390:inst5|6 
     Info (332119):     0.169               0.000 Alarme:inst45|DivHorloge_enable:DIVENA|74390:inst|33 
@@ -2762,55 +2767,50 @@ Info (332146): Worst-case hold slack is -0.037
     Info (332119):     0.170               0.000 D4 
     Info (332119):     0.170               0.000 D5 
     Info (332119):     0.170               0.000 D6 
-    Info (332119):     0.171               0.000 DivHorloge:inst3|74390:inst3|31 
-    Info (332119):     0.172               0.000 7490:inst35|19 
-    Info (332119):     0.175               0.000 74390:inst32|34 
-    Info (332119):     0.176               0.000 74390:inst32|31 
-    Info (332119):     0.184               0.000 DivHorloge:inst3|74390:inst5|31 
-    Info (332119):     0.186               0.000 DivHorloge:inst3|74390:inst5|3 
-    Info (332119):     0.192               0.000 DivHorloge:inst3|7490:inst8|19 
-    Info (332119):     0.193               0.000 Alarme:inst45|DivHorloge_enable:DIVENA|74390:inst5|31 
-    Info (332119):     0.195               0.000 Alarme:inst45|DivHorloge_enable:DIVENA|74390:inst|31 
-    Info (332119):     0.202               0.000 74390:inst13|3 
-    Info (332119):     0.210               0.000 Alarme:inst45|DivHorloge_enable:DIVENA|74390:inst5|3 
-    Info (332119):     0.212               0.000 Alarme:inst45|DivHorloge_enable:DIVENA|74390:inst3|31 
-    Info (332119):     0.221               0.000 Alarme:inst45|DivHorloge_enable:DIVENA|74390:inst3|3 
-    Info (332119):     0.223               0.000 DivHorloge:inst3|74390:inst3|3 
-    Info (332119):     0.225               0.000 74390:inst13|31 
-    Info (332119):     0.235               0.000 Alarme:inst45|DivHorloge_enable:DIVENA|74390:inst|3 
-    Info (332119):     0.293               0.000 DivHorloge:inst3|74390:inst|3 
-    Info (332119):     0.315               0.000 74390:inst33|3 
-Info (332146): Worst-case recovery slack is 0.082
+    Info (332119):     0.170               0.000 DivHorloge:inst3|7490:inst8|19 
+    Info (332119):     0.173               0.000 Alarme:inst45|DivHorloge_enable:DIVENA|74390:inst5|31 
+    Info (332119):     0.174               0.000 DivHorloge:inst3|74390:inst5|3 
+    Info (332119):     0.178               0.000 74390:inst13|31 
+    Info (332119):     0.178               0.000 DivHorloge:inst3|74390:inst3|3 
+    Info (332119):     0.182               0.000 74390:inst13|3 
+    Info (332119):     0.184               0.000 DivHorloge:inst3|74390:inst3|31 
+    Info (332119):     0.199               0.000 74390:inst32|7 
+    Info (332119):     0.201               0.000 Alarme:inst45|DivHorloge_enable:DIVENA|74390:inst3|31 
+    Info (332119):     0.213               0.000 DivHorloge:inst3|74390:inst3|7 
+    Info (332119):     0.215               0.000 7490:inst35|19 
+    Info (332119):     0.227               0.000 DivHorloge:inst3|74390:inst|3 
+    Info (332119):     0.252               0.000 74390:inst32|3 
+Info (332146): Worst-case recovery slack is -0.122
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):     0.082               0.000 D1 
-    Info (332119):     0.098               0.000 D4 
-    Info (332119):     0.136               0.000 D5 
-    Info (332119):     0.169               0.000 D6 
-    Info (332119):     0.187               0.000 D2 
-    Info (332119):     0.232               0.000 D3 
-    Info (332119):     0.316               0.000 D7 
-Info (332146): Worst-case removal slack is 0.311
+    Info (332119):    -0.122              -0.122 D1 
+    Info (332119):     0.084               0.000 D6 
+    Info (332119):     0.129               0.000 D3 
+    Info (332119):     0.137               0.000 D2 
+    Info (332119):     0.170               0.000 D4 
+    Info (332119):     0.172               0.000 D5 
+    Info (332119):     0.176               0.000 D7 
+Info (332146): Worst-case removal slack is 0.392
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):     0.311               0.000 D7 
-    Info (332119):     0.397               0.000 D3 
-    Info (332119):     0.419               0.000 D2 
-    Info (332119):     0.447               0.000 D6 
-    Info (332119):     0.465               0.000 D1 
-    Info (332119):     0.504               0.000 D5 
-    Info (332119):     0.537               0.000 D4 
+    Info (332119):     0.392               0.000 D7 
+    Info (332119):     0.457               0.000 D4 
+    Info (332119):     0.464               0.000 D5 
+    Info (332119):     0.477               0.000 D6 
+    Info (332119):     0.478               0.000 D3 
+    Info (332119):     0.482               0.000 D2 
+    Info (332119):     0.616               0.000 D1 
 Info (332146): Worst-case minimum pulse width slack is -3.000
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):    -3.000            -198.029 Clock 
-    Info (332119):    -3.000              -4.305 D1 
-    Info (332119):    -3.000              -4.253 D7 
-    Info (332119):    -3.000              -4.207 D6 
+    Info (332119):    -3.000            -198.094 Clock 
+    Info (332119):    -3.000              -4.353 D1 
+    Info (332119):    -3.000              -4.259 D7 
+    Info (332119):    -3.000              -4.225 D6 
     Info (332119):    -3.000              -4.193 D2 
-    Info (332119):    -3.000              -4.193 D3 
-    Info (332119):    -3.000              -4.189 D4 
-    Info (332119):    -3.000              -4.178 D5 
+    Info (332119):    -3.000              -4.186 D3 
+    Info (332119):    -3.000              -4.180 D5 
+    Info (332119):    -3.000              -4.179 D4 
     Info (332119):    -1.000              -8.000 DivHorloge:inst3|7490:inst10|19 
     Info (332119):    -1.000              -3.000 74390:inst33|34 
     Info (332119):    -1.000              -3.000 7490:inst37|19 
@@ -2877,9 +2877,9 @@ Info (332114): Report Metastability: Found 1 synchronizer chains.
 Info (332102): Design is not fully constrained for setup requirements
 Info (332102): Design is not fully constrained for hold requirements
 Info: Quartus Prime Timing Analyzer was successful. 0 errors, 5 warnings
-    Info: Peak virtual memory: 4838 megabytes
-    Info: Processing ended: Sat Nov 04 16:12:00 2023
-    Info: Elapsed time: 00:00:04
-    Info: Total CPU time (on all processors): 00:00:02
+    Info: Peak virtual memory: 603 megabytes
+    Info: Processing ended: Sun Nov  5 11:09:20 2023
+    Info: Elapsed time: 00:00:02
+    Info: Total CPU time (on all processors): 00:00:03
 
 

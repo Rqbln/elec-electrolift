@@ -9,7 +9,7 @@ Clock => Alarme:inst45.clock
 Clock => DivHorloge:inst3.clock
 Clock => PRESIDENT:pres.clock
 Clock => 74390:inst32.1CLKB
-Clock => compultrason:inst4.i_Clock
+Clock => detect:inst2.i_Clock
 Clock => counter:inst9.i_Clock
 Clock => echo_pulse2.CLK
 Clock => echo_pulse1.CLK
@@ -661,7 +661,7 @@ QD <= 19.DB_MAX_OUTPUT_PORT_TYPE
 1CLKA => 23.IN0
 
 
-|Quartus|compultrason:inst4
+|Quartus|detect:inst2
 i_Clock => o_Object_Detected~reg0.CLK
 i_Clock => state.CLK
 i_Reset_n => state.ACLR
