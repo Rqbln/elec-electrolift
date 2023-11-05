@@ -1,0 +1,169 @@
+/*
+WARNING: Do NOT edit the input and output ports in this file in a text
+editor if you plan to continue editing the block that represents it in
+the Block Editor! File corruption is VERY likely to occur.
+*/
+/*
+Copyright (C) 2018  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel FPGA IP License Agreement, or other applicable license
+agreement, including, without limitation, that your use is for
+the sole purpose of programming logic devices manufactured by
+Intel and sold by Intel or its authorized distributors.  Please
+refer to the applicable agreement for further details.
+*/
+(header "graphic" (version "1.4"))
+(pin
+	(input)
+	(rect 776 120 944 136)
+	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
+	(text "ADC_CLK_10" (rect 5 0 73 12)(font "Arial" ))
+	(pt 168 8)
+	(drawing
+		(line (pt 84 12)(pt 109 12))
+		(line (pt 84 4)(pt 109 4))
+		(line (pt 113 8)(pt 168 8))
+		(line (pt 84 12)(pt 84 4))
+		(line (pt 109 4)(pt 113 8))
+		(line (pt 109 12)(pt 113 8))
+	)
+	(text "VCC" (rect 128 7 148 17)(font "Arial" (font_size 6)))
+	(annotation_block (location)(rect 280 112 336 136))
+)
+(pin
+	(input)
+	(rect 760 136 944 152)
+	(text "INPUT" (rect 141 0 169 10)(font "Arial" (font_size 6)))
+	(text "MAX10_CLK1_50" (rect 5 0 89 17)(font "Intel Clear" ))
+	(pt 184 8)
+	(drawing
+		(line (pt 100 12)(pt 125 12))
+		(line (pt 100 4)(pt 125 4))
+		(line (pt 129 8)(pt 184 8))
+		(line (pt 100 12)(pt 100 4))
+		(line (pt 125 4)(pt 129 8))
+		(line (pt 125 12)(pt 129 8))
+	)
+	(text "VCC" (rect 144 7 164 17)(font "Arial" (font_size 6)))
+	(annotation_block (location)(rect 416 216 480 240))
+)
+(symbol
+	(rect 1208 96 1416 336)
+	(text "ADC_to_12bits" (rect 5 0 79 12)(font "Arial" ))
+	(text "inst1" (rect 8 224 30 241)(font "Intel Clear" ))
+	(port
+		(pt 0 32)
+		(input)
+		(text "AADC_CLK_10" (rect 0 0 75 12)(font "Arial" ))
+		(text "AADC_CLK_10" (rect 21 27 96 39)(font "Arial" ))
+		(line (pt 0 32)(pt 16 32))
+	)
+	(port
+		(pt 0 48)
+		(input)
+		(text "MMAX10_CLK1_50" (rect 0 0 92 12)(font "Arial" ))
+		(text "MMAX10_CLK1_50" (rect 21 43 113 55)(font "Arial" ))
+		(line (pt 0 48)(pt 16 48))
+	)
+	(port
+		(pt 208 32)
+		(output)
+		(text "DR11" (rect 0 0 28 12)(font "Arial" ))
+		(text "DR11" (rect 164 27 192 39)(font "Arial" ))
+		(line (pt 208 32)(pt 192 32))
+	)
+	(port
+		(pt 208 48)
+		(output)
+		(text "DR10" (rect 0 0 28 12)(font "Arial" ))
+		(text "DR10" (rect 164 43 192 55)(font "Arial" ))
+		(line (pt 208 48)(pt 192 48))
+	)
+	(port
+		(pt 208 64)
+		(output)
+		(text "DR9" (rect 0 0 22 12)(font "Arial" ))
+		(text "DR9" (rect 169 59 191 71)(font "Arial" ))
+		(line (pt 208 64)(pt 192 64))
+	)
+	(port
+		(pt 208 80)
+		(output)
+		(text "DR8" (rect 0 0 22 12)(font "Arial" ))
+		(text "DR8" (rect 169 75 191 87)(font "Arial" ))
+		(line (pt 208 80)(pt 192 80))
+	)
+	(port
+		(pt 208 96)
+		(output)
+		(text "DR7" (rect 0 0 22 12)(font "Arial" ))
+		(text "DR7" (rect 169 91 191 103)(font "Arial" ))
+		(line (pt 208 96)(pt 192 96))
+	)
+	(port
+		(pt 208 112)
+		(output)
+		(text "DR6" (rect 0 0 22 12)(font "Arial" ))
+		(text "DR6" (rect 169 107 191 119)(font "Arial" ))
+		(line (pt 208 112)(pt 192 112))
+	)
+	(port
+		(pt 208 128)
+		(output)
+		(text "DR5" (rect 0 0 22 12)(font "Arial" ))
+		(text "DR5" (rect 169 123 191 135)(font "Arial" ))
+		(line (pt 208 128)(pt 192 128))
+	)
+	(port
+		(pt 208 144)
+		(output)
+		(text "DR4" (rect 0 0 22 12)(font "Arial" ))
+		(text "DR4" (rect 169 139 191 151)(font "Arial" ))
+		(line (pt 208 144)(pt 192 144))
+	)
+	(port
+		(pt 208 160)
+		(output)
+		(text "DR3" (rect 0 0 22 12)(font "Arial" ))
+		(text "DR3" (rect 169 155 191 167)(font "Arial" ))
+		(line (pt 208 160)(pt 192 160))
+	)
+	(port
+		(pt 208 176)
+		(output)
+		(text "DR2" (rect 0 0 22 12)(font "Arial" ))
+		(text "DR2" (rect 169 171 191 183)(font "Arial" ))
+		(line (pt 208 176)(pt 192 176))
+	)
+	(port
+		(pt 208 192)
+		(output)
+		(text "DR1" (rect 0 0 22 12)(font "Arial" ))
+		(text "DR1" (rect 169 187 191 199)(font "Arial" ))
+		(line (pt 208 192)(pt 192 192))
+	)
+	(port
+		(pt 208 208)
+		(output)
+		(text "DR0" (rect 0 0 22 12)(font "Arial" ))
+		(text "DR0" (rect 169 203 191 215)(font "Arial" ))
+		(line (pt 208 208)(pt 192 208))
+	)
+	(drawing
+		(rectangle (rect 16 16 192 224))
+	)
+)
+(connector
+	(pt 944 128)
+	(pt 1208 128)
+)
+(connector
+	(pt 1208 144)
+	(pt 944 144)
+)

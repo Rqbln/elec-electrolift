@@ -1,16 +1,16 @@
-Analysis & Synthesis Status : Successful - Sun Nov  5 11:09:02 2023
+Analysis & Synthesis Status : Successful - Sun Nov  5 11:51:10 2023
 Quartus Prime Version : 20.1.0 Build 711 06/05/2020 SJ Lite Edition
 Revision Name : Quartus
-Top-level Entity Name : Quartus
+Top-level Entity Name : hello-adc
 Family : MAX 10
-Total logic elements : 635
-    Total combinational functions : 592
-    Dedicated logic registers : 292
-Total registers : 292
-Total pins : 73
+Total logic elements : 0
+    Total combinational functions : 0
+    Dedicated logic registers : 0
+Total registers : 0
+Total pins : 2
 Total virtual pins : 0
 Total memory bits : 0
-Embedded Multiplier 9-bit elements : 8
+Embedded Multiplier 9-bit elements : 0
 Total PLLs : 0
 UFM blocks : 0
 ADC blocks : 0

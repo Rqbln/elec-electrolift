@@ -1,0 +1,290 @@
+Analysis & Elaboration report for hello-adc
+Wed Nov 01 20:04:18 2023
+Quartus Prime Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Analysis & Elaboration Summary
+  3. Parallel Compilation
+  4. Analysis & Elaboration Settings
+  5. Analysis & Elaboration Messages
+  6. Analysis & Elaboration Suppressed Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 2020  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
+and other software and tools, and any partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel FPGA IP License Agreement, or other applicable license
+agreement, including, without limitation, that your use is for
+the sole purpose of programming logic devices manufactured by
+Intel and sold by Intel or its authorized distributors.  Please
+refer to the applicable agreement for further details, at
+https://fpgasoftware.intel.com/eula.
+
+
+
++----------------------------------------------------------------------------------+
+; Analysis & Elaboration Summary                                                   ;
++------------------------------------+---------------------------------------------+
+; Analysis & Elaboration Status      ; Successful - Wed Nov 01 20:04:18 2023       ;
+; Quartus Prime Version              ; 20.1.0 Build 711 06/05/2020 SJ Lite Edition ;
+; Revision Name                      ; hello-adc                                   ;
+; Top-level Entity Name              ; adc_sample_to_out                           ;
+; Family                             ; MAX 10                                      ;
+; Total logic elements               ; N/A until Partition Merge                   ;
+;     Total combinational functions  ; N/A until Partition Merge                   ;
+;     Dedicated logic registers      ; N/A until Partition Merge                   ;
+; Total registers                    ; N/A until Partition Merge                   ;
+; Total pins                         ; N/A until Partition Merge                   ;
+; Total virtual pins                 ; N/A until Partition Merge                   ;
+; Total memory bits                  ; N/A until Partition Merge                   ;
+; Embedded Multiplier 9-bit elements ; N/A until Partition Merge                   ;
+; Total PLLs                         ; N/A until Partition Merge                   ;
+; UFM blocks                         ; N/A until Partition Merge                   ;
+; ADC blocks                         ; N/A until Partition Merge                   ;
++------------------------------------+---------------------------------------------+
+
+
++------------------------------------------+
+; Parallel Compilation                     ;
++----------------------------+-------------+
+; Processors                 ; Number      ;
++----------------------------+-------------+
+; Number detected on machine ; 8           ;
+; Maximum allowed            ; 4           ;
+;                            ;             ;
+; Average used               ; 1.00        ;
+; Maximum used               ; 1           ;
+;                            ;             ;
+; Usage by Processor         ; % Time Used ;
+;     Processor 1            ; 100.0%      ;
++----------------------------+-------------+
+
+
++------------------------------------------------------------------------------------------------------------+
+; Analysis & Elaboration Settings                                                                            ;
++------------------------------------------------------------------+--------------------+--------------------+
+; Option                                                           ; Setting            ; Default Value      ;
++------------------------------------------------------------------+--------------------+--------------------+
+; Device                                                           ; 10M50DAF484C7G     ;                    ;
+; Top-level entity name                                            ; adc_sample_to_out  ; hello-adc          ;
+; Family name                                                      ; MAX 10             ; Cyclone V          ;
+; Use smart compilation                                            ; Off                ; Off                ;
+; Enable parallel Assembler and Timing Analyzer during compilation ; On                 ; On                 ;
+; Enable compact report table                                      ; Off                ; Off                ;
+; Restructure Multiplexers                                         ; Auto               ; Auto               ;
+; Create Debugging Nodes for IP Cores                              ; Off                ; Off                ;
+; Preserve fewer node names                                        ; On                 ; On                 ;
+; Intel FPGA IP Evaluation Mode                                    ; Enable             ; Enable             ;
+; Verilog Version                                                  ; Verilog_2001       ; Verilog_2001       ;
+; VHDL Version                                                     ; VHDL_1993          ; VHDL_1993          ;
+; State Machine Processing                                         ; Auto               ; Auto               ;
+; Safe State Machine                                               ; Off                ; Off                ;
+; Extract Verilog State Machines                                   ; On                 ; On                 ;
+; Extract VHDL State Machines                                      ; On                 ; On                 ;
+; Ignore Verilog initial constructs                                ; Off                ; Off                ;
+; Iteration limit for constant Verilog loops                       ; 5000               ; 5000               ;
+; Iteration limit for non-constant Verilog loops                   ; 250                ; 250                ;
+; Add Pass-Through Logic to Inferred RAMs                          ; On                 ; On                 ;
+; Infer RAMs from Raw Logic                                        ; On                 ; On                 ;
+; Parallel Synthesis                                               ; On                 ; On                 ;
+; DSP Block Balancing                                              ; Auto               ; Auto               ;
+; NOT Gate Push-Back                                               ; On                 ; On                 ;
+; Power-Up Don't Care                                              ; On                 ; On                 ;
+; Remove Redundant Logic Cells                                     ; Off                ; Off                ;
+; Remove Duplicate Registers                                       ; On                 ; On                 ;
+; Ignore CARRY Buffers                                             ; Off                ; Off                ;
+; Ignore CASCADE Buffers                                           ; Off                ; Off                ;
+; Ignore GLOBAL Buffers                                            ; Off                ; Off                ;
+; Ignore ROW GLOBAL Buffers                                        ; Off                ; Off                ;
+; Ignore LCELL Buffers                                             ; Off                ; Off                ;
+; Ignore SOFT Buffers                                              ; On                 ; On                 ;
+; Limit AHDL Integers to 32 Bits                                   ; Off                ; Off                ;
+; Optimization Technique                                           ; Balanced           ; Balanced           ;
+; Carry Chain Length                                               ; 70                 ; 70                 ;
+; Auto Carry Chains                                                ; On                 ; On                 ;
+; Auto Open-Drain Pins                                             ; On                 ; On                 ;
+; Perform WYSIWYG Primitive Resynthesis                            ; Off                ; Off                ;
+; Auto ROM Replacement                                             ; On                 ; On                 ;
+; Auto RAM Replacement                                             ; On                 ; On                 ;
+; Auto DSP Block Replacement                                       ; On                 ; On                 ;
+; Auto Shift Register Replacement                                  ; Auto               ; Auto               ;
+; Allow Shift Register Merging across Hierarchies                  ; Auto               ; Auto               ;
+; Auto Clock Enable Replacement                                    ; On                 ; On                 ;
+; Strict RAM Replacement                                           ; Off                ; Off                ;
+; Allow Synchronous Control Signals                                ; On                 ; On                 ;
+; Force Use of Synchronous Clear Signals                           ; Off                ; Off                ;
+; Auto RAM Block Balancing                                         ; On                 ; On                 ;
+; Auto RAM to Logic Cell Conversion                                ; Off                ; Off                ;
+; Auto Resource Sharing                                            ; Off                ; Off                ;
+; Allow Any RAM Size For Recognition                               ; Off                ; Off                ;
+; Allow Any ROM Size For Recognition                               ; Off                ; Off                ;
+; Allow Any Shift Register Size For Recognition                    ; Off                ; Off                ;
+; Use LogicLock Constraints during Resource Balancing              ; On                 ; On                 ;
+; Ignore translate_off and synthesis_off directives                ; Off                ; Off                ;
+; Timing-Driven Synthesis                                          ; On                 ; On                 ;
+; Report Parameter Settings                                        ; On                 ; On                 ;
+; Report Source Assignments                                        ; On                 ; On                 ;
+; Report Connectivity Checks                                       ; On                 ; On                 ;
+; Ignore Maximum Fan-Out Assignments                               ; Off                ; Off                ;
+; Synchronization Register Chain Length                            ; 2                  ; 2                  ;
+; Power Optimization During Synthesis                              ; Normal compilation ; Normal compilation ;
+; HDL message level                                                ; Level2             ; Level2             ;
+; Suppress Register Optimization Related Messages                  ; Off                ; Off                ;
+; Number of Removed Registers Reported in Synthesis Report         ; 5000               ; 5000               ;
+; Number of Swept Nodes Reported in Synthesis Report               ; 5000               ; 5000               ;
+; Number of Inverted Registers Reported in Synthesis Report        ; 100                ; 100                ;
+; Clock MUX Protection                                             ; On                 ; On                 ;
+; Auto Gated Clock Conversion                                      ; Off                ; Off                ;
+; Block Design Naming                                              ; Auto               ; Auto               ;
+; SDC constraint protection                                        ; Off                ; Off                ;
+; Synthesis Effort                                                 ; Auto               ; Auto               ;
+; Shift Register Replacement - Allow Asynchronous Clear Signal     ; On                 ; On                 ;
+; Pre-Mapping Resynthesis Optimization                             ; Off                ; Off                ;
+; Analysis & Synthesis Message Level                               ; Medium             ; Medium             ;
+; Disable Register Merging Across Hierarchies                      ; Auto               ; Auto               ;
+; Resource Aware Inference For Block RAM                           ; On                 ; On                 ;
++------------------------------------------------------------------+--------------------+--------------------+
+
+
++---------------------------------+
+; Analysis & Elaboration Messages ;
++---------------------------------+
+Info: *******************************************************************
+Info: Running Quartus Prime Analysis & Elaboration
+    Info: Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
+    Info: Processing started: Wed Nov 01 20:04:02 2023
+Info: Command: quartus_map --read_settings_files=on --write_settings_files=off hello-adc -c hello-adc --analysis_and_elaboration
+Warning (125092): Tcl Script File DE10LitePins.tcl not found
+Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
+Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
+Info (12248): Elaborating Platform Designer system entity "hello_adc.qsys"
+Info (12250): 2023.11.01.20:04:11 Progress: Loading ADC/hello_adc.qsys
+Info (12250): 2023.11.01.20:04:12 Progress: Reading input file
+Info (12250): 2023.11.01.20:04:12 Progress: Adding adc_control_core [altera_modular_adc 21.1]
+Warning (12251): Adc_control_core: Used altera_modular_adc 20.1 (instead of 21.1)
+Info (12250): 2023.11.01.20:04:12 Progress: Parameterizing module adc_control_core
+Info (12250): 2023.11.01.20:04:12 Progress: Adding altpll [altpll 21.1]
+Warning (12251): Altpll: Used altpll 20.1 (instead of 21.1)
+Info (12250): 2023.11.01.20:04:13 Progress: Parameterizing module altpll
+Info (12250): 2023.11.01.20:04:13 Progress: Adding clk_50 [clock_source 21.1]
+Warning (12251): Clk_50: Used clock_source 20.1 (instead of 21.1)
+Info (12250): 2023.11.01.20:04:13 Progress: Parameterizing module clk_50
+Info (12250): 2023.11.01.20:04:13 Progress: Adding clock_bridge [altera_clock_bridge 21.1]
+Warning (12251): Clock_bridge: Used altera_clock_bridge 20.1 (instead of 21.1)
+Info (12250): 2023.11.01.20:04:13 Progress: Parameterizing module clock_bridge
+Info (12250): 2023.11.01.20:04:13 Progress: Building connections
+Info (12250): 2023.11.01.20:04:13 Progress: Parameterizing connections
+Info (12250): 2023.11.01.20:04:13 Progress: Validating
+Info (12250): 2023.11.01.20:04:13 Progress: Done reading input file
+Warning (12251): Hello_adc.altpll: altpll.areset_conduit must be exported, or connected to a matching conduit.
+Warning (12251): Hello_adc.altpll: altpll.pll_slave must be connected to an Avalon-MM master
+Info (12250): Hello_adc: Generating hello_adc "hello_adc" for QUARTUS_SYNTH
+Info (12250): Adc_control_core: "hello_adc" instantiated altera_modular_adc "adc_control_core"
+Info (12250): Altpll: "hello_adc" instantiated altpll "altpll"
+Info (12250): Rst_controller: "hello_adc" instantiated altera_reset_controller "rst_controller"
+Info (12250): Control_internal: "adc_control_core" instantiated altera_modular_adc_control "control_internal"
+Info (12250): Hello_adc: Done "hello_adc" with 5 modules, 13 files
+Info (12249): Finished elaborating Platform Designer system entity "hello_adc.qsys"
+Info (12021): Found 2 design units, including 1 entities, in source file adc_to_12bits.vhd
+    Info (12022): Found design unit 1: ADC_to_12bits-A File: C:/Users/pierr/AppData/quartus/ADC/ADC_to_12bits.vhd Line: 28
+    Info (12023): Found entity 1: ADC_to_12bits File: C:/Users/pierr/AppData/quartus/ADC/ADC_to_12bits.vhd Line: 6
+Info (12021): Found 1 design units, including 1 entities, in source file hello-adc.bdf
+    Info (12023): Found entity 1: hello-adc
+Info (12021): Found 2 design units, including 1 entities, in source file adc_sample_to_out.vhd
+    Info (12022): Found design unit 1: adc_sample_to_out-A File: C:/Users/pierr/AppData/quartus/ADC/adc_sample_to_out.vhd Line: 16
+    Info (12023): Found entity 1: adc_sample_to_out File: C:/Users/pierr/AppData/quartus/ADC/adc_sample_to_out.vhd Line: 6
+Info (12021): Found 1 design units, including 1 entities, in source file db/ip/hello_adc/hello_adc.v
+    Info (12023): Found entity 1: hello_adc File: C:/Users/pierr/AppData/quartus/ADC/db/ip/hello_adc/hello_adc.v Line: 6
+Info (12021): Found 1 design units, including 1 entities, in source file db/ip/hello_adc/submodules/altera_modular_adc_control.v
+    Info (12023): Found entity 1: altera_modular_adc_control File: C:/Users/pierr/AppData/quartus/ADC/db/ip/hello_adc/submodules/altera_modular_adc_control.v Line: 18
+Info (12021): Found 1 design units, including 1 entities, in source file db/ip/hello_adc/submodules/altera_modular_adc_control_avrg_fifo.v
+    Info (12023): Found entity 1: altera_modular_adc_control_avrg_fifo File: C:/Users/pierr/AppData/quartus/ADC/db/ip/hello_adc/submodules/altera_modular_adc_control_avrg_fifo.v Line: 53
+Info (12021): Found 1 design units, including 1 entities, in source file db/ip/hello_adc/submodules/altera_modular_adc_control_fsm.v
+    Info (12023): Found entity 1: altera_modular_adc_control_fsm File: C:/Users/pierr/AppData/quartus/ADC/db/ip/hello_adc/submodules/altera_modular_adc_control_fsm.v Line: 18
+Info (12021): Found 1 design units, including 1 entities, in source file db/ip/hello_adc/submodules/altera_reset_controller.v
+    Info (12023): Found entity 1: altera_reset_controller File: C:/Users/pierr/AppData/quartus/ADC/db/ip/hello_adc/submodules/altera_reset_controller.v Line: 42
+Info (12021): Found 1 design units, including 1 entities, in source file db/ip/hello_adc/submodules/altera_reset_synchronizer.v
+    Info (12023): Found entity 1: altera_reset_synchronizer File: C:/Users/pierr/AppData/quartus/ADC/db/ip/hello_adc/submodules/altera_reset_synchronizer.v Line: 24
+Info (12021): Found 1 design units, including 1 entities, in source file db/ip/hello_adc/submodules/chsel_code_converter_sw_to_hw.v
+    Info (12023): Found entity 1: chsel_code_converter_sw_to_hw File: C:/Users/pierr/AppData/quartus/ADC/db/ip/hello_adc/submodules/chsel_code_converter_sw_to_hw.v Line: 32
+Info (12021): Found 1 design units, including 1 entities, in source file db/ip/hello_adc/submodules/fiftyfivenm_adcblock_primitive_wrapper.v
+    Info (12023): Found entity 1: fiftyfivenm_adcblock_primitive_wrapper File: C:/Users/pierr/AppData/quartus/ADC/db/ip/hello_adc/submodules/fiftyfivenm_adcblock_primitive_wrapper.v Line: 37
+Info (12021): Found 1 design units, including 1 entities, in source file db/ip/hello_adc/submodules/fiftyfivenm_adcblock_top_wrapper.v
+    Info (12023): Found entity 1: fiftyfivenm_adcblock_top_wrapper File: C:/Users/pierr/AppData/quartus/ADC/db/ip/hello_adc/submodules/fiftyfivenm_adcblock_top_wrapper.v Line: 31
+Info (12021): Found 1 design units, including 1 entities, in source file db/ip/hello_adc/submodules/hello_adc_adc_control_core.v
+    Info (12023): Found entity 1: hello_adc_adc_control_core File: C:/Users/pierr/AppData/quartus/ADC/db/ip/hello_adc/submodules/hello_adc_adc_control_core.v Line: 9
+Info (12021): Found 4 design units, including 4 entities, in source file db/ip/hello_adc/submodules/hello_adc_altpll.v
+    Info (12023): Found entity 1: hello_adc_altpll_dffpipe_l2c File: C:/Users/pierr/AppData/quartus/ADC/db/ip/hello_adc/submodules/hello_adc_altpll.v Line: 38
+    Info (12023): Found entity 2: hello_adc_altpll_stdsync_sv6 File: C:/Users/pierr/AppData/quartus/ADC/db/ip/hello_adc/submodules/hello_adc_altpll.v Line: 99
+    Info (12023): Found entity 3: hello_adc_altpll_altpll_5b92 File: C:/Users/pierr/AppData/quartus/ADC/db/ip/hello_adc/submodules/hello_adc_altpll.v Line: 131
+    Info (12023): Found entity 4: hello_adc_altpll File: C:/Users/pierr/AppData/quartus/ADC/db/ip/hello_adc/submodules/hello_adc_altpll.v Line: 218
+Info (12127): Elaborating entity "adc_sample_to_out" for the top level hierarchy
+Warning (20013): Ignored 22 assignments for entity "altera_modular_adc_control" -- entity does not exist in design
+Warning (20013): Ignored 35 assignments for entity "altera_reset_controller" -- entity does not exist in design
+Warning (20013): Ignored 19 assignments for entity "hello_adc" -- entity does not exist in design
+Warning (20013): Ignored 196 assignments for entity "hello_adc_adc_control_core" -- entity does not exist in design
+Warning (20013): Ignored 78 assignments for entity "hello_adc_altpll" -- entity does not exist in design
+Warning (20013): Ignored 36 assignments for entity "top_level" -- entity does not exist in design
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to ADC_CLK_10 -entity top_level was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to LEDR0 -entity top_level was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to LEDR1 -entity top_level was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to LEDR2 -entity top_level was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to LEDR3 -entity top_level was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to LEDR4 -entity top_level was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to LEDR5 -entity top_level was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to LEDR6 -entity top_level was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to LEDR7 -entity top_level was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to LEDR8 -entity top_level was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to LEDR9 -entity top_level was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to MAX10_CLK1_50 -entity top_level was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -entity top_level -section_id Top was ignored
+    Warning (20014): Assignment for entity set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -entity top_level -section_id Top was ignored
+    Warning (20014): Assignment for entity set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -entity top_level -section_id Top was ignored
+    Warning (20014): Assignment for entity set_global_assignment -name PARTITION_PRESERVE_HIGH_SPEED_TILES ON -entity top_level -section_id Top was ignored
+    Warning (20014): Assignment for entity set_global_assignment -name PARTITION_IGNORE_SOURCE_FILE_CHANGES OFF -entity top_level -section_id Top was ignored
+    Warning (20014): Assignment for entity set_global_assignment -name PARTITION_ALWAYS_USE_QXP_NETLIST OFF -entity top_level -section_id Top was ignored
+    Warning (20014): Assignment for entity set_global_assignment -name PARTITION_COLOR 16764057 -entity top_level -section_id Top was ignored
+    Warning (20014): Assignment for entity set_global_assignment -name PARTITION_IMPORT_ASSIGNMENTS ON -entity top_level -section_id Top was ignored
+    Warning (20014): Assignment for entity set_global_assignment -name PARTITION_IMPORT_EXISTING_ASSIGNMENTS REPLACE_CONFLICTING -entity top_level -section_id Top was ignored
+    Warning (20014): Assignment for entity set_global_assignment -name PARTITION_IMPORT_EXISTING_LOGICLOCK_REGIONS UPDATE_CONFLICTING -entity top_level -section_id Top was ignored
+    Warning (20014): Assignment for entity set_global_assignment -name PARTITION_IMPORT_PIN_ASSIGNMENTS ON -entity top_level -section_id Top was ignored
+    Warning (20014): Assignment for entity set_global_assignment -name PARTITION_IMPORT_PROMOTE_ASSIGNMENTS ON -entity top_level -section_id Top was ignored
+    Warning (20014): Assignment for entity set_global_assignment -name PARTITION_TYPE STANDARD_PARTITION -entity top_level -section_id Top was ignored
+    Warning (20014): Assignment for entity set_global_assignment -name ALLOW_MULTIPLE_PERSONAS OFF -entity top_level -section_id Top was ignored
+    Warning (20014): Assignment for entity set_global_assignment -name PARTITION_ASD_REGION_ID 1 -entity top_level -section_id Top was ignored
+    Warning (20014): Assignment for entity set_global_assignment -name CROSS_BOUNDARY_OPTIMIZATIONS OFF -entity top_level -section_id Top was ignored
+    Warning (20014): Assignment for entity set_global_assignment -name PROPAGATE_CONSTANTS_ON_INPUTS ON -entity top_level -section_id Top was ignored
+    Warning (20014): Assignment for entity set_global_assignment -name PROPAGATE_INVERSIONS_ON_INPUTS ON -entity top_level -section_id Top was ignored
+    Warning (20014): Assignment for entity set_global_assignment -name REMOVE_LOGIC_ON_UNCONNECTED_OUTPUTS ON -entity top_level -section_id Top was ignored
+    Warning (20014): Assignment for entity set_global_assignment -name MERGE_EQUIVALENT_INPUTS ON -entity top_level -section_id Top was ignored
+    Warning (20014): Assignment for entity set_global_assignment -name MERGE_EQUIVALENT_BIDIRS ON -entity top_level -section_id Top was ignored
+    Warning (20014): Assignment for entity set_global_assignment -name ABSORB_PATHS_FROM_OUTPUTS_TO_INPUTS ON -entity top_level -section_id Top was ignored
+    Warning (20014): Assignment for entity set_global_assignment -name PARTITION_EXTRACT_HARD_BLOCK_NODES ON -entity top_level -section_id Top was ignored
+    Warning (20014): Assignment for entity set_global_assignment -name PARTITION_ENABLE_STRICT_PRESERVATION OFF -entity top_level -section_id Top was ignored
+Info (144001): Generated suppressed messages file C:/Users/pierr/AppData/quartus/ADC/output_files/hello-adc.map.smsg
+Info: Quartus Prime Analysis & Elaboration was successful. 0 errors, 50 warnings
+    Info: Peak virtual memory: 4767 megabytes
+    Info: Processing ended: Wed Nov 01 20:04:18 2023
+    Info: Elapsed time: 00:00:16
+    Info: Total CPU time (on all processors): 00:00:39
+
+
++--------------------------------------------+
+; Analysis & Elaboration Suppressed Messages ;
++--------------------------------------------+
+The suppressed messages can be found in C:/Users/pierr/AppData/quartus/ADC/output_files/hello-adc.map.smsg.
+
+
