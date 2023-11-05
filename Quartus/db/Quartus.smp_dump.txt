@@ -1,24 +1,83 @@
 
-State Machine - |hello-adc|ADC_to_12bits:inst1|hello_adc:qsys_u0|hello_adc_adc_control_core:adc_control_core|altera_modular_adc_control:control_internal|altera_modular_adc_control_fsm:u_control_fsm|ctrl_state
-Name ctrl_state.SYNC1 ctrl_state.AVRG_CNT ctrl_state.PUTRESP_PEND ctrl_state.WAIT_PEND_DLY1 ctrl_state.WAIT_PEND ctrl_state.PUTRESP_DLY3 ctrl_state.PUTRESP_DLY2 ctrl_state.PUTRESP_DLY1 ctrl_state.PUTRESP ctrl_state.CONV_DLY1 ctrl_state.CONV ctrl_state.PRE_CONV ctrl_state.GETCMD_W ctrl_state.GETCMD ctrl_state.WAIT ctrl_state.PWRUP_SOC ctrl_state.PWRUP_CH ctrl_state.PWRDWN_DONE ctrl_state.PWRDWN_TSEN ctrl_state.PWRDWN ctrl_state.IDLE 
-ctrl_state.IDLE 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-ctrl_state.PWRDWN 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1 
-ctrl_state.PWRDWN_TSEN 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 1 
-ctrl_state.PWRDWN_DONE 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 1 
-ctrl_state.PWRUP_CH 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 1 
-ctrl_state.PWRUP_SOC 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 1 
-ctrl_state.WAIT 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 1 
-ctrl_state.GETCMD 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 1 
-ctrl_state.GETCMD_W 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 1 
-ctrl_state.PRE_CONV 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 1 
-ctrl_state.CONV 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 1 
-ctrl_state.CONV_DLY1 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 1 
-ctrl_state.PUTRESP 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 1 
-ctrl_state.PUTRESP_DLY1 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 1 
-ctrl_state.PUTRESP_DLY2 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
-ctrl_state.PUTRESP_DLY3 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
-ctrl_state.WAIT_PEND 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
-ctrl_state.WAIT_PEND_DLY1 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
-ctrl_state.PUTRESP_PEND 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
-ctrl_state.AVRG_CNT 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
-ctrl_state.SYNC1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+State Machine - |Quartus|binary_to_bcd:inst10|state
+Name state.counting state.copying_info state.idle 
+state.idle 0 0 0 
+state.copying_info 0 1 1 
+state.counting 1 0 1 
+
+State Machine - |Quartus|seven_seg_dispayer:inst11|state
+Name state.display_seven_seg state.handle_in_data state.idle 
+state.idle 0 0 0 
+state.handle_in_data 0 1 1 
+state.display_seven_seg 1 0 1 
+
+State Machine - |Quartus|SEVSEG_ETAGE:inst14|fstate
+Name fstate.PREZIDAN fstate.ET6 fstate.ET5 fstate.ET4 fstate.ET3 fstate.ET2 fstate.ET1 fstate.RDC 
+fstate.RDC 0 0 0 0 0 0 0 0 
+fstate.ET1 0 0 0 0 0 0 1 1 
+fstate.ET2 0 0 0 0 0 1 0 1 
+fstate.ET3 0 0 0 0 1 0 0 1 
+fstate.ET4 0 0 0 1 0 0 0 1 
+fstate.ET5 0 0 1 0 0 0 0 1 
+fstate.ET6 0 1 0 0 0 0 0 1 
+fstate.PREZIDAN 1 0 0 0 0 0 0 1 
+
+State Machine - |Quartus|counter:inst9|state
+Name state.sending_info state.counting state.idle 
+state.idle 0 0 0 
+state.counting 0 1 1 
+state.sending_info 1 0 1 
+
+State Machine - |Quartus|AffichagePorte:inst42|fstate
+Name fstate.OUVERT fstate.SEMIOUVERT fstate.ferme 
+fstate.ferme 0 0 0 
+fstate.SEMIOUVERT 0 1 1 
+fstate.OUVERT 1 0 1 
+
+State Machine - |Quartus|PRESIDENT:pres|fstate
+Name fstate.state12 fstate.state11 fstate.state10 fstate.state9 fstate.state8 fstate.state2 fstate.state3 fstate.state7 fstate.state6 fstate.state5 fstate.state4 fstate.state1 
+fstate.state1 0 0 0 0 0 0 0 0 0 0 0 0 
+fstate.state4 0 0 0 0 0 0 0 0 0 0 1 1 
+fstate.state5 0 0 0 0 0 0 0 0 0 1 0 1 
+fstate.state6 0 0 0 0 0 0 0 0 1 0 0 1 
+fstate.state7 0 0 0 0 0 0 0 1 0 0 0 1 
+fstate.state3 0 0 0 0 0 0 1 0 0 0 0 1 
+fstate.state2 0 0 0 0 0 1 0 0 0 0 0 1 
+fstate.state8 0 0 0 0 1 0 0 0 0 0 0 1 
+fstate.state9 0 0 0 1 0 0 0 0 0 0 0 1 
+fstate.state10 0 0 1 0 0 0 0 0 0 0 0 1 
+fstate.state11 0 1 0 0 0 0 0 0 0 0 0 1 
+fstate.state12 1 0 0 0 0 0 0 0 0 0 0 1 
+
+State Machine - |Quartus|ETAGE:inst47|fstate
+Name fstate.ETAGE7 fstate.ETAGE1 fstate.ETAGE2 fstate.ETAGE4 fstate.ETAGE6 fstate.EATGE5 fstate.ETAGE3 fstate.ETAGE0 
+fstate.ETAGE0 0 0 0 0 0 0 0 0 
+fstate.ETAGE3 0 0 0 0 0 0 1 1 
+fstate.EATGE5 0 0 0 0 0 1 0 1 
+fstate.ETAGE6 0 0 0 0 1 0 0 1 
+fstate.ETAGE4 0 0 0 1 0 0 0 1 
+fstate.ETAGE2 0 0 1 0 0 0 0 1 
+fstate.ETAGE1 0 1 0 0 0 0 0 1 
+fstate.ETAGE7 1 0 0 0 0 0 0 1 
+
+State Machine - |Quartus|Alarme:inst45|AlarmeClock:ALARM|fstate
+Name fstate.state3 fstate.state2 fstate.state1 
+fstate.state1 0 0 0 
+fstate.state2 0 1 1 
+fstate.state3 1 0 1 
+
+State Machine - |Quartus|Maintenance:inst|fstate
+Name fstate.state6 fstate.state3 fstate.state2 fstate.state4 fstate.state5 fstate.state1 
+fstate.state1 0 0 0 0 0 0 
+fstate.state5 0 0 0 0 1 1 
+fstate.state4 0 0 0 1 0 1 
+fstate.state2 0 0 1 0 0 1 
+fstate.state3 0 1 0 0 0 1 
+fstate.state6 1 0 0 0 0 1 
+
+State Machine - |Quartus|AlarMaintenance:inst44|fstate
+Name fstate.state4 fstate.state3 fstate.state2 fstate.state1 
+fstate.state1 0 0 0 0 
+fstate.state2 0 0 1 1 
+fstate.state3 0 1 0 1 
+fstate.state4 1 0 0 1 
