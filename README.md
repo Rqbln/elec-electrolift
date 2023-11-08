@@ -1,3 +1,4 @@
+## Voir Rapport.pdf pour une meilleure lisibilité
 ING2 Groupe 07
 
 RAPPORT DE PROJET
