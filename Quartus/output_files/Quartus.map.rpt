@@ -1,5 +1,5 @@
 Analysis & Synthesis report for Quartus
-Sun Nov  5 11:09:02 2023
+Wed Nov  8 09:31:25 2023
 Quartus Prime Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
 
 
@@ -61,7 +61,7 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Sun Nov  5 11:09:02 2023       ;
+; Analysis & Synthesis Status        ; Successful - Wed Nov  8 09:31:25 2023       ;
 ; Quartus Prime Version              ; 20.1.0 Build 711 06/05/2020 SJ Lite Edition ;
 ; Revision Name                      ; Quartus                                     ;
 ; Top-level Entity Name              ; Quartus                                     ;
@@ -194,38 +194,38 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------+-------------+
 
 
-+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                                                                      ;
-+----------------------------------+-----------------+------------------------------------------+---------------------------------------------------------------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type                                ; File Name with Absolute Path                                                                      ; Library ;
-+----------------------------------+-----------------+------------------------------------------+---------------------------------------------------------------------------------------------------+---------+
-; detect.vhd                       ; yes             ; User VHDL File                           ; /home/rqbin/Documents/ECE/ECE ING 2/Conception FPGA/Projet_S1/Repo/Quartus/detect.vhd             ;         ;
-; AffichagePorte.vhd               ; yes             ; User VHDL File                           ; /home/rqbin/Documents/ECE/ECE ING 2/Conception FPGA/Projet_S1/Repo/Quartus/AffichagePorte.vhd     ;         ;
-; ETAGE.vhd                        ; yes             ; User VHDL File                           ; /home/rqbin/Documents/ECE/ECE ING 2/Conception FPGA/Projet_S1/Repo/Quartus/ETAGE.vhd              ;         ;
-; DivHorloge.bdf                   ; yes             ; User Block Diagram/Schematic File        ; /home/rqbin/Documents/ECE/ECE ING 2/Conception FPGA/Projet_S1/Repo/Quartus/DivHorloge.bdf         ;         ;
-; Quartus.bdf                      ; yes             ; User Block Diagram/Schematic File        ; /home/rqbin/Documents/ECE/ECE ING 2/Conception FPGA/Projet_S1/Repo/Quartus/Quartus.bdf            ;         ;
-; trigger_generator.vhd            ; yes             ; Auto-Found VHDL File                     ; /home/rqbin/Documents/ECE/ECE ING 2/Conception FPGA/Projet_S1/Repo/Quartus/trigger_generator.vhd  ;         ;
-; AlarMaintenance.vhd              ; yes             ; Auto-Found VHDL File                     ; /home/rqbin/Documents/ECE/ECE ING 2/Conception FPGA/Projet_S1/Repo/Quartus/AlarMaintenance.vhd    ;         ;
-; Maintenance.vhd                  ; yes             ; Auto-Found VHDL File                     ; /home/rqbin/Documents/ECE/ECE ING 2/Conception FPGA/Projet_S1/Repo/Quartus/Maintenance.vhd        ;         ;
-; Alarme.bdf                       ; yes             ; Auto-Found Block Diagram/Schematic File  ; /home/rqbin/Documents/ECE/ECE ING 2/Conception FPGA/Projet_S1/Repo/Quartus/Alarme.bdf             ;         ;
-; AlarmeClock.vhd                  ; yes             ; Auto-Found VHDL File                     ; /home/rqbin/Documents/ECE/ECE ING 2/Conception FPGA/Projet_S1/Repo/Quartus/AlarmeClock.vhd        ;         ;
-; DivHorloge_enable.bdf            ; yes             ; Auto-Found Block Diagram/Schematic File  ; /home/rqbin/Documents/ECE/ECE ING 2/Conception FPGA/Projet_S1/Repo/Quartus/DivHorloge_enable.bdf  ;         ;
-; 7490.bdf                         ; yes             ; Megafunction                             ; /home/rqbin/intelFPGA_lite/20.1/quartus/libraries/others/maxplus2/7490.bdf                        ;         ;
-; 74390.bdf                        ; yes             ; Megafunction                             ; /home/rqbin/intelFPGA_lite/20.1/quartus/libraries/others/maxplus2/74390.bdf                       ;         ;
-; PRESIDENT.vhd                    ; yes             ; Auto-Found VHDL File                     ; /home/rqbin/Documents/ECE/ECE ING 2/Conception FPGA/Projet_S1/Repo/Quartus/PRESIDENT.vhd          ;         ;
-; counter.vhd                      ; yes             ; Auto-Found VHDL File                     ; /home/rqbin/Documents/ECE/ECE ING 2/Conception FPGA/Projet_S1/Repo/Quartus/counter.vhd            ;         ;
-; SEVSEG_ETAGE.vhd                 ; yes             ; Auto-Found VHDL File                     ; /home/rqbin/Documents/ECE/ECE ING 2/Conception FPGA/Projet_S1/Repo/Quartus/SEVSEG_ETAGE.vhd       ;         ;
-; seven_seg_dispayer.vhd           ; yes             ; Auto-Found VHDL File                     ; /home/rqbin/Documents/ECE/ECE ING 2/Conception FPGA/Projet_S1/Repo/Quartus/seven_seg_dispayer.vhd ;         ;
-; binary_to_bcd.vhd                ; yes             ; Auto-Found VHDL File                     ; /home/rqbin/Documents/ECE/ECE ING 2/Conception FPGA/Projet_S1/Repo/Quartus/binary_to_bcd.vhd      ;         ;
-; measurement_cal.vhd              ; yes             ; Auto-Found VHDL File                     ; /home/rqbin/Documents/ECE/ECE ING 2/Conception FPGA/Projet_S1/Repo/Quartus/measurement_cal.vhd    ;         ;
-; lpm_mult.tdf                     ; yes             ; Megafunction                             ; /home/rqbin/intelFPGA_lite/20.1/quartus/libraries/megafunctions/lpm_mult.tdf                      ;         ;
-; aglobal201.inc                   ; yes             ; Megafunction                             ; /home/rqbin/intelFPGA_lite/20.1/quartus/libraries/megafunctions/aglobal201.inc                    ;         ;
-; lpm_add_sub.inc                  ; yes             ; Megafunction                             ; /home/rqbin/intelFPGA_lite/20.1/quartus/libraries/megafunctions/lpm_add_sub.inc                   ;         ;
-; multcore.inc                     ; yes             ; Megafunction                             ; /home/rqbin/intelFPGA_lite/20.1/quartus/libraries/megafunctions/multcore.inc                      ;         ;
-; bypassff.inc                     ; yes             ; Megafunction                             ; /home/rqbin/intelFPGA_lite/20.1/quartus/libraries/megafunctions/bypassff.inc                      ;         ;
-; altshift.inc                     ; yes             ; Megafunction                             ; /home/rqbin/intelFPGA_lite/20.1/quartus/libraries/megafunctions/altshift.inc                      ;         ;
-; db/mult_prs.tdf                  ; yes             ; Auto-Generated Megafunction              ; /home/rqbin/Documents/ECE/ECE ING 2/Conception FPGA/Projet_S1/Repo/Quartus/db/mult_prs.tdf        ;         ;
-+----------------------------------+-----------------+------------------------------------------+---------------------------------------------------------------------------------------------------+---------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                                                 ;
++----------------------------------+-----------------+------------------------------------------+----------------------------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type                                ; File Name with Absolute Path                                                                 ; Library ;
++----------------------------------+-----------------+------------------------------------------+----------------------------------------------------------------------------------------------+---------+
+; Quartus.bdf                      ; yes             ; User Block Diagram/Schematic File        ; /home/rqbin/Documents/ECE/ECE ING 2/Conception FPGA/Projet_S1/Quartus/Quartus.bdf            ;         ;
+; trigger_generator.vhd            ; yes             ; Auto-Found VHDL File                     ; /home/rqbin/Documents/ECE/ECE ING 2/Conception FPGA/Projet_S1/Quartus/trigger_generator.vhd  ;         ;
+; AlarMaintenance.vhd              ; yes             ; Auto-Found VHDL File                     ; /home/rqbin/Documents/ECE/ECE ING 2/Conception FPGA/Projet_S1/Quartus/AlarMaintenance.vhd    ;         ;
+; Maintenance.vhd                  ; yes             ; Auto-Found VHDL File                     ; /home/rqbin/Documents/ECE/ECE ING 2/Conception FPGA/Projet_S1/Quartus/Maintenance.vhd        ;         ;
+; Alarme.bdf                       ; yes             ; Auto-Found Block Diagram/Schematic File  ; /home/rqbin/Documents/ECE/ECE ING 2/Conception FPGA/Projet_S1/Quartus/Alarme.bdf             ;         ;
+; AlarmeClock.vhd                  ; yes             ; Auto-Found VHDL File                     ; /home/rqbin/Documents/ECE/ECE ING 2/Conception FPGA/Projet_S1/Quartus/AlarmeClock.vhd        ;         ;
+; DivHorloge_enable.bdf            ; yes             ; Auto-Found Block Diagram/Schematic File  ; /home/rqbin/Documents/ECE/ECE ING 2/Conception FPGA/Projet_S1/Quartus/DivHorloge_enable.bdf  ;         ;
+; 7490.bdf                         ; yes             ; Megafunction                             ; /home/rqbin/intelFPGA_lite/20.1/quartus/libraries/others/maxplus2/7490.bdf                   ;         ;
+; 74390.bdf                        ; yes             ; Megafunction                             ; /home/rqbin/intelFPGA_lite/20.1/quartus/libraries/others/maxplus2/74390.bdf                  ;         ;
+; ETAGE.vhd                        ; yes             ; Auto-Found VHDL File                     ; /home/rqbin/Documents/ECE/ECE ING 2/Conception FPGA/Projet_S1/Quartus/ETAGE.vhd              ;         ;
+; DivHorloge.bdf                   ; yes             ; Auto-Found Block Diagram/Schematic File  ; /home/rqbin/Documents/ECE/ECE ING 2/Conception FPGA/Projet_S1/Quartus/DivHorloge.bdf         ;         ;
+; PRESIDENT.vhd                    ; yes             ; Auto-Found VHDL File                     ; /home/rqbin/Documents/ECE/ECE ING 2/Conception FPGA/Projet_S1/Quartus/PRESIDENT.vhd          ;         ;
+; AffichagePorte.vhd               ; yes             ; Auto-Found VHDL File                     ; /home/rqbin/Documents/ECE/ECE ING 2/Conception FPGA/Projet_S1/Quartus/AffichagePorte.vhd     ;         ;
+; detect.vhd                       ; yes             ; Auto-Found VHDL File                     ; /home/rqbin/Documents/ECE/ECE ING 2/Conception FPGA/Projet_S1/Quartus/detect.vhd             ;         ;
+; counter.vhd                      ; yes             ; Auto-Found VHDL File                     ; /home/rqbin/Documents/ECE/ECE ING 2/Conception FPGA/Projet_S1/Quartus/counter.vhd            ;         ;
+; SEVSEG_ETAGE.vhd                 ; yes             ; Auto-Found VHDL File                     ; /home/rqbin/Documents/ECE/ECE ING 2/Conception FPGA/Projet_S1/Quartus/SEVSEG_ETAGE.vhd       ;         ;
+; seven_seg_dispayer.vhd           ; yes             ; Auto-Found VHDL File                     ; /home/rqbin/Documents/ECE/ECE ING 2/Conception FPGA/Projet_S1/Quartus/seven_seg_dispayer.vhd ;         ;
+; binary_to_bcd.vhd                ; yes             ; Auto-Found VHDL File                     ; /home/rqbin/Documents/ECE/ECE ING 2/Conception FPGA/Projet_S1/Quartus/binary_to_bcd.vhd      ;         ;
+; measurement_cal.vhd              ; yes             ; Auto-Found VHDL File                     ; /home/rqbin/Documents/ECE/ECE ING 2/Conception FPGA/Projet_S1/Quartus/measurement_cal.vhd    ;         ;
+; lpm_mult.tdf                     ; yes             ; Megafunction                             ; /home/rqbin/intelFPGA_lite/20.1/quartus/libraries/megafunctions/lpm_mult.tdf                 ;         ;
+; aglobal201.inc                   ; yes             ; Megafunction                             ; /home/rqbin/intelFPGA_lite/20.1/quartus/libraries/megafunctions/aglobal201.inc               ;         ;
+; lpm_add_sub.inc                  ; yes             ; Megafunction                             ; /home/rqbin/intelFPGA_lite/20.1/quartus/libraries/megafunctions/lpm_add_sub.inc              ;         ;
+; multcore.inc                     ; yes             ; Megafunction                             ; /home/rqbin/intelFPGA_lite/20.1/quartus/libraries/megafunctions/multcore.inc                 ;         ;
+; bypassff.inc                     ; yes             ; Megafunction                             ; /home/rqbin/intelFPGA_lite/20.1/quartus/libraries/megafunctions/bypassff.inc                 ;         ;
+; altshift.inc                     ; yes             ; Megafunction                             ; /home/rqbin/intelFPGA_lite/20.1/quartus/libraries/megafunctions/altshift.inc                 ;         ;
+; db/mult_prs.tdf                  ; yes             ; Auto-Generated Megafunction              ; /home/rqbin/Documents/ECE/ECE ING 2/Conception FPGA/Projet_S1/Quartus/db/mult_prs.tdf        ;         ;
++----------------------------------+-----------------+------------------------------------------+----------------------------------------------------------------------------------------------+---------+
 
 
 +-----------------------------------------------------------+
@@ -632,7 +632,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:01     ;
+; Top            ; 00:00:02     ;
 +----------------+--------------+
 
 
@@ -642,46 +642,31 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
-    Info: Processing started: Sun Nov  5 11:08:52 2023
+    Info: Processing started: Wed Nov  8 09:31:14 2023
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Quartus -c Quartus
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 12 of the 12 processors detected
-Info (12021): Found 2 design units, including 1 entities, in source file detect.vhd
-    Info (12022): Found design unit 1: detect-Behavioral File: /home/rqbin/Documents/ECE/ECE ING 2/Conception FPGA/Projet_S1/Repo/Quartus/detect.vhd Line: 23
-    Info (12023): Found entity 1: detect File: /home/rqbin/Documents/ECE/ECE ING 2/Conception FPGA/Projet_S1/Repo/Quartus/detect.vhd Line: 5
-Info (12021): Found 1 design units, including 1 entities, in source file Div2Hz05s.bdf
-    Info (12023): Found entity 1: Div2Hz05s
-Info (12021): Found 2 design units, including 1 entities, in source file AffichagePorte.vhd
-    Info (12022): Found design unit 1: AffichagePorte-BEHAVIOR File: /home/rqbin/Documents/ECE/ECE ING 2/Conception FPGA/Projet_S1/Repo/Quartus/AffichagePorte.vhd Line: 45
-    Info (12023): Found entity 1: AffichagePorte File: /home/rqbin/Documents/ECE/ECE ING 2/Conception FPGA/Projet_S1/Repo/Quartus/AffichagePorte.vhd Line: 22
-Info (12021): Found 2 design units, including 1 entities, in source file ETAGE.vhd
-    Info (12022): Found design unit 1: ETAGE-BEHAVIOR File: /home/rqbin/Documents/ECE/ECE ING 2/Conception FPGA/Projet_S1/Repo/Quartus/ETAGE.vhd Line: 48
-    Info (12023): Found entity 1: ETAGE File: /home/rqbin/Documents/ECE/ECE ING 2/Conception FPGA/Projet_S1/Repo/Quartus/ETAGE.vhd Line: 22
-Info (12021): Found 1 design units, including 1 entities, in source file DivHorloge.bdf
-    Info (12023): Found entity 1: DivHorloge
-Info (12021): Found 1 design units, including 1 entities, in source file DivHorloge Robin.bdf
-    Info (12023): Found entity 1: DivHorloge Robin
 Info (12021): Found 1 design units, including 1 entities, in source file Quartus.bdf
     Info (12023): Found entity 1: Quartus
 Info (12127): Elaborating entity "Quartus" for the top level hierarchy
 Warning (12125): Using design file trigger_generator.vhd, which is not specified as a design file for the current project, but contains definitions for 2 design units and 1 entities in project
-    Info (12022): Found design unit 1: trigger_generator-Behavioral File: /home/rqbin/Documents/ECE/ECE ING 2/Conception FPGA/Projet_S1/Repo/Quartus/trigger_generator.vhd Line: 10
-    Info (12023): Found entity 1: trigger_generator File: /home/rqbin/Documents/ECE/ECE ING 2/Conception FPGA/Projet_S1/Repo/Quartus/trigger_generator.vhd Line: 4
+    Info (12022): Found design unit 1: trigger_generator-Behavioral File: /home/rqbin/Documents/ECE/ECE ING 2/Conception FPGA/Projet_S1/Quartus/trigger_generator.vhd Line: 10
+    Info (12023): Found entity 1: trigger_generator File: /home/rqbin/Documents/ECE/ECE ING 2/Conception FPGA/Projet_S1/Quartus/trigger_generator.vhd Line: 4
 Info (12128): Elaborating entity "trigger_generator" for hierarchy "trigger_generator:inst8"
 Warning (12125): Using design file AlarMaintenance.vhd, which is not specified as a design file for the current project, but contains definitions for 2 design units and 1 entities in project
-    Info (12022): Found design unit 1: AlarMaintenance-BEHAVIOR File: /home/rqbin/Documents/ECE/ECE ING 2/Conception FPGA/Projet_S1/Repo/Quartus/AlarMaintenance.vhd Line: 35
-    Info (12023): Found entity 1: AlarMaintenance File: /home/rqbin/Documents/ECE/ECE ING 2/Conception FPGA/Projet_S1/Repo/Quartus/AlarMaintenance.vhd Line: 22
+    Info (12022): Found design unit 1: AlarMaintenance-BEHAVIOR File: /home/rqbin/Documents/ECE/ECE ING 2/Conception FPGA/Projet_S1/Quartus/AlarMaintenance.vhd Line: 35
+    Info (12023): Found entity 1: AlarMaintenance File: /home/rqbin/Documents/ECE/ECE ING 2/Conception FPGA/Projet_S1/Quartus/AlarMaintenance.vhd Line: 22
 Info (12128): Elaborating entity "AlarMaintenance" for hierarchy "AlarMaintenance:inst44"
 Warning (12125): Using design file Maintenance.vhd, which is not specified as a design file for the current project, but contains definitions for 2 design units and 1 entities in project
-    Info (12022): Found design unit 1: Maintenance-BEHAVIOR File: /home/rqbin/Documents/ECE/ECE ING 2/Conception FPGA/Projet_S1/Repo/Quartus/Maintenance.vhd Line: 32
-    Info (12023): Found entity 1: Maintenance File: /home/rqbin/Documents/ECE/ECE ING 2/Conception FPGA/Projet_S1/Repo/Quartus/Maintenance.vhd Line: 22
+    Info (12022): Found design unit 1: Maintenance-BEHAVIOR File: /home/rqbin/Documents/ECE/ECE ING 2/Conception FPGA/Projet_S1/Quartus/Maintenance.vhd Line: 32
+    Info (12023): Found entity 1: Maintenance File: /home/rqbin/Documents/ECE/ECE ING 2/Conception FPGA/Projet_S1/Quartus/Maintenance.vhd Line: 22
 Info (12128): Elaborating entity "Maintenance" for hierarchy "Maintenance:inst"
 Warning (12125): Using design file Alarme.bdf, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
     Info (12023): Found entity 1: Alarme
 Info (12128): Elaborating entity "Alarme" for hierarchy "Alarme:inst45"
 Warning (12125): Using design file AlarmeClock.vhd, which is not specified as a design file for the current project, but contains definitions for 2 design units and 1 entities in project
-    Info (12022): Found design unit 1: AlarmeClock-BEHAVIOR File: /home/rqbin/Documents/ECE/ECE ING 2/Conception FPGA/Projet_S1/Repo/Quartus/AlarmeClock.vhd Line: 32
-    Info (12023): Found entity 1: AlarmeClock File: /home/rqbin/Documents/ECE/ECE ING 2/Conception FPGA/Projet_S1/Repo/Quartus/AlarmeClock.vhd Line: 22
+    Info (12022): Found design unit 1: AlarmeClock-BEHAVIOR File: /home/rqbin/Documents/ECE/ECE ING 2/Conception FPGA/Projet_S1/Quartus/AlarmeClock.vhd Line: 32
+    Info (12023): Found entity 1: AlarmeClock File: /home/rqbin/Documents/ECE/ECE ING 2/Conception FPGA/Projet_S1/Quartus/AlarmeClock.vhd Line: 22
 Info (12128): Elaborating entity "AlarmeClock" for hierarchy "Alarme:inst45|AlarmeClock:ALARM"
 Warning (12125): Using design file DivHorloge_enable.bdf, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
     Info (12023): Found entity 1: DivHorloge_enable
@@ -690,38 +675,49 @@ Info (12128): Elaborating entity "7490" for hierarchy "Alarme:inst45|DivHorloge_
 Info (12130): Elaborated megafunction instantiation "Alarme:inst45|DivHorloge_enable:DIVENA|7490:inst10"
 Info (12128): Elaborating entity "74390" for hierarchy "Alarme:inst45|DivHorloge_enable:DIVENA|74390:inst5"
 Info (12130): Elaborated megafunction instantiation "Alarme:inst45|DivHorloge_enable:DIVENA|74390:inst5"
+Warning (12125): Using design file ETAGE.vhd, which is not specified as a design file for the current project, but contains definitions for 2 design units and 1 entities in project
+    Info (12022): Found design unit 1: ETAGE-BEHAVIOR File: /home/rqbin/Documents/ECE/ECE ING 2/Conception FPGA/Projet_S1/Quartus/ETAGE.vhd Line: 48
+    Info (12023): Found entity 1: ETAGE File: /home/rqbin/Documents/ECE/ECE ING 2/Conception FPGA/Projet_S1/Quartus/ETAGE.vhd Line: 22
 Info (12128): Elaborating entity "ETAGE" for hierarchy "ETAGE:inst47"
+Warning (12125): Using design file DivHorloge.bdf, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
+    Info (12023): Found entity 1: DivHorloge
 Info (12128): Elaborating entity "DivHorloge" for hierarchy "DivHorloge:inst3"
 Warning (12125): Using design file PRESIDENT.vhd, which is not specified as a design file for the current project, but contains definitions for 2 design units and 1 entities in project
-    Info (12022): Found design unit 1: PRESIDENT-BEHAVIOR File: /home/rqbin/Documents/ECE/ECE ING 2/Conception FPGA/Projet_S1/Repo/Quartus/PRESIDENT.vhd Line: 32
-    Info (12023): Found entity 1: PRESIDENT File: /home/rqbin/Documents/ECE/ECE ING 2/Conception FPGA/Projet_S1/Repo/Quartus/PRESIDENT.vhd Line: 22
+    Info (12022): Found design unit 1: PRESIDENT-BEHAVIOR File: /home/rqbin/Documents/ECE/ECE ING 2/Conception FPGA/Projet_S1/Quartus/PRESIDENT.vhd Line: 32
+    Info (12023): Found entity 1: PRESIDENT File: /home/rqbin/Documents/ECE/ECE ING 2/Conception FPGA/Projet_S1/Quartus/PRESIDENT.vhd Line: 22
 Info (12128): Elaborating entity "PRESIDENT" for hierarchy "PRESIDENT:pres"
+Warning (12125): Using design file AffichagePorte.vhd, which is not specified as a design file for the current project, but contains definitions for 2 design units and 1 entities in project
+    Info (12022): Found design unit 1: AffichagePorte-BEHAVIOR File: /home/rqbin/Documents/ECE/ECE ING 2/Conception FPGA/Projet_S1/Quartus/AffichagePorte.vhd Line: 45
+    Info (12023): Found entity 1: AffichagePorte File: /home/rqbin/Documents/ECE/ECE ING 2/Conception FPGA/Projet_S1/Quartus/AffichagePorte.vhd Line: 22
 Info (12128): Elaborating entity "AffichagePorte" for hierarchy "AffichagePorte:inst42"
+Warning (12125): Using design file detect.vhd, which is not specified as a design file for the current project, but contains definitions for 2 design units and 1 entities in project
+    Info (12022): Found design unit 1: detect-Behavioral File: /home/rqbin/Documents/ECE/ECE ING 2/Conception FPGA/Projet_S1/Quartus/detect.vhd Line: 23
+    Info (12023): Found entity 1: detect File: /home/rqbin/Documents/ECE/ECE ING 2/Conception FPGA/Projet_S1/Quartus/detect.vhd Line: 5
 Info (12128): Elaborating entity "detect" for hierarchy "detect:inst2"
 Warning (12125): Using design file counter.vhd, which is not specified as a design file for the current project, but contains definitions for 2 design units and 1 entities in project
-    Info (12022): Found design unit 1: counter-Behavioral File: /home/rqbin/Documents/ECE/ECE ING 2/Conception FPGA/Projet_S1/Repo/Quartus/counter.vhd Line: 14
-    Info (12023): Found entity 1: counter File: /home/rqbin/Documents/ECE/ECE ING 2/Conception FPGA/Projet_S1/Repo/Quartus/counter.vhd Line: 4
+    Info (12022): Found design unit 1: counter-Behavioral File: /home/rqbin/Documents/ECE/ECE ING 2/Conception FPGA/Projet_S1/Quartus/counter.vhd Line: 14
+    Info (12023): Found entity 1: counter File: /home/rqbin/Documents/ECE/ECE ING 2/Conception FPGA/Projet_S1/Quartus/counter.vhd Line: 4
 Info (12128): Elaborating entity "counter" for hierarchy "counter:inst9"
 Warning (12125): Using design file SEVSEG_ETAGE.vhd, which is not specified as a design file for the current project, but contains definitions for 2 design units and 1 entities in project
-    Info (12022): Found design unit 1: SEVSEG_ETAGE-BEHAVIOR File: /home/rqbin/Documents/ECE/ECE ING 2/Conception FPGA/Projet_S1/Repo/Quartus/SEVSEG_ETAGE.vhd Line: 44
-    Info (12023): Found entity 1: SEVSEG_ETAGE File: /home/rqbin/Documents/ECE/ECE ING 2/Conception FPGA/Projet_S1/Repo/Quartus/SEVSEG_ETAGE.vhd Line: 22
+    Info (12022): Found design unit 1: SEVSEG_ETAGE-BEHAVIOR File: /home/rqbin/Documents/ECE/ECE ING 2/Conception FPGA/Projet_S1/Quartus/SEVSEG_ETAGE.vhd Line: 44
+    Info (12023): Found entity 1: SEVSEG_ETAGE File: /home/rqbin/Documents/ECE/ECE ING 2/Conception FPGA/Projet_S1/Quartus/SEVSEG_ETAGE.vhd Line: 22
 Info (12128): Elaborating entity "SEVSEG_ETAGE" for hierarchy "SEVSEG_ETAGE:inst14"
 Warning (12125): Using design file seven_seg_dispayer.vhd, which is not specified as a design file for the current project, but contains definitions for 2 design units and 1 entities in project
-    Info (12022): Found design unit 1: seven_seg_dispayer-Behavioral File: /home/rqbin/Documents/ECE/ECE ING 2/Conception FPGA/Projet_S1/Repo/Quartus/seven_seg_dispayer.vhd Line: 24
-    Info (12023): Found entity 1: seven_seg_dispayer File: /home/rqbin/Documents/ECE/ECE ING 2/Conception FPGA/Projet_S1/Repo/Quartus/seven_seg_dispayer.vhd Line: 4
+    Info (12022): Found design unit 1: seven_seg_dispayer-Behavioral File: /home/rqbin/Documents/ECE/ECE ING 2/Conception FPGA/Projet_S1/Quartus/seven_seg_dispayer.vhd Line: 24
+    Info (12023): Found entity 1: seven_seg_dispayer File: /home/rqbin/Documents/ECE/ECE ING 2/Conception FPGA/Projet_S1/Quartus/seven_seg_dispayer.vhd Line: 4
 Info (12128): Elaborating entity "seven_seg_dispayer" for hierarchy "seven_seg_dispayer:inst11"
 Warning (12125): Using design file binary_to_bcd.vhd, which is not specified as a design file for the current project, but contains definitions for 2 design units and 1 entities in project
-    Info (12022): Found design unit 1: binary_to_bcd-Behavioral File: /home/rqbin/Documents/ECE/ECE ING 2/Conception FPGA/Projet_S1/Repo/Quartus/binary_to_bcd.vhd Line: 21
-    Info (12023): Found entity 1: binary_to_bcd File: /home/rqbin/Documents/ECE/ECE ING 2/Conception FPGA/Projet_S1/Repo/Quartus/binary_to_bcd.vhd Line: 6
+    Info (12022): Found design unit 1: binary_to_bcd-Behavioral File: /home/rqbin/Documents/ECE/ECE ING 2/Conception FPGA/Projet_S1/Quartus/binary_to_bcd.vhd Line: 21
+    Info (12023): Found entity 1: binary_to_bcd File: /home/rqbin/Documents/ECE/ECE ING 2/Conception FPGA/Projet_S1/Quartus/binary_to_bcd.vhd Line: 6
 Info (12128): Elaborating entity "binary_to_bcd" for hierarchy "binary_to_bcd:inst10"
 Warning (12125): Using design file measurement_cal.vhd, which is not specified as a design file for the current project, but contains definitions for 2 design units and 1 entities in project
-    Info (12022): Found design unit 1: measurement_cal-Behavioral File: /home/rqbin/Documents/ECE/ECE ING 2/Conception FPGA/Projet_S1/Repo/Quartus/measurement_cal.vhd Line: 32
-    Info (12023): Found entity 1: measurement_cal File: /home/rqbin/Documents/ECE/ECE ING 2/Conception FPGA/Projet_S1/Repo/Quartus/measurement_cal.vhd Line: 6
+    Info (12022): Found design unit 1: measurement_cal-Behavioral File: /home/rqbin/Documents/ECE/ECE ING 2/Conception FPGA/Projet_S1/Quartus/measurement_cal.vhd Line: 32
+    Info (12023): Found entity 1: measurement_cal File: /home/rqbin/Documents/ECE/ECE ING 2/Conception FPGA/Projet_S1/Quartus/measurement_cal.vhd Line: 6
 Info (12128): Elaborating entity "measurement_cal" for hierarchy "measurement_cal:inst1"
 Info (278001): Inferred 1 megafunctions from design logic
-    Info (278003): Inferred multiplier megafunction ("lpm_mult") from the following logic: "detect:inst2|Mult0" File: /home/rqbin/Documents/ECE/ECE ING 2/Conception FPGA/Projet_S1/Repo/Quartus/detect.vhd Line: 56
-Info (12130): Elaborated megafunction instantiation "detect:inst2|lpm_mult:Mult0" File: /home/rqbin/Documents/ECE/ECE ING 2/Conception FPGA/Projet_S1/Repo/Quartus/detect.vhd Line: 56
-Info (12133): Instantiated megafunction "detect:inst2|lpm_mult:Mult0" with the following parameter: File: /home/rqbin/Documents/ECE/ECE ING 2/Conception FPGA/Projet_S1/Repo/Quartus/detect.vhd Line: 56
+    Info (278003): Inferred multiplier megafunction ("lpm_mult") from the following logic: "detect:inst2|Mult0" File: /home/rqbin/Documents/ECE/ECE ING 2/Conception FPGA/Projet_S1/Quartus/detect.vhd Line: 56
+Info (12130): Elaborated megafunction instantiation "detect:inst2|lpm_mult:Mult0" File: /home/rqbin/Documents/ECE/ECE ING 2/Conception FPGA/Projet_S1/Quartus/detect.vhd Line: 56
+Info (12133): Instantiated megafunction "detect:inst2|lpm_mult:Mult0" with the following parameter: File: /home/rqbin/Documents/ECE/ECE ING 2/Conception FPGA/Projet_S1/Quartus/detect.vhd Line: 56
     Info (12134): Parameter "LPM_WIDTHA" = "29"
     Info (12134): Parameter "LPM_WIDTHB" = "30"
     Info (12134): Parameter "LPM_WIDTHP" = "59"
@@ -732,7 +728,7 @@ Info (12133): Instantiated megafunction "detect:inst2|lpm_mult:Mult0" with the f
     Info (12134): Parameter "INPUT_B_IS_CONSTANT" = "YES"
     Info (12134): Parameter "MAXIMIZE_SPEED" = "5"
 Info (12021): Found 1 design units, including 1 entities, in source file db/mult_prs.tdf
-    Info (12023): Found entity 1: mult_prs File: /home/rqbin/Documents/ECE/ECE ING 2/Conception FPGA/Projet_S1/Repo/Quartus/db/mult_prs.tdf Line: 31
+    Info (12023): Found entity 1: mult_prs File: /home/rqbin/Documents/ECE/ECE ING 2/Conception FPGA/Projet_S1/Quartus/db/mult_prs.tdf Line: 31
 Info (13014): Ignored 176 buffer(s)
     Info (13019): Ignored 176 SOFT buffer(s)
 Warning (13024): Output pins are stuck at VCC or GND
@@ -751,10 +747,10 @@ Info (21057): Implemented 716 device resources after synthesis - the final resou
     Info (21059): Implemented 55 output pins
     Info (21061): Implemented 635 logic cells
     Info (21062): Implemented 8 DSP elements
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 20 warnings
-    Info: Peak virtual memory: 497 megabytes
-    Info: Processing ended: Sun Nov  5 11:09:02 2023
-    Info: Elapsed time: 00:00:10
-    Info: Total CPU time (on all processors): 00:00:21
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 24 warnings
+    Info: Peak virtual memory: 495 megabytes
+    Info: Processing ended: Wed Nov  8 09:31:25 2023
+    Info: Elapsed time: 00:00:11
+    Info: Total CPU time (on all processors): 00:00:23
 
 

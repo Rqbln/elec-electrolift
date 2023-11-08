@@ -17,7 +17,7 @@
 -- PROGRAM "Quartus Prime"
 -- VERSION "Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition"
 
--- DATE "11/05/2023 11:09:21"
+-- DATE "11/08/2023 09:31:47"
 
 -- 
 -- Device: Altera 10M50DAF484C7G Package FBGA484
@@ -1641,6 +1641,38 @@ SIGNAL \inst8|counter\ : std_logic_vector(23 DOWNTO 0);
 SIGNAL \inst2|Mult0|auto_generated|w475w\ : std_logic_vector(59 DOWNTO 0);
 SIGNAL \inst1|result\ : std_logic_vector(13 DOWNTO 0);
 SIGNAL \inst11|o_Sev_seg_1\ : std_logic_vector(6 DOWNTO 0);
+SIGNAL \inst32|ALT_INV_31~q\ : std_logic;
+SIGNAL \inst3|inst|ALT_INV_31~q\ : std_logic;
+SIGNAL \inst45|DIVENA|inst3|ALT_INV_3~q\ : std_logic;
+SIGNAL \inst32|ALT_INV_34~q\ : std_logic;
+SIGNAL \inst13|ALT_INV_6~q\ : std_logic;
+SIGNAL \inst3|inst|ALT_INV_34~q\ : std_logic;
+SIGNAL \inst3|inst3|ALT_INV_6~q\ : std_logic;
+SIGNAL \inst45|DIVENA|inst3|ALT_INV_7~q\ : std_logic;
+SIGNAL \inst45|DIVENA|inst3|ALT_INV_33~q\ : std_logic;
+SIGNAL \inst13|ALT_INV_3~q\ : std_logic;
+SIGNAL \inst3|inst3|ALT_INV_3~q\ : std_logic;
+SIGNAL \inst45|DIVENA|inst3|ALT_INV_31~q\ : std_logic;
+SIGNAL \inst13|ALT_INV_7~q\ : std_logic;
+SIGNAL \inst13|ALT_INV_33~q\ : std_logic;
+SIGNAL \inst3|inst3|ALT_INV_7~q\ : std_logic;
+SIGNAL \inst3|inst3|ALT_INV_33~q\ : std_logic;
+SIGNAL \inst45|DIVENA|inst3|ALT_INV_34~q\ : std_logic;
+SIGNAL \inst45|DIVENA|inst5|ALT_INV_6~q\ : std_logic;
+SIGNAL \inst13|ALT_INV_31~q\ : std_logic;
+SIGNAL \inst3|inst3|ALT_INV_31~q\ : std_logic;
+SIGNAL \inst45|DIVENA|inst5|ALT_INV_3~q\ : std_logic;
+SIGNAL \inst13|ALT_INV_34~q\ : std_logic;
+SIGNAL \inst33|ALT_INV_6~q\ : std_logic;
+SIGNAL \inst3|inst3|ALT_INV_34~q\ : std_logic;
+SIGNAL \inst3|inst5|ALT_INV_6~q\ : std_logic;
+SIGNAL \inst45|DIVENA|inst5|ALT_INV_7~q\ : std_logic;
+SIGNAL \inst45|DIVENA|inst5|ALT_INV_33~q\ : std_logic;
+SIGNAL \inst33|ALT_INV_3~q\ : std_logic;
+SIGNAL \inst3|inst5|ALT_INV_3~q\ : std_logic;
+SIGNAL \inst45|DIVENA|inst5|ALT_INV_31~q\ : std_logic;
+SIGNAL \inst33|ALT_INV_7~q\ : std_logic;
+SIGNAL \inst33|ALT_INV_33~q\ : std_logic;
 SIGNAL \inst3|inst5|ALT_INV_7~q\ : std_logic;
 SIGNAL \inst3|inst5|ALT_INV_33~q\ : std_logic;
 SIGNAL \inst33|ALT_INV_31~q\ : std_logic;
@@ -1682,38 +1714,6 @@ SIGNAL \inst3|inst|ALT_INV_7~q\ : std_logic;
 SIGNAL \inst3|inst|ALT_INV_33~q\ : std_logic;
 SIGNAL \inst45|DIVENA|inst|ALT_INV_34~q\ : std_logic;
 SIGNAL \inst45|DIVENA|inst3|ALT_INV_6~q\ : std_logic;
-SIGNAL \inst32|ALT_INV_31~q\ : std_logic;
-SIGNAL \inst3|inst|ALT_INV_31~q\ : std_logic;
-SIGNAL \inst45|DIVENA|inst3|ALT_INV_3~q\ : std_logic;
-SIGNAL \inst32|ALT_INV_34~q\ : std_logic;
-SIGNAL \inst13|ALT_INV_6~q\ : std_logic;
-SIGNAL \inst3|inst|ALT_INV_34~q\ : std_logic;
-SIGNAL \inst3|inst3|ALT_INV_6~q\ : std_logic;
-SIGNAL \inst45|DIVENA|inst3|ALT_INV_7~q\ : std_logic;
-SIGNAL \inst45|DIVENA|inst3|ALT_INV_33~q\ : std_logic;
-SIGNAL \inst13|ALT_INV_3~q\ : std_logic;
-SIGNAL \inst3|inst3|ALT_INV_3~q\ : std_logic;
-SIGNAL \inst45|DIVENA|inst3|ALT_INV_31~q\ : std_logic;
-SIGNAL \inst13|ALT_INV_7~q\ : std_logic;
-SIGNAL \inst13|ALT_INV_33~q\ : std_logic;
-SIGNAL \inst3|inst3|ALT_INV_7~q\ : std_logic;
-SIGNAL \inst3|inst3|ALT_INV_33~q\ : std_logic;
-SIGNAL \inst45|DIVENA|inst3|ALT_INV_34~q\ : std_logic;
-SIGNAL \inst45|DIVENA|inst5|ALT_INV_6~q\ : std_logic;
-SIGNAL \inst13|ALT_INV_31~q\ : std_logic;
-SIGNAL \inst3|inst3|ALT_INV_31~q\ : std_logic;
-SIGNAL \inst45|DIVENA|inst5|ALT_INV_3~q\ : std_logic;
-SIGNAL \inst13|ALT_INV_34~q\ : std_logic;
-SIGNAL \inst33|ALT_INV_6~q\ : std_logic;
-SIGNAL \inst3|inst3|ALT_INV_34~q\ : std_logic;
-SIGNAL \inst3|inst5|ALT_INV_6~q\ : std_logic;
-SIGNAL \inst45|DIVENA|inst5|ALT_INV_7~q\ : std_logic;
-SIGNAL \inst45|DIVENA|inst5|ALT_INV_33~q\ : std_logic;
-SIGNAL \inst33|ALT_INV_3~q\ : std_logic;
-SIGNAL \inst3|inst5|ALT_INV_3~q\ : std_logic;
-SIGNAL \inst45|DIVENA|inst5|ALT_INV_31~q\ : std_logic;
-SIGNAL \inst33|ALT_INV_7~q\ : std_logic;
-SIGNAL \inst33|ALT_INV_33~q\ : std_logic;
 
 COMPONENT hard_block
     PORT (
@@ -2162,6 +2162,38 @@ ww_devpor <= devpor;
 \Clock~inputclkctrl_INCLK_bus\ <= (vcc & vcc & vcc & \Clock~input_o\);
 
 \inst3|inst5|34~clkctrl_INCLK_bus\ <= (vcc & vcc & vcc & \inst3|inst5|34~q\);
+\inst32|ALT_INV_31~q\ <= NOT \inst32|31~q\;
+\inst3|inst|ALT_INV_31~q\ <= NOT \inst3|inst|31~q\;
+\inst45|DIVENA|inst3|ALT_INV_3~q\ <= NOT \inst45|DIVENA|inst3|3~q\;
+\inst32|ALT_INV_34~q\ <= NOT \inst32|34~q\;
+\inst13|ALT_INV_6~q\ <= NOT \inst13|6~q\;
+\inst3|inst|ALT_INV_34~q\ <= NOT \inst3|inst|34~q\;
+\inst3|inst3|ALT_INV_6~q\ <= NOT \inst3|inst3|6~q\;
+\inst45|DIVENA|inst3|ALT_INV_7~q\ <= NOT \inst45|DIVENA|inst3|7~q\;
+\inst45|DIVENA|inst3|ALT_INV_33~q\ <= NOT \inst45|DIVENA|inst3|33~q\;
+\inst13|ALT_INV_3~q\ <= NOT \inst13|3~q\;
+\inst3|inst3|ALT_INV_3~q\ <= NOT \inst3|inst3|3~q\;
+\inst45|DIVENA|inst3|ALT_INV_31~q\ <= NOT \inst45|DIVENA|inst3|31~q\;
+\inst13|ALT_INV_7~q\ <= NOT \inst13|7~q\;
+\inst13|ALT_INV_33~q\ <= NOT \inst13|33~q\;
+\inst3|inst3|ALT_INV_7~q\ <= NOT \inst3|inst3|7~q\;
+\inst3|inst3|ALT_INV_33~q\ <= NOT \inst3|inst3|33~q\;
+\inst45|DIVENA|inst3|ALT_INV_34~q\ <= NOT \inst45|DIVENA|inst3|34~q\;
+\inst45|DIVENA|inst5|ALT_INV_6~q\ <= NOT \inst45|DIVENA|inst5|6~q\;
+\inst13|ALT_INV_31~q\ <= NOT \inst13|31~q\;
+\inst3|inst3|ALT_INV_31~q\ <= NOT \inst3|inst3|31~q\;
+\inst45|DIVENA|inst5|ALT_INV_3~q\ <= NOT \inst45|DIVENA|inst5|3~q\;
+\inst13|ALT_INV_34~q\ <= NOT \inst13|34~q\;
+\inst33|ALT_INV_6~q\ <= NOT \inst33|6~q\;
+\inst3|inst3|ALT_INV_34~q\ <= NOT \inst3|inst3|34~q\;
+\inst3|inst5|ALT_INV_6~q\ <= NOT \inst3|inst5|6~q\;
+\inst45|DIVENA|inst5|ALT_INV_7~q\ <= NOT \inst45|DIVENA|inst5|7~q\;
+\inst45|DIVENA|inst5|ALT_INV_33~q\ <= NOT \inst45|DIVENA|inst5|33~q\;
+\inst33|ALT_INV_3~q\ <= NOT \inst33|3~q\;
+\inst3|inst5|ALT_INV_3~q\ <= NOT \inst3|inst5|3~q\;
+\inst45|DIVENA|inst5|ALT_INV_31~q\ <= NOT \inst45|DIVENA|inst5|31~q\;
+\inst33|ALT_INV_7~q\ <= NOT \inst33|7~q\;
+\inst33|ALT_INV_33~q\ <= NOT \inst33|33~q\;
 \inst3|inst5|ALT_INV_7~q\ <= NOT \inst3|inst5|7~q\;
 \inst3|inst5|ALT_INV_33~q\ <= NOT \inst3|inst5|33~q\;
 \inst33|ALT_INV_31~q\ <= NOT \inst33|31~q\;
@@ -2203,38 +2235,6 @@ ww_devpor <= devpor;
 \inst3|inst|ALT_INV_33~q\ <= NOT \inst3|inst|33~q\;
 \inst45|DIVENA|inst|ALT_INV_34~q\ <= NOT \inst45|DIVENA|inst|34~q\;
 \inst45|DIVENA|inst3|ALT_INV_6~q\ <= NOT \inst45|DIVENA|inst3|6~q\;
-\inst32|ALT_INV_31~q\ <= NOT \inst32|31~q\;
-\inst3|inst|ALT_INV_31~q\ <= NOT \inst3|inst|31~q\;
-\inst45|DIVENA|inst3|ALT_INV_3~q\ <= NOT \inst45|DIVENA|inst3|3~q\;
-\inst32|ALT_INV_34~q\ <= NOT \inst32|34~q\;
-\inst13|ALT_INV_6~q\ <= NOT \inst13|6~q\;
-\inst3|inst|ALT_INV_34~q\ <= NOT \inst3|inst|34~q\;
-\inst3|inst3|ALT_INV_6~q\ <= NOT \inst3|inst3|6~q\;
-\inst45|DIVENA|inst3|ALT_INV_7~q\ <= NOT \inst45|DIVENA|inst3|7~q\;
-\inst45|DIVENA|inst3|ALT_INV_33~q\ <= NOT \inst45|DIVENA|inst3|33~q\;
-\inst13|ALT_INV_3~q\ <= NOT \inst13|3~q\;
-\inst3|inst3|ALT_INV_3~q\ <= NOT \inst3|inst3|3~q\;
-\inst45|DIVENA|inst3|ALT_INV_31~q\ <= NOT \inst45|DIVENA|inst3|31~q\;
-\inst13|ALT_INV_7~q\ <= NOT \inst13|7~q\;
-\inst13|ALT_INV_33~q\ <= NOT \inst13|33~q\;
-\inst3|inst3|ALT_INV_7~q\ <= NOT \inst3|inst3|7~q\;
-\inst3|inst3|ALT_INV_33~q\ <= NOT \inst3|inst3|33~q\;
-\inst45|DIVENA|inst3|ALT_INV_34~q\ <= NOT \inst45|DIVENA|inst3|34~q\;
-\inst45|DIVENA|inst5|ALT_INV_6~q\ <= NOT \inst45|DIVENA|inst5|6~q\;
-\inst13|ALT_INV_31~q\ <= NOT \inst13|31~q\;
-\inst3|inst3|ALT_INV_31~q\ <= NOT \inst3|inst3|31~q\;
-\inst45|DIVENA|inst5|ALT_INV_3~q\ <= NOT \inst45|DIVENA|inst5|3~q\;
-\inst13|ALT_INV_34~q\ <= NOT \inst13|34~q\;
-\inst33|ALT_INV_6~q\ <= NOT \inst33|6~q\;
-\inst3|inst3|ALT_INV_34~q\ <= NOT \inst3|inst3|34~q\;
-\inst3|inst5|ALT_INV_6~q\ <= NOT \inst3|inst5|6~q\;
-\inst45|DIVENA|inst5|ALT_INV_7~q\ <= NOT \inst45|DIVENA|inst5|7~q\;
-\inst45|DIVENA|inst5|ALT_INV_33~q\ <= NOT \inst45|DIVENA|inst5|33~q\;
-\inst33|ALT_INV_3~q\ <= NOT \inst33|3~q\;
-\inst3|inst5|ALT_INV_3~q\ <= NOT \inst3|inst5|3~q\;
-\inst45|DIVENA|inst5|ALT_INV_31~q\ <= NOT \inst45|DIVENA|inst5|31~q\;
-\inst33|ALT_INV_7~q\ <= NOT \inst33|7~q\;
-\inst33|ALT_INV_33~q\ <= NOT \inst33|33~q\;
 auto_generated_inst : hard_block
 PORT MAP (
 	devoe => ww_devoe,
