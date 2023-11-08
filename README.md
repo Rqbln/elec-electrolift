@@ -19,8 +19,7 @@ technologie, permettant de tester et de perfectionner les systèmes d'ascenseurs
 réelle.
 
 
-*Problématique*
-
+### **Problématique**
 Notre projet d’électronique répond aux défis croissants posés par l'urbanisation rapide et la
 densification des villes. À mesure que les métropoles se développent et que la construction de bâtiments de
 grande hauteur devient courante, la nécessité d'une mobilité verticale efficace et fiable devient primordiale.
